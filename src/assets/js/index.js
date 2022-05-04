@@ -47,12 +47,19 @@ $(document).ready(function(){
 	}
 
 	// slick
+	$('.lgmembersweek .visual__swiper').slick({
+		speed: 600,
+		infinite: false,
+		dots: true,
+		touchThreshold : 100,
+		focusOnSelect: true
+	});
 	$('.lgmembersweek .product__swiper').slick({
 		speed: 600,
 		infinite: false,
 		slidesToShow: 5,
 		touchThreshold : 100,
-		focusOnSelect: true
+		focusOnSelect: true,
 	});
 	$('.lgmembersweek .product__showroom').slick({
 		speed: 600,
@@ -60,4 +67,35 @@ $(document).ready(function(){
 		touchThreshold : 100,
 		focusOnSelect: true
 	});
+
+	// tab
+	$('.lgmembersweek .tab__button').on('click', function (event) {
+		event.preventDefault();
+		
+		if ($($(this).attr('href')).find('.product__swiper, .product__showroom').length > 0) {
+			$($(this).attr('href')).find('.product__showroom').slick('refresh');
+			$($(this).attr('href')).find('.product__swiper').slick('refresh');
+		}
+
+		$(this).closest('.tab').find('.tab__item').removeClass('tab__item--active');
+		$(this).parent('.tab__item').addClass('tab__item--active');
+		$(this).closest('.tab').find('.tab__panel').hide();
+		$($(this).attr('href')).show();
+		// $('.brand_product-tabstage').find('.tabproduct_items:nth-child(n+17)').hide();
+		// $('.brandtabs-container').find('.btn_seemore').show();
+	});
+	// $('.brandtabs-container .tabs-menu a:first').trigger('click');
+
+	// if($('.brand_product-tabstage').find('.tabproduct_items').length > 0) {
+	// 	$('#producttab-01').find('.btn_seemore').on('click', function (e) {
+	// 		$('#producttab-01').find('.tabproduct_items').show();
+	// 		$('#producttab-01').find('.btn_seemore').hide();
+	// 		return false;
+	// 	});
+	// 	$('#producttab-02').find('.btn_seemore').on('click', function (e) {
+	// 		$('#producttab-02').find('.tabproduct_items').show();
+	// 		$('#producttab-02').find('.btn_seemore').hide();
+	// 		return false;
+	// 	});	
+	// }
 });

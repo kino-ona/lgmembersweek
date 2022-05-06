@@ -51,20 +51,35 @@ $(document).ready(function(){
 		speed: 600,
 		infinite: false,
 		dots: true,
-		touchThreshold : 100,
-		focusOnSelect: true
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					arrows: false
+				}
+			}
+		]
 	});
 	$('.lgmembersweek .product__swiper').slick({
 		speed: 600,
 		infinite: false,
 		slidesToShow: 5,
-		touchThreshold : 100,
 		focusOnSelect: true,
+		swipeToSlide: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					arrows: false,
+					slidesToShow: 2.4,
+				}
+			}
+		]
 	});
 	$('.lgmembersweek .product__showroom').slick({
 		speed: 600,
 		infinite: false,
-		touchThreshold : 100,
 		focusOnSelect: true
 	});
 

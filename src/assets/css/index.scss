@@ -20,9 +20,7 @@
 			}
 			&--black {
 				background-color: #1D1D1B;
-				.section__header {
-					color: #fff;
-				}
+				color: #fff;
 			}
 			&--toplow {
 				padding-top: 4.17%;
@@ -192,8 +190,10 @@
 				}
 			}
 			&__slide {
-				height: 143.59vw !important;
-				padding-top: 10.26vw;
+				background-image: none;
+				.section__inner {
+					height: 143.59vw;
+				}
 				.section__title {
 					font-size: 60px;
 					line-height: 50px;
@@ -207,6 +207,12 @@
 					margin-top: 18px;
 					font-size: 18px;
 					line-height: 22px;
+				}
+				&--intro {
+					.section__inner {
+						padding-top: 10.26vw;
+						background-image: url('../images/m_bg_visual_intro.png');
+					}
 				}
 			}
 		}
@@ -597,9 +603,36 @@
 				}
 			}
 			&__back {
+				padding: 20px;
 				border-radius: 15px;
 				&:before {
 					border-radius: 15px;
+				}
+				.product {
+					&__img {
+						padding: 0;
+					}
+					&__info {
+						margin-top: 0;
+					}
+					&__category {
+						margin-bottom: 0;
+						font-size: 16px;
+						line-height: 20px;
+					}
+					&__name {
+						font-size: 16px;
+						line-height: 20px;
+					}
+				}
+				.coupon__ico {
+					margin-top: 20px;
+					width: 26px;
+					height: 26px;
+					svg {
+						width: 9.29px;
+						height: 6.08;
+					}
 				}
 			}
 		}
@@ -1297,6 +1330,196 @@
 			}
 		}
 	}
+
+	// benefit
+	.benefit {
+		&:not(:first-child) {
+			margin-top: 60px;
+		}
+		&__list {
+			display: flex;
+			justify-content: center;
+			&:not(:first-child) {
+				margin-top: 80px;
+			}
+			&--discount {
+				.benefit__item {
+					margin: 0 4.22vw;
+					&:not(:first-child) {
+						&:before {
+							content: '';
+							display: block;
+							position: absolute;
+							left: calc(-4.22vw - 30px);
+							top: 50%;
+							width: 60px;
+							height: 60px;
+							margin-top: -30px;
+							background-image: url('../images/bg_benefit_plus.png');
+							background-repeat: no-repeat;
+							background-position: 0 0;
+							background-size: 100% 100%;
+						}
+					}
+					> .benefit__inner {
+						text-align: center;
+					}
+				}
+			}
+			&--coupon {
+				.benefit__item {
+					flex: 1 1 0%;
+					max-width: 240px;
+					margin: 0 1.04vw;
+					&:before,
+					&:after {
+						content: '';
+						display: block;
+						position: absolute;
+						top: 50%;
+						z-index: 1;
+						width: 26px;
+						height: 26px;
+						margin-top: -13px;
+						border-radius: 50%;
+						background-color: #1D1D1B;
+					}
+					&:before {
+						left: -13px;
+					}
+					&:after {
+						right: -13px;
+					}
+					@for $i from 1 through 3 {
+						&:nth-child(#{ $i }) {
+							> .benefit__inner {
+								&:after {
+									background-image: url('../images/ico_benefit_list0#{$i}.png');
+								}
+							}
+						}
+					}
+					> .benefit__inner {
+						position: relative;
+						height: 144px;
+						padding: 20px 25px;
+						border-radius: 14px;
+						background-color: #fff;
+						&:before,
+						&:after {
+							content: '';
+							display: block;
+							position: absolute;
+						}
+						&:before {
+							left: 0;
+							bottom: 0;
+							width: 100%;
+							height: 42px;
+							border-radius: 0 0 14px 14px;
+							background-color: #C4D7FF;
+						}
+						&:after {
+							right: 21px;
+							bottom: 11px;
+							width: 63px;
+							height: 62px;
+							background-repeat: no-repeat;
+							background-position: 0 0;
+							background-size: 100% 100%;
+						}
+					}
+				}
+				.benefit__category {
+					color: #000;
+					font-size: 24px;
+					line-height: 26px;
+				}
+			}
+		}
+		&__item {
+			position: relative;
+		}
+		&__category {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 24px;
+			text-decoration: underline;
+		}
+		&__discount {
+			margin-top: 20px;
+			color: #BEF860;
+			font-weight: 700;
+			font-size: 100px;
+			line-height: 116px;
+			.benefit__text {
+				display: block;
+				margin-top: 10px;
+				color: #fff;
+				font-size: 16px;
+				line-height: 22px;
+			}
+		}
+		&__condition {
+			display: block;
+			color: #BEF860;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 24px;
+		}
+		&__footer {
+			margin-top: 30px;
+			text-align: center;
+		}
+		&__link {
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			color: inherit;
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 24px;
+			&:hover {
+				text-decoration: none;
+			}
+			.benefit__arrow {
+				margin-left: 10px;
+				@include iconAngle($direction: 'right', $width: 8px, $height: 20px, $thick: 2px, $color: #fff, $display: block, $position: relative);
+			}
+		}
+		@media (max-width: 767px) {
+			&:not(:first-child) {
+				margin-top: 40px;
+			}
+			&__list {
+				display: block;
+				&--discount {
+					.benefit__item {
+						margin: 0;
+						&:not(:first-child) {
+							margin-top: 80px;
+							&:before {
+								left: 50%;
+								top: -60px;
+								width: 40px;
+								height: 40px;
+								margin: 0 0 0 -20px;
+								background-image: url('../images/m_bg_benefit_plus.png');
+							}
+						}
+					}
+				}
+				&--coupon {
+					display: none;
+				}
+			}
+			&__discount {
+				margin-top: 10px;
+				font-size: 60px;
+				line-height: 60px;
+			}
+		}
+	}
 	
 	// tab
 	.tab {
@@ -1431,6 +1654,15 @@
 				}
 			}
 		}
+		&__noti {
+			font-weight: 600;
+			font-size: 24px;
+			line-height: 32px;
+			text-align: center;
+			&:not(:last-child) {
+				margin-bottom: 40px;
+			}
+		}
 		@media (max-width: 767px) {
 			&__list {
 				overflow-x: auto;
@@ -1485,6 +1717,13 @@
 					}
 				}
 			}
+			&__noti {
+				font-size: 16px;
+				line-height: 22px;
+				&:not(:last-child) {
+					margin-bottom: 20px;
+				}
+			}
 		}
 	}
 
@@ -1532,6 +1771,7 @@
 	// highlight
 	.highlight {
 		position: relative;
+		z-index: 1;
 		&:before {
 			content: '';
 			display: block;
@@ -1550,6 +1790,22 @@
 		&--lightblue {
 			&:before {
 				background-color: #C8D2FA;
+			}
+		}
+		@media (min-width: 767px) {
+			&--desktop {
+				position: static;
+				&:before {
+					display: none;
+				}
+			}
+		}
+		@media (max-width: 767px) {
+			&--mobile {
+				position: static;
+				&:before {
+					display: none;
+				}
 			}
 		}
 	}

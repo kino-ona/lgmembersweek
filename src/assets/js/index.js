@@ -61,6 +61,24 @@ $(document).ready(function(){
 			}
 		]
 	});
+	$('.lgmembersweek .product--hotdeal .product__list').slick({
+		speed: 600,
+		infinite: false,
+		arrows: false,
+		slidesToShow: 3,
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					initialSlide: 1,
+					slidesToShow: 1,
+					centerPadding: '18vw',
+					centerMode: true,
+				}
+			}
+		]
+	});
 	$('.lgmembersweek .product__swiper').slick({
 		speed: 600,
 		infinite: false,

@@ -25,6 +25,9 @@
 			&--toplow {
 				padding-top: 4.17%;
 			}
+			&--bottomlow {
+				padding-bottom: 4.17%;
+			}
 		}
 		&__inner {
 			max-width: 1600px;
@@ -626,12 +629,12 @@
 					}
 				}
 				.coupon__ico {
-					margin-top: 20px;
+					margin-top: 17px;
 					width: 26px;
 					height: 26px;
 					svg {
 						width: 9.29px;
-						height: 6.08;
+						height: 6.08px;
 					}
 				}
 			}
@@ -661,9 +664,13 @@
 				flex-wrap: nowrap;
 				justify-content: center;
 				margin: 0;
+				.slick-track {
+					display: flex;
+					justify-content: center;
+					margin: 0 auto;
+				}
 			}
 			.product__item {
-				flex: 0 1 240px;
 				width: auto;
 				max-width: 240px;
 				margin: 0 3.13vw;
@@ -1223,17 +1230,16 @@
 					max-width: 140px;
 				}
 				.product__mask {
-					overflow-x: auto;
 					margin: 0 -5.13vw;
-					padding: 0 1.28vw;
 				}
 				.product__list {
 					justify-content: flex-start;
-					width: calc(660px + 23.1vw);
+					.slick-track {
+						display: block;
+					}
 				}
 				.product__item {
 					flex: none;
-					width: 220px;
 					max-width: none;
 					margin: 0 3.85vw;
 				}
@@ -1344,6 +1350,7 @@
 			}
 			&--discount {
 				.benefit__item {
+					flex: 1 1 auto;
 					margin: 0 4.22vw;
 					&:not(:first-child) {
 						&:before {
@@ -1778,7 +1785,7 @@
 			position: absolute;
 			left: 4px;
 			top: 0;
-			right: -2px;
+			right: 0;
 			z-index: -1;
 			height: 90%;
 		}
@@ -2045,6 +2052,7 @@
 		background-position: 0 0;
 		background-size: 100% 100%;
 		background-color: transparent;
+		cursor: pointer;
 	}
 	.slick-prev {
 		left: 1.88%;
@@ -2087,6 +2095,7 @@
 				outline: none;
 				font-size: 0;
 				line-height: 0;
+				cursor: pointer;
 			}
 		}
 		@media (max-width: 767px) {

@@ -8,10 +8,10 @@
 							<div class="modal-contents" role="document">
 								<div class="modal-contentainer">
 									<div class="modal-header">
-										<strong class="modal-title"><img src="/lg5-common/images/common/logo-modal-head.jpg"
+										<strong class="modal-title"><img src="./lg5-common/images/common/logo-modal-head.jpg"
 												alt="LG"></strong>
 										<button type="button" class="modal-layer-close" id="modal-layer-close"><img
-												src="/lg5-common/images/common/popup-close.png" alt="Close"></button>
+												src="./lg5-common/images/common/popup-close.png" alt="Close"></button>
 									</div>
 									<div class="modal-body">
 

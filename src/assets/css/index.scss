@@ -92,6 +92,7 @@
 
 	// visual
 	.visual {
+		max-height: 900;
 		&__swiper {
 			.slick-prev {
 				left: 2.08%;
@@ -105,15 +106,21 @@
 		}
 		&__slide {
 			position: relative;
+			max-height: 900px;
 			background-repeat: no-repeat;
-			background-position: 50% 50%;
-			background-size: cover;
+			// background-position: 50% 50%;
+			background-position: 50% bottom 0;
+			// background-size: cover;
+			background-size: 100% 100%;
 			.section__inner {
 				height: 46.88vw;
-				padding-top: 5.21vw;
+				padding-top: 4.17vw;
+				// padding-top: 5.21vw;
 				background-repeat: no-repeat;
-				background-position: 50% 50%;
-				background-size: cover;
+				// background-position: 50% 50%;
+				background-position: 50% 0;
+				// background-size: cover;
+				background-size: contain;
 			}
 			.section__title {
 				font-size: 74px;

@@ -1329,7 +1329,7 @@
 		}
 		&__name {
 			display: block;
-			height: 44px;
+			height: 47px;
 			font-weight: 600;
 			font-size: 18px;
 			line-height: 24px;
@@ -1371,6 +1371,19 @@
 			}
 		}
 		@media (max-width: 767px) {
+			> .button {
+				&:not(:first-child) {
+					margin-top: 40px;
+				}
+				.button__item {
+					max-width: none;
+					height: 50px;
+					font-size: 18px;
+					&:not(:first-child) {
+						margin-left: 20px;
+					}
+				}
+			}
 			.learn-more {
 				&:not(:first-child) {
 					margin-top: 16px;
@@ -1543,7 +1556,7 @@
 					margin-top: 12px;
 				}
 				.product__name {
-					height: 34px;
+					height: 37px;
 					font-size: 16px;
 					@include ellipse(2);
 				}
@@ -1582,7 +1595,7 @@
 				}
 			}
 			&__name {
-				height: 52px;
+				height: 55px;
 				font-size: 16px;
 				line-height: 18px;
 				@include ellipse(3);
@@ -1840,10 +1853,11 @@
 		&__list {
 			display: flex;
 			height: 54px;
+			border-bottom: 1px solid #E0E0E0;
 			&--round {
 				height: 50px;
+				border-bottom: 0;
 				.tab__item {
-					border-bottom: 0;
 					&:not(:first-child) {
 						padding-left: 14px;
 					}
@@ -1869,7 +1883,6 @@
 		&__item {
 			flex: 1;
 			height: 100%;
-			border-bottom: 1px solid #E0E0E0;
 			&--active {
 				.tab__button {
 					color: #000;
@@ -2071,7 +2084,7 @@
 				&--greenlife {
 					margin-top: 10px;
 					&:before {
-						top: calc(55.13vw + 153px);
+						top: calc(38.465vw + 153px);
 					}
 					.tab__noti {
 						max-width: none;
@@ -2082,7 +2095,7 @@
 				&--vividlife {
 					margin-top: 10px;
 					&:before {
-						top: calc(55.13vw + 153px);
+						top: calc(38.465vw + 153px);
 					}
 					.tab__noti {
 						max-width: none;
@@ -2093,7 +2106,7 @@
 				&--gaminglife {
 					margin-top: 10px;
 					&:before {
-						top: calc(55.13vw + 153px);
+						top: calc(38.465vw + 153px);
 					}
 					.tab__noti {
 						max-width: none;
@@ -2104,7 +2117,7 @@
 				&--workinglife {
 					margin-top: 10px;
 					&:before {
-						top: calc(55.13vw + 153px);
+						top: calc(38.465vw + 153px);
 					}
 					.tab__noti {
 						max-width: none;
@@ -2115,7 +2128,7 @@
 				&--soundfullife {
 					margin-top: 10px;
 					&:before {
-						top: calc(55.13vw + 153px);
+						top: calc(38.465vw + 153px);
 					}
 					.tab__noti {
 						max-width: none;
@@ -2175,6 +2188,7 @@
 
 	// highlight
 	.highlight {
+		display: inline-block;
 		position: relative;
 		z-index: 1;
 		&:before {

@@ -146,7 +146,7 @@ function watchs(done) {
 
 // clean
 function clean(done) {
-	del.sync(['dist/*/', '!dist/path/**', '!dist/path.html']);
+	del.sync(['dist/*/', '!dist/path/**', '!dist/path.html', '!dist/lg5-common-gp']);
 	done();
 }
 exports.clean = clean;

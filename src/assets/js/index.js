@@ -71,10 +71,9 @@ $(document).ready(function(){
 			{
 				breakpoint: 767,
 				settings: {
-					initialSlide: 1,
 					slidesToShow: 1,
 					centerPadding: '18vw',
-					centerMode: true,
+					centerMode: true
 				}
 			}
 		]
@@ -98,8 +97,46 @@ $(document).ready(function(){
 	$('.lgmembersweek .product__showroom').slick({
 		speed: 600,
 		infinite: false,
-		focusOnSelect: true
+		dots: true,
+		focusOnSelect: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					arrows: false
+				}
+			}
+		]
 	});
+
+	// 제품 레이어
+	function showRoomDesktop() {
+		$('.lgmembersweek .product__showroom .product__layer').on('mouseenter mouseleave', function(event){
+			if (event.type === 'mouseenter') {
+				$(this).find('.product__target').show();
+			} else {
+				$(this).find('.product__target').hide();
+			}
+		});
+	}
+	function showRoomMobile() {
+		$('.lgmembersweek .product__showroom .product__layer .product__anchor').on('click', function(event){
+			event.preventDefault();
+			$(this).next('.product__target').toggle();
+		});
+	}
+	// if ($(window).width() > 767) {
+	// 	showRoomDesktop();
+	// } else if ($(window).width() <= 767) {
+	// 	showRoomMobile();
+	// }
+	$(window).resize(function(){
+		if ($(window).width() > 767) {
+			showRoomDesktop();
+		} else if ($(window).width() <= 767) {
+			showRoomMobile();
+		}
+	})
 
 	// tab
 	$('.lgmembersweek .tab__button').on('click', function (event) {

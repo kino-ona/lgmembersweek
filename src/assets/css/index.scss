@@ -1379,11 +1379,13 @@
 					margin-top: 40px;
 				}
 				.button__item {
+					height: auto;
 					max-width: none;
-					height: 50px;
+					min-height: 50px;
+					padding: 10px 15px;
 					font-size: 18px;
 					&:not(:first-child) {
-						margin-left: 20px;
+						margin-left: 10px;
 					}
 				}
 			}

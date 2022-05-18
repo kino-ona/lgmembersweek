@@ -1191,6 +1191,9 @@
 				border-top: 20px solid #fff;
 				border-radius: 2px;
 			}
+			&--opened {
+				display: block;
+			}
 			.product__link {
 				display: flex;
 				align-items: center;
@@ -1644,8 +1647,8 @@
 			&--discount {
 				.benefit__item {
 					flex: 1 1 auto;
-					margin: 0 4.22vw;
 					&:not(:first-child) {
+						margin-left: 8.44vw;
 						&:before {
 							content: '';
 							display: block;
@@ -1799,8 +1802,8 @@
 				}
 				&--discount {
 					.benefit__item {
-						margin: 0;
 						&:not(:first-child) {
+							margin-left: 0;
 							margin-top: 80px;
 							&:before {
 								left: 50%;

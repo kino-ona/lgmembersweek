@@ -98,7 +98,6 @@ $(document).ready(function(){
 		speed: 600,
 		infinite: false,
 		dots: true,
-		focusOnSelect: true,
 		responsive: [
 			{
 				breakpoint: 767,
@@ -110,42 +109,45 @@ $(document).ready(function(){
 	});
 
 	// 제품 레이어
-	$('.lgmembersweek .product__showroom .product__layer').on({
-		mouseenter: function(event){
-			// console.log(event);
-			$(this).find('.product__target').show();
-		},
-		mouseleave: function(event){
-			// console.log(event);
-			$(this).find('.product__target').hide();
-		}
-	})
-	$('.lgmembersweek .product__showroom .product__layer .product__anchor').on('click', function(event){
-		event.preventDefault();
-		// console.log(event);
-		$(this).next('.product__target').toggle();
-	});
 	if ($(window).width() > 767) {
-		$('.lgmembersweek .product__showroom .product__layer .product__anchor').off('click');
+		$('.lgmembersweek .product__showroom .product__layer').on({
+			mouseenter: function(event){
+				$(this).find('.product__target').addClass('product__target--opened');
+			},
+			mouseleave: function(event){
+				$(this).find('.product__target').removeClass('product__target--opened');
+			}
+		})
 	} else if ($(window).width() <= 767) {
-		$('.lgmembersweek .product__showroom .product__layer').off('mouseenter mouseleave');
+		$('.lgmembersweek .product__showroom .product__layer .product__anchor').on('click', function(event){
+			event.preventDefault();
+			if ($(this).next('.product__target').hasClass('product__target--opened') === true) {
+				$(this).next('.product__target').removeClass('product__target--opened')
+			} else {
+				$(this).next('.product__target').addClass('product__target--opened')
+			}
+		});
 	}
 	$(window).resize(function(){
 		if ($(window).width() > 767) {
 			$('.lgmembersweek .product__showroom .product__layer .product__anchor').off('click');
 			$('.lgmembersweek .product__showroom .product__layer').on({
 				mouseenter: function(event){
-					$(this).find('.product__target').show();
+					$(this).find('.product__target').addClass('product__target--opened');
 				},
 				mouseleave: function(event){
-					$(this).find('.product__target').hide();
+					$(this).find('.product__target').removeClass('product__target--opened');
 				}
 			})
 		} else if ($(window).width() <= 767) {
 			$('.lgmembersweek .product__showroom .product__layer').off('mouseenter mouseleave');
 			$('.lgmembersweek .product__showroom .product__layer .product__anchor').on('click', function(event){
 				event.preventDefault();
-				$(this).next('.product__target').toggle();
+				if ($(this).next('.product__target').hasClass('product__target--opened') === true) {
+					$(this).next('.product__target').removeClass('product__target--opened')
+				} else {
+					$(this).next('.product__target').addClass('product__target--opened')
+				}
 			});
 		}
 	});

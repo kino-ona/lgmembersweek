@@ -21,6 +21,14 @@
 			&--black {
 				background-color: #1D1D1B;
 				color: #fff;
+				.section__footer {
+					margin-bottom: -2.08vw;
+					.section__text {
+						.symbol {
+							color: #BEF860;
+						}
+					}
+				}
 			}
 			&--toplow {
 				padding-top: 4.17%;
@@ -64,16 +72,33 @@
 		}
 		&__desc {
 			margin-top: 20px;
-			font-weight: 600;
 			font-size: 20px;
 			line-height: 24px;
 			& + .section__desc {
 				margin-top: 16px;
 			}
+			.section__mark {
+				color: #A50034;
+				font-weight: 700;
+			}
+		}
+		&__footer {
+			margin-top: 40px;
+			margin-bottom: -4.17vw;
+			text-align: right;
+			.section__text {
+				font-size: 16px;
+				line-height: 22px;
+			}
 		}
 		@media (max-width: 767px) {
 			&__container {
 				padding: 12.82% 0;
+				&--black {
+					.section__footer {
+						margin-bottom: -5.13vw;
+					}
+				}
 				&--toplow {
 					padding-top: 10.26%;
 				}
@@ -106,6 +131,11 @@
 				& + .section__desc {
 					margin-top: 10px;
 				}
+			}
+			&__footer {
+				margin-top: 30px;
+				margin-bottom: -5.13vw;
+				text-align: center;
 			}
 		}
 	}
@@ -768,11 +798,16 @@
 			}
 			.product__item {
 				width: auto;
-				max-width: 240px;
+				max-width: 260px;
 				margin: 0 3.13vw;
 				padding: 0;
 				border-radius: 0;
 				background-color: transparent;
+				.button {
+					&:not(:first-child) {
+						margin-top: 10px;
+					}
+				}
 			}
 			.product__flags {
 				left: 0;
@@ -783,24 +818,39 @@
 			}
 			.product__name {
 				height: auto;
-				font-size: 20px;
-				line-height: 24px;
 				@include ellipse(1);
 			}
 			.product__price {
-				display: block;
-				margin-top: 16px;
-			}
-			.product__cost {
-				display: block;
-				margin-left: 0;
-				margin-bottom: 4px;
-			}
-			.product__discount {
-				margin-right: 0;
+				margin-top: 15px;
 			}
 			.product__members {
-				margin-top: 10px;
+				margin-top: 0;
+				height: 54px;
+			}
+			.product__noti {
+				margin-top: 8px;
+				font-size: 16px;
+				line-height: 22px;
+				.product__text {
+					display: inline-block;
+					position: relative;
+					padding-left: 22px;
+					color: #A50034;
+					&:before {
+						content: '';
+						display: block;
+						position: absolute;
+						left: 0;
+						top: 50%;
+						width: 16px;
+						height: 16px;
+						margin-top: -8px;
+						background-image: url('../images/ico_info.png');
+						background-repeat: no-repeat;
+						background-position: 0 0;
+						background-size: 100% 100%;
+					}
+				}
 			}
 		}
 		&__showroom {
@@ -1345,7 +1395,7 @@
 			line-height: 22px;
 		}
 		&__price {
-			display: inline-flex;
+			display: flex;
 			justify-content: center;
 			align-items: center;
 			margin-top: 20px;
@@ -1363,9 +1413,6 @@
 			font-size: 16px;
 			line-height: 22px;
 			text-decoration: line-through;
-			& + .product__highlight {
-				margin-left: 4px;
-			}
 		}
 		&__members {
 			margin-top: 4px;
@@ -1416,6 +1463,38 @@
 					flex: none;
 					max-width: none;
 					margin: 0 3.85vw;
+					.button {
+						&:not(:first-child) {
+							margin-top: 6px;
+						}
+					}
+				}
+				.product__info {
+					.product__highlight {
+						font-size: 16px;
+					}
+				}
+				.product__sn {
+					margin-top: 6px;
+					font-size: 16px;
+				}
+				.product__price {
+					flex-wrap: nowrap;
+				}
+				.product__cost {
+					order: 1;
+					width: auto;
+					margin-left: 10px;
+					margin-bottom: 0;
+				}
+				.product__discount {
+					margin-right: 4px;
+					font-size: 16px;
+				}
+				.product__members {
+					.product__text {
+						font-size: 16px;
+					}
 				}
 			}
 			&__showroom {
@@ -1645,18 +1724,16 @@
 			display: flex;
 			justify-content: center;
 			&:not(:first-child) {
-				margin-top: 80px;
+				margin-top: 40px;
 			}
 			&--discount {
 				.benefit__item {
-					flex: 1 1 auto;
 					&:not(:first-child) {
-						margin-left: 8.44vw;
+						margin-left: 4.32vw;
 						&:before {
 							content: '';
 							display: block;
 							position: absolute;
-							left: calc(-4.22vw - 30px);
 							top: 50%;
 							width: 60px;
 							height: 60px;
@@ -1665,6 +1742,16 @@
 							background-repeat: no-repeat;
 							background-position: 0 0;
 							background-size: 100% 100%;
+						}
+					}
+					&:nth-child(2) {
+						&:before {
+							left: -28px;
+						}
+					}
+					&:last-child {
+						&:before {
+							left: -110px;
 						}
 					}
 					> .benefit__inner {
@@ -1677,6 +1764,7 @@
 					flex: 1 1 0%;
 					max-width: 240px;
 					margin: 0 1.04vw;
+					color: #000;
 					&:before,
 					&:after {
 						content: '';
@@ -1699,7 +1787,7 @@
 					@for $i from 1 through 3 {
 						&:nth-child(#{ $i }) {
 							> .benefit__inner {
-								&:after {
+								&:before {
 									background-image: url('../images/ico_benefit_list0#{$i}.png');
 								}
 							}
@@ -1708,24 +1796,12 @@
 					> .benefit__inner {
 						position: relative;
 						height: 144px;
-						padding: 20px 25px;
 						border-radius: 14px;
 						background-color: #fff;
-						&:before,
-						&:after {
+						&:before {
 							content: '';
 							display: block;
 							position: absolute;
-						}
-						&:before {
-							left: 0;
-							bottom: 0;
-							width: 100%;
-							height: 42px;
-							border-radius: 0 0 14px 14px;
-							background-color: #C4D7FF;
-						}
-						&:after {
 							right: 21px;
 							bottom: 11px;
 							width: 63px;
@@ -1737,9 +1813,23 @@
 					}
 				}
 				.benefit__category {
-					color: #000;
+					display: flex;
+					align-items: center;
+					height: 94px;
+					padding: 0 20px;
 					font-size: 24px;
 					line-height: 26px;
+				}
+				.benefit__text {
+					display: flex;
+					align-items: center;
+					height: 50px;
+					padding: 0 20px;
+					border-radius: 0 0 14px 14px;
+					background-color: #C4D7FF;
+					font-weight: 600;
+					font-size: 14px;
+					line-height: 16px;
 				}
 			}
 		}
@@ -1774,14 +1864,18 @@
 			font-size: 20px;
 			line-height: 24px;
 		}
-		&__footer {
-			margin-top: 30px;
+		&__button {
+			margin-top: 40px;
 			text-align: center;
 		}
 		&__link {
 			display: inline-flex;
 			justify-content: center;
 			align-items: center;
+			height: 40px;
+			padding: 0 30px;
+			border: 1px solid #fff;
+			border-radius: 21px;
 			color: inherit;
 			font-weight: 600;
 			font-size: 20px;
@@ -1842,8 +1936,8 @@
 				font-size: 16px;
 				line-height: 18px;
 			}
-			&__footer {
-				margin-top: 20px;
+			&__button {
+				margin-top: 30px;
 			}
 			&__link {
 				font-size: 18px;

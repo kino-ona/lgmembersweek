@@ -142,7 +142,6 @@
 
 	// visual
 	.visual {
-		max-height: 900px;
 		&__swiper {
 			.slick-prev {
 				left: 2.08%;
@@ -185,6 +184,9 @@
 			.section__title {
 				font-size: 74px;
 				line-height: 76px;
+			}
+			.section__desc {
+				font-weight: 600;
 			}
 			.button {
 				position: absolute;

@@ -1468,7 +1468,11 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			margin-top: 20px;
+			margin-top: 15px;
+		}
+		&__price-now {
+			justify-content: center;
+			align-items: center;
 		}
 		&__cost {
 			order: 1;
@@ -1489,6 +1493,31 @@
 			.product__text {
 				font-size: 16px;
 				line-height: 22px;
+			}
+		}
+		.product__noti {
+			margin-top: 4px;
+			font-size: 16px;
+			line-height: 20px;
+			.product__text {
+				display: inline-block;
+				position: relative;
+				padding-left: 22px;
+				color: #A50034;
+				&:before {
+					content: '';
+					display: block;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					width: 16px;
+					height: 16px;
+					margin-top: -8px;
+					background-image: url('../images/ico_info.png');
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					background-size: 100% 100%;
+				}
 			}
 		}
 		@media (max-width: 767px) {

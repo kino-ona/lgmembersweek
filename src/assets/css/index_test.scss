@@ -112,7 +112,13 @@
 
 	// visual
 	.visual {
-		max-height: 900px;
+		height: 900px;
+		.slick-slider {
+			height: 100%;
+		}
+		.slick-list, .slick-track, .visual__slide {
+			height: 100%;
+		} 
 		&__swiper {
 			.slick-prev {
 				left: 2.08%;
@@ -137,18 +143,19 @@
 		}
 		&__slide {
 			position: relative;
-			max-height: 900px;
+			height: 900px;
 			background-repeat: no-repeat;
 			// background-position: 50% 50%;
 			background-position: 50% bottom;
 			background-size: 100% 100%;
 			.section__inner {
-				height: 46.88vw;
+				// height: 46.88vw;
+				height: 900px;
 				padding-top: 4.17vw;
 				// padding-top: 5.21vw;
 				background-repeat: no-repeat;
-				// background-position: 50% 50%;
-				background-position: 50% 0;
+				background-position: 50% 50%;
+				// background-position: 50% 0;
 				// background-size: cover;
 				background-size: contain;
 			}
@@ -806,8 +813,7 @@
 		&__showroom {
 			.product__slide {
 				position: relative;
-				height: 0;
-				padding-top: 25.625%;
+				height: 42.71vw;
 				border-radius: 30px;
 				background-repeat: no-repeat;
 				// background-position: 50% 50%;

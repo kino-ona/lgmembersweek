@@ -1274,7 +1274,7 @@
 			}
 		}
 		&__target {
-			// display: none;
+			display: none;
 			position: absolute;
 			left: 50%;
 			width: 340px;
@@ -1379,6 +1379,12 @@
 			.slick-next {
 				right: -7.06%;
 				background-image: url('../images/btn_product_swiper_next.png');
+			}
+			.product__img {
+				img {
+					border-radius: 28px;
+					overflow: hidden;
+				}
 			}
 		}
 		&__list {

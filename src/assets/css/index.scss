@@ -1,6 +1,63 @@
 @charset "UTF-8";
 @import "mixins";
 
+// popup
+.popup {
+	display: none;
+	p {
+		margin: 0;
+	}
+	&__container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		z-index: 100;
+		background-color: rgba(0,0,0,.2);
+	}
+	&__body {
+		max-width: 360px;
+		border-radius: 30px;
+		background-color: #fff;
+	}
+	&__contents {
+		padding: 45px 40px;
+		text-align: center;
+		.popup__text {
+			font-size: 20px;
+			line-height: 24px;
+		}
+		.popup__bold {
+			font-weight: 700;
+		}
+	}
+	&__bottom {
+		display: flex;
+		border-top: 1px solid #E0E0E0;
+	}
+	&__button {
+		flex: 1;
+		height: 60px;
+		border: 0;
+		background: none;
+		color: #A50034;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+		cursor: pointer;
+	}
+	@media (max-width: 767px) {
+		&__body {
+			max-width: none;
+			margin: 0 5.13vw;
+		}
+	}
+}
+
 .lgmembersweek {
 	color: #000;
 	figure {
@@ -2014,7 +2071,7 @@
 					@for $i from 1 through 3 {
 						&:nth-child(#{ $i }) {
 							> .benefit__inner {
-								&:before {
+								&:after {
 									background-image: url('../images/ico_benefit_list0#{$i}.png');
 								}
 							}
@@ -2025,10 +2082,21 @@
 						height: 144px;
 						border-radius: 14px;
 						background-color: #fff;
-						&:before {
+						&:before,
+						&:after {
 							content: '';
 							display: block;
 							position: absolute;
+						}
+						&:before {
+							left: 0;
+							bottom: 0;
+							width: 100%;
+							height: 40px;
+							border-radius: 0 0 14px 14px;
+							background-color: #C4D7FF;
+						}
+						&:after {
 							right: 21px;
 							bottom: 11px;
 							width: 63px;
@@ -2047,17 +2115,16 @@
 					font-size: 24px;
 					line-height: 26px;
 				}
-				.benefit__text {
-					display: flex;
-					align-items: center;
-					height: 50px;
-					padding: 0 20px;
-					border-radius: 0 0 14px 14px;
-					background-color: #C4D7FF;
-					font-weight: 600;
-					font-size: 14px;
-					line-height: 16px;
-				}
+				// .benefit__text {
+				// 	display: flex;
+				// 	align-items: center;
+				// 	height: 40px;
+				// 	padding: 0 20px;
+				// 	border-radius: 0 0 14px 14px;
+				// 	font-weight: 600;
+				// 	font-size: 14px;
+				// 	line-height: 16px;
+				// }
 			}
 		}
 		&__item {

@@ -166,4 +166,12 @@ $(document).ready(function(){
 	// 		return false;
 	// 	});	
 	// }
+
+	// popup
+	$('#submit').on('click', function(){
+		$('.popup--guide').show();
+	});
+	$('.popup--guide .popup__close').on('click', function(){
+		$(this).closest('.popup--guide').hide();
+	});
 });

@@ -51,7 +51,6 @@ $(document).ready(function(){
 		speed: 600,
 		infinite: false,
 		dots: true,
-		focusOnSelect: true,
 		responsive: [
 			{
 				breakpoint: 767,
@@ -66,14 +65,16 @@ $(document).ready(function(){
 		infinite: false,
 		arrows: false,
 		slidesToShow: 3,
-		focusOnSelect: true,
+		focusOnSelect: false,
 		responsive: [
 			{
 				breakpoint: 767,
 				settings: {
 					slidesToShow: 1,
-					centerPadding: '18vw',
-					centerMode: true
+					variableWidth: true,
+					centerPadding: '11.54vw',
+					centerMode: true,
+					focusOnSelect: true
 				}
 			}
 		]
@@ -82,7 +83,7 @@ $(document).ready(function(){
 		speed: 600,
 		infinite: false,
 		slidesToShow: 5,
-		focusOnSelect: true,
+		focusOnSelect: false,
 		swipeToSlide: true,
 		responsive: [
 			{
@@ -90,6 +91,7 @@ $(document).ready(function(){
 				settings: {
 					arrows: false,
 					slidesToShow: 2.4,
+					focusOnSelect: true
 				}
 			}
 		]
@@ -118,19 +120,9 @@ $(document).ready(function(){
 				$(this).find('.product__target').removeClass('product__target--opened');
 			}
 		})
-	} else if ($(window).width() <= 767) {
-		$('.lgmembersweek .product__showroom .product__layer .product__anchor').on('click', function(event){
-			event.preventDefault();
-			if ($(this).next('.product__target').hasClass('product__target--opened') === true) {
-				$(this).next('.product__target').removeClass('product__target--opened')
-			} else {
-				$(this).next('.product__target').addClass('product__target--opened')
-			}
-		});
 	}
 	$(window).resize(function(){
 		if ($(window).width() > 767) {
-			$('.lgmembersweek .product__showroom .product__layer .product__anchor').off('click');
 			$('.lgmembersweek .product__showroom .product__layer').on({
 				mouseenter: function(event){
 					$(this).find('.product__target').addClass('product__target--opened');
@@ -141,14 +133,6 @@ $(document).ready(function(){
 			})
 		} else if ($(window).width() <= 767) {
 			$('.lgmembersweek .product__showroom .product__layer').off('mouseenter mouseleave');
-			$('.lgmembersweek .product__showroom .product__layer .product__anchor').on('click', function(event){
-				event.preventDefault();
-				if ($(this).next('.product__target').hasClass('product__target--opened') === true) {
-					$(this).next('.product__target').removeClass('product__target--opened')
-				} else {
-					$(this).next('.product__target').addClass('product__target--opened')
-				}
-			});
 		}
 	});
 

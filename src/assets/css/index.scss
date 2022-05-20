@@ -796,11 +796,12 @@
 					display: flex;
 					justify-content: center;
 					margin: 0 auto;
+					align-items: center;
 				}
 			}
 			.product__item {
 				width: auto;
-				max-width: 260px;
+				max-width: 272px;
 				margin: 0 3.13vw;
 				padding: 0;
 				border-radius: 0;
@@ -828,6 +829,47 @@
 			.product__members {
 				margin-top: 0;
 				height: 54px;
+			}
+			.product__img {
+				position: relative;
+				width: 100%;
+				height: 262px;
+				margin-bottom: 40px;
+				text-align: center;
+				img {
+					position: absolute;
+					bottom: 0;
+					left: 50%;
+					@include translate(-50%, 45px);
+				}
+				@media (max-width: 767px) {
+					height: 220px;
+					margin: 0 auto;
+					img {
+						max-width: 200px;
+						@include translate(-50%, 30px);
+					}
+				}
+			}
+			.hotdeal_bg {
+				position: absolute;
+				left: 8px;
+				top: 0;
+				z-index: -1;
+				width: 100%;
+				height: 262px;
+				background: {
+					image: url('../images/hotdeal_bg01.png');
+					position: center top;
+					size: cover;
+					repeat: no-repeat;
+				};
+				&.hotdeal_soldout {
+					background-image: url('../images/hotdeal_bg02.png');
+				}
+				@media (max-width: 767px) {
+					height: 220px;
+				}
 			}
 			.product__noti {
 				margin-top: 8px;
@@ -1551,6 +1593,9 @@
 				&:not(:first-child) {
 					margin-top: 40px;
 				}
+				.slick-list {
+					padding: 0 0 !important;
+				}
 				.button__item {
 					flex-basis: 140px;
 					max-width: 140px;
@@ -1566,8 +1611,10 @@
 				}
 				.product__item {
 					flex: none;
+					float: none;
+					width: 220px !important;
 					max-width: none;
-					margin: 0 3.85vw;
+					margin: 0 auto;
 					.button {
 						&:not(:first-child) {
 							margin-top: 6px;

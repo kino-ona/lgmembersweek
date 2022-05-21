@@ -1576,7 +1576,7 @@
 		_dl = 
 		{
 			"page_name" : {
-				"super_category" : "",
+				"super_category" : "membersweek2022",
 				"bu" : "",
 				"gmc_bu" : "",
 				"sub_category_list" : "",
@@ -1587,9 +1587,9 @@
 				"sku" : ""
 			},
 			"isLogin" : "",
-			"country_code" : "uk",
-			"language_code" : "en",
-			"page_category_l1" : "uk:microsite",
+			"country_code" : $country,
+			"language_code" : $language,
+			"page_category_l1" : "$countrymembersweek2022",
 			"page_category_l2" : "",
 			"page_category_l3" : "",
 			"page_category_l4" : "",

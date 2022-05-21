@@ -924,8 +924,8 @@
 				}
 			}
 			.product__item {
-				width: auto;
-				max-width: 272px;
+				// width: auto;
+				width: 272px;
 				margin: 0 3.13vw;
 				padding: 0;
 				border-radius: 0;
@@ -946,6 +946,14 @@
 					left: 50%;
 					@include translate(-50%, 45px);
 				}
+				@media (max-width: 767px) {
+					height: 220px;
+					margin: 0 auto;
+					img {
+						max-width: 200px;
+						@include translate(-50%, 30px);
+					}
+				}
 			}
 			.hotdeal_bg {
 				position: absolute;
@@ -962,6 +970,9 @@
 				};
 				&.hotdeal_soldout {
 					background-image: url('../images/hotdeal_bg02.png');
+				}
+				@media (max-width: 767px) {
+					height: 220px;
 				}
 			}
 			.product__info {
@@ -1737,7 +1748,7 @@
 					margin: 0 -5.13vw;
 				}
 				.product__list {
-					justify-content: flex-start;
+					justify-content: center;
 					.slick-track {
 						display: block;
 					}
@@ -1745,7 +1756,7 @@
 				.product__item {
 					// flex: none;
 					// float: none;
-					width: 272px;
+					width: 220px;
 					max-width: none;
 					margin: 0 3.85vw;
 					.button {
@@ -1755,17 +1766,17 @@
 					}
 				}
 				.product__img {
-					// width: 220px;
-					// height: 220px;
+					width: 220px;
+					height: 220px;
 					margin: 0 auto;
 					img {
 						max-width: 200px;
 						@include translate(-50%, 30px);
 					}
 				}
-				.hotdeal_bg {
-					height: 262px;
-				}
+				// .hotdeal_bg {
+				// 	height: 262px;
+				// }
 				.product__info {
 					margin-top: 32px;
 				}

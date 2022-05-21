@@ -1376,7 +1376,7 @@
 							<div class="product__mask">
 								<div class="product__list">
 									<!-- 품절인 경우 -->
-									<div class="product__item">
+									<!-- <div class="product__item">
 										<div class="product__flags">
 											<span class="product__flag">NEW</span>
 											<span class="product__flag">CASHBACK</span>
@@ -1412,7 +1412,7 @@
 												</a>
 											</div>
 										</div>
-									</div>
+									</div> -->
 									<!-- 재고가 있는 경우 -->
 									<div class="product__item">
 										<div class="product__flags">

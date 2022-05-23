@@ -1193,6 +1193,11 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="anchors" id="VolumeProductsAudio"></div>
+			<div class="anchors" id="VolumeProductsTVCinebeam"></div>
+			<div class="anchors" id="VolumeProductsHomeAppliance"></div>
+			<div class="anchors" id="VolumeProductsComputerProducts"></div>
 			<div id="box_content3" class="section">
 				<div class="section__container section__container--lightgray" data-list="hottest">
 					<div class="section__inner">
@@ -1625,6 +1630,58 @@
 				})
 			})
     });
+
+		$(document).ready(function(){
+			var href = window.location.href;
+			if(href.indexOf('VolumeProductsTVCinebeam') != -1) {    
+				$('#box_content3 .tab__list .tab__panel').attr('display', 'none')
+        $('#box_content3 .tab__list .tab__item').removeClass('tab__item--active');
+        $('#box_content3 .tab__list .tab__item').eq(0).addClass('tab__item--active');    
+				var timer = setTimeout(function() {         
+					$('#box_content3 .tab__list .tab__item').eq(0).find('.tab__button').click();
+					console.log($('#box_content3 .tab__list .tab__item').eq(0).find('.tab__button').html())
+					$('#box_content3 .tab__list .tab__item').eq(0).find('.tab__button').trigger('click')    
+					    
+					clearTimeout(timer);     
+				}, 1500);
+			}
+			if(href.indexOf('VolumeProductsAudio') != -1) {
+				$('#box_content3 .tab__list .tab__panel').attr('display', 'none')
+        $('#box_content3 .tab__list .tab__item').removeClass('tab__item--active');
+        $('#box_content3 .tab__list .tab__item').eq(1).addClass('tab__item--active');  
+				var timer = setTimeout(function() {         
+					$('#box_content3 .tab__list .tab__item').eq(1).find('.tab__button').click();
+					console.log($('#box_content3 .tab__list .tab__item').eq(1).find('.tab__button').html())
+					$('#box_content3 .tab__list .tab__item').eq(1).find('.tab__button').trigger('click')    
+					    
+					clearTimeout(timer);  
+				}, 1500);
+			}
+			if(href.indexOf('VolumeProductsHomeAppliance') != -1) {
+				$('#box_content3 .tab__list .tab__panel').attr('display', 'none')
+        $('#box_content3 .tab__list .tab__item').removeClass('tab__item--active');
+        $('#box_content3 .tab__list .tab__item').eq(2).addClass('tab__item--active');  
+				var timer = setTimeout(function() {         
+					$('#box_content3 .tab__list .tab__item').eq(2).find('.tab__button').click();
+					console.log($('#box_content3 .tab__list .tab__item').eq(2).find('.tab__button').html())
+					$('#box_content3 .tab__list .tab__item').eq(2).find('.tab__button').trigger('click')    
+					    
+					clearTimeout(timer);  
+				}, 1500);
+			}
+			if(href.indexOf('VolumeProductsComputerProducts') != -1) {
+				$('#box_content3 .tab__list .tab__panel').attr('display', 'none')
+        $('#box_content3 .tab__list .tab__item').removeClass('tab__item--active');
+        $('#box_content3 .tab__list .tab__item').eq(3).addClass('tab__item--active');  
+				var timer = setTimeout(function() {         
+					$('#box_content3 .tab__list .tab__item').eq(3).find('.tab__button').click();
+					console.log($('#box_content3 .tab__list .tab__item').eq(3).find('.tab__button').html())
+					$('#box_content3 .tab__list .tab__item').eq(3).find('.tab__button').trigger('click')    
+					    
+					clearTimeout(timer);   
+				}, 1500);
+			}
+		});
 	</script>
 	
 	<script src="${path}/assets/js/index.js"></script>

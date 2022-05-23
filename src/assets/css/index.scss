@@ -369,6 +369,7 @@
 						margin: 6px 0 2px;
 						display: block;
 						font-size: 50px;
+						letter-spacing: -2px;
 					}
 				}
 				.section__sub {
@@ -1745,11 +1746,7 @@
 			text-decoration: line-through;
 		}
 		&__members {
-			display: inline-flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			align-content: flex-start;
-			height: 60px;
+			height: 54px;
 			.product__text {
 				font-size: 16px;
 				line-height: 18px;
@@ -1862,6 +1859,10 @@
 				}
 				.product__discount {
 					margin-right: 4px;
+				}
+				.product__members {
+					display: block;
+					height: 54px;
 				}
 			}
 			&__showroom {
@@ -2072,6 +2073,11 @@
 				font-size: 14px;
 			}
 			&__members {
+				display: inline-flex;
+				flex-wrap: wrap;
+				justify-content: center;
+				align-content: flex-start;
+				height: 60px;
 				.product__text {
 					font-size: 14px;
 				}

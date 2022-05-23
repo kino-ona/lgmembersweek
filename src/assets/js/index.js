@@ -60,25 +60,23 @@ $(document).ready(function(){
 			}
 		]
 	});
-	// $('.lgmembersweek .product--hotdeal .product__list').slick({
-	// 	speed: 600,
-	// 	infinite: false,
-	// 	arrows: false,
-	// 	slidesToShow: 3,
-	// 	focusOnSelect: false,
-	// 	responsive: [
-	// 		{
-	// 			breakpoint: 767,
-	// 			settings: {
-	// 				slidesToShow: 1,
-	// 				variableWidth: true,
-	// 				centerPadding: '11.54vw',
-	// 				centerMode: true,
-	// 				focusOnSelect: true
-	// 			}
-	// 		}
-	// 	]
-	// });
+	$('.lgmembersweek .product--hotdeal .product__list').slick({
+		speed: 600,
+		infinite: false,
+		slidesToShow: 3,
+		focusOnSelect: false,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '11.54vw',
+					centerMode: true,
+					focusOnSelect: true
+				}
+			}
+		]
+	});
 	$('.lgmembersweek .product__swiper').slick({
 		speed: 600,
 		infinite: false,

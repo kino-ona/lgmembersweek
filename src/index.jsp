@@ -55,8 +55,6 @@
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/head/head-script.jsp" />
 </head>
 
-
-
 <body>
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/body/body-noscript.jsp" />
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/body/google-tag-manager.jsp" />
@@ -81,23 +79,63 @@
 	<!-- // component (navigation) -->
 
 	<!-- breadcrumb -->
- 	<c:import url="/${localeCd }/breadCrumb"> 
+ 	<c:import url="/${localeCd}/breadCrumb"> 
 	    <c:param name="bizType" value="${bizType}"/>
 	</c:import> 
 	<!-- // breadcrumb -->
 
+	<c:set var='path' value='/${localeCd}/memberdays' /> <!-- Required input ## Specify the microsite upload path for a flexible folder structure -->
+	<link rel="stylesheet" href="${path}/assets/css/index.css">
+	<link rel="stylesheet" href="${path}/assets/css/index_uk.css">
+	<link rel="stylesheet" href="/lg5-common-gp/css/customer-mylg-wish-list.min.css"> <!-- For import GET STOCK ALERT css  -->
+
 	<!-- Enter Code Here -->
 	<div class="wrapper">
+		<!-- Tracking Event Setting -->
+			<input type="hidden" class="addtocart-datelayer-use-flag" value="<spring:message code='addtocart-datelayer-use-flag' text='addtocart-datelayer-use-flag'/>">
+			<input type="hidden" class="currency-code" value="<spring:message code='component-currency-code' text='component-currency-code'/>">
+
+			<!-- Required input ## Model List Start -->
+			<!-- Event Gift Model -->
+			<input type="hidden" data-model-group="eventGift" data-type="coupon" value="MD07535483|MD07548494|MD07528387|MD07552999|MD07535216"/>
+
+			<!-- Life Style Model -->
+			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07535414|MD07535475|MD07535483"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548378|MD07548355|MD07548335|MD07548282|MD07546566|MD07546594|MD07546571|MD07546563|MD07548246|MD07546595|MD07546591|MD07546596|MD07546657|MD07545548|MD07552142"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07546558|MD07552142"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552999|MD07553142|MD07535403|MD07540281|MD07540286|MD07537017"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07535216"/>
+
+			<!-- Hot Deal Model / thumb - alt text -->
+			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573"/>
+			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
+			<!-- <input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/> -->
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/hotdeal_product.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="Limited to 100 units"/>
+			<!-- ex. multiple model thumb / alt text 
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/hotdeal_product.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt2" value="Limited to 100 units"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/hotdeal_product.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt3" value="Limited to 100 units"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/hotdeal_product.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt4" value="Limited to 100 units"/>
+			-->
+
+			<!-- Hottest Gift Model -->
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07546563|MD07548335|MD07548282|MD07545548|MD07546595|MD07546591|MD07546596|MD07546657|MD07548387|MD07548331|MD07550523|MD07550540|MD07550466|MD07550528|MD07550538|MD07550521|MD07550534"/>
+			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07528451|MD07510893|MD07528365|MD07504084|MD07535242|MD07538956|MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508573|MD07508373"/>
+			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07514393|MD07535502|MD07535480|MD07535414|MD07517580|MD07535475|MD07536912|MD07515106|MD07514364"/>
+			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07552999|MD07553042|MD07540281|MD07540286|MD07540283|MD07550947|MD06164217|MD07525661|MD07532529|MD07522774|MD07525972|MD07532528|MD07528387"/>
+		<!-- Required input ## Model List End -->
 	
 		<!--  Content Start  -->
-		<link rel="stylesheet" href="./assets/css/index.css">
-		<div class="lgmembersweek">
+		<div class="lgmembersweek" data-action-url="/${localeCd}/mkt/ajax/nbaa/retrieveManualProductList">
 			<div class="visual">
 				<div class="visual__swiper">
 					<div class="visual__slide visual__slide--intro">
 						<div class="section">
 							<div class="section__inner">
-								<div class="section__header">
+								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">LG MEMBER DAYS</h2>
 									<p class="section__sub">
 										Design your [#Lifestyle] with LG
@@ -110,8 +148,12 @@
 								</div>
 								<div class="button">
 									<a href="#" 
-										data-link-area="memberdays_banner_click_main" 
-										data-link-name="memberdays_2022" 
+										data-track-group="mic" 
+										data-track-opt="theme" 
+										data-track-val="lifestyle" 
+										data-track-name="members_week_benefit_click"
+										data-link-name="memberdays_banner_click_main" 
+										data-link-area="memberdays_2022" 
 										class="button__item button__item--red">DISCOVER THE BENEFITS</a>
 								</div>
 							</div>
@@ -120,7 +162,7 @@
 					<div class="visual__slide visual__slide--greenlife">
 						<div class="section">
 							<div class="section__inner">
-								<div class="section__header">
+								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">Design your <span>[#Green Life]</span> with LG</h2>
 									<p class="section__sub">
 										<span class="break--desktop">
@@ -134,15 +176,19 @@
 						</div>
 						<div class="button">
 							<a href="#" 
-								data-link-area="memberdays_banner_click_greenlife" 
-								data-link-name="memberdays_2022" 
+								data-track-group="mic" 
+								data-track-opt="theme" 
+								data-track-val="greenlife" 
+								data-track-name="members_week_benefit_click"
+								data-link-name="memberdays_banner_click_greenlife" 
+								data-link-area="memberdays_2022" 
 								class="button__item button__item--red">DISCOVER THE BENEFITS</a>
 						</div>
 					</div>
 					<div class="visual__slide visual__slide--vividlife">
 						<div class="section">
 							<div class="section__inner">
-								<div class="section__header">
+								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">Design your <span>[#Vivid Life]</span> with LG</h2>
 									<p class="section__sub">
 										<span class="break--desktop">
@@ -158,15 +204,19 @@
 						</div>
 						<div class="button">
 							<a href="#" 
-								data-link-area="memberdays_banner_click_vividlife" 
-								data-link-name="memberdays_2022" 
+								data-track-group="mic" 
+								data-track-opt="theme" 
+								data-track-val="vividlife" 
+								data-track-name="members_week_benefit_click"
+								data-link-name="memberdays_banner_click_vividlife" 
+								data-link-area="memberdays_2022" 
 								class="button__item button__item--red">DISCOVER THE BENEFITS</a>
 						</div>
 					</div>
 					<div class="visual__slide visual__slide--gaminglife">
 						<div class="section">
 							<div class="section__inner">
-								<div class="section__header">
+								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">Design your <span>[#Gaming Life]</span> with LG</h2>
 									<p class="section__sub">
 										<span class="break--desktop">
@@ -180,15 +230,19 @@
 						</div>
 						<div class="button">
 							<a href="#" 
-								data-link-area="memberdays_banner_click_gaminglife" 
-								data-link-name="memberdays_2022" 
+								data-track-group="mic" 
+								data-track-opt="theme" 
+								data-track-val="gaminglife" 
+								data-track-name="members_week_benefit_click"
+								data-link-name="memberdays_banner_click_gaminglife" 
+								data-link-area="memberdays_2022" 
 								class="button__item button__item--red">DISCOVER THE BENEFITS</a>
 						</div>
 					</div>
 					<div class="visual__slide visual__slide--workinglife">
 						<div class="section">
 							<div class="section__inner">
-								<div class="section__header">
+								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">Design your <span>[#Working Life]</span> with LG</h2>
 									<p class="section__sub">
 										Build your best workstation with LG technology wherever your workplace.<br>
@@ -198,13 +252,20 @@
 							</div>
 						</div>
 						<div class="button">
-							<a href="#" class="button__item button__item--red">DISCOVER THE BENEFITS</a>
+							<a href="#" 
+							data-track-group="mic" 
+							data-track-opt="theme" 
+							data-track-val="workinglife" 
+							data-track-name="members_week_benefit_click" 
+							data-link-name="memberdays_banner_click_workinglife" 
+							data-link-area="memberdays_2022" 
+							class="button__item button__item--red">DISCOVER THE BENEFITS</a>
 						</div>
 					</div>
 					<div class="visual__slide visual__slide--soundfullife">
 						<div class="section">
 							<div class="section__inner">
-								<div class="section__header">
+								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">Design your <span>[#Soundful Life]</span> with LG</h2>
 									<p class="section__sub">
 										Immersive Sound in your hand wherever you go with LG technology<br>
@@ -215,16 +276,20 @@
 						</div>
 						<div class="button">
 							<a href="#" 
-								data-link-area="memberdays_banner_click_soundfullife" 
-								data-link-name="memberdays_2022" 
+								data-track-group="mic" 
+								data-track-opt="theme" 
+								data-track-val="soundfullife" 
+								data-track-name="members_week_benefit_click"
+								data-link-name="memberdays_banner_click_soundfullife" 
+								data-link-area="memberdays_2022" 
 								class="button__item button__item--red">DISCOVER THE BENEFITS</a>
 						</div>
 					</div>
 				</div>
 				<div class="visual__terms">
 					<a href="#" 
-						data-link-area="memberdays_anchor_click_termsandconditions" 
-						data-link-name="memberdays_2022" 
+						data-link-name="memberdays_anchor_click_termsandconditions" 
+						data-link-area="memberdays_2022" 
 						class="terms__link visual__link">
 						Terms and Conditions
 						<i class="visual__arrow"></i>
@@ -237,20 +302,23 @@
 						<ul class="list_navigation smooth-scroll">
 							<li class="list-item">
 								<a href="#box_content1" 
-									data-link-area="memberdays_anchor_benefit" 
-									data-link-name="memberdays_2022" 
+									data-track-group="mic" data-track-name="members_week_anchor_click"
+									data-link-name="memberdays_anchor_benefit" 
+									data-link-area="memberdays_2022" 
 									class="link">MEMBER DAYS BENEFITS</a>
 							</li>
 							<li class="list-item">
 								<a href="#box_content2" 
-									data-link-area="memberdays_anchor_click_design_lifestyle" 
-									data-link-name="memberdays_2022" 
+									data-track-group="mic" data-track-name="members_week_anchor_click"
+									data-link-name="memberdays_anchor_click_design_lifestyle" 
+									data-link-area="memberdays_2022" 
 									class="link">DESIGN YOUR LIFESTYLE WITH LG</a>
 							</li>
 							<li class="list-item">
-								<a href="#box_content3"  
-									data-link-area="memberdays_anchor_click_hottest_product" 
-									data-link-name="memberdays_2022" 
+								<a href="#box_content3" 
+									data-track-group="mic" data-track-name="members_week_anchor_click"
+									data-link-name="memberdays_anchor_click_hottest_product" 
+									data-link-area="memberdays_2022" 
 									class="link">FIND OUT OUR HOTTEST PRODUCTS</a>
 								</li>
 						</ul>
@@ -280,7 +348,8 @@
 										<p class="benefit__category">MEMBER DAYS Special Discount Coupon</p>
 										<p class="benefit__discount">
 											15% off
-											<span class="benefit__condition">When you buy two or more items on ANY LG PRODUCTS*</span>
+											<em class="benefit__condition">When you buy two or more items on ANY LG PRODUCTS*</em>
+											<span class="benefit__text benefit__text--gray">Welcome Coupon & MEMBER DAYS Special Discount Coupon are not applicable to PL5, ‘gram & +view’ Bundle</span>
 											<span class="benefit__text">Sign in and find your MEMBER DAYS DISCOUNT coupon in your MyLG Account</span>
 										</p>
 									</div>
@@ -319,12 +388,9 @@
 								</li> -->
 							</ul>
 						</div>
-						<div class="section__footer">
-							<p class="section__text"><span class="symbol">*</span> PL5, Gram&+view Bundle are excluded</p>
-						</div>
 					</div>
 				</div>
-				<div class="section__container section__container--lightgray">
+				<div class="section__container section__container--lightgray" data-list="eventGift">
 					<div class="section__inner">
 						<div class="section__header">
 							<h2 class="section__title">
@@ -336,10 +402,10 @@
 								One winner per lifestyle
 							</p>
 						</div>
-						<div class="coupon">
+						<div id="coupon" class="coupon">
 							<div class="coupon__process">
 								<div class="coupon__group">
-									<span class="coupon__build">Start</span>
+									<!-- <span class="coupon__build">Start</span> -->
 									<ol class="coupon__order">
 										<li>
 											<span class="coupon__num">1</span>
@@ -347,14 +413,31 @@
 										</li>
 										<li>
 											<span class="coupon__num">2</span>
-											<span class="coupon__text highlight highlight--beige">Sign Up or Sing In</span>
+											<span class="coupon__text highlight highlight--beige">Click ‘Take Part’</span>
 										</li>
 										<li>
-											<span class="coupon__num">3</span>
-											<span class="coupon__text highlight highlight--beige">Click “Take Part”</span>
+											<span class="coupon__num coupon__num--dotted">3</span>
+											<span class="coupon__text">
+												<span class="highlight highlight--beige">Sign-in</span>
+												<span class="coupon__desc">
+													<span class="break--mobile">(or Sign-up if you are</span>
+													not a member)
+												</span>
+											</span>
+										</li>
+										<li>
+											<span class="coupon__num coupon__num--complete">
+												<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
+														viewBox="0 0 14.265 10.308">
+													<path id="line" d="M334.66-8684.6l3.958,3.958,7.479-7.479"
+														transform="translate(-333.246 8689.539)" fill="none" stroke="#fff" stroke-linecap="round"
+														stroke-width="2" />
+												</svg>
+											</span>
+											<span class="coupon__text highlight highlight--beige">Complete</span>
 										</li>
 									</ol>
-									<span class="coupon__build">Finish</span>
+									<!-- <span class="coupon__build">Finish</span> -->
 								</div>
 							</div>
 							<div class="coupon__list">
@@ -363,13 +446,13 @@
 										<div class="coupon__thumnail"></div>
 										<p class="coupon__category">#Green life</p>
 									</div>
-									<input type="radio" id="Coupon01" name="Coupons" class="sr-only" data-param="Green">
+									<input type="radio" id="Coupon01" name="Coupons" class="sr-only" data-param="Green" data-track-group="mic" data-track-opt="theme" data-track-val="greenlife" data-track-name="themeSelectionCoupon">
 									<label for="Coupon01" 
-										data-link-area="memberdays_luckydraw_theme_click_greenlife" 
-										data-link-name="memberdays_2022" class="coupon__back">
+										data-link-name="memberdays_luckydraw_theme_click_greenlife" 
+										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="./assets/images/img_coupon_greenlife_product.png" alt="product img">
+												<img src="${path}/assets/images/img_coupon_greenlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -391,13 +474,13 @@
 										<div class="coupon__thumnail"></div>
 										<p class="coupon__category">#Vivid life</p>
 									</div>
-									<input type="radio" id="Coupon02" name="Coupons" class="sr-only" data-param="Vivid">
+									<input type="radio" id="Coupon02" name="Coupons" class="sr-only" data-param="Vivid" data-track-group="mic" data-track-opt="theme" data-track-val="vividlife" data-track-name="themeSelectionCoupon">
 									<label for="Coupon02" 
-										data-link-area="memberdays_luckydraw_theme_click_vividlife" 
-										data-link-name="memberdays_2022" class="coupon__back">
+										data-link-name="memberdays_luckydraw_theme_click_vividlife" 
+										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="./assets/images/img_coupon_vividlife_product.png" alt="product img">
+												<img src="${path}/assets/images/img_coupon_vividlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -419,13 +502,13 @@
 										<div class="coupon__thumnail"></div>
 										<p class="coupon__category">#Gaming life</p>
 									</div>
-									<input type="radio" id="Coupon03" name="Coupons" class="sr-only" data-param="Gaming">
+									<input type="radio" id="Coupon03" name="Coupons" class="sr-only" data-param="Gaming" data-track-group="mic" data-track-opt="theme" data-track-val="gaminglife" data-track-name="themeSelectionCoupon">
 									<label for="Coupon03" 
-										data-link-area="memberdays_luckydraw_theme_click_gaminglife" 
-										data-link-name="memberdays_2022" class="coupon__back">
+										data-link-name="memberdays_luckydraw_theme_click_gaminglife" 
+										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="./assets/images/img_coupon_gaminglife_product.png" alt="product img">
+												<img src="${path}/assets/images/img_coupon_gaminglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -447,13 +530,13 @@
 										<div class="coupon__thumnail"></div>
 										<p class="coupon__category">#Working life</p>
 									</div>
-									<input type="radio" id="Coupon04" name="Coupons" class="sr-only" data-param="Working">
+									<input type="radio" id="Coupon04" name="Coupons" class="sr-only" data-param="Working" data-track-group="mic" data-track-opt="theme" data-track-val="workinglife" data-track-name="themeSelectionCoupon">
 									<label for="Coupon04" 
-										data-link-area="memberdays_luckydraw_theme_click_workinglife" 
-										data-link-name="memberdays_2022" class="coupon__back">
+										data-link-name="memberdays_luckydraw_theme_click_workinglife" 
+										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="./assets/images/img_coupon_workinglife_product.png" alt="product img">
+												<img src="${path}/assets/images/img_coupon_workinglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -475,13 +558,13 @@
 										<div class="coupon__thumnail"></div>
 										<p class="coupon__category">#Soundful life</p>
 									</div>
-									<input type="radio" id="Coupon05" name="Coupons" class="sr-only" data-param="Soundful">
+									<input type="radio" id="Coupon05" name="Coupons" class="sr-only" data-param="Soundful" data-track-group="mic" data-track-opt="theme" data-track-val="soundfullife" data-track-name="themeSelectionCoupon">
 									<label for="Coupon05" 
-										data-link-area="memberdays_luckydraw_theme_click_soundfullife" 
-										data-link-name="memberdays_2022" class="coupon__back">
+										data-link-name="memberdays_luckydraw_theme_click_soundfullife" 
+										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="./assets/images/img_coupon_soundfullife_product.png" alt="product img">
+												<img src="${path}/assets/images/img_coupon_soundfullife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -503,41 +586,82 @@
 							<div style="margin-top:80px">
 								<form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
 									<div class="button">
-										<a href="#" 
-										data-link-name="memberdays_2022"
-										id="submit" class="button__item button__item--red">TAKE PART</a>
+										<button type="button" id="submit" class="button__item button__item--red button_takepart" data-track-group="mic" data-track-opt="theme" data-track-name="submitClick" 
+										data-link-name="memberdays_luckydraw_submit_click_"
+										data-link-area="memberdays_2022">TAKE PART</button>
+										<!-- <a href="#" 
+										data-track-group="mic" data-track-opt="theme" data-track-name="submitClick"
+										data-link-area="memberdays_2022"
+										id="submit" class="button__item button__item--red">TAKE PART</a> -->
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="section__footer">
-							<p class="section__text">*Winner can win only one product.</p>
+							<p class="section__text">You can apply to one or more Lifestyles, but can win only one product</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div id="box_content2" class="section">
-				<div class="section__container section__container--toplow">
+				<div class="section__container section__container--toplow" data-list="lifeStyle">
 					<div class="section__inner">
 						<div class="tab">
 							<ul class="tab__list">
 								<li class="tab__item tab__item--active">
-									<a href="#greenlife" data-link-area="memberdays_themedisplay_click_greenlife" data-link-name="memberdays_2022" class="tab__button">Green life</a>
+									<a href="#greenlife" 
+									data-tab-name="greenlife" data-track-group="mic" data-track-opt="theme" data-track-val="greenlife" data-track-name="selectThemeDisplay" 
+									data-link-name="memberdays_themedisplay_click_greenlife" data-link-area="memberdays_2022" class="tab__button">Green life</a>
 								</li>
 								<li class="tab__item">
-									<a href="#vividlife" data-link-area="memberdays_themedisplay_click_vividlife" data-link-name="memberdays_2022" class="tab__button">Vivid life</a>
+									<a href="#vividlife" 
+									data-tab-name="vividlife" data-track-group="mic" data-track-opt="theme" data-track-val="vividlife" data-track-name="selectThemeDisplay" 
+									data-link-name="memberdays_themedisplay_click_vividlife" data-link-area="memberdays_2022" class="tab__button">Vivid life</a>
 								</li>
 								<li class="tab__item">
-									<a href="#gaminglife" data-link-area="memberdays_themedisplay_click_gaminglife" data-link-name="memberdays_2022" class="tab__button">Gaming life</a>
+									<a href="#gaminglife" 
+									data-tab-name="gaminglife" data-track-group="mic" data-track-opt="theme" data-track-val="gaminglife" data-track-name="selectThemeDisplay" 
+									data-link-name="memberdays_themedisplay_click_gaminglife" data-link-area="memberdays_2022" class="tab__button">Gaming life</a>
 								</li>
 								<li class="tab__item">
-									<a href="#workinglife" data-link-area="memberdays_themedisplay_click_workinglife" data-link-name="memberdays_2022" class="tab__button">Working life</a>
+									<a href="#workinglife" 
+									data-tab-name="workinglife" data-track-group="mic" data-track-opt="theme" data-track-val="workinglife" data-track-name="selectThemeDisplay" 
+									data-link-name="memberdays_themedisplay_click_workinglife" data-link-area="memberdays_2022" class="tab__button">Working life</a>
 								</li>
 								<li class="tab__item">
-									<a href="#soundfullife" data-link-area="memberdays_themedisplay_click_soundfullife" data-link-name="memberdays_2022" class="tab__button">Soundful life</a>
+									<a href="#soundfullife" 
+									data-tab-name="soundfullife" data-track-group="mic" data-track-opt="theme" data-track-val="soundfullife" data-track-name="selectThemeDisplay" 
+									data-link-name="memberdays_themedisplay_click_soundfullife" data-link-area="memberdays_2022" class="tab__button">Soundful life</a>
 								</li>
 							</ul>
-							<div id="greenlife" class="tab__panel tab__panel--greenlife" style="display: block;">
+							<template class="contents-template">
+								<div class="product__slide">
+									<div class="product__item">
+										<div class="product__img">
+											<div class="product__flags">
+												<span class="product__flag d-none" data-user-type="*productTag1UserType*" data-key="productTag1">*productTag1*</span>
+												<span class="product__flag d-none" data-user-type="*productTag2UserType*" data-key="productTag2">*productTag2*</span>
+											</div>
+											<img class="lazyload" data-src="*mediumImageAddr*" alt="*imageAltText*" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+										</div>
+										<div class="product__info">
+											<p class="product__name">*userFriendlyName*</p>
+											<p class="product__sn">*modelName*</p>
+											<div class="button">
+												<a role="button" href="#" class="add-to-cart button__item button__item--red" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category="*superCategoryName*" data-category="*buName2*" data-subcategory="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-sales-model-code="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-suffix="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
+												<a role="button" href="#modal_re_stock_alert" class="re-stock-alert button__item button__item--lightgray d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
+											</div>
+											<div class="learn-more">
+												<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click">
+													<span class="learn-more__text"><spring:message code='component-learnMore' text='LEARN MORE'/></span>
+													<i class="learn-more__arrow"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</template>
+							<div id="greenlife" class="tab__panel tab__panel--greenlife showroom_panel" style="display: block;">
 								<p class="tab__noti">
 									Install an energy-saving Refrigerator and Washing Machine.<br>
 									Helping you transition to a cleaner, healthier, more comfortable home.
@@ -549,11 +673,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/fridge-freezers/lg-gsxv91bsae" target="_blank"
-														data-link-area="memberdays_productMouseHover_greenlife_GSXV91BSAE"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_greenlife_GSXV91BSAE"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_greenlife01_01.png"
+															<img src="${path}/assets/images/img_product_showroom_greenlife01_01.png"
 																alt="LG InstaView™ ThinQ™">
 														</div>
 														<div class="product__right">
@@ -572,11 +696,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/washing-machines/lg-f6v1110wtsa" target="_blank"
-														data-link-area="memberdays_productMouseHover_greenlife_F6V1110WTSA"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_greenlife_F6V1110WTSA"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_greenlife02_01.png"
+															<img src="${path}/assets/images/img_product_showroom_greenlife02_01.png"
 																alt="AI DD™ Washing Machine">
 														</div>
 														<div class="product__right">
@@ -593,11 +717,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/tumble-dryers/lg-fdv1109w" target="_blank" 
-														data-link-area="memberdays_productMouseHover_greenlife_FDV1109W"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_greenlife_FDV1109W"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_greenlife02_02.png"
+															<img src="${path}/assets/images/img_product_showroom_greenlife02_02.png"
 																alt="LG Eco Hybrid™ Tumble Dryer">
 														</div>
 														<div class="product__right">
@@ -613,64 +737,11 @@
 										</div>
 									</div>
 									<div class="product__track">
-										<div class="product__swiper">
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="LG InstaView™ ThinQ™ GSXV91BSAE American style Fridge Freezer, 635L, Stainless Steel -E">
-													</div>
-													<div class="product__info">
-														<p class="product__name">LG InstaView™ ThinQ™ GSXV91BSAE American style Fridge Freezer,
-															635L, Stainless Steel -E</p>
-														<p class="product__sn">GSXV91BSAE</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="Washing Machine 10.5kg - TurboWash™360˚ | AIDD™ | Steam+™ | ezDispense™">
-													</div>
-													<div class="product__info">
-														<p class="product__name">Washing Machine 10.5kg - TurboWash™360˚ | AIDD™ | Steam+™ |
-															ezDispense™</p>
-														<p class="product__sn">OLED83G26LA</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+										<div class="product__swiper"></div>
 									</div>
 								</div>
 							</div>
-							<div id="vividlife" class="tab__panel tab__panel--vividlife">
+							<div id="vividlife" class="tab__panel tab__panel--vividlife showroom_panel">
 								<p class="tab__noti">
 									LG technology delivers cinema-like experience and immersive on-screen sports viewing.
 									Live your best home entertainment life with OLED TV, CineBeam projector and Soundbar.
@@ -682,11 +753,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/speakers-sound-systems/lg-sp8ya" target="_blank"
-														data-link-area="memberdays_productMouseHover_vividlife_SP8YA"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_vividlife_SP8YA"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
+															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG Sound Bar SP8YA</p>
@@ -702,11 +773,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/tvs/lg-oled77g26la" target="_blank"
-														data-link-area="memberdays_productMouseHover_vividlife_OLED77G26LA"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_vividlife_OLED77G26LA"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_vividlife01_02.png" alt="OLED evo G2">
+															<img src="${path}/assets/images/img_product_showroom_vividlife01_02.png" alt="OLED evo G2">
 														</div>
 														<div class="product__right">
 															<p class="product__name">OLED evo G2</p>
@@ -724,11 +795,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/speakers-sound-systems/lg-sp8ya" target="_blank"
-														data-link-area="memberdays_productMouseHover_vividlife_SP8YA"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_vividlife_SP8YA"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_vividlife02_01.png" alt="LG Sound Bar SP8YA">
+															<img src="${path}/assets/images/img_product_showroom_vividlife02_01.png" alt="LG Sound Bar SP8YA">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG Sound Bar SP8YA</p>
@@ -744,11 +815,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/projectors/lg-hu715qw" target="_blank"
-														data-link-area="memberdays_productMouseHover_vividlife_HU715QW"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_vividlife_HU715QW"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_vividlife02_02.png"
+															<img src="${path}/assets/images/img_product_showroom_vividlife02_02.png"
 																alt="LG CineBeam 4K UHD Laser UST Projector">
 														</div>
 														<div class="product__right">
@@ -764,162 +835,11 @@
 										</div>
 									</div>
 									<div class="product__track">
-										<div class="product__swiper">
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="Exclusive Model gram 17 Limited to 100 units">
-													</div>
-													<div class="product__info">
-														<p class="product__name">LG G2 83 inch evo Gallery Edition</p>
-														<p class="product__sn">OLED83G26LA</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="Exclusive Model gram 17 Limited to 100 units">
-													</div>
-													<div class="product__info">
-														<p class="product__name">LG G2 83 inch evo Gallery Edition</p>
-														<p class="product__sn">OLED83G26LA</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="Exclusive Model gram 17 Limited to 100 units">
-													</div>
-													<div class="product__info">
-														<p class="product__name">LG G2 83 inch evo Gallery Edition</p>
-														<p class="product__sn">OLED83G26LA</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="Exclusive Model gram 17 Limited to 100 units">
-													</div>
-													<div class="product__info">
-														<p class="product__name">LG G2 83 inch evo Gallery Edition</p>
-														<p class="product__sn">OLED83G26LA</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="Exclusive Model gram 17 Limited to 100 units">
-													</div>
-													<div class="product__info">
-														<p class="product__name">LG G2 83 inch evo Gallery Edition</p>
-														<p class="product__sn">OLED83G26LA</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="Exclusive Model gram 17 Limited to 100 units">
-													</div>
-													<div class="product__info">
-														<p class="product__name">LG G2 83 inch evo Gallery Edition</p>
-														<p class="product__sn">OLED83G26LA</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+										<div class="product__swiper"></div>
 									</div>
 								</div>
 							</div>
-							<div id="gaminglife" class="tab__panel tab__panel--gaminglife">
+							<div id="gaminglife" class="tab__panel tab__panel--gaminglife showroom_panel">
 								<p class="tab__noti">
 									Get ready to experience immersive gaming like never before with 
 									LG's big screen (TV, Monitor), 3D surround sound (Gaming Speaker, Soundbar) and eye-popping picture speed and quality.
@@ -931,11 +851,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/monitors/lg-27gp950-b" target="_blank"
-														data-link-area="memberdays_productMouseHover_gaminglife_27GP950-B"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_gaminglife_27GP950-B"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_gaminglife01_01.png"
+															<img src="${path}/assets/images/img_product_showroom_gaminglife01_01.png"
 																alt="27’’ UHD 4K UltraGear™">
 														</div>
 														<div class="product__right">
@@ -953,11 +873,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/speakers-sound-systems/lg-gp9" target="_blank"
-														data-link-area="memberdays_productMouseHover_gaminglife_GP9"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_gaminglife_GP9"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_gaminglife01_02.png" alt="UltraGear Gaming Speaker">
+															<img src="${path}/assets/images/img_product_showroom_gaminglife01_02.png" alt="UltraGear Gaming Speaker">
 														</div>
 														<div class="product__right">
 															<p class="product__name">UltraGear Gaming Speaker</p>
@@ -975,11 +895,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/tvs/lg-oled42c24la" target="_blank"
-														data-link-area="memberdays_productMouseHover_gaminglife_OLED42C24LA"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_gaminglife_OLED42C24LA"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_gaminglife02_01.png" alt="OLED evo C2(48/42)">
+															<img src="${path}/assets/images/img_product_showroom_gaminglife02_01.png" alt="OLED evo C2(48/42)">
 														</div>
 														<div class="product__right">
 															<p class="product__name">OLED evo C2(48/42)</p>
@@ -995,11 +915,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/speakers-sound-systems/lg-sp8ya" target="_blank"
-														data-link-area="memberdays_productMouseHover_gaminglife_SP8YA"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_gaminglife_SP8YA"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_gaminglife02_02.png" alt="LG Sound Bar SP8YA">
+															<img src="${path}/assets/images/img_product_showroom_gaminglife02_02.png" alt="LG Sound Bar SP8YA">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG Sound Bar SP8YA</p>
@@ -1014,64 +934,11 @@
 										</div>
 									</div>
 									<div class="product__track">
-										<div class="product__swiper">
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="LG InstaView™ ThinQ™ GSXV91BSAE American style Fridge Freezer, 635L, Stainless Steel -E">
-													</div>
-													<div class="product__info">
-														<p class="product__name">LG InstaView™ ThinQ™ GSXV91BSAE American style Fridge Freezer,
-															635L, Stainless Steel -E</p>
-														<p class="product__sn">GSXV91BSAE</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="Washing Machine 10.5kg - TurboWash™360˚ | AIDD™ | Steam+™ | ezDispense™">
-													</div>
-													<div class="product__info">
-														<p class="product__name">Washing Machine 10.5kg - TurboWash™360˚ | AIDD™ | Steam+™ |
-															ezDispense™</p>
-														<p class="product__sn">OLED83G26LA</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+										<div class="product__swiper"></div>
 									</div>
 								</div>
 							</div>
-							<div id="workinglife" class="tab__panel tab__panel--workinglife">
+							<div id="workinglife" class="tab__panel tab__panel--workinglife showroom_panel">
 								<p class="tab__noti">
 									Boost your workday efficiency and wellbeing with tools that optimimize your workplace set-up, including LG gram, ultra wide monitors, IPS picture quality and outstanding multi-tasking features.
 								</p>
@@ -1082,11 +949,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/monitors/lg-28mq780-b" target="_blank"
-														data-link-area="memberdays_productMouseHover_workinglife_28MQ780-B"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_workinglife_28MQ780-B"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_workinglife01_01.png"
+															<img src="${path}/assets/images/img_product_showroom_workinglife01_01.png"
 																alt="DualUp Monitor with Ergo">
 														</div>
 														<div class="product__right">
@@ -1103,11 +970,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/laptops/lg-16z90q-kaa78a1" target="_blank"
-														data-link-area="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_workinglife01_02.png"
+															<img src="${path}/assets/images/img_product_showroom_workinglife01_02.png"
 																alt="LG gram 16">
 														</div>
 														<div class="product__right">
@@ -1125,11 +992,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/true-wireless-earbuds/lg-tone-ufp9" target="_blank"
-														data-link-area="memberdays_productMouseHover_workinglife_TONE-UFP9"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_workinglife01_03.png"
+															<img src="${path}/assets/images/img_product_showroom_workinglife01_03.png"
 																alt="LG TONE Free UFP9">
 														</div>
 														<div class="product__right">
@@ -1148,11 +1015,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/true-wireless-earbuds/lg-tone-ufp9" target="_blank"
-														data-link-area="memberdays_productMouseHover_workinglife_TONE-UFP9"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_workinglife02_01.png"
+															<img src="${path}/assets/images/img_product_showroom_workinglife02_01.png"
 																alt=" LG TONE Free UFP9">
 														</div>
 														<div class="product__right">
@@ -1169,11 +1036,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/laptops/lg-16z90q-kaa78a1" target="_blank"
-														data-link-area="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_workinglife02_02.png" alt="LG gram 16">
+															<img src="${path}/assets/images/img_product_showroom_workinglife02_02.png" alt="LG gram 16">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG gram 16</p>
@@ -1189,64 +1056,11 @@
 										</div>
 									</div>
 									<div class="product__track">
-										<div class="product__swiper">
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="LG InstaView™ ThinQ™ GSXV91BSAE American style Fridge Freezer, 635L, Stainless Steel -E">
-													</div>
-													<div class="product__info">
-														<p class="product__name">LG InstaView™ ThinQ™ GSXV91BSAE American style Fridge Freezer,
-															635L, Stainless Steel -E</p>
-														<p class="product__sn">GSXV91BSAE</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="Washing Machine 10.5kg - TurboWash™360˚ | AIDD™ | Steam+™ | ezDispense™">
-													</div>
-													<div class="product__info">
-														<p class="product__name">Washing Machine 10.5kg - TurboWash™360˚ | AIDD™ | Steam+™ |
-															ezDispense™</p>
-														<p class="product__sn">OLED83G26LA</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+										<div class="product__swiper"></div>
 									</div>
 								</div>
 							</div>
-							<div id="soundfullife" class="tab__panel tab__panel--soundfullife">
+							<div id="soundfullife" class="tab__panel tab__panel--soundfullife showroom_panel">
 								<p class="tab__noti">
 									From top of the range wireless Earbuds to Portable Speakers, 
 									LG audio technology delivers crystal clear sound quality for every occasion - house parties, exercise sessions.
@@ -1258,11 +1072,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/true-wireless-earbuds/lg-tone-ufp9" target="_blank"
-														data-link-area="memberdays_productMouseHover_workinglife_TONE-UFP9"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_soundfullife01_01.png"
+															<img src="${path}/assets/images/img_product_showroom_soundfullife01_01.png"
 																alt="LG TONE Free UFP9">
 														</div>
 														<div class="product__right">
@@ -1281,11 +1095,11 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/uk/speakers-sound-systems/lg-rp4" target="_blank"
-														data-link-area="memberdays_productMouseHover_workinglife_RP4"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_workinglife_RP4"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="./assets/images/img_product_showroom_soundfullife02_01.png" alt="XBOOM360">
+															<img src="${path}/assets/images/img_product_showroom_soundfullife02_01.png" alt="XBOOM360">
 														</div>
 														<div class="product__right">
 															<p class="product__name">XBOOM360</p>
@@ -1301,67 +1115,14 @@
 										</div>
 									</div>
 									<div class="product__track">
-										<div class="product__swiper">
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="LG InstaView™ ThinQ™ GSXV91BSAE American style Fridge Freezer, 635L, Stainless Steel -E">
-													</div>
-													<div class="product__info">
-														<p class="product__name">LG InstaView™ ThinQ™ GSXV91BSAE American style Fridge Freezer,
-															635L, Stainless Steel -E</p>
-														<p class="product__sn">GSXV91BSAE</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="product__slide">
-												<div class="product__item">
-													<div class="product__img">
-														<div class="product__flags">
-															<span class="product__flag">NEW</span>
-															<span class="product__flag">CASHBACK</span>
-														</div>
-														<img src="./assets/images/img_product01.png"
-															alt="Washing Machine 10.5kg - TurboWash™360˚ | AIDD™ | Steam+™ | ezDispense™">
-													</div>
-													<div class="product__info">
-														<p class="product__name">Washing Machine 10.5kg - TurboWash™360˚ | AIDD™ | Steam+™ |
-															ezDispense™</p>
-														<p class="product__sn">OLED83G26LA</p>
-														<div class="button">
-															<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-														</div>
-														<div class="learn-more">
-															<a href="#" class="learn-more__link">
-																<span class="learn-more__text">LEARN MORE</span>
-																<i class="learn-more__arrow"></i>
-															</a>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
+										<div class="product__swiper"></div>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="section__container">
+				<div class="section__container" data-list="hotDeal">
 					<div class="section__inner">
 						<div class="section__header">
 							<h2 class="section__title">
@@ -1372,83 +1133,58 @@
 								<span class="highlight highlight--lightblue">Get 55% OFF</span> the LG XBOOM Go PL5! Limited offer for LG members only.
 							</p>
 						</div>
-						<div class="product product--hotdeal">
+						<div id="hotdeal" class="product product--hotdeal">
 							<div class="product__mask">
-								<div class="product__list">
-									<!-- 품절인 경우 -->
+								<template class="contents-template">
 									<div class="product__item">
 										<div class="product__flags">
-											<span class="product__flag">NEW</span>
-											<span class="product__flag">CASHBACK</span>
+											<span class="product__flag d-none" data-user-type="*productTag1UserType*" data-key="productTag1">*productTag1*</span>
+											<span class="product__flag d-none" data-user-type="*productTag2UserType*" data-key="productTag2">*productTag2*</span>
 										</div>
 										<div class="product__img">
-											<p class="hotdeal_bg hotdeal_soldout"></p>
-											<img src="./assets/images/hotdeal_product.png" alt="LG XBOOM Go PL5">
+											<p class="hotdeal_bg"></p>
+											<img src="*hotdealImageAddr*" alt="*hotdealImageAltText*">
 										</div>
 										<div class="product__info">
-											<p class="product__name">LG XBOOM Go PL5</p>
-											<p class="product__sn">PL5</p>
+											<p class="product__name">*userFriendlyName*</p>
+											<p class="product__sn">*modelName*</p>
 											<div class="product__price">
-												<span class="product__discount">£1,049.98</span>
-												<span class="product__highlight">19% Off</span>
+												<span class="product__discount">
+													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
+													<span class="number">*finalPrice*</span>
+												</span>
+												<span class="product__highlight">*discountMsg*</span>
 											</div>
 											<div class="product__price-now">
-												<p class="product__cost">£849.98</p>
+												<span class="product__cost">
+													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
+													<span class="number">*originPrice*</span>
+												</span>
 											</div>
 											<div class="product__members">
-												<span class="product__text">LG Members only</span>
-												<span class="product__highlight">£666.39</span>
-												<div class="product__noti">
-													<p class="product__text">Out of Stock</p>
+												<span class="product__text"><spring:message code='OBS_MEMBERSHIP_MSG' text='OBS_MEMBERSHIP_MSG'/></span>
+												<span class="product__highlight">
+													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
+													<span class="number">*membershipPriceValue*</span>
+												</span>
+												<div class="product__noti d-none">
+													<p class="product__text">*reStockAlertText*</p>
 												</div>
 											</div>
 											<div class="button">
-												<a href="#" class="button__item button__item--lightgray">GET STOCK ALERT</a>
+												<a role="button" href="#" class="add-to-cart button__item button__item--red" data-track-group="product" data-track-name="offer_add_to_cart_click" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category="*superCategoryName*" data-category="*buName2*" data-subcategory="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-sales-model-code="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-suffix="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
+												<a role="button" href="#modal_re_stock_alert" class="re-stock-alert button__item button__item--lightgray d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
 											</div>
 											<div class="learn-more">
-												<a href="#" class="learn-more__link">
-													<span class="learn-more__text">LEARN MORE</span>
+												<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click">
+													<span class="learn-more__text"><spring:message code='component-learnMore' text='LEARN MORE'/></span>
 													<i class="learn-more__arrow"></i>
 												</a>
 											</div>
 										</div>
 									</div>
-									<!-- 재고가 있는 경우 -->
-									<!-- <div class="product__item">
-										<div class="product__flags">
-											<span class="product__flag">NEW</span>
-											<span class="product__flag">CASHBACK</span>
-										</div>
-										<div class="product__img">
-											<p class="hotdeal_bg"></p>
-											<img src="./assets/images/hotdeal_product.png" alt="LG XBOOM Go PL5">
-										</div>
-										<div class="product__info">
-											<p class="product__name">LG XBOOM Go PL5</p>
-											<p class="product__sn">PL5</p>
-											<div class="product__price">
-												<span class="product__discount">£1,049.98</span>
-												<span class="product__highlight">19% Off</span>
-											</div>
-											<div class="product__price-now">
-												<p class="product__cost">£849.98</p>
-											</div>
-											<div class="product__members">
-												<span class="product__text">LG Members only</span>
-												<span class="product__highlight">£666.39</span>
-											</div>
-											<div class="button">
-												<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-											</div>
-											<div class="learn-more">
-												<a href="#" class="learn-more__link">
-													<span class="learn-more__text">LEARN MORE</span>
-													<i class="learn-more__arrow"></i>
-												</a>
-											</div>
-										</div>
-									</div> -->
-								</div>
+								</template>
+								<div class="product__list"></div>
 							</div>
 						</div>
 						<div class="section__footer">
@@ -1458,7 +1194,7 @@
 				</div>
 			</div>
 			<div id="box_content3" class="section">
-				<div class="section__container section__container--lightgray">
+				<div class="section__container section__container--lightgray" data-list="hottest">
 					<div class="section__inner">
 						<div class="section__header">
 							<h2 class="section__title">
@@ -1470,7 +1206,7 @@
 								Create your own Lifestyle Bundle with ANY LG PRODUCTS: and get up to 22% OFF your Bundle Purchases.
 							</p>
 							<p class="section__desc">
-								<span class="break--desktop">MEMBER DAYS Special Discount 15% + Member Price Discount 2% + Welcome Coupon 5% off.</span>
+								<span class="break--desktop">MEMBER DAYS Special Discount Coupon 15% + Member Price Discount 2% + Welcome Coupon 5% off.</span>
 								Additional discount applicable <span class="section__mark">when you buy 2 or more items.</span>
 							</p>
 						</div>
@@ -1478,29 +1214,93 @@
 							<ul class="tab__list tab__list--round">
 								<li class="tab__item tab__item--active">
 									<a href="#tvcinebeam" 
-										data-link-area="memberdays_productCategory_tvcinebeam"
-										data-link-name="memberdays_2022"
+										data-tab-name="tvcinebeam" 
+										data-track-group="mic" 
+										data-track-opt="category" 
+										data-track-name="selectProductCategory" 
+										data-link-name="memberdays_productCategory_tvcinebeam"
+										data-link-area="memberdays_2022"
 										class="tab__button">TV/Cinebeam</a>
 								</li>
 								<li class="tab__item">
 									<a href="#audio" 
-									data-link-area="memberdays_productCategory_audio"
-									data-link-name="memberdays_2022"
+									data-tab-name="audio" 
+									data-track-group="mic" 
+									data-track-opt="category" 
+									data-track-name="selectProductCategory" 
+									data-link-name="memberdays_productCategory_audio"
+									data-link-area="memberdays_2022"
 									class="tab__button">Audio</a>
 								</li>
 								<li class="tab__item">
 									<a href="#homeappliance" 
-									data-link-area="memberdays_productCategory_homeappliance"
-									data-link-name="memberdays_2022"
+									data-tab-name="homeappliance" 
+									data-track-group="mic" 
+									data-track-opt="category" 
+									data-track-name="selectProductCategory" 
+									data-link-name="memberdays_productCategory_homeappliance"
+									data-link-area="memberdays_2022"
 									class="tab__button">Home Appliance</a>
 								</li>
 								<li class="tab__item">
 									<a href="#computerproducts" 
-									data-link-area="memberdays_productCategory_computerproducts"
-									data-link-name="memberdays_2022"
+									data-tab-name="computerproducts" 
+									data-track-group="mic" 
+									data-track-opt="category" 
+									data-track-name="selectProductCategory" 
+									data-link-name="memberdays_productCategory_computerproducts"
+									data-link-area="memberdays_2022"
 									class="tab__button">Computer Products</a>
 								</li>
 							</ul>
+							<template class="contents-template">
+								<li class="product__item">
+									<div class="product__img">
+										<div class="product__flags">
+											<span class="product__flag d-none" data-user-type="*productTag1UserType*" data-key="productTag1">*productTag1*</span>
+											<span class="product__flag d-none" data-user-type="*productTag2UserType*" data-key="productTag2">*productTag2*</span>
+										</div>
+										<img class="lazyload" data-src="*mediumImageAddr*" alt="*imageAltText*" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+									</div>
+									<div class="product__info">
+										<p class="product__name">*userFriendlyName*</p>
+										<p class="product__sn">*modelName*</p>
+										<div class="product__price">
+											<span class="product__discount">
+												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
+												<span class="number">*finalPrice*</span>
+											</span>
+											<span class="product__highlight">*discountMsg*</span>
+										</div>
+										<div class="product__price-now">
+											<span class="product__cost">
+												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
+												<span class="number">*originPrice*</span>
+											</span>
+										</div>
+										<div class="product__members">
+											<span class="product__text"><spring:message code='OBS_MEMBERSHIP_MSG' text='OBS_MEMBERSHIP_MSG'/></span>
+											<span class="product__highlight">
+												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
+												<span class="number">*membershipPriceValue*</span>
+											</span>
+										</div>
+										<div class="product__noti d-none">
+											<p class="product__text">*reStockAlertText*</p>
+										</div>
+										<div class="button">
+											<a role="button" href="#" class="add-to-cart button__item button__item--red" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category="*superCategoryName*" data-category="*buName2*" data-subcategory="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-sales-model-code="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-suffix="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
+											<a role="button" href="#modal_re_stock_alert" class="re-stock-alert button__item button__item--lightgray d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
+										</div>
+										<div class="learn-more">
+											<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click">
+												<span class="learn-more__text"><spring:message code='component-learnMore' text='LEARN MORE'/></span>
+												<i class="learn-more__arrow"></i>
+											</a>
+										</div>
+									</div>
+								</li>
+							</template>
 							<div id="tvcinebeam" class="tab__panel" style="display: block;">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
@@ -1510,187 +1310,28 @@
 								</p>
 								<div class="product">
 									<div class="product__mask">
-										<ul class="product__list">
-											<!-- 품절인 경우 -->
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-														<div class="product__noti">
-															<p class="product__text">Out of Stock</p>
-														</div>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--lightgray">GET STOCK ALERT</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-
-											<!-- 재고가 있는 경우 -->
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-										</ul>
+										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" 
-											data-link-area="memberdays_plp_click_seemoretvs"
-											data-link-name="memberdays_2022"
+										<a href="https://www.lg.com/uk/tvs" 
+											target="_blank"
+											tabindex="0" 
+											data-track-group="mic" 
+											data-track-opt="category" 
+											data-track-val="TVS" 
+											data-track-name="plpClick" 
+											data-link-name="memberdays_plp_click_seemoretvs" 
+											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">SEE MORE TVS</a>
-										<a href="#" 
-											data-link-area="memberdays_plp_click_seemorecinebeams"
-											data-link-name="memberdays_2022"
+										<a href="https://www.lg.com/uk/projectors" 
+											target="_blank" 
+											tabindex="0" 
+											data-track-group="mic" 
+											data-track-opt="category" 
+											data-track-val="CINEBEAMS" 
+											data-track-name="plpClick" 
+											data-link-name="memberdays_plp_click_seemorecinebeams" 
+											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">SEE MORE CINEBEAMS</a>
 									</div>
 								</div>
@@ -1704,743 +1345,28 @@
 								</p>
 								<div class="product">
 									<div class="product__mask">
-										<ul class="product__list">
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-										</ul>
+										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" 
-											data-link-area="memberdays_plp_click_seemorecomputerproducts"
-											data-link-name="memberdays_2022"
+										<a href="https://www.lg.com/uk/speakers-sound-systems" 
+											target="_blank" 
+											tabindex="0" 
+											data-track-group="mic" 
+											data-track-opt="category" 
+											data-track-val="SOUND SYSTEMS" 
+											data-track-name="plpClick" 
+											data-link-name="memberdays_plp_click_seemoresoundsystems"
+											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">SEE MORE SOUND SYSTEMS</a>
-										<a href="#" 
-											data-link-area="memberdays_plp_click_seemorewirelessearbuds"
-											data-link-name="memberdays_2022"
+										<a href="https://www.lg.com/uk/true-wireless-earbuds" 
+											target="_blank"
+											tabindex="0" 
+											data-track-group="mic" 
+											data-track-opt="category" 
+											data-track-val="SOUND WIRELESS EARBUDS"  
+											data-track-name="plpClick" 
+											data-link-name="memberdays_plp_click_seemorewirelessearbuds" 
+											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">SEE MORE SOUND WIRELESS EARBUDS</a>
 									</div>
 								</div>
@@ -2454,328 +1380,18 @@
 								</p>
 								<div class="product">
 									<div class="product__mask">
-										<ul class="product__list">
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png"
-														alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine -
-														White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png"
-														alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine -
-														White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png"
-														alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine -
-														White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png"
-														alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine -
-														White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png"
-														alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine -
-														White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png"
-														alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine -
-														White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png"
-														alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine -
-														White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png"
-														alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine -
-														White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png"
-														alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine -
-														White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-										</ul>
+										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" 
-											data-link-area="memberdays_plp_click_seemorecomputerproducts"
-											data-link-name="memberdays_2022"
+										<a href="https://www.lg.com/uk/appliances" 
+											target="_blank" 
+											tabindex="0" 
+											data-track-group="mic" 
+											data-track-opt="category" 
+											data-track-val="HOME APPLIANCES"  
+											data-track-name="plpClick" 
+											data-link-name="memberdays_plp_click_seemorehomeappliances"
+											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">SEE MORE HOME APPLIANCES</a>
 									</div>
 								</div>
@@ -2789,381 +1405,34 @@
 								</p>
 								<div class="product">
 									<div class="product__mask">
-										<ul class="product__list">
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-											<li class="product__item">
-												<div class="product__img">
-													<div class="product__flags">
-														<span class="product__flag">NEW</span>
-														<span class="product__flag">CASHBACK</span>
-													</div>
-													<img src="./assets/images/img_product01.png" alt="Exclusive Model gram 17 Limited to 100 units">
-												</div>
-												<div class="product__info">
-													<p class="product__name">LG Turbowash™360 F6V1010WTSE 10.5kg / 1600 RPM Washing Machine - White</p>
-													<p class="product__sn">F6V1010WTSE</p>
-													<div class="product__price">
-														<span class="product__discount">£1,049.98</span>
-														<span class="product__highlight">19% Off</span>
-													</div>
-													<div class="product__price-now">
-														<p class="product__cost">£849.98</p>
-													</div>
-													<div class="product__members">
-														<span class="product__text">LG Members only</span>
-														<span class="product__highlight">£832.98</span>
-													</div>
-													<div class="button">
-														<a href="#" class="button__item button__item--red">ADD TO BASKET</a>
-													</div>
-													<div class="learn-more">
-														<a href="#" class="learn-more__link">
-															<span class="learn-more__text">LEARN MORE</span>
-															<i class="learn-more__arrow"></i>
-														</a>
-													</div>
-												</div>
-											</li>
-										</ul>
+										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" 
-											data-link-area="memberdays_plp_click_seemorecomputerproducts"
-											data-link-name="memberdays_2022"
+										<a href="https://www.lg.com/uk/computer-products" 
+											target="_blank" 
+											data-link-name="memberdays_plp_click_seemorecomputerproducts"
+											data-link-area="memberdays_2022"
 											class="button__item button__item--white">SEE MORE COMPUTER PRODUCTS</a>
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- popup -->
+		<div class="popup referrer-sso">
+			<div class="popup__container">
+				<div class="popup__body">
+					<div class="popup__contents">
+						<p class="popup__text">
+							After joining the sign-up, you must click the <span class="popup__bold">“submit”</span> button to apply for the event.
+						</p>
+					</div>
+					<div class="popup__bottom">
+						<button type="type" class="popup__button popup__close">Close</button>
 					</div>
 				</div>
 			</div>
@@ -3181,39 +1450,9 @@
 				</div>
 			</div>
 		</div>
-
-		<!-- popup -->
-		<div class="popup popup--guide">
-			<div class="popup__container">
-				<div class="popup__body">
-					<div class="popup__contents">
-						<p class="popup__text">
-							After joining the sign-up, you must click the <span class="popup__bold">“submit”</span> button to apply for the event.
-						</p>
-					</div>
-					<div class="popup__bottom">
-						<button type="type" class="popup__button popup__close">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="popup">
-			<div class="popup__container">
-				<div class="popup__body">
-					<div class="popup__contents">
-						<p class="popup__text">
-							<span class="popup__bold">Thank You For Attending!</span>
-						</p>
-					</div>
-					<div class="popup__bottom">
-						<button type="type" class="popup__button">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!-- // popup -->
+
 		<!-- // Content End  -->
-		
 	</div>
 
 	<!-- top button -->
@@ -3258,8 +1497,8 @@
 			},
 			"isLogin" : "",
 			"country_code" : "${localeCd}",
-			"language_code" : "en",
-			"page_category_l1" : "${localeCd}membersweek2022",
+			"language_code" : "${languageCd}",
+			"page_category_l1" : "${localeCd}:membersweek2022",
 			"page_category_l2" : "",
 			"page_category_l3" : "",
 			"page_category_l4" : "",
@@ -3294,9 +1533,102 @@
 	<script src="/lg5-common-gp/js/components/model-switcher.min.js"></script>
 	<script src="/lg5-common-gp/js/components/thumbnail-loop.min.js"></script>
 	<script src="/lg5-common-gp/js/components/video-asset.min.js"></script>
+
+	<script>
+		$(document).ready(function(){
+      if($('.coupon__item').length > 0){
+        $('.coupon__list .coupon__item').each(function() {	
+          var $Item = $(this);
+          $Item.find('label').on('click', function(){ 
+            $('.coupon__list .coupon__item').removeClass('checking');
+            $('.button_takepart').attr('data-link-name', "memberdays_luckydraw_submit_click_" + $(this).siblings('input:radio').attr('data-track-val'));
+            console.log($(this).siblings('input:radio').attr('data-track-val'));
+            
+            if($(this).find('input:radio').is(':checked')){
+              $(this).parent('.coupon__item').addClass('checking');
+            }else{
+              $('.coupon__list .coupon__item').removeClass('checking');
+            }
+          });
+        });
+      }
+    });
+
+		$('.visual').find('.button__item').each(function () {
+      $(this).on('click', function() {
+				dataLayer.push({
+          'event' : $(this).attr('data-track-name'),
+					'bu' : 'HE, HA, BS_IT_B2C, BS',
+					'pageType' : 'MICROSITE',
+					'theme' : $(this).attr('data-track-val')
+        })
+      })
+    });
+
+		$('.box_navigation').find('.link').each(function () {
+      $(this).on('click', function() {
+				dataLayer.push({
+          'event' : $(this).attr('data-track-name'),
+					'bu' : 'HE, HA, BS_IT_B2C, BS',
+					'pageType' : 'MICROSITE',
+        })
+      })
+    });
+		
+		$('#box_content2 .tab__list').find('.tab__button').each(function () {
+			$(this).on('click', function() {
+				dataLayer.push({
+					'event' : $(this).find('input').attr('data-track-name'),
+					'bu' : 'HE, HA, BS_IT_B2C, BS',
+					'theme' : $(this).find('input').attr('data-track-val'),
+				})
+			})
+    });
+
+		$('.showroom_panel').each(function () {
+			var theme = $(this).attr('id');
+
+			$(this).find('.product__slide').each(function () {
+				$(this).find('.product__link').each(function () {
+					$(this).on('click', function() {
+						dataLayer.push({
+						'event' : 'productMouseHover',
+						'bu' : 'HE, HA, BS_IT_B2C, BS',
+						'pageType' : 'MICROSITE',
+						'theme' : theme,
+						})
+					})
+				})
+			})
+    });
+		
+		$('#box_content3 .tab__list').find('.tab__button').each(function () {
+			$(this).on('click', function() {
+				dataLayer.push({
+					'event' : 'selectProductCategory',
+					'bu' : 'HE, HA, BS_IT_B2C, BS',
+					'pageType' : 'MICROSITE',
+					'theme' : $(this).attr('data-tab-name'),
+				})
+			})
+    });
+		
+		$('#box_content3 .tab__panel').each(function () {
+			$(this).find('.button__item--white').each(function () {
+				$(this).on('click', function() {
+					dataLayer.push({
+						'event' : 'plpClick',
+						'bu' : 'HE, HA, BS_IT_B2C, BS',
+						'pageType' : 'MICROSITE',
+						'theme' : $(this).attr('data-track-val'),
+					})
+				})
+			})
+    });
+	</script>
 	
-	<script src="./assets/js/index.js"></script>
-	<script src="./assets/js/index-ajax.js"></script>
+	<script src="${path}/assets/js/index.js"></script>
+	<script src="${path}/assets/js/index-ajax.js"></script>
 	
 </body>
 </html>

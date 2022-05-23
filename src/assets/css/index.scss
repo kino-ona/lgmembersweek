@@ -16,7 +16,7 @@
 		top: 0;
 		right: 0;
 		bottom: 0;
-		z-index: 100;
+  	z-index: 30000;
 		background-color: rgba(0,0,0,.2);
 	}
 	&__body {
@@ -2789,7 +2789,10 @@
 		}
 	}
 	.box_navigation .box_nav-position.fixed {
-		position: fixed
+		position: fixed;
+		margin-top: 1px;
+		border-width: 1px 0px;
+		z-index: 24999;
 	}
 	.box_navigation .box_navigation-inner {
 		position: relative;

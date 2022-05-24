@@ -102,9 +102,11 @@
 			<!-- Life Style Model -->
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07535414|MD07535483|MD07535475"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548355|MD07546571|MD07546591|MD07545548|MD07552142"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07528365"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552999|MD07553042|MD07553142|MD07535403|MD07540281|MD07550947|MD07537017"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07534551|MD07535359|MD07535216|MD07528451"/>
+			<!-- <input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548378|MD07548355|MD07548335|MD07548282|MD07546566|MD07546594|MD07546571|MD07546563|MD07548246|MD07546595|MD07546591|MD07546596|MD07546657|MD07545548|MD07552142"/> -->
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07552142"/>
+			<!-- <input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07546558|MD07552142"/> -->
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552999|MD07553142|MD07535403|MD07540281|MD07540286|MD07537017"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07535216"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
 			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573"/>
@@ -122,9 +124,9 @@
 			-->
 
 			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07548335|MD07546595|MD07548387|MD07550523|MD07545548"/>
-			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508573|MD07508373|MD07528365|MD07528451|MD07510893|MD07504084|MD07535242|MD07538956|"/>
-			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07514393|MD07535475|MD07536912|MD07515106|MD07514364|MD07535502|MD07535480|MD07535414|MD07517580"/>
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07546563|MD07548335|MD07548282|MD07545548|MD07546595|MD07546591|MD07546596|MD07546657|MD07548387|MD07548331|MD07550523|MD07550540|MD07550466|MD07550528|MD07550538|MD07550521|MD07550534"/>
+			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07528451|MD07510893|MD07528365|MD07504084|MD07535242|MD07538956|MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508573|MD07508373"/>
+			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07514393|MD07535502|MD07535480|MD07535414|MD07517580|MD07535475|MD07536912|MD07515106|MD07514364"/>
 			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07552999|MD07553042|MD07540281|MD07540286|MD07540283|MD07550947|MD06164217|MD07525661|MD07532529|MD07522774|MD07525972|MD07532528|MD07528387"/>
 		<!-- Required input ## Model List End -->
 	
@@ -349,7 +351,7 @@
 										<p class="benefit__discount">
 											15% off
 											<em class="benefit__condition">When you buy two or more items on ANY LG PRODUCTS*</em>
-											<span class="benefit__text benefit__text--gray">*Welcome Coupon & MEMBER DAYS Special Discount Coupon are not applicable to PL5, ‘gram & +view’ Bundle</span>
+											<span class="benefit__text benefit__text--gray">Welcome Coupon & MEMBER DAYS Special Discount Coupon are not applicable to PL5, ‘gram & +view’ Bundle</span>
 											<span class="benefit__text">Sign in and find your MEMBER DAYS DISCOUNT coupon in your MyLG Account</span>
 										</p>
 									</div>
@@ -379,7 +381,6 @@
 								<li class="benefit__item">
 									<div class="benefit__inner">
 										<p class="benefit__category">Free Installation &amp; Disposal</p>
-										<span class="benefit__text">Washing Machine,<br>Refridgerator only</span>
 									</div>
 								</li>
 								<!-- <li class="benefit__item">
@@ -592,13 +593,9 @@
 							<div style="margin-top:80px">
 								<form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
 									<div class="button">
-										<a class="button_takepart" data-track-group="mic" data-track-opt="theme" data-track-name="submitClick" 
+										<button type="button" id="submit" class="button__item button__item--red button_takepart" data-track-group="mic" data-track-opt="theme" data-track-name="submitClick" 
 										data-link-name="memberdays_luckydraw_submit_click_"
-										data-link-area="memberdays_2022">
-											<button type="button" id="submit" class="button__item button__item--red" data-track-group="mic" data-track-opt="theme" data-track-name="submitClick" 
-											data-link-name="memberdays_luckydraw_submit_click_"
-											data-link-area="memberdays_2022">TAKE PART</button>
-										</a>
+										data-link-area="memberdays_2022">TAKE PART</button>
 										<!-- <a href="#" 
 										data-track-group="mic" data-track-opt="theme" data-track-name="submitClick"
 										data-link-area="memberdays_2022"
@@ -753,7 +750,7 @@
 							</div>
 							<div id="vividlife" class="tab__panel tab__panel--vividlife showroom_panel">
 								<p class="tab__noti">
-									LG technology delivers cinema-like experience and immersive on-screen sports viewing.<br>
+									LG technology delivers cinema-like experience and immersive on-screen sports viewing.
 									Live your best home entertainment life with OLED TV, CineBeam projector and Soundbar.
 								</p>
 								<div class="product">
@@ -851,7 +848,7 @@
 							</div>
 							<div id="gaminglife" class="tab__panel tab__panel--gaminglife showroom_panel">
 								<p class="tab__noti">
-									Get ready to experience immersive gaming like never before with<br>
+									Get ready to experience immersive gaming like never before with 
 									LG's big screen (TV, Monitor), 3D surround sound (Gaming Speaker, Soundbar) and eye-popping picture speed and quality.
 								</p>
 								<div class="product">
@@ -1072,7 +1069,7 @@
 							</div>
 							<div id="soundfullife" class="tab__panel tab__panel--soundfullife showroom_panel">
 								<p class="tab__noti">
-									From top of the range wireless Earbuds to Portable Speakers,<br> 
+									From top of the range wireless Earbuds to Portable Speakers, 
 									LG audio technology delivers crystal clear sound quality for every occasion - house parties, exercise sessions.
 								</p>
 								<div class="product">
@@ -1161,14 +1158,14 @@
 											<div class="product__price">
 												<span class="product__discount">
 													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
-													<span class="number">*originPrice*</span>
+													<span class="number">*finalPrice*</span>
 												</span>
 												<span class="product__highlight">*discountMsg*</span>
 											</div>
 											<div class="product__price-now">
 												<span class="product__cost">
 													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
-													<span class="number">*finalPrice*</span>
+													<span class="number">*originPrice*</span>
 												</span>
 											</div>
 											<div class="product__members">
@@ -1198,7 +1195,7 @@
 							</div>
 						</div>
 						<div class="section__footer">
-							<p class="section__text">*Welcome coupon 5% is not applicable</p>
+							<p class="section__text">*Welcome coupon can not be applicable</p>
 						</div>
 					</div>
 				</div>
@@ -1283,14 +1280,14 @@
 										<div class="product__price">
 											<span class="product__discount">
 												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
-												<span class="number">*originPrice*</span>
+												<span class="number">*finalPrice*</span>
 											</span>
 											<span class="product__highlight">*discountMsg*</span>
 										</div>
 										<div class="product__price-now">
 											<span class="product__cost">
 												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
-												<span class="number">*finalPrice*</span>
+												<span class="number">*originPrice*</span>
 											</span>
 										</div>
 										<div class="product__members">
@@ -1425,11 +1422,6 @@
 									<div class="button">
 										<a href="https://www.lg.com/uk/computer-products" 
 											target="_blank" 
-											tabindex="0" 
-											data-track-group="mic" 
-											data-track-opt="category" 
-											data-track-val="COMPUTER PRODUCTS"  
-											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorecomputerproducts"
 											data-link-area="memberdays_2022"
 											class="button__item button__item--white">SEE MORE COMPUTER PRODUCTS</a>
@@ -1560,109 +1552,46 @@
         $('.coupon__list .coupon__item').each(function() {	
           var $Item = $(this);
           $Item.find('label').on('click', function(){ 
-						var themeType = $(this).siblings('input:radio').attr('data-track-val');
-						if(themeType == 'greenlife') {
-							$bu = 'HA'
-						} else if(themeType == 'vividlife') {
-							$bu = 'TV, IT, AV'
-						} else if(themeType == 'gaminglife') {
-							$bu = 'IT, AV, TV'
-						} else if(themeType == 'workinglife') {
-							$bu = 'AV, IT'
-						} else if(themeType == 'soundfullife') {
-							$bu = 'AV'
-						} else {
-							$bu = ' '
-						}
-						
             $('.coupon__list .coupon__item').removeClass('checking');
             $('.button_takepart').attr('data-link-name', "memberdays_luckydraw_submit_click_" + $(this).siblings('input:radio').attr('data-track-val'));
+            console.log($(this).siblings('input:radio').attr('data-track-val'));
             
             if($(this).find('input:radio').is(':checked')){
               $(this).parent('.coupon__item').addClass('checking');
             }else{
               $('.coupon__list .coupon__item').removeClass('checking');
             }
-
-						dataLayer.push({
-							'event' : 'themeSelectionCoupon',
-							'bu' : $bu,
-							'theme' : $(this).attr('data-track-val'),
-							'pageType' : 'MICROSITE',
-						})
           });
         });
       }
     });
 
-		if($('.coupon__list .coupon__item').hasClass('checking').length > 0) {
-			$('.button_takepart').on('click', function() {
-				var $selectCoupon = $('.coupon__list .coupon__item.checking')
-				var themeType = $selectCoupon.find('radio').attr('data-track-val');
-				if(themeType == 'greenlife') {
-					$bu = 'HA'
-				} else if(themeType == 'vividlife') {
-					$bu = 'TV, IT, AV'
-				} else if(themeType == 'gaminglife') {
-					$bu = 'IT, AV, TV'
-				} else if(themeType == 'workinglife') {
-					$bu = 'AV, IT'
-				} else if(themeType == 'soundfullife') {
-					$bu = 'AV'
-				} else {
-					$bu = ' '
-				}
-				
+		$('.visual').find('.button__item').each(function () {
+      $(this).on('click', function() {
 				dataLayer.push({
-					'event' : $(this).attr('data-track-name'),
-					'bu' : $bu,
+          'event' : $(this).attr('data-track-name'),
+					'bu' : 'HE, HA, BS_IT_B2C, BS',
 					'pageType' : 'MICROSITE',
 					'theme' : $(this).attr('data-track-val')
-				})
-			})
-		}
-		
-		// $('.visual').find('.button__item').each(function () {
-    //   $(this).on('click', function() {
-		// 		dataLayer.push({
-    //       'event' : $(this).attr('data-track-name'),
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-track-val')
-    //     })
-    //   })
-    // });
+        })
+      })
+    });
 
-		// $('.box_navigation').find('.link').each(function () {
-    //   $(this).on('click', function() {
-		// 		dataLayer.push({
-    //       'event' : $(this).attr('data-track-name'),
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-    //     })
-    //   })
-    // });
+		$('.box_navigation').find('.link').each(function () {
+      $(this).on('click', function() {
+				dataLayer.push({
+          'event' : $(this).attr('data-track-name'),
+					'bu' : 'HE, HA, BS_IT_B2C, BS',
+					'pageType' : 'MICROSITE',
+        })
+      })
+    });
 		
 		$('#box_content2 .tab__list').find('.tab__button').each(function () {
 			$(this).on('click', function() {
-				var themeType = $(this).attr('data-track-val');
-				if(themeType == 'greenlife') {
-					$bu = 'HA'
-				} else if(themeType == 'vividlife') {
-					$bu = 'TV, IT, AV'
-				} else if(themeType == 'gaminglife') {
-					$bu = 'IT, AV, TV'
-				} else if(themeType == 'workinglife') {
-					$bu = 'AV, IT'
-				} else if(themeType == 'soundfullife') {
-					$bu = 'AV'
-				} else {
-					$bu = ' '
-				}
-				
 				dataLayer.push({
 					'event' : $(this).find('input').attr('data-track-name'),
-					'bu' : $bu,
+					'bu' : 'HE, HA, BS_IT_B2C, BS',
 					'theme' : $(this).find('input').attr('data-track-val'),
 				})
 			})
@@ -1685,29 +1614,29 @@
 			})
     });
 		
-		// $('#box_content3 .tab__list').find('.tab__button').each(function () {
-		// 	$(this).on('click', function() {
-		// 		dataLayer.push({
-		// 			'event' : 'selectProductCategory',
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-tab-name'),
-		// 		})
-		// 	})
-    // });
+		$('#box_content3 .tab__list').find('.tab__button').each(function () {
+			$(this).on('click', function() {
+				dataLayer.push({
+					'event' : 'selectProductCategory',
+					'bu' : 'HE, HA, BS_IT_B2C, BS',
+					'pageType' : 'MICROSITE',
+					'theme' : $(this).attr('data-tab-name'),
+				})
+			})
+    });
 		
-		// $('#box_content3 .tab__panel').each(function () {
-		// 	$(this).find('.button__item--white').each(function () {
-		// 		$(this).on('click', function() {
-		// 			dataLayer.push({
-		// 				'event' : 'plpClick',
-		// 				'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 				'pageType' : 'MICROSITE',
-		// 				'theme' : $(this).attr('data-track-val'),
-		// 			})
-		// 		})
-		// 	})
-    // });
+		$('#box_content3 .tab__panel').each(function () {
+			$(this).find('.button__item--white').each(function () {
+				$(this).on('click', function() {
+					dataLayer.push({
+						'event' : 'plpClick',
+						'bu' : 'HE, HA, BS_IT_B2C, BS',
+						'pageType' : 'MICROSITE',
+						'theme' : $(this).attr('data-track-val'),
+					})
+				})
+			})
+    });
 
 		$(document).ready(function(){
 			var href = window.location.href;

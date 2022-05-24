@@ -62,6 +62,7 @@ $(document).ready(function() {
 		hotDealSlickOpt: {
 			speed: 600,
 			infinite: false,
+			arrows: false,
 			slidesToShow: 3,
 			focusOnSelect: false,
 			responsive: [
@@ -226,7 +227,7 @@ $(document).ready(function() {
 								.replace(/\*reStockAlertUrl\*/g, p.reStockAlertUrl ? p.reStockAlertUrl : "")
 								.replace(/\*reStockAlertText\*/g, productMessages.outOfStockText)
 								.replace(/\*originPrice\*/g, p.rPrice ? changeFormatFullPrice(p.rPrice, p.rPriceCent) : 'null')
-								.replace(/\*finalPrice\*/g, p.rPromoPrice ? changeFormatFullPrice(p.rPromoPrice, p.rPromoPriceCent) : 'null')
+								.replace(/\*finalPrice\*/g, priceValue)
 								.replace(/\*membershipPriceValue\*/g, p.rMembershipPrice ? changeFormatFullPrice(p.rMembershipPrice, p.rMembershipPriceCent) : 'null')
 								.replace(/\*discountMsg\*/g, p.discountMsg == null ? '' : p.discountMsg.replace(/&lt;/gi, '<').replace(/&gt;/gi, '>'))
 								.replace(/\*salesSuffixCode\*/g, (p.salesSuffixCode || ''))

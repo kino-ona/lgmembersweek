@@ -733,6 +733,12 @@
 					line-height: 32px;
 					@include ellipse(1);
 				}
+				&__code {
+					height: auto;
+					font-size: 16px;
+					line-height: 22px;
+					@include ellipse(1);
+				}
 			}
 			.coupon__ico {
 				display: inline-flex;

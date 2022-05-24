@@ -69,12 +69,10 @@
 
 			<!-- Life Style Model -->
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07539105|MD07528602|MD07544843|MD06211517"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548355|MD07546571|MD07546591|MD07545548|MD07552142"/>
-			<!-- <input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548378|MD07548355|MD07548335|MD07548282|MD07546566|MD07546594|MD07546571|MD07546563|MD07548246|MD07546595|MD07546591|MD07546596|MD07546657|MD07545548|MD07552142"/> -->
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07552142"/>
-			<!-- <input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07546558|MD07552142"/> -->
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552999|MD07553142|MD07535403|MD07540281|MD07540286|MD07537017"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07535216"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548200|MD07546868|MD07547146|MD07531094|MD07535366"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07538352|MD07532987|MD07546823|MD07535366"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07525444|MD07536292|MD07554256|MD07554813"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536292|MD07538440|MD07535124|MD07529953"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
 			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573"/>
@@ -92,10 +90,10 @@
 			-->
 
 			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07546563|MD07548335|MD07548282|MD07545548|MD07546595|MD07546591|MD07546596|MD07546657|MD07548387|MD07548331|MD07550523|MD07550540|MD07550466|MD07550528|MD07550538|MD07550521|MD07550534"/>
-			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07528451|MD07510893|MD07528365|MD07504084|MD07535242|MD07538956|MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508573|MD07508373"/>
-			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07514393|MD07535502|MD07535480|MD07535414|MD07517580|MD07535475|MD07536912|MD07515106|MD07514364"/>
-			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07552999|MD07553042|MD07540281|MD07540286|MD07540283|MD07550947|MD06164217|MD07525661|MD07532529|MD07522774|MD07525972|MD07532528|MD07528387"/>
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546781|MD07523705|MD07528466|MD07533869|MD07523980|MD07526955|MD07534114|MD07531094"/>
+			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535124|MD07529953|MD07530617|MD07540591"/>
+			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07546805|MD07527380|MD07539124|MD07535708|MD07536705|MD07522656|MD07544843|MD07520889|MD06175496|MD05774871|MD05775808|MD07528602|MD07528454|MD07546205|MD07546235|MD07551400|MD07551561"/>
+			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07544866|MD07525444|MD07544862|MD07540299|MD07525616|MD07554256|MD07520962|MD07532987|MD07529698"/>
 		<!-- Required input ## Model List End -->
 	
 		<!--  Content Start  -->

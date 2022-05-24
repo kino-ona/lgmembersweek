@@ -23,6 +23,17 @@
 
 	// product
 	.product {
+		&--hotdeal {
+			.product__item {
+				@for $i from 1 through 6 {
+					&:nth-child(#{ $i }) {
+						.hotdeal_bg {
+							background-image: url('../images/it/bg_hotdeal0#{$i}.png');
+						}
+					}
+				}
+			}
+		}
 		&__showroom {
 			&--greenlife {
 				.product__slide {
@@ -30,49 +41,49 @@
 						&:nth-child(#{ $i }) {
 							background-image: url('../images/it/bg_product_showroom_greenlife0#{$i}.png');
 						}
-						&:nth-child(1) {
-							.product__layer {
-								&:nth-child(1) {
-									.product__target {
-										top: -44px;
-										&:before {
-											top: 46px;
-											margin-top: 0;
-										}
+					}
+					&:nth-child(1) {
+						.product__layer {
+							&:nth-child(1) {
+								.product__target {
+									top: -44px;
+									&:before {
+										top: 46px;
+										margin-top: 0;
 									}
 								}
-								&:nth-child(2) {
-									left: 78.38%;
-									top: 62.68%;
-									.product__target {
+							}
+							&:nth-child(2) {
+								left: 78.38%;
+								top: 62.68%;
+								.product__target {
+									left: auto;
+									right: 32px;
+									top: -44px;
+									margin-left: 0;
+									padding-right: 20px;
+									&:before {
 										left: auto;
-										right: 32px;
-										top: -44px;
-										margin-left: 0;
-										padding-right: 20px;
-										&:before {
-											left: auto;
-											right: 10px;
-											top: 43px;
-											margin-right: 0;
-											border-right: 0;
-											border-top: 15px solid transparent;
-											border-bottom: 15px solid transparent;
-											border-left: 20px solid #fff;
-										}
+										right: 10px;
+										top: 43px;
+										margin-right: 0;
+										border-right: 0;
+										border-top: 15px solid transparent;
+										border-bottom: 15px solid transparent;
+										border-left: 20px solid #fff;
 									}
 								}
 							}
 						}
-						&:nth-child(2) {
-							.product__layer {
-								&:nth-child(1) {
-									.product__target {
-										top: -44px;
-										&:before {
-											top: 45px;
-											margin-top: 0;
-										}
+					}
+					&:nth-child(2) {
+						.product__layer {
+							&:nth-child(1) {
+								.product__target {
+									top: -44px;
+									&:before {
+										top: 45px;
+										margin-top: 0;
 									}
 								}
 							}
@@ -82,6 +93,11 @@
 			}
 			&--vividlife {
 				.product__slide {
+					@for $i from 1 through 2 {
+						&:nth-child(#{ $i }) {
+							background-image: url('../images/it/bg_product_showroom_vividlife0#{$i}.png');
+						}
+					}
 					&:nth-child(1) {
 						.product__layer {
 							&:nth-child(1) {
@@ -149,6 +165,7 @@
 						}
 					}
 					&:nth-child(2) {
+						background-image: url('../images/it/bg_product_showroom_gaminglife02.png');
 						.product__layer {
 							&:nth-child(1) {
 								.product__target {
@@ -166,6 +183,7 @@
 			&--workinglife {
 				.product__slide {
 					&:nth-child(1) {
+						background-image: url('../images/it/bg_product_showroom_workinglife01.png');
 						.product__layer {
 							&:nth-child(3) {
 								.product__target {
@@ -219,6 +237,42 @@
 									}
 								}
 							}
+						}
+					}
+				}
+			}
+		}
+		@media (max-width: 767px) {
+			&__showroom {
+				&--greenlife {
+					.product__slide {
+						@for $i from 1 through 2 {
+							&:nth-child(#{ $i }) {
+								background-image: url('../images/it/m_bg_product_showroom_greenlife0#{$i}.png');
+							}
+						}
+					}
+				}
+				&--vividlife {
+					.product__slide {
+						@for $i from 1 through 2 {
+							&:nth-child(#{ $i }) {
+								background-image: url('../images/it/m_bg_product_showroom_vividlife0#{$i}.png');
+							}
+						}
+					}
+				}
+				&--gaminglife {
+					.product__slide {
+						&:nth-child(2) {
+							background-image: url('../images/it/m_bg_product_showroom_gaminglife02.png');
+						}
+					}
+				}
+				&--workinglife {
+					.product__slide {
+						&:nth-child(1) {
+							background-image: url('../images/it/m_bg_product_showroom_workinglife01.png');
 						}
 					}
 				}

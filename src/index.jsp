@@ -5,9 +5,9 @@
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="telephone=no" name="format-detection">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
-	<title>Consumer &amp; Home Electronics from LG | LG UK</title>
+	<title>LG Member Days Promotion: Up to 22% Off Purchase | LG UK</title>
 	<meta name="keywords" content="">
-	<meta name="description" content="Welcome to LG UK. We deliver consumer electronics that allow you to embrace life and prepare you for its greatest moments. Learn about our electronics.">
+	<meta name="description" content="Sign up at LG.com today and enjoy the Member-Only Benefits and money off on ANY LG PRODUCTS. LG Member Days exclusive offers run ONLY UNTIL 29 June 2022.">
 	<meta name="robots" content="NOODP, NOYDIR">
 
 	<link rel="canonical" href="https://www.lg.com/uk">
@@ -15,8 +15,8 @@
 	<meta property="og:locale" content="en_GB">
 	<meta property="og:site_name" content="LG UK">
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Consumer &amp; Home Electronics from LG | LG UK">
-	<meta property="og:description" content="Welcome to LG UK. We deliver consumer electronics that allow you to embrace life and prepare you for its greatest moments. Learn about our electronics.">
+	<meta property="og:title" content="LG Member Days Promotion: Up to 22% Off Purchase | LG UK">
+	<meta property="og:description" content="Sign up at LG.com today and enjoy the Member-Only Benefits and money off on ANY LG PRODUCTS. LG Member Days exclusive offers run ONLY UNTIL 29 June 2022.">
 	<meta property="og:url" content="https://www.lg.com/uk">
 	<meta property="og:image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg">
 	<meta name="twitter:card" content="summary_large_image">
@@ -80,11 +80,11 @@
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/body/broswe-check-popup-layer.jsp" />
 	
 	<div class="sr-only" itemscope itemtype="http://schema.org/WebPage">
-		<meta itemprop="name" content="LG Solar Calculator | LG UK Business"/>
-		<meta itemprop="image" content="https://www.lg.com/uk/images/business/solar/uk-solar-hero-1-d.jpg" />
-		<meta itemprop="url" content="www.lg.com/uk/business/solar-calculator" />
-		<meta itemprop="description" content="Find out in a few steps which is the optimal solar installation for you and how much you can save." />
-		<meta itemprop="keywords" content="solar, panels, energy, savings, calculator, renewable, efficiency, sustainability" />
+		<meta itemprop="name" content="LG Member Days Promotion: Up to 22% Off Purchase | LG UK"/>
+		<meta itemprop="image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg" />
+		<meta itemprop="url" content="www.lg.com/uk/memberdays" />
+		<meta itemprop="description" content="Sign up at LG.com today and enjoy the Member-Only Benefits and money off on ANY LG PRODUCTS. LG Member Days exclusive offers run ONLY UNTIL 29 June 2022." />
+		<meta itemprop="keywords" content="" />
 	</div>
 	
 	<c:set var='bizType' value='${$bizType }' />
@@ -120,9 +120,9 @@
 
 			<!-- Life Style Model -->
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07535414|MD07535483|MD07535475"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548355|MD07546571|MD07546591|MD07545548|MD07552142"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548355|MD07546571|MD07546591|MD07545548|MD07528365"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07528365"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552999|MD07553042|MD07553142|MD07535403|MD07540281|MD07550947|MD07537017"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552999|MD07553042|MD07553142|MD07535403|MD07540286|MD07540281|MD07550947|MD07537017"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07534551|MD07535359|MD07535216|MD07528451"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
@@ -166,7 +166,7 @@
 									</p>
 								</div>
 								<div class="button">
-									<a href="#box_content2" 
+									<a href="#box_content1" 
 										data-track-group="mic" 
 										data-track-opt="theme" 
 										data-track-val="lifestyle" 
@@ -186,7 +186,7 @@
 									<p class="section__sub">
 										<span class="break--desktop">
 											<span class="break--mobile">Care for the planet, Care for your next bill </span>
-											<span class="break--mobile">with help from LG technology</span>
+											<span class="break--mobile">with help from LG technology.</span>
 										</span>
 										Exclusive offers run until 28<sup>th</sup> June, 2022
 									</p>
@@ -194,7 +194,7 @@
 							</div>
 						</div>
 						<div class="button">
-							<a href="#box_content2" 
+							<a href="#box_content1" 
 								data-track-group="mic" 
 								data-track-opt="theme" 
 								data-track-val="greenlife" 
@@ -212,8 +212,7 @@
 									<p class="section__sub">
 										<span class="break--desktop">
 											<span class="break--mobile">
-												Bring Bright Screen, Surround Sound to your
-												home with LG technology
+												Bring Bright Screen, Surround Sound to your home with LG technology.
 											</span>
 										</span>
 										Exclusive offers run until 28<sup>th</sup> June, 2022
@@ -222,7 +221,7 @@
 							</div>
 						</div>
 						<div class="button">
-							<a href="#box_content2" 
+							<a href="#box_content1" 
 								data-track-group="mic" 
 								data-track-opt="theme" 
 								data-track-val="vividlife" 
@@ -248,7 +247,7 @@
 							</div>
 						</div>
 						<div class="button">
-							<a href="#box_content2" 
+							<a href="#box_content1" 
 								data-track-group="mic" 
 								data-track-opt="theme" 
 								data-track-val="gaminglife" 
@@ -271,7 +270,7 @@
 							</div>
 						</div>
 						<div class="button">
-							<a href="#box_content2" 
+							<a href="#box_content1" 
 							data-track-group="mic" 
 							data-track-opt="theme" 
 							data-track-val="workinglife" 
@@ -287,14 +286,14 @@
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">Design your <span>[#Soundful Life]</span> with LG</h2>
 									<p class="section__sub">
-										Immersive Sound in your hand wherever you go with LG technology<br>
+										Immersive Sound in your hand wherever you go with LG technology.<br>
 										Exclusive offers run until 28<sup>th</sup> June, 2022
 									</p>
 								</div>
 							</div>
 						</div>
 						<div class="button">
-							<a href="#box_content2" 
+							<a href="#box_content1" 
 								data-track-group="mic" 
 								data-track-opt="theme" 
 								data-track-val="soundfullife" 
@@ -352,7 +351,7 @@
 								Exclusive benefits for LG Members<br>
 								Join for free. Find out more.
 							</p>
-							<h2 class="section__title">Buy More, Save More</h2>
+							<h2 class="section__title">Spend More, Save More</h2>
 						</div>
 						<div class="benefit">
 							<ul class="benefit__list benefit__list--discount">
@@ -382,7 +381,7 @@
 							</ul>
 							<div class="benefit__button">
 								<a href="https://www.lg.com/uk/tncs/memberdays" target="_blank" class="benefit__link">
-									Terms and Conditions applied
+									Terms and Conditions apply
 									<i class="benefit__arrow"></i>
 								</a>
 							</div>
@@ -627,7 +626,7 @@
 							</div>
 						</div>
 						<div class="section__footer">
-							<p class="section__text">*You can apply to one or more Lifestyles, but can win only one product</p>
+							<p class="section__text">*One entry per participant. You can win only one prize.</p>
 						</div>
 					</div>
 				</div>
@@ -1032,7 +1031,7 @@
 															<p class="product__name">LG TONE Free UFP9</p>
 															<ul class="product__desc">
 																<li>Plug and Wireless</li>
-																<li>Enhanced Active Noise Cancellation/li>
+																<li>Enhanced Active Noise Cancellation</li>
 															</ul>
 														</div>
 													</a>
@@ -1397,11 +1396,11 @@
 											tabindex="0" 
 											data-track-group="mic" 
 											data-track-opt="category" 
-											data-track-val="SOUND WIRELESS EARBUDS"  
+											data-track-val="WIRELESS EARBUDS"  
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorewirelessearbuds" 
 											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE SOUND WIRELESS EARBUDS</a>
+											class="button__item button__item--white">SEE MORE WIRELESS EARBUDS</a>
 									</div>
 								</div>
 							</div>

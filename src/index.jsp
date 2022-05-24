@@ -53,6 +53,25 @@
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/head/head-css.jsp" />
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/head/font-woff.jsp" />
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/head/head-script.jsp" />
+
+	<!-- Facebook Pixel Code -->
+	<script>
+		!function(f,b,e,v,n,t,s)
+		{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+		n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+		if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+		n.queue=[];t=b.createElement(e);t.async=!0;
+		t.src=v;s=b.getElementsByTagName(e)[0];
+		s.parentNode.insertBefore(t,s)}(window, document,'script',
+		'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '493623621658054');
+		fbq('track', 'PageView');
+		fbq('trackCustom', '2022GMCMemberDay View');
+	</script>
+	<noscript>
+		<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id={your-pixel-id-goes-here}&ev=PageView&noscript=1"/>
+	</noscript>
+	<!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -123,7 +142,7 @@
 
 			<!-- Hottest Gift Model -->
 			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07548335|MD07546595|MD07548387|MD07550523|MD07545548"/>
-			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508573|MD07508373|MD07528365|MD07528451|MD07510893|MD07504084|MD07535242|MD07538956|"/>
+			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508573|MD07508373|MD07528365|MD07528451|MD07510893|MD07504084|MD07535242|MD07538956"/>
 			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07514393|MD07535475|MD07536912|MD07515106|MD07514364|MD07535502|MD07535480|MD07535414|MD07517580"/>
 			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07552999|MD07553042|MD07540281|MD07540286|MD07540283|MD07550947|MD06164217|MD07525661|MD07532529|MD07522774|MD07525972|MD07532528|MD07528387"/>
 		<!-- Required input ## Model List End -->
@@ -1132,7 +1151,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="section__container" data-list="hotDeal">
+				<div id="HotDeal" class="section__container" data-list="hotDeal">
 					<div class="section__inner">
 						<div class="section__header">
 							<h2 class="section__title">
@@ -1299,9 +1318,9 @@
 												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												<span class="number">*membershipPriceValue*</span>
 											</span>
-										</div>
-										<div class="product__noti d-none">
-											<p class="product__text">*reStockAlertText*</p>
+											<div class="product__noti d-none">
+												<p class="product__text">*reStockAlertText*</p>
+											</div>
 										</div>
 										<div class="button">
 											<a role="button" href="#" class="add-to-cart button__item button__item--red" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category="*superCategoryName*" data-category="*buName2*" data-subcategory="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-sales-model-code="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-suffix="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
@@ -1760,6 +1779,12 @@
 				}, 1500);
 			}
 		});
+
+		if($('.add-to-cart').length > 0) {
+      $('.add-to-cart').on('click', function (e) {
+        fbq('trackCustom', '2022GMCMemberDay AddToBasket');
+      });
+    }
 	</script>
 	
 	<script src="${path}/assets/js/index.js"></script>

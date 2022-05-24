@@ -166,7 +166,7 @@
 									</p>
 								</div>
 								<div class="button">
-									<a href="#" 
+									<a href="#box_content2" 
 										data-track-group="mic" 
 										data-track-opt="theme" 
 										data-track-val="lifestyle" 
@@ -194,7 +194,7 @@
 							</div>
 						</div>
 						<div class="button">
-							<a href="#" 
+							<a href="#box_content2" 
 								data-track-group="mic" 
 								data-track-opt="theme" 
 								data-track-val="greenlife" 
@@ -222,7 +222,7 @@
 							</div>
 						</div>
 						<div class="button">
-							<a href="#" 
+							<a href="#box_content2" 
 								data-track-group="mic" 
 								data-track-opt="theme" 
 								data-track-val="vividlife" 
@@ -248,7 +248,7 @@
 							</div>
 						</div>
 						<div class="button">
-							<a href="#" 
+							<a href="#box_content2" 
 								data-track-group="mic" 
 								data-track-opt="theme" 
 								data-track-val="gaminglife" 
@@ -271,7 +271,7 @@
 							</div>
 						</div>
 						<div class="button">
-							<a href="#" 
+							<a href="#box_content2" 
 							data-track-group="mic" 
 							data-track-opt="theme" 
 							data-track-val="workinglife" 
@@ -294,7 +294,7 @@
 							</div>
 						</div>
 						<div class="button">
-							<a href="#" 
+							<a href="#box_content2" 
 								data-track-group="mic" 
 								data-track-opt="theme" 
 								data-track-val="soundfullife" 
@@ -306,7 +306,7 @@
 					</div>
 				</div>
 				<div class="visual__terms">
-					<a href="#" 
+					<a href="https://www.lg.com/uk/tncs/memberdays" target="_blank" 
 						data-link-name="memberdays_anchor_click_termsandconditions" 
 						data-link-area="memberdays_2022" 
 						class="terms__link visual__link">
@@ -381,7 +381,7 @@
 								</li>
 							</ul>
 							<div class="benefit__button">
-								<a href="#" class="benefit__link">
+								<a href="https://www.lg.com/uk/tncs/memberdays" target="_blank" class="benefit__link">
 									Terms and Conditions applied
 									<i class="benefit__arrow"></i>
 								</a>

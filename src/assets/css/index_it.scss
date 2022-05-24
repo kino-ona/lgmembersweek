@@ -11,7 +11,7 @@
 						&:nth-child(#{ $i }) {
 							> .benefit__inner {
 								&:after {
-									background-image: url('../images/it/ico_benefit_list0#{$i}.png');
+									background-image: url('../images/ico_benefit_list0#{$i}.png');
 								}
 							}
 						}
@@ -28,7 +28,7 @@
 				@for $i from 1 through 6 {
 					&:nth-child(#{ $i }) {
 						.hotdeal_bg {
-							background-image: url('../images/it/bg_hotdeal0#{$i}.png');
+							background-image: url('../images/bg_hotdeal0#{$i}.png');
 						}
 					}
 				}
@@ -39,7 +39,7 @@
 				.product__slide {
 					@for $i from 1 through 2 {
 						&:nth-child(#{ $i }) {
-							background-image: url('../images/it/bg_product_showroom_greenlife0#{$i}.png');
+							background-image: url('../images/bg_product_showroom_greenlife0#{$i}.png');
 						}
 					}
 					&:nth-child(1) {
@@ -95,7 +95,7 @@
 				.product__slide {
 					@for $i from 1 through 2 {
 						&:nth-child(#{ $i }) {
-							background-image: url('../images/it/bg_product_showroom_vividlife0#{$i}.png');
+							background-image: url('../images/bg_product_showroom_vividlife0#{$i}.png');
 						}
 					}
 					&:nth-child(1) {
@@ -165,7 +165,7 @@
 						}
 					}
 					&:nth-child(2) {
-						background-image: url('../images/it/bg_product_showroom_gaminglife02.png');
+						background-image: url('../images/bg_product_showroom_gaminglife02.png');
 						.product__layer {
 							&:nth-child(1) {
 								.product__target {
@@ -183,7 +183,7 @@
 			&--workinglife {
 				.product__slide {
 					&:nth-child(1) {
-						background-image: url('../images/it/bg_product_showroom_workinglife01.png');
+						background-image: url('../images/bg_product_showroom_workinglife01.png');
 						.product__layer {
 							&:nth-child(3) {
 								.product__target {
@@ -248,7 +248,7 @@
 					.product__slide {
 						@for $i from 1 through 2 {
 							&:nth-child(#{ $i }) {
-								background-image: url('../images/it/m_bg_product_showroom_greenlife0#{$i}.png');
+								background-image: url('../images/m_bg_product_showroom_greenlife0#{$i}.png');
 							}
 						}
 					}
@@ -257,7 +257,7 @@
 					.product__slide {
 						@for $i from 1 through 2 {
 							&:nth-child(#{ $i }) {
-								background-image: url('../images/it/m_bg_product_showroom_vividlife0#{$i}.png');
+								background-image: url('../images/m_bg_product_showroom_vividlife0#{$i}.png');
 							}
 						}
 					}
@@ -265,14 +265,14 @@
 				&--gaminglife {
 					.product__slide {
 						&:nth-child(2) {
-							background-image: url('../images/it/m_bg_product_showroom_gaminglife02.png');
+							background-image: url('../images/m_bg_product_showroom_gaminglife02.png');
 						}
 					}
 				}
 				&--workinglife {
 					.product__slide {
 						&:nth-child(1) {
-							background-image: url('../images/it/m_bg_product_showroom_workinglife01.png');
+							background-image: url('../images/m_bg_product_showroom_workinglife01.png');
 						}
 					}
 				}

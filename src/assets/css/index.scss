@@ -1033,9 +1033,6 @@
 				&.hotdeal_soldout {
 					background-image: url('../images/hotdeal_bg02.png');
 				}
-				// @media (max-width: 767px) {
-				// 	height: 220px;
-				// }
 			}
 			.product__info {
 				margin-top: 40px;
@@ -1824,7 +1821,7 @@
 				.product__item {
 					// flex: none;
 					// float: none;
-					// width: 220px;
+					width: 220px;
 					max-width: none;
 					margin: 0 3.85vw;
 					.button {
@@ -1834,19 +1831,19 @@
 					}
 				}
 				.product__img {
-					// width: 220px;
-					// height: 220px;
+					width: 220px;
+					height: 220px;
 					margin: 0 auto;
 					img {
 						max-width: 200px;
 						@include translate(-50%, 30px);
 					}
 				}
-				// .hotdeal_bg {
-				// 	height: 262px;
-				// }
+				.hotdeal_bg {
+					height: 220px;
+				}
 				.product__info {
-					margin-top: 32px;
+					margin-top: 0;
 				}
 				.product__sn {
 					margin-top: 6px;

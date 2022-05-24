@@ -1871,6 +1871,51 @@
 					height: 56.41vw;
 					border-radius: 15px;
 				}
+				&--greenlife {
+					.product__slide {
+						@for $i from 1 through 2 {
+							&:nth-child(#{ $i }) {
+								background-image: url('../images/m_bg_product_showroom_greenlife0#{$i}.png');
+							}
+						}
+					}
+				}
+				&--vividlife {
+					.product__slide {
+						@for $i from 1 through 2 {
+							&:nth-child(#{ $i }) {
+								background-image: url('../images/m_bg_product_showroom_vividlife0#{$i}.png');
+							}
+						}
+					}
+				}
+				&--gaminglife {
+					.product__slide {
+						@for $i from 1 through 2 {
+							&:nth-child(#{ $i }) {
+								background-image: url('../images/m_bg_product_showroom_gaminglife0#{$i}.png');
+							}
+						}
+					}
+				}
+				&--workinglife {
+					.product__slide {
+						@for $i from 1 through 2 {
+							&:nth-child(#{ $i }) {
+								background-image: url('../images/m_bg_product_showroom_workinglife0#{$i}.png');
+							}
+						}
+					}
+				}
+				&--soundfullife {
+					.product__slide {
+						@for $i from 1 through 2 {
+							&:nth-child(#{ $i }) {
+								background-image: url('../images/m_bg_product_showroom_soundfullife0#{$i}.png');
+							}
+						}
+					}
+				}
 			}
 			&__anchor {
 				display: none;

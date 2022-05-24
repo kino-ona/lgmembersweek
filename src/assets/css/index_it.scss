@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import "mixins";
+.loading-circle {
+	display: none;
+}
+.lgmembersweek {
+	// benefit
+	.benefit {
+		&__list {
+			&--coupon {
+				.benefit__item {
+					@for $i from 1 through 4 {
+						&:nth-child(#{ $i }) {
+							> .benefit__inner {
+								&:after {
+									background-image: url('../images/it/ico_benefit_list0#{$i}.png');
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

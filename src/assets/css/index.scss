@@ -1871,93 +1871,6 @@
 					height: 56.41vw;
 					border-radius: 15px;
 				}
-				&--greenlife {
-					.product__slide {
-						@for $i from 1 through 2 {
-							&:nth-child(#{ $i }) {
-								background-image: url('../images/m_bg_product_showroom_greenlife0#{$i}.png');
-							}
-						}
-						&:nth-child(1) {
-							.product__layer {
-								&:nth-child(1) {
-									left: 26.88%;
-									top: 54.88%;
-									.product__target {
-										bottom: 32px;
-										padding-bottom: 20px;
-										&:before {
-											bottom: 10px;
-										}
-									}
-								}
-								&:nth-child(2) {
-									left: 41.88%;
-									top: 54.88%;
-									.product__target {
-										bottom: 32px;
-										padding-bottom: 20px;
-										&:before {
-											bottom: 10px;
-										}
-									}
-								}
-								&:nth-child(3) {
-									left: 80%;
-									top: 13.18%;
-									.product__target {
-										right: -37px;
-										top: 24px;
-										padding-top: 14px;
-										&:before {
-											right: 34px;
-											top: 4px;
-										}
-									}
-								}
-							}
-						}
-						&:nth-child(2) {
-							.product__layer {
-								&:nth-child(1) {
-									left: 26.88%;
-									top: 54.88%;
-									.product__target {
-										bottom: 32px;
-										padding-bottom: 20px;
-										&:before {
-											bottom: 10px;
-										}
-									}
-								}
-								&:nth-child(2) {
-									left: 41.88%;
-									top: 54.88%;
-									.product__target {
-										bottom: 32px;
-										padding-bottom: 20px;
-										&:before {
-											bottom: 10px;
-										}
-									}
-								}
-								&:nth-child(3) {
-									left: 78.13%;
-									top: 14.63%;
-									.product__target {
-										top: 32px;
-										padding-top: 20px;
-										&:before {
-											top: 10px;
-											border-top: 0;
-											border-bottom: 20px solid #fff;
-										}
-									}
-								}
-							}
-						}
-					}
-				}
 			}
 			&__anchor {
 				display: none;
@@ -2091,12 +2004,22 @@
 		&:not(:first-child) {
 			margin-top: 60px;
 		}
+		&__caption {
+			margin-top: 40px;
+			.benefit__text {
+				font-weight: 700;
+				font-size: 30px;
+				line-height: 36px;
+				text-align: center;
+			}
+			& + .benefit__list--coupon {
+				margin-top: 20px;
+			}
+		}
 		&__list {
 			display: flex;
 			justify-content: center;
-			&:not(:first-child) {
-				margin-top: 40px;
-			}
+			margin-top: 40px;
 			&--discount {
 				.benefit__item {
 					min-width: 300px;

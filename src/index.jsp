@@ -109,7 +109,7 @@
 			<!-- Hot Deal Model / thumb - alt text -->
 			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573"/>
 			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
-			<!-- <input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/> -->
+			<input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/hotdeal_product.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="Limited to 100 units"/>
 			<!-- ex. multiple model thumb / alt text 
@@ -143,7 +143,7 @@
 									<p class="section__desc">
 										Member-only Benefits and Money Off on ANY LG PRODUCTS<br>
 										for the Lifestyle you dream of.<br>
-										Exclusive Offers run until 28th June, 2022
+										Exclusive Offers run until 28<sup>th</sup> June, 2022
 									</p>
 								</div>
 								<div class="button">
@@ -166,10 +166,10 @@
 									<h2 class="section__title">Design your <span>[#Green Life]</span> with LG</h2>
 									<p class="section__sub">
 										<span class="break--desktop">
-											<span class="break--mobile">Care for the planet, Care for your next bill</span>
+											<span class="break--mobile">Care for the planet, Care for your next bill </span>
 											<span class="break--mobile">with help from LG technology</span>
 										</span>
-										Exclusive offers run until 29 June, 2022
+										Exclusive offers run until 28<sup>th</sup> June, 2022
 									</p>
 								</div>
 							</div>
@@ -197,7 +197,7 @@
 												home with LG technology
 											</span>
 										</span>
-										Exclusive offers run until 29 June, 2022
+										Exclusive offers run until 28<sup>th</sup> June, 2022
 									</p>
 								</div>
 							</div>
@@ -223,7 +223,7 @@
 											<span class="break--mobile">Be the first to See it, Play it, React to it.</span>
 											<span class="break--mobile">Win with LG.</span>
 										</span>
-										Exclusive offers run until 29 June, 2022
+										Exclusive offers run until 28<sup>th</sup> June, 2022
 									</p>
 								</div>
 							</div>
@@ -246,7 +246,7 @@
 									<h2 class="section__title">Design your <span>[#Working Life]</span> with LG</h2>
 									<p class="section__sub">
 										Build your best workstation with LG technology wherever your workplace.<br>
-										Exclusive offers run until 29 June, 2022
+										Exclusive offers run until 28<sup>th</sup> June, 2022
 									</p>
 								</div>
 							</div>
@@ -269,7 +269,7 @@
 									<h2 class="section__title">Design your <span>[#Soundful Life]</span> with LG</h2>
 									<p class="section__sub">
 										Immersive Sound in your hand wherever you go with LG technology<br>
-										Exclusive offers run until 29 June, 2022
+										Exclusive offers run until 28<sup>th</sup> June, 2022
 									</p>
 								</div>
 							</div>
@@ -598,7 +598,7 @@
 							</div>
 						</div>
 						<div class="section__footer">
-							<p class="section__text">You can apply to one or more Lifestyles, but can win only one product</p>
+							<p class="section__text">*Welcome coupon 5% is not applicable</p>
 						</div>
 					</div>
 				</div>

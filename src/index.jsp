@@ -100,9 +100,11 @@
 			<input type="hidden" data-model-group="eventGift" data-type="coupon" value="MD07535483|MD07548494|MD07528387|MD07552999|MD07535216"/>
 
 			<!-- Life Style Model -->
-			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07535414|MD07535475|MD07535483"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548378|MD07548355|MD07548335|MD07548282|MD07546566|MD07546594|MD07546571|MD07546563|MD07548246|MD07546595|MD07546591|MD07546596|MD07546657|MD07545548|MD07552142"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07546558|MD07552142"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07535414|MD07535483|MD07535475"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548355|MD07546571|MD07546591|MD07545548|MD07552142"/>
+			<!-- <input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548378|MD07548355|MD07548335|MD07548282|MD07546566|MD07546594|MD07546571|MD07546563|MD07548246|MD07546595|MD07546591|MD07546596|MD07546657|MD07545548|MD07552142"/> -->
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07552142"/>
+			<!-- <input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07546558|MD07552142"/> -->
 			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552999|MD07553142|MD07535403|MD07540281|MD07540286|MD07537017"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07535216"/>
 
@@ -456,7 +458,8 @@
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
-												<span class="product__name">99% Discount Coupon</span>
+												<span class="product__name">99.9% Discount Coupon</span>
+												<span class="product__code">F6V1110WTSA.ABWQPUK</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -484,7 +487,8 @@
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
-												<span class="product__name">99% Discount Coupon</span>
+												<span class="product__name">99.9% Discount Coupon</span>
+												<span class="product__code">OLED55A26LA.AEK</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -512,7 +516,8 @@
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
-												<span class="product__name">99% Discount Coupon</span>
+												<span class="product__name">99.9% Discount Coupon</span>
+												<span class="product__code">32GP850-B.AEK</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -540,7 +545,8 @@
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
-												<span class="product__name">99% Discount Coupon</span>
+												<span class="product__name">99.9% Discount Coupon</span>
+												<span class="product__code">16Z90Q-K.AA78A1</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -568,7 +574,8 @@
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
-												<span class="product__name">99% Discount Coupon</span>
+												<span class="product__name">99.9% Discount Coupon</span>
+												<span class="product__code">RP4.DGBRLLK</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -598,7 +605,7 @@
 							</div>
 						</div>
 						<div class="section__footer">
-							<p class="section__text">*Welcome coupon 5% is not applicable</p>
+							<p class="section__text">*You can apply to one or more Lifestyles, but can win only one product</p>
 						</div>
 					</div>
 				</div>
@@ -799,7 +806,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_vividlife02_01.png" alt="LG Sound Bar SP8YA">
+															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG Sound Bar SP8YA</p>
@@ -882,8 +889,8 @@
 														<div class="product__right">
 															<p class="product__name">UltraGear Gaming Speaker</p>
 															<ul class="product__desc">
-																<li>CLEAR VOICE CHAT</li>
-																<li>CUSTOMIZABLE EQ SOUND</li>
+																<li>Clear Voice Chat</li>
+																<li>Customizable EQ Sound</li>
 															</ul>
 														</div>
 													</a>
@@ -919,7 +926,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_gaminglife02_02.png" alt="LG Sound Bar SP8YA">
+															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG Sound Bar SP8YA</p>

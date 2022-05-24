@@ -155,6 +155,45 @@
 		<!--// header -->
 
 
+
+		<!-- Tracking Event Setting -->
+		<input type="hidden" class="addtocart-datelayer-use-flag" value="<spring:message code='addtocart-datelayer-use-flag' text='addtocart-datelayer-use-flag'/>">
+		<input type="hidden" class="currency-code" value="<spring:message code='component-currency-code' text='component-currency-code'/>">
+
+		<!-- Required input ## Model List Start -->
+		<!-- Event Gift Model -->
+		<input type="hidden" data-model-group="eventGift" data-type="coupon" value="MD07535483|MD07548494|MD07528387|MD07552999|MD07535216"/>
+
+		<!-- Life Style Model -->
+		<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07535414|MD07535475|MD07535483"/>
+		<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548378|MD07548355|MD07548335|MD07548282|MD07546566|MD07546594|MD07546571|MD07546563|MD07548246|MD07546595|MD07546591|MD07546596|MD07546657|MD07545548|MD07552142"/>
+		<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07546558|MD07552142"/>
+		<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552999|MD07553142|MD07535403|MD07540281|MD07540286|MD07537017"/>
+		<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07535216"/>
+
+		<!-- Hot Deal Model / thumb - alt text -->
+		<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573"/>
+		<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
+		<input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/>
+		<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/hotdeal_product.png"/>
+		<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="Limited to 100 units"/>
+		<!-- ex. multiple model thumb / alt text 
+		<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/hotdeal_product.png"/>
+		<input type="hidden" data-model-group="hotDeal" data-type="alt2" value="Limited to 100 units"/>
+		<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/hotdeal_product.png"/>
+		<input type="hidden" data-model-group="hotDeal" data-type="alt3" value="Limited to 100 units"/>
+		<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/hotdeal_product.png"/>
+		<input type="hidden" data-model-group="hotDeal" data-type="alt4" value="Limited to 100 units"/>
+		-->
+
+		<!-- Hottest Gift Model -->
+		<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07546563|MD07548335|MD07548282|MD07545548|MD07546595|MD07546591|MD07546596|MD07546657|MD07548387|MD07548331|MD07550523|MD07550540|MD07550466|MD07550528|MD07550538|MD07550521|MD07550534"/>
+		<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07528451|MD07510893|MD07528365|MD07504084|MD07535242|MD07538956|MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508573|MD07508373"/>
+		<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07514393|MD07535502|MD07535480|MD07535414|MD07517580|MD07535475|MD07536912|MD07515106|MD07514364"/>
+		<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07552999|MD07553042|MD07540281|MD07540286|MD07540283|MD07550947|MD06164217|MD07525661|MD07532529|MD07522774|MD07525972|MD07532528|MD07528387"/>
+		<!-- Required input ## Model List End -->
+
+
 		<!-- 여기서부터 컨텐츠 시작 -->
 		<link rel="stylesheet" href="./assets/css/index.css">
 		<link rel="stylesheet" href="./assets/css/index_it.css">
@@ -412,7 +451,7 @@
 							<p class="section__sub section__sub--small">Scegli il #lifestyle che ti rappresenta, scopri il prodotto in regalo e partecipa all’estrazione.</p>
 							<p class="section__desc section__desc--small">Puoi iscriverti a uno o più #lifestyle ma potrai vincere un solo prodotto.</p>
 						</div>
-						<div class="coupon">
+						<div id="coupon" class="coupon">
 							<div class="coupon__process">
 								<div class="coupon__group">
 									<span class="coupon__build">Inizio</span>
@@ -447,7 +486,7 @@
 										data-link-name="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="./assets/images/img_coupon_greenlife_product.png" alt="product img">
+												<img src="./assets/images/it/img_coupon_greenlife_product.png" alt="product img">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -475,7 +514,7 @@
 										data-link-name="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="./assets/images/img_coupon_vividlife_product.png" alt="product img">
+												<img src="./assets/images/it/img_coupon_vividlife_product.png" alt="product img">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -503,7 +542,7 @@
 										data-link-name="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="./assets/images/img_coupon_gaminglife_product.png" alt="product img">
+												<img src="./assets/images/it/img_coupon_gaminglife_product.png" alt="product img">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -531,7 +570,7 @@
 										data-link-name="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="./assets/images/img_coupon_workinglife_product.png" alt="product img">
+												<img src="./assets/images/it/img_coupon_workinglife_product.png" alt="product img">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -559,7 +598,7 @@
 										data-link-name="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="./assets/images/img_coupon_soundfullife_product.png" alt="product img">
+												<img src="./assets/images/it/img_coupon_soundfullife_product.png" alt="product img">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -596,25 +635,36 @@
 				</div>
 			</div>
 			<div id="box_content2" class="section">
-				<div class="section__container section__container--toplow">
+				<div class="section__container section__container--toplow" data-list="lifeStyle">
 					<div class="section__inner">
 						<div class="tab">
 							<ul class="tab__list">
 								<li class="tab__item tab__item--active">
-									<a href="#greenlife" data-link-area="memberdays_themedisplay_click_greenlife" data-link-name="memberdays_2022" class="tab__button">Green life</a>
+									<a href="#greenlife" 
+									data-tab-name="greenlife" data-track-group="mic" data-track-opt="theme" data-track-val="greenlife" data-track-name="selectThemeDisplay" 
+									data-link-name="memberdays_themedisplay_click_greenlife" data-link-area="memberdays_2022" class="tab__button">Green life</a>
 								</li>
 								<li class="tab__item">
-									<a href="#vividlife" data-link-area="memberdays_themedisplay_click_vividlife" data-link-name="memberdays_2022" class="tab__button">Vivid life</a>
+									<a href="#vividlife" 
+									data-tab-name="vividlife" data-track-group="mic" data-track-opt="theme" data-track-val="vividlife" data-track-name="selectThemeDisplay" 
+									data-link-name="memberdays_themedisplay_click_vividlife" data-link-area="memberdays_2022" class="tab__button">Vivid life</a>
 								</li>
 								<li class="tab__item">
-									<a href="#gaminglife" data-link-area="memberdays_themedisplay_click_gaminglife" data-link-name="memberdays_2022" class="tab__button">Gaming life</a>
+									<a href="#gaminglife"
+									data-tab-name="gaminglife" data-track-group="mic" data-track-opt="theme" data-track-val="gaminglife" data-track-name="selectThemeDisplay" 
+									data-link-name="memberdays_themedisplay_click_gaminglife" data-link-area="memberdays_2022" class="tab__button">Gaming life</a>
 								</li>
 								<li class="tab__item">
-									<a href="#workinglife" data-link-area="memberdays_themedisplay_click_workinglife" data-link-name="memberdays_2022" class="tab__button">Working life</a>
+									<a href="#workinglife"
+									data-tab-name="workinglife" data-track-group="mic" data-track-opt="theme" data-track-val="workinglife" data-track-name="selectThemeDisplay" 
+									data-link-name="memberdays_themedisplay_click_workinglife" data-link-area="memberdays_2022" class="tab__button">Working life</a>
 								</li>
 								<li class="tab__item">
-									<a href="#soundfullife" data-link-area="memberdays_themedisplay_click_soundfullife" data-link-name="memberdays_2022" class="tab__button">Soundful life</a>
+									<a href="#soundfullife" 
+									data-tab-name="soundfullife" data-track-group="mic" data-track-opt="theme" data-track-val="soundfullife" data-track-name="selectThemeDisplay" 
+									data-link-name="memberdays_themedisplay_click_soundfullife" data-link-area="memberdays_2022" class="tab__button">Soundful life</a>
 								</li>
+							</ul>
 							</ul>
 							<div id="greenlife" class="tab__panel tab__panel--greenlife" style="display: block;">
 								<p class="tab__noti">Migliora l’efficienza energetica della tua casa con i nostri elettrodomestici, che si prendono cura di te e dell’ambiente.</p>
@@ -1480,7 +1530,7 @@
 								Le quantità sono limitate!
 							</p>
 						</div>
-						<div class="product product--hotdeal">
+						<div id="hotdeal" class="product product--hotdeal">
 							<div class="product__mask">
 								<div class="product__list">
 									<div class="product__item">
@@ -1708,14 +1758,18 @@
 								</div>
 							</div>
 						</div>
-						<div class="section__footer">
+						<!-- <div class="section__footer">
 							<p class="section__text">*Welcome coupon can not be applicable</p>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
+			<div class="anchors" id="VolumeProductsAudio"></div>
+			<div class="anchors" id="VolumeProductsTVCinebeam"></div>
+			<div class="anchors" id="VolumeProductsHomeAppliance"></div>
+			<div class="anchors" id="VolumeProductsComputerProducts"></div>
 			<div id="box_content3" class="section">
-				<div class="section__container section__container--lightgray">
+				<div class="section__container section__container--lightgray" data-list="hottest">
 					<div class="section__inner">
 						<div class="section__header">
 							<h2 class="section__title">SCOPRI I NOSTRI BEST SELLER</h2>
@@ -1723,33 +1777,52 @@
 								Crea il set perfetto per il tuo #Lifestyle!<br>
 								Acquista 2 o più prodotti insieme e ottieni fino al 22% di sconto.
 							</p>
-							<p class="section__desc">Sconto speciale Member Days 15% (acquistando 2 o più prodotti) + Extra sconto utenti registrati 2% (direttamente a carrello, per sempre) + Offerta di benvenuto 5% (sul primo acquisto)</p>
+							<p class="section__desc">
+								Sconto speciale Member Days 15% (acquistando 2 o più prodotti) + Extra sconto utenti registrati 2% (direttamente<br>
+								a carrello, per sempre) + Offerta di benvenuto 5% (sul primo acquisto)
+							</p>
 							<p class="section__desc">Visualizzerai il tuo coupon direttamente a carrello in fase di acquisto.</p>
 						</div>
 						<div class="tab">
 							<ul class="tab__list tab__list--round">
 								<li class="tab__item tab__item--active">
 									<a href="#tvcinebeam" 
-										data-link-area="memberdays_productCategory_tvcinebeam"
-										data-link-name="memberdays_2022"
+										data-tab-name="tvcinebeam" 
+										data-track-group="mic" 
+										data-track-opt="category" 
+										data-track-name="selectProductCategory" 
+										data-link-name="memberdays_productCategory_tvcinebeam"
+										data-link-area="memberdays_2022"
 										class="tab__button">TV/Proiettori</a>
 								</li>
 								<li class="tab__item">
 									<a href="#audio" 
-									data-link-area="memberdays_productCategory_audio"
-									data-link-name="memberdays_2022"
+									data-tab-name="audio" 
+									data-track-group="mic" 
+									data-track-opt="category" 
+									data-track-name="selectProductCategory" 
+									data-link-name="memberdays_productCategory_audio"
+									data-link-area="memberdays_2022"
 									class="tab__button">Audio</a>
 								</li>
 								<li class="tab__item">
 									<a href="#homeappliance" 
-									data-link-area="memberdays_productCategory_homeappliance"
-									data-link-name="memberdays_2022"
+									data-tab-name="homeappliance" 
+									data-track-group="mic" 
+									data-track-opt="category" 
+									data-track-name="selectProductCategory" 
+									data-link-name="memberdays_productCategory_homeappliance"
+									data-link-area="memberdays_2022"
 									class="tab__button">Elettrodomestici</a>
 								</li>
 								<li class="tab__item">
 									<a href="#computerproducts" 
-									data-link-area="memberdays_productCategory_computerproducts"
-									data-link-name="memberdays_2022"
+									data-tab-name="computerproducts" 
+									data-track-group="mic" 
+									data-track-opt="category" 
+									data-track-name="selectProductCategory" 
+									data-link-name="memberdays_productCategory_computerproducts"
+									data-link-area="memberdays_2022"
 									class="tab__button">Informatica</a>
 								</li>
 							</ul>

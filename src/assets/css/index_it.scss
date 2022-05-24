@@ -1,8 +1,6 @@
 @charset "UTF-8";
 @import "mixins";
-.loading-circle {
-	display: none;
-}
+
 .lgmembersweek {
 	// benefit
 	.benefit {
@@ -14,6 +12,211 @@
 							> .benefit__inner {
 								&:after {
 									background-image: url('../images/it/ico_benefit_list0#{$i}.png');
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// product
+	.product {
+		&__showroom {
+			&--greenlife {
+				.product__slide {
+					@for $i from 1 through 2 {
+						&:nth-child(#{ $i }) {
+							background-image: url('../images/it/bg_product_showroom_greenlife0#{$i}.png');
+						}
+						&:nth-child(1) {
+							.product__layer {
+								&:nth-child(1) {
+									.product__target {
+										top: -44px;
+										&:before {
+											top: 46px;
+											margin-top: 0;
+										}
+									}
+								}
+								&:nth-child(2) {
+									left: 78.38%;
+									top: 62.68%;
+									.product__target {
+										left: auto;
+										right: 32px;
+										top: -44px;
+										margin-left: 0;
+										padding-right: 20px;
+										&:before {
+											left: auto;
+											right: 10px;
+											top: 43px;
+											margin-right: 0;
+											border-right: 0;
+											border-top: 15px solid transparent;
+											border-bottom: 15px solid transparent;
+											border-left: 20px solid #fff;
+										}
+									}
+								}
+							}
+						}
+						&:nth-child(2) {
+							.product__layer {
+								&:nth-child(1) {
+									.product__target {
+										top: -44px;
+										&:before {
+											top: 45px;
+											margin-top: 0;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&--vividlife {
+				.product__slide {
+					&:nth-child(1) {
+						.product__layer {
+							&:nth-child(1) {
+								.product__target {
+									top: -44px;
+									&:before {
+										top: 46px;
+										margin-top: 0;
+									}
+								}
+							}
+							&:nth-child(2) {
+								.product__target {
+									left: 32px;
+									top: -44px;
+									margin-left: 0;
+									padding-left: 20px;
+									&:before {
+										left: 10px;
+										top: 46px;
+										margin-left: 0;
+										margin-top: 0;
+										border-left: 0;
+										border-top: 15px solid transparent;
+										border-bottom: 15px solid transparent;
+										border-right: 20px solid #fff;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&--gaminglife {
+				.product__slide {
+					&:nth-child(1) {
+						.product__layer {
+							&:nth-child(1) {
+								.product__target {
+									top: -44px;
+									&:before {
+										top: 46px;
+										margin-top: 0;
+									}
+								}
+							}
+							&:nth-child(2) {
+								.product__target {
+									left: 32px;
+									top: -44px;
+									margin-left: 0;
+									padding-left: 20px;
+									&:before {
+										left: 10px;
+										top: 46px;
+										margin-left: 0;
+										margin-top: 0;
+										border-left: 0;
+										border-top: 15px solid transparent;
+										border-bottom: 15px solid transparent;
+										border-right: 20px solid #fff;
+									}
+								}
+							}
+						}
+					}
+					&:nth-child(2) {
+						.product__layer {
+							&:nth-child(1) {
+								.product__target {
+									top: -44px;
+									&:before {
+										top: 46px;
+										margin-top: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&--workinglife {
+				.product__slide {
+					&:nth-child(1) {
+						.product__layer {
+							&:nth-child(3) {
+								.product__target {
+									top: -44px;
+									&:before {
+										top: 46px;
+										margin-top: 0;
+									}
+								}
+							}
+						}
+					}
+					&:nth-child(2) {
+						.product__layer {
+							&:nth-child(1) {
+								.product__target {
+									top: -44px;
+									&:before {
+										top: 46px;
+										margin-top: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			&--soundfullife {
+				.product__slide {
+					&:nth-child(1) {
+						.product__layer {
+							&:nth-child(1) {
+								.product__target {
+									top: -44px;
+									&:before {
+										top: 46px;
+										margin-top: 0;
+									}
+								}
+							}
+						}
+					}
+					&:nth-child(2) {
+						.product__layer {
+							&:nth-child(1) {
+								.product__target {
+									top: -44px;
+									&:before {
+										top: 46px;
+										margin-top: 0;
+									}
 								}
 							}
 						}

@@ -2257,11 +2257,12 @@
 			&:not(:first-child) {
 				margin-top: 40px;
 			}
+			&__caption {
+				margin-top: 30px;
+			}
 			&__list {
 				display: block;
-				&:not(:first-child) {
-					margin-top: 30px;
-				}
+				margin-top: 30px;
 				&--discount {
 					.benefit__item {
 						min-width: 0;

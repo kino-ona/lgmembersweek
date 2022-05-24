@@ -60,40 +60,40 @@ $(document).ready(function(){
 			}
 		]
 	});
-	// $('.lgmembersweek .product--hotdeal .product__list').slick({
-	// 	speed: 600,
-	// 	infinite: false,
-	// 	slidesToShow: 3,
-	// 	focusOnSelect: false,
-	// 	responsive: [
-	// 		{
-	// 			breakpoint: 767,
-	// 			settings: {
-	// 				slidesToShow: 1,
-	// 				centerPadding: '11.54vw',
-	// 				centerMode: true,
-	// 				focusOnSelect: true
-	// 			}
-	// 		}
-	// 	]
-	// });
-	// $('.lgmembersweek .product__swiper').slick({
-	// 	speed: 600,
-	// 	infinite: false,
-	// 	slidesToShow: 5,
-	// 	focusOnSelect: false,
-	// 	swipeToSlide: true,
-	// 	responsive: [
-	// 		{
-	// 			breakpoint: 767,
-	// 			settings: {
-	// 				arrows: false,
-	// 				slidesToShow: 2.4,
-	// 				focusOnSelect: true
-	// 			}
-	// 		}
-	// 	]
-	// });
+	$('.lgmembersweek .product--hotdeal .product__list').slick({
+		speed: 600,
+		infinite: false,
+		slidesToShow: 3,
+		focusOnSelect: false,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 1,
+					centerPadding: '11.54vw',
+					centerMode: true,
+					focusOnSelect: true
+				}
+			}
+		]
+	});
+	$('.lgmembersweek .product__swiper').slick({
+		speed: 600,
+		infinite: false,
+		slidesToShow: 5,
+		focusOnSelect: false,
+		swipeToSlide: true,
+		responsive: [
+			{
+				breakpoint: 767,
+				settings: {
+					arrows: false,
+					slidesToShow: 2.4,
+					focusOnSelect: true
+				}
+			}
+		]
+	});
 	$('.lgmembersweek .product__showroom').slick({
 		speed: 600,
 		infinite: false,
@@ -140,7 +140,7 @@ $(document).ready(function(){
 		
 		if ($($(this).attr('href')).find('.product__swiper, .product__showroom').length > 0) {
 			$($(this).attr('href')).find('.product__showroom').slick('refresh');
-			// $($(this).attr('href')).find('.product__swiper').slick('refresh');
+			$($(this).attr('href')).find('.product__swiper').slick('refresh');
 		}
 
 		$(this).closest('.tab').find('.tab__item').removeClass('tab__item--active');

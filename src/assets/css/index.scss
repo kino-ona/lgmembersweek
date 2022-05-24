@@ -977,9 +977,13 @@
 				flex-wrap: nowrap;
 				justify-content: center;
 				margin: 0;
+				.slick-list {
+					max-width: 1176px;
+					margin: 0 auto;
+				}
 				.slick-track {
 					display: flex;
-					justify-content: center;
+					// justify-content: center;
 					margin: 0 auto;
 					align-items: center;
 				}
@@ -987,8 +991,9 @@
 			.product__item {
 				// width: auto;
 				// width: 272px;
+				min-width: 272px;
 				max-width: 272px;
-				margin: 0 3.13vw;
+				margin: 0 60px;
 				padding: 0;
 				border-radius: 0;
 				background-color: transparent;
@@ -1042,9 +1047,11 @@
 				@include ellipse(1);
 			}
 			.slick-prev {
+				left: 0;
 				background-image: url('../images/btn_hotdeal_prev.png');
 			}
 			.slick-next {
+				right: 0;
 				background-image: url('../images/btn_hotdeal_next.png');
 			}
 		}
@@ -1822,8 +1829,9 @@
 					// flex: none;
 					// float: none;
 					width: 220px;
+					min-width: 0;
 					max-width: none;
-					margin: 0 3.85vw;
+					margin: 0 6.41vw;
 					.button {
 						&:not(:first-child) {
 							margin-top: 6px;
@@ -1861,6 +1869,13 @@
 				.product__members {
 					display: block;
 					height: 54px;
+				}
+				.slick-prev {
+					left: 5.13%;
+				}
+				.slick-next {
+					right: 5.13%;
+					background-image: url('../images/btn_hotdeal_next.png');
 				}
 			}
 			&__showroom {
@@ -2243,7 +2258,7 @@
 				}
 				&--discount {
 					.benefit__item {
-						min-width: none;
+						min-width: 0;
 						max-width: none;
 						&:not(:first-child) {
 							margin-left: 0;

@@ -156,6 +156,9 @@
 			margin-top: 40px;
 			margin-bottom: -4.17vw;
 			text-align: right;
+			&--center {
+				text-align: center;
+			}
 			.section__text {
 				font-size: 16px;
 				line-height: 22px;
@@ -734,7 +737,7 @@
 					@include ellipse(1);
 				}
 				&__code {
-					height: auto;
+					margin-top: 20px;
 					font-size: 16px;
 					line-height: 22px;
 					@include ellipse(1);
@@ -744,7 +747,7 @@
 				display: inline-flex;
 				justify-content: center;
 				align-items: center;
-				margin-top: 40px;
+				margin-top: 30px;
 				width: 32px;
 				height: 32px;
 				border-radius: 50%;
@@ -933,9 +936,13 @@
 						font-size: 16px;
 						line-height: 20px;
 					}
+					&__code {
+						margin-top: 6px;
+						font-size: 14px;
+					}
 				}
 				.coupon__ico {
-					margin-top: 17px;
+					margin-top: 12px;
 					width: 26px;
 					height: 26px;
 					svg {
@@ -2163,9 +2170,9 @@
 							background-color: #C4D7FF;
 						}
 						&:after {
-							right: 21px;
-							bottom: 11px;
-							width: 63px;
+							right: 20px;
+							bottom: 9px;
+							width: 62px;
 							height: 62px;
 							background-repeat: no-repeat;
 							background-position: 0 0;
@@ -2176,16 +2183,15 @@
 				}
 				.benefit__category {
 					display: flex;
-					align-items: center;
-					height: 94px;
-					padding: 0 20px;
+					height: 104px;
+					padding: 20px 20px 0;
 					font-size: 24px;
 					line-height: 26px;
 				}
 				.benefit__text {
 					display: flex;
 					align-items: center;
-					height: 50px;
+					height: 40px;
 					padding: 0 20px;
 					border-radius: 0 0 14px 14px;
 					font-weight: 600;

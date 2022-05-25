@@ -2,6 +2,76 @@
 @import "mixins";
 
 .lgmembersweek {
+	// visual
+	.visual {
+		&__slide {
+			&--intro {
+				.section__inner {
+					background-image: url('../images/it/bg_visual_intro_obj.png');
+				}
+			}
+			&--greenlife {
+				.section__inner {
+					background-image: url('../images/it/bg_visual_greenlife_obj.png');
+				}
+			}
+			&--vividlife {
+				.section__inner {
+					background-image: url('../images/it/bg_visual_vividlife_obj.png');
+				}
+			}
+			&--gaminglife {
+				.section__inner {
+					background-image: url('../images/it/bg_visual_gaminglife_obj.png');
+				}
+			}
+			&--workinglife {
+				.section__inner {
+					background-image: url('../images/it/bg_visual_workinglife_obj.png');
+				}
+			}
+			&--soundfullife {
+				.section__inner {
+					background-image: url('../images/it/bg_visual_soundfullife_obj.png');
+				}
+			}
+		}
+		@media (max-width: 767px)  {
+			&__slide {
+				&--intro {
+					.section__inner {
+						background-image: url('../images/it/m_bg_visual_intro.png');
+					}
+				}
+				&--greenlife {
+					.section__inner {
+						background-image: url('../images/it/m_bg_visual_greenlife.png');
+					}
+				}
+				&--vividlife {
+					.section__inner {
+						background-image: url('../images/it/m_bg_visual_vividlife.png');
+					}
+				}
+				&--gaminglife {
+					.section__inner {
+						background-image: url('../images/it/m_bg_visual_gaminglife.png');
+					}
+				}
+				&--workinglife {
+					.section__inner {
+						background-image: url('../images/it/m_bg_visual_workinglife.png');
+					}
+				}
+				&--soundfullife {
+					.section__inner {
+						background-image: url('../images/it/m_bg_visual_soundfullife.png');
+					}
+				}
+			}
+		}
+	}
+
 	// benefit
 	.benefit {
 		&__list {
@@ -53,8 +123,12 @@
 		&__showroom {
 			&--greenlife {
 				.product__slide {
+					@for $i from 1 through 2 {
+						&:nth-child(#{ $i }) {
+							background-image: url('../images/it/bg_product_showroom_greenlife0#{$i}.png');
+						}
+					}
 					&:nth-child(1) {
-						background-image: url('../images/it/bg_product_showroom_greenlife01.png');
 						.product__layer {
 							&:nth-child(1) {
 								.product__target {

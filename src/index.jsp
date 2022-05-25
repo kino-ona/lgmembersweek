@@ -1461,7 +1461,7 @@
 		</div>
 
 		<!-- popup -->
-		<div class="popup referrer-sso">
+		<div class="popup modal_referrer_sso">
 			<div class="popup__container">
 				<div class="popup__body">
 					<div class="popup__contents">
@@ -1470,20 +1470,20 @@
 						</p>
 					</div>
 					<div class="popup__bottom">
-						<button type="type" class="popup__button popup__close">Close</button>
+						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="modal fade" id="modal_lgmembersweek_submit" tabindex="-1" role="dialog" data-backdrop="true">
-			<div class="modal-dialog modal-sm modal-simple-alert" role="document">
-				<div class="modal-content">
-					<div class="modal-body">
-						<p>Please select a lifestyle.</p>
+		<div class="popup modal_lgmembersweek_submit">
+			<div class="popup__container">
+				<div class="popup__body">
+					<div class="popup__contents">
+						<p class="popup__text"></p>
 					</div>
-					<div class="modal-footer">
-						<button type="button" class="btn btn-primary" id="" data-dismiss="modal">Close</button>
+					<div class="popup__bottom">
+						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>
 					</div>
 				</div>
 			</div>
@@ -1788,6 +1788,17 @@
 	
 	<script src="${path}/assets/js/index.js"></script>
 	<script src="${path}/assets/js/index-ajax.js"></script>
-	
+
+	<script type="text/javascript">
+	(function(w, d, a){
+			w.__beusablerumclient__ = {
+					load : function(src){
+							var b = d.createElement("script");
+							b.src = src; b.async=true; b.type = "text/javascript";
+							d.getElementsByTagName("head")[0].appendChild(b);
+					}
+			};w.__beusablerumclient__.load(a);
+	})(window, document, "//rum.beusable.net/script/b180412e115004u874/9de67effc7");
+	</script>
 </body>
 </html>

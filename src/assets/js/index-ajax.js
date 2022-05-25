@@ -18,7 +18,7 @@ $(document).ready(function() {
 	// Non-members -> Expose alert pop-up when re-entering after logging in to SSO (비회원 -> SSO 로그인 후 재진입 시에 알람팝업 노출)
 	const referrerSso = document.referrer;
 	if(referrerSso.indexOf('sso.lg.com') > -1 || referrerSso.indexOf('ssodev.lg.com') > -1 || referrerSso.indexOf('change-password-reminder') > -1){
-		$('.referrer-sso').show();
+		$('.modal_referrer_sso').show();
 		$('html, body').animate({scrollTop : $('[data-list="eventGift"]').offset().top}, 250); // move scroll to "#submit" form element
 	}
 
@@ -62,7 +62,6 @@ $(document).ready(function() {
 		hotDealSlickOpt: {
 			speed: 600,
 			infinite: false,
-			arrows: false,
 			slidesToShow: 3,
 			focusOnSelect: false,
 			responsive: [
@@ -82,21 +81,22 @@ $(document).ready(function() {
 		init: function(){
 			// submit lifestyle
 			$('.lgmembersweek .coupon form:not(:first-child)').css('margin-top','80px');
-			$submit.click(function(){
+			$submit.click(function(e){
+				e.preventDefault();
 				if(isLogin){
 					let url = $('#eventCustomerForm').data('url'),
 						chooseParam = $('.coupon__list [type="radio"]:checked').data('param'),
 						paramData = 'lifeStyle=' + chooseParam,
-						$modal = $('#modal_lgmembersweek_submit');
+						$modal = $('.modal_lgmembersweek_submit');
 					$.ajax({
 						type: 'post',
 						url: url,
 						data: paramData,
 						dataType:'json',
 						success : function(data){
-							$modal.find('.modal-body p').text(data.message)
-							$modal.modal('show');
-							lgMembersWeek.trackEvent($(this)); //tracking Event
+							$modal.find('.popup__text').text(data.message)
+							$modal.show();
+							if(data.code == '00') lgMembersWeek.trackEvent($submit); //tracking Event
 						}
 					});
 				}else{
@@ -125,7 +125,7 @@ $(document).ready(function() {
 
 			let targetModelType = $targetPanel.attr('id'), $target,
 				paramModel = listArray[listName][targetModelType],
-				paramData = 'listType=SEARCH&requestModelIdList=' + paramModel.replace(/\|/g,'%257C');
+				paramData = 'listType=EVENT&requestModelIdList=' + paramModel.replace(/\|/g,'%257C');
 
 				switch(listName){
 					case 'eventGift':
@@ -297,10 +297,10 @@ $(document).ready(function() {
 			let tmp = $this.data('trackGroup'),
 				option = $this.data('trackOpt') ? $this.data('trackOpt') : '',
 				value = $this.data('trackVal') ? $this.data('trackVal') : '',
-				dataLayerTemp = {};
+				dataLayerTemp = {}, $dataMetaButton;
 
 			if(option == 'category' && event == 'selectProductCategory') value = $this.text();
-			if(option == 'buy_now_click') $this = $this.closest('.product__info').find('.button a');
+			if(event == 'buy_now_click') $this = $this.closest('.product__info').find('.add-to-cart');
 
 			switch(tmp){
 				case 'mic':
@@ -310,17 +310,17 @@ $(document).ready(function() {
 				break;
 				case 'product':
 					dataLayerTemp['bu'] = $this.data('bu'),
-					dataLayerTemp['superCategory'] = $this.data('superCategory'),
-					dataLayerTemp['category'] = $this.data('category'),
-					dataLayerTemp['subcategory'] = $this.data('subcategory'),
+					dataLayerTemp['superCategory'] = $this.data('superCategoryName'),
+					dataLayerTemp['category'] = $this.data('categoryName'),
+					dataLayerTemp['subcategory'] = $this.data('subCategoryName'),
 					dataLayerTemp['modelYear'] = $this.data('modelYear'),
 					dataLayerTemp['modelName'] = $this.data('modelName'),
-					dataLayerTemp['modelCode'] = $this.data('modelCode'),
-					dataLayerTemp['salesModelCode'] = $this.data('salesModelCode'),
+					dataLayerTemp['modelCode'] = $this.data('modelId'),
+					dataLayerTemp['salesModelCode'] = $this.data('modelSalesmodelcode'),
 					dataLayerTemp['sku'] = $this.data('sku'),
-					dataLayerTemp['suffix'] = $this.data('suffix'),
+					dataLayerTemp['suffix'] = $this.data('modelSuffixcode'),
 					dataLayerTemp['price'] = $this.data('price'),
-					dataLayerTemp['currencyCode'] = $this.data('currencyCode')
+					dataLayerTemp['currencyCode'] = $('.currency-code').val()
 				break;
 			}
 			return dataLayerTemp;

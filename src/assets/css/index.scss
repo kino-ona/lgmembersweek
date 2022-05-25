@@ -1674,6 +1674,9 @@
 				&:not(:first-child) {
 					margin-top: 10px;
 				}
+				&__item {
+					padding: 0 5px;
+				}
 			}
 		}
 		&__img {
@@ -1877,9 +1880,9 @@
 					margin-left: 10px;
 					margin-bottom: 0;
 				}
-				.product__discount {
-					margin-right: 4px;
-				}
+				// .product__discount {
+				// 	margin-right: 4px;
+				// }
 				.product__members {
 					display: block;
 					height: 54px;

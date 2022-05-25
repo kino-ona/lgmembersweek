@@ -364,6 +364,9 @@
 					}
 				}
 			}
+			&__price {
+				flex-direction: column;
+			}
 		}
 	}
 }

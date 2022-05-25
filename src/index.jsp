@@ -7,7 +7,7 @@
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 	<title>LG Member Days Promotion: Up to 22% Off Purchase | LG UK</title>
 	<meta name="keywords" content="">
-	<meta name="description" content="Sign up at LG.com today and enjoy the Member-Only Benefits and money off on ANY LG PRODUCTS. LG Member Days exclusive offers run ONLY UNTIL 29 June 2022.">
+	<meta name="description" content="Sign up at LG.com today and enjoy the Member-Only Benefits and money off on ANY LG PRODUCTS. LG Member Days exclusive offers run ONLY UNTIL 28 June 2022.">
 	<meta name="robots" content="NOODP, NOYDIR">
 
 	<link rel="canonical" href="https://www.lg.com/uk">

@@ -94,7 +94,7 @@
 			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536043|MD07538440|MD07535124|MD07529953"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
-			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07540676|MD07536301|MD07547135|MD07540307|MD06211517"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07540676|MD07536043|MD07547135|MD07540307|MD06211517"/>
 			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
 			<input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/it/hotdeal_product01.png"/>
@@ -154,7 +154,7 @@
 						<div class="section">
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
-									<h2 class="section__title">Cre la tua #GreenLife con LG</h2>
+									<h2 class="section__title">Crea la tua #GreenLife con LG</h2>
 									<p class="section__sub">
 										Prenditi cura del pianeta e risparmia in bolletta con la tecnologia LG.<br>
 										Offerte valide fino al 22 giugno.
@@ -202,8 +202,7 @@
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">Crea la tua #GamingLife con LG</h2>
 									<p class="section__sub">
-										Immergiti completamente nell’azione e conquista la vittoria grazie a tempi di risposta eccezionali<br>
-										Offerte valide fino al 22 giugno.
+										**Il coupon relativo allo sconto Member Days sarà visibile direttamente a carrello in fase d'acquisto o nella sezione "I miei coupon" del tuo account MyLG
 									</p>
 								</div>
 							</div>
@@ -568,7 +567,7 @@
 											<span class="product__info">
 												<!-- <span class="product__category">with</span> -->
 												<span class="product__name">Premio in palio!</span>
-												<span class="product__code">FP9</span>
+												<span class="product__code">FP9W</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -603,8 +602,7 @@
 						</div>
 						<div class="section__footer section__footer--center">
 							<p class="section__text">
-								Concorso a premi valido dal 31/05 al 22/06. Valore montepremi €6.645,00.<br>
-								Maggiori info e regolamento disponibili su www.lg.com/it/promotions. 
+								<a href="https://www.lg.com/it/promotions" target="_blank" data-link-name="memberdays_promotions" data-link-area="memberdays_2022">Concorso a premi valido dal 31/05 al 22/06. Valore montepremi €6.645,00.<br>Maggiori info e regolamento disponibili su www.lg.com/it/promotions.</a>
 							</p>
 						</div>
 					</div>
@@ -651,12 +649,17 @@
 											</div>
 											<img class="lazyload" data-src="*mediumImageAddr*" alt="*imageAltText*" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 										</div>
-										<div class="product__info">
+										<!-- 
+											// common.js add-to-cart dataLayer 공통 로직 진입을 위해
+											// .products-info / .js-compare 클래스 추가
+											// => $('body').on('click', '.add-to-cart:not(.in-buynow)', ~ );
+										-->
+										<div class="product__info products-info">
 											<p class="product__name">*userFriendlyName*</p>
 											<p class="product__sn">*modelName*</p>
 											<div class="button">
-												<a role="button" href="#" class="add-to-cart button__item button__item--red" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category="*superCategoryName*" data-category="*buName2*" data-subcategory="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-sales-model-code="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-suffix="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
-												<a role="button" href="#modal_re_stock_alert" class="re-stock-alert button__item button__item--lightgray d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
+												<a role="button" href="#" class="button__item button__item--red add-to-cart js-compare" data-track-group="product" data-track-name="offer_add_to_cart_click" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
+												<a role="button" href="#modal_re_stock_alert" class="button__item button__item--lightgray re-stock-alert d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
 											</div>
 											<div class="learn-more">
 												<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click">
@@ -669,7 +672,7 @@
 								</div>
 							</template>
 							<div id="greenlife" class="tab__panel tab__panel--greenlife showroom_panel" style="display: block;">
-								<p class="tab__noti">Migliora l’efficienza energetica della tua casa con i nostri elettrodomestici, che si prendono cura di te e dell’ambiente.</p>
+								<p class="tab__noti">Migliora l’efficienza energetica della tua casa con i nostri elettrodomestici,<br>che si prendono cura di te e dell’ambiente.</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--greenlife">
 										<div class="product__slide">
@@ -829,7 +832,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													a href="https://www.lg.com/it/home-audio/lg-sp11ra" target="_blank"
+														<a href="https://www.lg.com/it/home-audio/lg-sp11ra" target="_blank"
 														data-link-name="memberdays_productMouseHover_vividlife_SP11RA"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -986,6 +989,7 @@
 								<div class="product">
 									<div class="product__showroom product__showroom--workinglife">
 										<div class="product__slide">
+											<div class="product__layer"></div>
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
@@ -1167,7 +1171,12 @@
 											<p class="hotdeal_bg"></p>
 											<img src="*hotdealImageAddr*" alt="*hotdealImageAltText*">
 										</div>
-										<div class="product__info">
+										<!-- 
+											// common.js add-to-cart dataLayer 공통 로직 진입을 위해
+											// .products-info / .js-compare 클래스 추가
+											// => $('body').on('click', '.add-to-cart:not(.in-buynow)', ~ );
+										-->
+										<div class="product__info products-info">
 											<p class="product__name">*userFriendlyName*</p>
 											<p class="product__sn">*modelName*</p>
 											<div class="product__price">
@@ -1194,8 +1203,8 @@
 												</div>
 											</div>
 											<div class="button">
-												<a role="button" href="#" class="add-to-cart button__item button__item--red" data-track-group="product" data-track-name="offer_add_to_cart_click" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category="*superCategoryName*" data-category="*buName2*" data-subcategory="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-sales-model-code="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-suffix="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
-												<a role="button" href="#modal_re_stock_alert" class="re-stock-alert button__item button__item--lightgray d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
+												<a role="button" href="#" class="button__item button__item--red add-to-cart js-compare" data-track-group="product" data-track-name="offer_add_to_cart_click" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
+												<a role="button" href="#modal_re_stock_alert" class="button__item button__item--lightgray re-stock-alert d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
 											</div>
 											<div class="learn-more">
 												<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click">
@@ -1287,7 +1296,12 @@
 										</div>
 										<img class="lazyload" data-src="*mediumImageAddr*" alt="*imageAltText*" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 									</div>
-									<div class="product__info">
+									<!-- 
+										// common.js add-to-cart dataLayer 공통 로직 진입을 위해
+										// .products-info / .js-compare 클래스 추가
+										// => $('body').on('click', '.add-to-cart:not(.in-buynow)', ~ );
+									-->
+									<div class="product__info products-info">
 										<p class="product__name">*userFriendlyName*</p>
 										<p class="product__sn">*modelName*</p>
 										<div class="product__price">
@@ -1309,13 +1323,13 @@
 												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												<span class="number">*membershipPriceValue*</span>
 											</span>
-											<div class="product__noti d-none">
-												<p class="product__text">*reStockAlertText*</p>
-											</div>
+										</div>
+										<div class="product__noti d-none">
+											<p class="product__text">*reStockAlertText*</p>
 										</div>
 										<div class="button">
-											<a role="button" href="#" class="add-to-cart button__item button__item--red" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category="*superCategoryName*" data-category="*buName2*" data-subcategory="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-sales-model-code="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-suffix="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
-											<a role="button" href="#modal_re_stock_alert" class="re-stock-alert button__item button__item--lightgray d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
+											<a role="button" href="#" class="button__item button__item--red add-to-cart js-compare" data-track-group="product" data-track-name="offer_add_to_cart_click" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
+											<a role="button" href="#modal_re_stock_alert" class="button__item button__item--lightgray re-stock-alert d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
 										</div>
 										<div class="learn-more">
 											<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click">
@@ -1337,7 +1351,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="https://www.lg.com/it/tvs" 
+										<a href="https://www.lg.com/it/tv" 
 											target="_blank"
 											tabindex="0" 
 											data-track-group="mic" 
@@ -1347,7 +1361,7 @@
 											data-link-name="memberdays_plp_click_seemoretvs" 
 											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">SCOPRI TUTTI I TV</a>
-										<a href="#" 
+										<a href="https://www.lg.com/it/proiettori" 
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
@@ -1371,26 +1385,36 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#"
+										<a href="https://www.lg.com/it/soundbar"
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
 											data-track-opt="category" 
 											data-track-val="SOUND SYSTEMS" 
 											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemoresoundsystems"
+											data-link-name="memberdays_plp_click_seemoresoundbar"
 											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE SOUND SYSTEMS</a>
-										<a href="#"
+											class="button__item button__item--white">SCOPRI TUTTI LE SOUNDBAR</a>
+										<a href="https://www.lg.com/it/hi-fi-audio"
 											target="_blank"
 											tabindex="0" 
 											data-track-group="mic" 
 											data-track-opt="category" 
-											data-track-val="SOUND WIRELESS EARBUDS"  
+											data-track-val="SOUND PRODUCTS AUDIO"  
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorewirelessearbuds" 
 											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE SOUND WIRELESS EARBUDS</a>
+											class="button__item button__item--white">SCOPRI TUTTI I PRODOTTI AUDIO</a>
+										<a href="https://www.lg.com/it/cuffie-bluetooth"
+											target="_blank"
+											tabindex="0" 
+											data-track-group="mic" 
+											data-track-opt="category" 
+											data-track-val="SOUND CUFFIE EARBUDS"  
+											data-track-name="plpClick" 
+											data-link-name="memberdays_plp_click_seemorewirelessearbuds" 
+											data-link-area="memberdays_2022" 
+											class="button__item button__item--white">SCOPRI TUTTI LE CUFFIE BLUETOOTH</a>
 									</div>
 								</div>
 							</div>
@@ -1405,16 +1429,26 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#"
+										<a href="https://www.lg.com/it/elettrodomestici"
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
 											data-track-opt="category" 
-											data-track-val="HOME APPLIANCES"  
+											data-track-val="SCOPRI TUTTI GLI ELETTRODOMESTICI"  
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorehomeappliances"
 											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE HOME APPLIANCES</a>
+											class="button__item button__item--white">SCOPRI TUTTI GLI ELETTRODOMESTICI</a>
+										<a href="https://www.lg.com/it/condizionatori"
+											target="_blank" 
+											tabindex="0" 
+											data-track-group="mic" 
+											data-track-opt="category" 
+											data-track-val="SCOPRI TUTTI I CONDIZIONATORI"  
+											data-track-name="plpClick" 
+											data-link-name="memberdays_plp_click_seemorehomeappliances"
+											data-link-area="memberdays_2022" 
+											class="button__item button__item--white">SCOPRI TUTTI I CONDIZIONATORI</a>	
 									</div>
 								</div>
 							</div>
@@ -1429,16 +1463,16 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" 
+										<a href="https://www.lg.com/it/informatica" 
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
 											data-track-opt="category" 
-											data-track-val="COMPUTER PRODUCTS"  
+											data-track-val="SCOPRI TUTTI I PRODOTTI INFORMATICI"  
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorecomputerproducts"
 											data-link-area="memberdays_2022"
-											class="button__item button__item--white">SEE MORE COMPUTER PRODUCTS</a>
+											class="button__item button__item--white">SCOPRI TUTTI I PRODOTTI INFORMATICI</a>
 									</div>
 								</div>
 							</div>
@@ -1482,6 +1516,23 @@
 		<!-- // popup -->
 
 		<!-- // Content End  -->
+	</div>
+
+	<div class="container-fluid">
+		<div class="footer-box">
+			<div class="footer-component">
+				<div class="footer-caution">
+					<p>Iniziativa promozionale Member Days valida dal 31/05 al 22/06/22. Ulteriore sconto a carrello del 15% acquistando 2 o più prodotti LG per
+						una valore minimo di 500€ su LG Online Shop. Coupon cumulabile con altri coupon o con offerte in corso. Sconto non applicabile ai prodotti
+						oggetto delle vendite abbinate.</p>
+					<p>Pagamenti rateizzati tramite Findomestic - promozione valida dal 01/01/2022 al 31/12/2022<br>
+						Messaggio pubblicitario con finalità promozionale. Offerta valida dal 01/01/2022 al 31/12/2022 in 10 e 20 mesi come da esempio
+						rappresentativo: Prezzo del bene € 900, TAN fisso 0%, TAEG 0%, in 10 rate da 90 €, 20 rate da 45 €, spese e costi accessori azzerati. Importo
+						totale del credito e dovuto dal Consumatore: € 900,00. IEBCC nel percorso online. Salvo approvazione di Findomestic Banca S.p.A. per cui LG
+						Electronics Italia S.p.A. opera quale intermediario del credito, non in esclusiva.</p>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<!-- top button -->
@@ -1569,21 +1620,6 @@
         $('.coupon__list .coupon__item').each(function() {	
           var $Item = $(this);
           $Item.find('label').on('click', function(){ 
-						var themeType = $(this).siblings('input:radio').attr('data-track-val');
-						if(themeType == 'greenlife') {
-							$bu = 'HA'
-						} else if(themeType == 'vividlife') {
-							$bu = 'TV, IT, AV'
-						} else if(themeType == 'gaminglife') {
-							$bu = 'IT, AV, TV'
-						} else if(themeType == 'workinglife') {
-							$bu = 'AV, IT'
-						} else if(themeType == 'soundfullife') {
-							$bu = 'AV'
-						} else {
-							$bu = ' '
-						}
-						
             $('.coupon__list .coupon__item').removeClass('checking');
             $('.button_takepart').attr('data-link-name', "memberdays_luckydraw_submit_click_" + $(this).siblings('input:radio').attr('data-track-val'));
             
@@ -1592,44 +1628,37 @@
             }else{
               $('.coupon__list .coupon__item').removeClass('checking');
             }
-
-						dataLayer.push({
-							'event' : 'themeSelectionCoupon',
-							'bu' : $bu,
-							'theme' : $(this).attr('data-track-val'),
-							'pageType' : 'MICROSITE',
-						})
           });
         });
       }
     });
 
-		if($('.coupon__list .coupon__item').hasClass('checking').length > 0) {
-			$('.button_takepart').on('click', function() {
-				var $selectCoupon = $('.coupon__list .coupon__item.checking')
-				var themeType = $selectCoupon.find('radio').attr('data-track-val');
-				if(themeType == 'greenlife') {
-					$bu = 'HA'
-				} else if(themeType == 'vividlife') {
-					$bu = 'TV, IT, AV'
-				} else if(themeType == 'gaminglife') {
-					$bu = 'IT, AV, TV'
-				} else if(themeType == 'workinglife') {
-					$bu = 'AV, IT'
-				} else if(themeType == 'soundfullife') {
-					$bu = 'AV'
-				} else {
-					$bu = ' '
-				}
+		// if($('.coupon__list .coupon__item').hasClass('checking').length > 0) {
+		// 	$('.button_takepart').on('click', function() {
+		// 		var $selectCoupon = $('.coupon__list .coupon__item.checking')
+		// 		var themeType = $selectCoupon.find('radio').attr('data-track-val');
+		// 		if(themeType == 'greenlife') {
+		// 			$bu = 'HA'
+		// 		} else if(themeType == 'vividlife') {
+		// 			$bu = 'TV, IT, AV'
+		// 		} else if(themeType == 'gaminglife') {
+		// 			$bu = 'IT, AV, TV'
+		// 		} else if(themeType == 'workinglife') {
+		// 			$bu = 'AV, IT'
+		// 		} else if(themeType == 'soundfullife') {
+		// 			$bu = 'AV'
+		// 		} else {
+		// 			$bu = ' '
+		// 		}
 				
-				dataLayer.push({
-					'event' : $(this).attr('data-track-name'),
-					'bu' : $bu,
-					'pageType' : 'MICROSITE',
-					'theme' : $(this).attr('data-track-val')
-				})
-			})
-		}
+		// 		dataLayer.push({
+		// 			'event' : $(this).attr('data-track-name'),
+		// 			'bu' : $bu,
+		// 			'pageType' : 'MICROSITE',
+		// 			'theme' : $(this).attr('data-track-val')
+		// 		})
+		// 	})
+		// }
 		
 		// $('.visual').find('.button__item').each(function () {
     //   $(this).on('click', function() {

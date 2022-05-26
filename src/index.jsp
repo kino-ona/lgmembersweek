@@ -610,13 +610,13 @@
 							<div style="margin-top:80px">
 								<form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
 									<div class="button">
-										<a class="button_takepart" data-track-group="mic" data-track-opt="theme" data-track-name="submitClick" 
-										data-link-name="memberdays_luckydraw_submit_click_"
-										data-link-area="memberdays_2022">
-											<button type="button" id="submit" class="button__item button__item--red" data-track-group="mic" data-track-opt="theme" data-track-name="submitClick" 
+										<button type="button" id="submit" class="button__item button__item--red button_takepart" 
+											data-track-group="mic" 
+											data-track-opt="theme" 	
+											data-track-name="submitClick" 
+											data-track-val="greenlife"
 											data-link-name="memberdays_luckydraw_submit_click_"
 											data-link-area="memberdays_2022">TAKE PART</button>
-										</a>
 										<!-- <a href="#" 
 										data-track-group="mic" data-track-opt="theme" data-track-name="submitClick"
 										data-link-area="memberdays_2022"
@@ -672,12 +672,17 @@
 											</div>
 											<img class="lazyload" data-src="*mediumImageAddr*" alt="*imageAltText*" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 										</div>
-										<div class="product__info">
+										<!-- 
+											// common.js add-to-cart dataLayer 공통 로직 진입을 위해
+											// .products-info / .js-compare 클래스 추가
+											// => $('body').on('click', '.add-to-cart:not(.in-buynow)', ~ );
+										-->
+										<div class="product__info products-info">
 											<p class="product__name">*userFriendlyName*</p>
 											<p class="product__sn">*modelName*</p>
 											<div class="button">
-												<a role="button" href="#" class="add-to-cart button__item button__item--red" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category="*superCategoryName*" data-category="*buName2*" data-subcategory="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-sales-model-code="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-suffix="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
-												<a role="button" href="#modal_re_stock_alert" class="re-stock-alert button__item button__item--lightgray d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
+												<a role="button" href="#" class="button__item button__item--red add-to-cart js-compare" data-track-group="product" data-track-name="offer_add_to_cart_click" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
+												<a role="button" href="#modal_re_stock_alert" class="button__item button__item--lightgray re-stock-alert d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
 											</div>
 											<div class="learn-more">
 												<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click">
@@ -1173,7 +1178,12 @@
 											<p class="hotdeal_bg"></p>
 											<img src="*hotdealImageAddr*" alt="*hotdealImageAltText*">
 										</div>
-										<div class="product__info">
+										<!-- 
+											// common.js add-to-cart dataLayer 공통 로직 진입을 위해
+											// .products-info / .js-compare 클래스 추가
+											// => $('body').on('click', '.add-to-cart:not(.in-buynow)', ~ );
+										-->
+										<div class="product__info products-info">
 											<p class="product__name">*userFriendlyName*</p>
 											<p class="product__sn">*modelName*</p>
 											<div class="product__price">
@@ -1200,8 +1210,8 @@
 												</div>
 											</div>
 											<div class="button">
-												<a role="button" href="#" class="add-to-cart button__item button__item--red" data-track-group="product" data-track-name="offer_add_to_cart_click" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category="*superCategoryName*" data-category="*buName2*" data-subcategory="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-sales-model-code="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-suffix="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
-												<a role="button" href="#modal_re_stock_alert" class="re-stock-alert button__item button__item--lightgray d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
+												<a role="button" href="#" class="button__item button__item--red add-to-cart js-compare" data-track-group="product" data-track-name="offer_add_to_cart_click" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
+												<a role="button" href="#modal_re_stock_alert" class="button__item button__item--lightgray re-stock-alert d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
 											</div>
 											<div class="learn-more">
 												<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click">
@@ -1295,7 +1305,12 @@
 										</div>
 										<img class="lazyload" data-src="*mediumImageAddr*" alt="*imageAltText*" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 									</div>
-									<div class="product__info">
+									<!-- 
+										// common.js add-to-cart dataLayer 공통 로직 진입을 위해
+										// .products-info / .js-compare 클래스 추가
+										// => $('body').on('click', '.add-to-cart:not(.in-buynow)', ~ );
+									-->
+									<div class="product__info products-info">
 										<p class="product__name">*userFriendlyName*</p>
 										<p class="product__sn">*modelName*</p>
 										<div class="product__price">
@@ -1317,13 +1332,13 @@
 												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												<span class="number">*membershipPriceValue*</span>
 											</span>
-											<div class="product__noti d-none">
-												<p class="product__text">*reStockAlertText*</p>
-											</div>
+										</div>
+										<div class="product__noti d-none">
+											<p class="product__text">*reStockAlertText*</p>
 										</div>
 										<div class="button">
-											<a role="button" href="#" class="add-to-cart button__item button__item--red" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category="*superCategoryName*" data-category="*buName2*" data-subcategory="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-sales-model-code="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-suffix="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
-											<a role="button" href="#modal_re_stock_alert" class="re-stock-alert button__item button__item--lightgray d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
+											<a role="button" href="#" class="button__item button__item--red add-to-cart js-compare" data-track-group="product" data-track-name="offer_add_to_cart_click" data-link-name="add_to_cart_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
+											<a role="button" href="#modal_re_stock_alert" class="button__item button__item--lightgray re-stock-alert d-none" data-link-name="move_to_stock_request_click" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
 										</div>
 										<div class="learn-more">
 											<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click">
@@ -1466,7 +1481,7 @@
 				<div class="popup__body">
 					<div class="popup__contents">
 						<p class="popup__text">
-							After joining the sign-up, you must click the <span class="popup__bold">“submit”</span> button to apply for the event.
+							Thank you for joining LG.com! Select your Lifestyle and click <span class="popup__bold">"TAKE PART"</span>.
 						</p>
 					</div>
 					<div class="popup__bottom">
@@ -1578,20 +1593,20 @@
         $('.coupon__list .coupon__item').each(function() {	
           var $Item = $(this);
           $Item.find('label').on('click', function(){ 
-						var themeType = $(this).siblings('input:radio').attr('data-track-val');
-						if(themeType == 'greenlife') {
-							$bu = 'HA'
-						} else if(themeType == 'vividlife') {
-							$bu = 'TV, IT, AV'
-						} else if(themeType == 'gaminglife') {
-							$bu = 'IT, AV, TV'
-						} else if(themeType == 'workinglife') {
-							$bu = 'AV, IT'
-						} else if(themeType == 'soundfullife') {
-							$bu = 'AV'
-						} else {
-							$bu = ' '
-						}
+						// var themeType = $(this).siblings('input:radio').attr('data-track-val');
+						// if(themeType == 'greenlife') {
+						// 	$bu = 'HA'
+						// } else if(themeType == 'vividlife') {
+						// 	$bu = 'TV, IT, AV'
+						// } else if(themeType == 'gaminglife') {
+						// 	$bu = 'IT, AV, TV'
+						// } else if(themeType == 'workinglife') {
+						// 	$bu = 'AV, IT'
+						// } else if(themeType == 'soundfullife') {
+						// 	$bu = 'AV'
+						// } else {
+						// 	$bu = ' '
+						// }
 						
             $('.coupon__list .coupon__item').removeClass('checking');
             $('.button_takepart').attr('data-link-name', "memberdays_luckydraw_submit_click_" + $(this).siblings('input:radio').attr('data-track-val'));
@@ -1602,43 +1617,43 @@
               $('.coupon__list .coupon__item').removeClass('checking');
             }
 
-						dataLayer.push({
-							'event' : 'themeSelectionCoupon',
-							'bu' : $bu,
-							'theme' : $(this).attr('data-track-val'),
-							'pageType' : 'MICROSITE',
-						})
+						// dataLayer.push({
+						// 	'event' : 'themeSelectionCoupon',
+						// 	'bu' : $bu,
+						// 	'theme' : $(this).attr('data-track-val'),
+						// 	'pageType' : 'MICROSITE',
+						// })
           });
         });
       }
     });
 
-		if($('.coupon__list .coupon__item').hasClass('checking').length > 0) {
-			$('.button_takepart').on('click', function() {
-				var $selectCoupon = $('.coupon__list .coupon__item.checking')
-				var themeType = $selectCoupon.find('radio').attr('data-track-val');
-				if(themeType == 'greenlife') {
-					$bu = 'HA'
-				} else if(themeType == 'vividlife') {
-					$bu = 'TV, IT, AV'
-				} else if(themeType == 'gaminglife') {
-					$bu = 'IT, AV, TV'
-				} else if(themeType == 'workinglife') {
-					$bu = 'AV, IT'
-				} else if(themeType == 'soundfullife') {
-					$bu = 'AV'
-				} else {
-					$bu = ' '
-				}
+		// if($('.coupon__list .coupon__item').hasClass('checking').length > 0) {
+		// 	$('.button_takepart').on('click', function() {
+		// 		var $selectCoupon = $('.coupon__list .coupon__item.checking')
+		// 		var themeType = $selectCoupon.find('radio').attr('data-track-val');
+		// 		if(themeType == 'greenlife') {
+		// 			$bu = 'HA'
+		// 		} else if(themeType == 'vividlife') {
+		// 			$bu = 'TV, IT, AV'
+		// 		} else if(themeType == 'gaminglife') {
+		// 			$bu = 'IT, AV, TV'
+		// 		} else if(themeType == 'workinglife') {
+		// 			$bu = 'AV, IT'
+		// 		} else if(themeType == 'soundfullife') {
+		// 			$bu = 'AV'
+		// 		} else {
+		// 			$bu = ' '
+		// 		}
 				
-				dataLayer.push({
-					'event' : $(this).attr('data-track-name'),
-					'bu' : $bu,
-					'pageType' : 'MICROSITE',
-					'theme' : $(this).attr('data-track-val')
-				})
-			})
-		}
+		// 		dataLayer.push({
+		// 			'event' : $(this).attr('data-track-name'),
+		// 			'bu' : $bu,
+		// 			'pageType' : 'MICROSITE',
+		// 			'theme' : $(this).attr('data-track-val')
+		// 		})
+		// 	})
+		// }
 		
 		// $('.visual').find('.button__item').each(function () {
     //   $(this).on('click', function() {

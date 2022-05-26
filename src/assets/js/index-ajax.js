@@ -62,6 +62,7 @@ $(document).ready(function() {
 		hotDealSlickOpt: {
 			speed: 600,
 			infinite: false,
+			// arrows: false,
 			slidesToShow: 3,
 			focusOnSelect: false,
 			responsive: [

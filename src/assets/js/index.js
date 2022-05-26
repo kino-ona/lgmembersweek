@@ -49,7 +49,7 @@ $(document).ready(function(){
 	// slick
 	$('.lgmembersweek .visual__swiper').slick({
 		speed: 800,
-		infinite: false,
+		infinite: true,
 		dots: true,
 		autoplay: true,
   	autoplaySpeed: 4000,

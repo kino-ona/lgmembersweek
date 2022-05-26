@@ -202,7 +202,8 @@
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">Crea la tua #GamingLife con LG</h2>
 									<p class="section__sub">
-										**Il coupon relativo allo sconto Member Days sarà visibile direttamente a carrello in fase d'acquisto o nella sezione "I miei coupon" del tuo account MyLG
+										Immergiti completamente nell’azione e conquista la vittoria grazie a tempi di risposta eccezionali<br>
+										Offerte valide fino al 22 giugno.
 									</p>
 								</div>
 							</div>
@@ -331,10 +332,10 @@
 										<p class="benefit__discount">
 											15%
 											<em class="benefit__condition">acquistando 2 o più prodotti</em>
-											<span class="benefit__text">
+											<!-- <span class="benefit__text">
 												*Finanziamento a tasso zero / installazione e consegna al piano disponibili solo su una selezione di prodotti<br>
 												**Il coupon relativo allo sconto Member Days sarà visibile direttamente a carrello in fase d’acquisto o nella sezione “I miei coupon” del tuo account MyLG
-											</span>
+											</span> -->
 										</p>
 									</div>
 								</li>
@@ -348,6 +349,12 @@
 									</div>
 								</li>
 							</ul>
+							<div style="text-align: center;margin-top: 20px;">
+								<span class="benefit__text">
+									*Finanziamento a tasso zero / installazione e consegna al piano disponibili solo su una selezione di prodotti<br>
+									**Il coupon relativo allo sconto Member Days sarà visibile direttamente a carrello in fase d’acquisto o nella sezione “I miei coupon” del tuo account MyLG
+								</span>
+							</div>
 							<!-- <div class="benefit__button">
 								<a href="#" class="benefit__link">
 									Termini &amp; Condizioni
@@ -404,6 +411,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="anchors" id="MemberDaysEvent"></div>
 				<div class="section__container section__container--lightgray" data-list="eventGift">
 					<div class="section__inner">
 						<div class="section__header">
@@ -590,7 +598,7 @@
 										data-link-area="memberdays_2022">
 											<button type="button" id="submit" class="button__item button__item--red" data-track-group="mic" data-track-opt="theme" data-track-name="submitClick" 
 											data-link-name="memberdays_luckydraw_submit_click_"
-											data-link-area="memberdays_2022">INVIA</button>
+											data-link-area="memberdays_2022" style="width: 160px;">INVIA</button>
 										</a>
 										<!-- <a href="#" 
 										data-track-group="mic" data-track-opt="theme" data-track-name="submitClick"
@@ -680,7 +688,7 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/it/frigoriferi/lg-gsxv90bsae" target="_blank"
-														data-link-area="memberdays_productMouseHover_greenlife_GSXV91BSAE"
+														data-link-area="memberdays_productMouseHover_greenlife_GSXV90BSAE"
 														data-link-name="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -702,7 +710,7 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/it/aspirapolvere/lg-a9k-ultra1p" target="_blank"
-														data-link-name="memberdays_productMouseHover_greenlife_GSXV91BSAE"
+														data-link-name="memberdays_productMouseHover_greenlife_A9K-ULTRA1P"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -725,7 +733,7 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/it/lavatrici/lg-f4wv510sae" target="_blank"
-														data-link-name="memberdays_productMouseHover_greenlife_F6V1110WTSA"
+														data-link-name="memberdays_productMouseHover_greenlife_F4WV510SAE"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -748,7 +756,7 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/it/asciugatrici/lg-RC80V9AV3W" target="_blank" 
-														data-link-name="memberdays_productMouseHover_greenlife_FDV1109W"
+														data-link-name="memberdays_productMouseHover_greenlife_RC80V9AV3W"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -994,7 +1002,7 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/it/computer/lg-17z90p-gaa86d" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
+														data-link-name="memberdays_productMouseHover_workinglife_17Z90P-G.AA86D"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -1476,9 +1484,6 @@
 									</div>
 								</div>
 							</div>
-						</div>
-						<div class="section__footer section__footer--center">
-							<p class="section__text" style="width: 60%; margin: 0 auto;">niziativa promozionale valida dal 31/05 al 22/06. Messaggio pubblicitario con finalita promozionale. Offerta valida dal 01/01/2022 al 31/12/2022 in 10 e 20 mesi come da esempio rappresentativo: Prezzo del bene €900, TAN fisso 0%, TAEG 0%, in 10 rate da 90 €, 20 rate da 45 €, spese e costi accessori azzerati. Importo totale del credito e dovuto dal Consumatore: € 900,00. IEBCC nel percorso online. Salvo approvazione di Findomestic Banca S.p.A. per cui LG Electronics Italia S.p.A. opera quale intermediario del credito, non in esclusiva. Pagamenti rateizzati tramite Findomestic - promozione valida dal 01/01/2022</p>
 						</div>
 					</div>
 				</div>

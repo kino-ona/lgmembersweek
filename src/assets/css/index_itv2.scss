@@ -122,6 +122,19 @@
 					}
 				}
 			}
+			.product__name {
+				height: auto;
+				min-height: 74px;
+				font-size: 17px;
+				line-height: 20px;
+				@include ellipse(4);
+			}
+			.slick-prev {
+				background-image: url('../images/btn_swiper_prev.png');
+			}
+			.slick-next {
+				background-image: url('../images/btn_swiper_next.png');
+			}
 		}
 		&__showroom {
 			&--greenlife {
@@ -345,6 +358,15 @@
 				}
 			}
 		}
+		&__swiper {
+			.product__name {
+				height: auto;
+				min-height: 74px;
+				font-size: 16px;
+				line-height: 18px;
+				@include ellipse(4);
+			}
+		}
 		@media (max-width: 767px) {
 			&__showroom {
 				&--greenlife {
@@ -395,4 +417,20 @@
 			}
 		}
 	}
+
+	@media (max-width: 767px) {
+		#box_content3 {
+			.product {
+				.button {
+					display: block;
+					.button__item {
+						margin-left: 0 !important;
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+
+	
 }

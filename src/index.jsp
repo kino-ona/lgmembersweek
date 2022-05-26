@@ -409,6 +409,7 @@
 						</div>
 					</div>
 				</div>
+				<div class="anchors" id="MemberDaysEvent"></div>
 				<div class="section__container section__container--lightgray" data-list="eventGift">
 					<div class="section__inner">
 						<div class="section__header">

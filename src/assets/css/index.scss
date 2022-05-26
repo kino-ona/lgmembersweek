@@ -152,6 +152,9 @@
 				font-size: 16px;
 				line-height: 22px;
 			}
+			&--semibold {
+				font-weight: 600;
+			}
 		}
 		&__footer {
 			margin-top: 40px;
@@ -264,6 +267,10 @@
 			}
 			.section__desc {
 				font-weight: 600;
+				&--regular {
+					margin-top: 10px;
+					font-weight: 400;
+				}
 			}
 			.button {
 				position: absolute;
@@ -371,10 +378,12 @@
 					font-size: 36px;
 					line-height: 46px;
 					span {
-						margin: 6px 0 2px;
-						display: block;
-						font-size: 50px;
-						letter-spacing: -2px;
+						&:not([class^='break--']) {
+							margin: 6px 0 2px;
+							display: block;
+							font-size: 50px;
+							letter-spacing: -2px;
+						}
 					}
 				}
 				.section__sub {
@@ -490,8 +499,8 @@
 				margin-top: 80px;
 			}
 			&__item {
-				width: 160px;
 				height: 60px;
+				min-width: 160px;
 				&:not(:first-child) {
 					margin-left: 10px;
 				}
@@ -599,6 +608,7 @@
 					.coupon__desc {
 						display: block;
 						margin-top: 4px;
+						font-weight: 400;
 						font-size: 16px;
 					}
 				}
@@ -732,13 +742,13 @@
 					line-height: 24px;
 				}
 				&__name {
-					height: auto;
+					height: 56px;
 					font-size: 24px;
-					line-height: 32px;
-					@include ellipse(1);
+					line-height: 28px;
+					@include ellipse(2);
 				}
 				&__code {
-					margin-top: 20px;
+					margin-top: 8px;
 					font-size: 16px;
 					line-height: 22px;
 					@include ellipse(1);
@@ -934,8 +944,10 @@
 						line-height: 20px;
 					}
 					&__name {
+						height: auto;
 						font-size: 16px;
 						line-height: 20px;
+						@include ellipse(1);
 					}
 					&__code {
 						margin-top: 6px;
@@ -1540,7 +1552,7 @@
 			}
 		}
 		&__target {
-			display: none;
+			// display: none;
 			position: absolute;
 			left: 50%;
 			width: 340px;

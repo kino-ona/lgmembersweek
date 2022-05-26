@@ -610,7 +610,7 @@
 						</div>
 						<div class="section__footer section__footer--center">
 							<p class="section__text">
-								<a href="https://www.lg.com/it/promotions" target="_blank" data-link-name="memberdays_promotions" data-link-area="memberdays_2022">Concorso a premi valido dal 31/05 al 22/06. Valore montepremi €6.645,00.<br>Maggiori info e regolamento disponibili su www.lg.com/it/promotions.</a>
+								Concorso a premi valido dal 31/05 al 22/06. Valore montepremi €6.645,00.<br>Maggiori info e regolamento disponibili su <a href="https://www.lg.com/it/promotions" target="_blank" data-link-name="memberdays_promotions" data-link-area="memberdays_2022">www.lg.com/it/promotions.</a>
 							</p>
 						</div>
 					</div>
@@ -688,8 +688,8 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/it/frigoriferi/lg-gsxv90bsae" target="_blank"
-														data-link-area="memberdays_productMouseHover_greenlife_GSXV90BSAE"
-														data-link-name="memberdays_2022"
+														data-link-name="memberdays_productMouseHover_greenlife_GSXV90BSAE"
+														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
 															<img src="${path}/assets/images/it/img_product_showroom_greenlife01_01.png"
@@ -784,7 +784,7 @@
 								</div>
 							</div>
 							<div id="vividlife" class="tab__panel tab__panel--vividlife showroom_panel">
-								<p class="tab__noti">
+								<p class="tab__noti" style="max-width: 1200px;">
 									Guarda i tuoi film come al cinema o goditi gli eventi sportivi come dal vivo grazie ai nostri prodotti audio e video.
 								</p>
 								<div class="product">
@@ -889,7 +889,7 @@
 								</div>
 							</div>
 							<div id="gaminglife" class="tab__panel tab__panel--gaminglife showroom_panel">
-								<p class="tab__noti">Preparati a vivere i tuoi videogame come mai prima, grazie ai nostri prodotti progettati per garantirti i migliori effetti audio e video.</p>
+								<p class="tab__noti">Preparati a vivere i tuoi videogame come mai prima,<br>grazie ai nostri prodotti progettati per garantirti i migliori effetti audio e video.</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--gaminglife">
 										<div class="product__slide">
@@ -1071,7 +1071,7 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/it/computer/lg-17z90p-gaa86d" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
+														data-link-name="memberdays_productMouseHover_workinglife_17Z90P-G.AA86D"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -1096,7 +1096,7 @@
 								</div>
 							</div>
 							<div id="soundfullife" class="tab__panel tab__panel--soundfullife showroom_panel">
-								<p class="tab__noti">Ascolta i tuoi brani preferiti con una qualità audio superiore, dovunque tu sia e in ogni momento della tua giornata.</p>
+								<p class="tab__noti">Ascolta i tuoi brani preferiti con una qualità audio superiore,<br>dovunque tu sia e in ogni momento della tua giornata.</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--soundfullife">
 										<div class="product__slide">

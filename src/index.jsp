@@ -7,7 +7,7 @@
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 	<title>LG Member Days Promotion: Up to 22% Off Purchase | LG UK</title>
 	<meta name="keywords" content="">
-	<meta name="description" content="Sign up at LG.com today and enjoy the Member-Only Benefits and money off on ANY LG PRODUCTS. LG Member Days exclusive offers run ONLY UNTIL 28 June 2022.">
+	<meta name="description" content="Sign up at LG.com today and enjoy the Member-Only Benefits and money off on LG PRODUCTS. LG Member Days exclusive offers run ONLY UNTIL 28 June 2022.">
 	<meta name="robots" content="NOODP, NOYDIR">
 
 	<link rel="canonical" href="https://www.lg.com/uk">
@@ -16,7 +16,7 @@
 	<meta property="og:site_name" content="LG UK">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="LG Member Days Promotion: Up to 22% Off Purchase | LG UK">
-	<meta property="og:description" content="Sign up at LG.com today and enjoy the Member-Only Benefits and money off on ANY LG PRODUCTS. LG Member Days exclusive offers run ONLY UNTIL 29 June 2022.">
+	<meta property="og:description" content="Sign up at LG.com today and enjoy the Member-Only Benefits and money off on LG PRODUCTS. LG Member Days exclusive offers run ONLY UNTIL 29 June 2022.">
 	<meta property="og:url" content="https://www.lg.com/uk">
 	<meta property="og:image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg">
 	<meta name="twitter:card" content="summary_large_image">
@@ -83,7 +83,7 @@
 		<meta itemprop="name" content="LG Member Days Promotion: Up to 22% Off Purchase | LG UK"/>
 		<meta itemprop="image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg" />
 		<meta itemprop="url" content="www.lg.com/uk/memberdays" />
-		<meta itemprop="description" content="Sign up at LG.com today and enjoy the Member-Only Benefits and money off on ANY LG PRODUCTS. LG Member Days exclusive offers run ONLY UNTIL 29 June 2022." />
+		<meta itemprop="description" content="Sign up at LG.com today and enjoy the Member-Only Benefits and money off on LG PRODUCTS. LG Member Days exclusive offers run ONLY UNTIL 29 June 2022." />
 		<meta itemprop="keywords" content="" />
 	</div>
 	
@@ -160,7 +160,7 @@
 										Design your [#Lifestyle] with LG
 									</p>
 									<p class="section__desc">
-										Member-only Benefits and Money Off on ANY LG PRODUCTS<br>
+										Member-only Benefits and Money Off on LG PRODUCTS<br>
 										for the Lifestyle you dream of.<br>
 										Exclusive Offers run until 28<sup>th</sup> June, 2022
 									</p>
@@ -366,7 +366,7 @@
 										<p class="benefit__category">MEMBER DAYS Special Discount Coupon</p>
 										<p class="benefit__discount">
 											15% off
-											<em class="benefit__condition">When you buy two or more items on ANY LG PRODUCTS*</em>
+											<em class="benefit__condition">When you buy two or more items on LG PRODUCTS*</em>
 											<span class="benefit__text benefit__text--gray">*Welcome Coupon & MEMBER DAYS Special Discount Coupon are not applicable to PL5, ‘gram & +view’ Bundle</span>
 											<span class="benefit__text">Sign in and find your MEMBER DAYS DISCOUNT coupon in your MyLG Account</span>
 										</p>
@@ -1043,6 +1043,27 @@
 													</a>
 												</div>
 											</div>
+											<div class="product__layer">
+												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
+												<div class="product__target">
+													<a href="https://www.lg.com/uk/true-wireless-earbuds/lg-tone-ufp9" target="_blank"
+														data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
+														data-link-area="memberdays_2022"
+														class="product__link">
+														<div class="product__img">
+															<img src="${path}/assets/images/img_product_showroom_workinglife01_03.png"
+																alt="LG TONE Free UFP9">
+														</div>
+														<div class="product__right">
+															<p class="product__name">LG TONE Free UFP9</p>
+															<ul class="product__desc">
+																<li>Plug and Wireless</li>
+																<li>Enhanced Active Noise Cancellation/li>
+															</ul>
+														</div>
+													</a>
+												</div>
+											</div>
 										</div>
 										<div class="product__slide">
 											<div class="product__layer">
@@ -1247,7 +1268,7 @@
 							</h2>
 							<p class="section__sub">SHOP OUR LATEST MARKDOWNS</p>
 							<p class="section__desc">
-								Create your own Lifestyle Bundle with ANY LG PRODUCTS: and get up to 22% OFF your Bundle Purchases.
+								Create your own Lifestyle Bundle with LG PRODUCTS: and get up to 22% OFF your Bundle Purchases.
 							</p>
 							<p class="section__desc">
 								<span class="break--desktop">MEMBER DAYS Special Discount Coupon 15% + Member Price Discount 2% + Welcome Coupon 5% off.</span>

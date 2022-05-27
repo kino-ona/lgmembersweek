@@ -349,6 +349,7 @@
 				font-weight: 600;
 				font-size: 20px;
 				line-height: 24px;
+				white-space: nowrap;
 				&:hover {
 					text-decoration: none;
 				}
@@ -2254,6 +2255,7 @@
 			display: block;
 			color: #BEF860;
 			font-weight: 600;
+			font-style: normal;
 			font-size: 20px;
 			line-height: 24px;
 		}

@@ -367,8 +367,13 @@
 										<p class="benefit__discount">
 											15% off
 											<em class="benefit__condition">When you buy two or more items on LG PRODUCTS*</em>
-											<span class="benefit__text benefit__text--gray">*Welcome Coupon & MEMBER DAYS Special Discount Coupon are not applicable to PL5, ‘gram & +view’ Bundle</span>
+											<span class="benefit__text benefit__text--gray">
+												*All products available on LG.com<br>
+												(with the exception of the new LG gram laptop Pre-Order bundle and the PL5 XBOOM speaker) 
+											</span>
 											<span class="benefit__text">Sign in and find your MEMBER DAYS DISCOUNT coupon in your MyLG Account</span>
+
+											
 										</p>
 									</div>
 								</li>
@@ -1053,7 +1058,7 @@
 															<p class="product__name">LG TONE Free UFP9</p>
 															<ul class="product__desc">
 																<li>Plug and Wireless</li>
-																<li>Enhanced Active Noise Cancellation/li>
+																<li>Enhanced Active Noise Cancellation</li>
 															</ul>
 														</div>
 													</a>
@@ -1263,11 +1268,16 @@
 							</h2>
 							<p class="section__sub">SHOP OUR LATEST MARKDOWNS</p>
 							<p class="section__desc">
-								Create your own Lifestyle Bundle with LG PRODUCTS: and get up to 22% OFF your Bundle Purchases.
+								Create your own Lifestyle Bundle with LG PRODUCTS and get UP TO 22% OFF your purchases.
+								<span class="section__mark">Additional discount applies when you buy 2 OR MORE items*.</span>
 							</p>
 							<p class="section__desc">
-								<span class="break--desktop">MEMBER DAYS Special Discount Coupon 15% + Member Price Discount 2% + Welcome Coupon 5% off.</span>
-								Additional discount applicable <span class="section__mark">when you buy 2 or more items.</span>
+								<span class="break--desktop">Apply MEMBER DAYS Special Discount Coupon 15% + Member Price</span>
+								Discount 2% + Welcome Coupon 5% off.
+							</p>
+							<p class="section__desc">
+								Click SEE MORE  button below to discover more LG SALE products.<br>
+								(*PL5, 'gram & +view' Bundle excluded from additional discount offer)
 							</p>
 						</div>
 						<div class="tab">
@@ -1369,8 +1379,8 @@
 							<div id="tvcinebeam" class="tab__panel" style="display: block;">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										Visit <span class="tab__bold">My Basket</span>
-										to check your final disocunted price
+										Visit <span class="tab__bold">My Basket</span> to check your final discounted price<br>
+										Remember to apply 15% Discount Coupon and 5% Welcome Coupon at My Basket
 									</span>
 								</p>
 								<div class="product">

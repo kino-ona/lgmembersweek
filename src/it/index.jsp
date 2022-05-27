@@ -66,9 +66,21 @@
 	<!-- // component (navigation) -->
 
 	<!-- breadcrumb -->
- 	<c:import url="/${localeCd}/breadCrumb"> 
+ 	<!-- <c:import url="/${localeCd}/breadCrumb"> 
 	    <c:param name="bizType" value="${bizType}"/>
-	</c:import> 
+	</c:import>  -->
+	<div class="breadcrumb">
+		<ul itemscope itemtype="http://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+        <a href="/it" itemprop="item" data-link-area="gnb-breadcrumb" data-link-name="home">
+        <span itemprop="name">HOME</span></a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li>
+        <strong>Member Days</strong>
+      </li>
+		</ul>
+	</div>
 	<!-- // breadcrumb -->
 
 	<c:set var='path' value='/${localeCd}/member-days' /> <!-- Required input ## Specify the microsite upload path for a flexible folder structure -->
@@ -87,25 +99,25 @@
 			<input type="hidden" data-model-group="eventGift" data-type="coupon" value="MD07535483|MD07548494|MD07528387|MD07552999|MD07535216"/>
 
 			<!-- Life Style Model -->
-			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07539105|MD07528602|MD07544843|MD06211517"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07539105|MD07544843|MD06211517|MD07528602|MD07551400"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548200|MD07546800|MD07547146|MD07531094|MD07535366"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07538352|MD07532987|MD07546823|MD07535366"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07540299|MD07536043|MD07554256|MD07554751"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536043|MD07538440|MD07535124|MD07529953"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07540299|MD07536043|MD07554256|MD07554813|MD07554751"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536043|MD07540591|MD07535124|MD07529953"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
-			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07540676|MD07536043|MD07547135|MD07540307|MD06211517"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07547135|MD07536043|MD07540676|MD06211517|MD07540307"/>
 			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
 			<input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/it/hotdeal_product01.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/it/hotdeal_product03.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="Limited to 100 units"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/it/hotdeal_product02.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt2" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/it/hotdeal_product03.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/it/hotdeal_product01.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt3" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/it/hotdeal_product05.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/it/hotdeal_product06.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt4" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb5" value="${path}/assets/images/it/hotdeal_product06.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb5" value="${path}/assets/images/it/hotdeal_product05.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt5" value="Limited to 100 units"/>
 			<!-- ex. multiple model thumb / alt text 
 			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/hotdeal_product.png"/>
@@ -115,7 +127,8 @@
 			<!-- Hottest Gift Model -->
 			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546805|MD07546781|MD07523705|MD07528466|MD07533869|MD07523980|MD07526955|MD07534114|MD07531094"/>
 			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535124|MD07529953|MD07530617|MD07540591"/>
-			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07546205|MD07546235|MD07551400|MD07551561|MD06175496|MD07527380|MD07539124|MD07535708|MD07536705|MD05774871|MD05775808|MD07528602|MD07528454|MD07522656|MD07544843|MD07520889"/>
+			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07527380|MD07539124|MD07535708|MD07536705|MD07522656|MD07544843|MD07521762|MD06175496|MD05774871|MD05775808|MD07528602|MD07528454|MD07546205|MD07546235|MD07551400|MD07551561"/>
+			<!-- <input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07546205|MD07546235|MD07551400|MD07551561|MD06175496|MD07527380|MD07539124|MD07535708|MD07536705|MD05774871|MD05775808|MD07528602|MD07528454|MD07522656|MD07544843|MD07520889"/> -->
 			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07544866|MD07525444|MD07544862|MD07540299|MD07525616|MD07554256|MD07520962|MD07532987|MD07529698"/>
 		<!-- Required input ## Model List End -->
 	
@@ -285,7 +298,7 @@
 									data-track-group="mic" data-track-name="members_week_anchor_click"
 									data-link-name="memberdays_anchor_benefit" 
 									data-link-area="memberdays_2022" 
-									class="link">VANTAGGI MEMBER DAYS</a>
+									class="link">VANTAGGI LG MEMBER DAYS</a>
 							</li>
 							<li class="list-item">
 								<a href="#box_content2" 
@@ -311,7 +324,7 @@
 						<div class="section__header">
 							<p class="section__sub">Più acquisti, più risparmi!</p>
 							<h2 class="section__title">
-								Crea il tuo set e ottieni fino al 22% di sconto.
+								Crea il tuo set e ottieni fino al 22% di sconto
 								<span class="section__text">Offerta valida solo per i clienti registrati</span>
 							</h2>
 						</div>
@@ -319,7 +332,7 @@
 							<ul class="benefit__list benefit__list--discount">
 								<li class="benefit__item">
 									<div class="benefit__inner">
-										<p class="benefit__category">Extra sconto utenti registrati</p>
+										<p class="benefit__category">Extra sconto clineti registrati</p>
 										<p class="benefit__discount">
 											2%
 											<em class="benefit__condition">direttamente a carrello, per sempre</em>
@@ -351,8 +364,7 @@
 							</ul>
 							<div style="text-align: center;margin-top: 20px;">
 								<span class="benefit__text">
-									*Finanziamento a tasso zero / installazione e consegna al piano disponibili solo su una selezione di prodotti<br>
-									**Il coupon relativo allo sconto Member Days sarà visibile direttamente a carrello in fase d’acquisto o nella sezione “I miei coupon” del tuo account MyLG
+									Lo sconto Member Days sarà visibile direttamente a carrello in fase di acquisto
 								</span>
 							</div>
 							<!-- <div class="benefit__button">
@@ -426,7 +438,7 @@
 									<ol class="coupon__order">
 										<li>
 											<span class="coupon__num">1</span>
-											<span class="coupon__text highlight highlight--beige">Registrati su LG.com</span>
+											<span class="coupon__text highlight highlight--beige">Accedi o registrati su LG.com</span>
 										</li>
 										<li>
 											<span class="coupon__num">2</span>
@@ -446,7 +458,7 @@
 								<div class="coupon__item coupon__item--greenlife">
 									<div class="coupon__front">
 										<div class="coupon__thumnail"></div>
-										<p class="coupon__category">#Green life</p>
+										<p class="coupon__category">#GreenLife</p>
 									</div>
 									<input type="radio" id="Coupon01" name="Coupons" class="sr-only" data-param="Green" data-track-group="mic" data-track-opt="theme" data-track-val="greenlife" data-track-name="themeSelectionCoupon">
 									<label for="Coupon01" 
@@ -475,7 +487,7 @@
 								<div class="coupon__item coupon__item--vividlife">
 									<div class="coupon__front">
 										<div class="coupon__thumnail"></div>
-										<p class="coupon__category">#Vivid life</p>
+										<p class="coupon__category">#VividLife</p>
 									</div>
 									<input type="radio" id="Coupon02" name="Coupons" class="sr-only" data-param="Vivid" data-track-group="mic" data-track-opt="theme" data-track-val="vividlife" data-track-name="themeSelectionCoupon">
 									<label for="Coupon02" 
@@ -504,7 +516,7 @@
 								<div class="coupon__item coupon__item--gaminglife">
 									<div class="coupon__front">
 										<div class="coupon__thumnail"></div>
-										<p class="coupon__category">#Gaming life</p>
+										<p class="coupon__category">#GamingLife</p>
 									</div>
 									<input type="radio" id="Coupon03" name="Coupons" class="sr-only" data-param="Gaming" data-track-group="mic" data-track-opt="theme" data-track-val="gaminglife" data-track-name="themeSelectionCoupon">
 									<label for="Coupon03" 
@@ -517,7 +529,7 @@
 											<span class="product__info">
 												<!-- <span class="product__category">with</span> -->
 												<span class="product__name">Premio in palio!</span>
-												<span class="product__code">27GL850-B</span>
+												<span class="product__code">27GP950-B.AEU</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -533,7 +545,7 @@
 								<div class="coupon__item coupon__item--workinglife">
 									<div class="coupon__front">
 										<div class="coupon__thumnail"></div>
-										<p class="coupon__category">#Working life</p>
+										<p class="coupon__category">#WorkingLife</p>
 									</div>
 									<input type="radio" id="Coupon04" name="Coupons" class="sr-only" data-param="Working" data-track-group="mic" data-track-opt="theme" data-track-val="workinglife" data-track-name="themeSelectionCoupon">
 									<label for="Coupon04" 
@@ -546,7 +558,7 @@
 											<span class="product__info">
 												<!-- <span class="product__category">with</span> -->
 												<span class="product__name">Premio in palio!</span>
-												<span class="product__code">17Z90P-G</span>
+												<span class="product__code">17Z90P-G.AA86D</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -562,7 +574,7 @@
 								<div class="coupon__item coupon__item--soundfullife">
 									<div class="coupon__front">
 										<div class="coupon__thumnail"></div>
-										<p class="coupon__category">#Soundful life</p>
+										<p class="coupon__category">#SoundfulLife</p>
 									</div>
 									<input type="radio" id="Coupon05" name="Coupons" class="sr-only" data-param="Soundful" data-track-group="mic" data-track-opt="theme" data-track-val="soundfullife" data-track-name="themeSelectionCoupon">
 									<label for="Coupon05" 
@@ -598,14 +610,14 @@
 											data-track-opt="theme" 
 											data-track-name="submitClick" 
 											data-link-name="memberdays_luckydraw_submit_click_{theme}"
-											data-link-area="memberdays_2022" style="width: 160px;">INVIA</button>
+											data-link-area="memberdays_2022" style="width: 160px;">PARTECIPA</button>
 									</div>
 								</form>
 							</div>
 						</div>
 						<div class="section__footer section__footer--center">
 							<p class="section__text">
-								Concorso a premi valido dal 31/05 al 22/06. Valore montepremi €6.645,00.<br>Maggiori info e regolamento disponibili su <a href="https://www.lg.com/it/promotions" target="_blank" data-link-name="memberdays_promotions" data-link-area="memberdays_2022">www.lg.com/it/promotions.</a>
+								Concorso a premi valido dal 31/05 al 22/06. Valore montepremi €6.645,00.<br>Maggiori info e regolamento disponibili su <a href="https://www.lg.com/it/promotions/member-days" target="_blank" data-link-name="memberdays_promotions" data-link-area="memberdays_2022">www.lg.com/it/promotions/member-days.</a>
 							</p>
 						</div>
 					</div>
@@ -619,27 +631,27 @@
 								<li class="tab__item tab__item--active">
 									<a href="#greenlife" 
 									data-tab-name="greenlife" data-track-group="mic" data-track-opt="theme" data-track-val="greenlife" data-track-name="selectThemeDisplay" 
-									data-link-name="memberdays_themedisplay_click_greenlife" data-link-area="memberdays_2022" class="tab__button">Green life</a>
+									data-link-name="memberdays_themedisplay_click_greenlife" data-link-area="memberdays_2022" class="tab__button">#GreenLife</a>
 								</li>
 								<li class="tab__item">
 									<a href="#vividlife" 
 									data-tab-name="vividlife" data-track-group="mic" data-track-opt="theme" data-track-val="vividlife" data-track-name="selectThemeDisplay" 
-									data-link-name="memberdays_themedisplay_click_vividlife" data-link-area="memberdays_2022" class="tab__button">Vivid life</a>
+									data-link-name="memberdays_themedisplay_click_vividlife" data-link-area="memberdays_2022" class="tab__button">#VividLife</a>
 								</li>
 								<li class="tab__item">
 									<a href="#gaminglife" 
 									data-tab-name="gaminglife" data-track-group="mic" data-track-opt="theme" data-track-val="gaminglife" data-track-name="selectThemeDisplay" 
-									data-link-name="memberdays_themedisplay_click_gaminglife" data-link-area="memberdays_2022" class="tab__button">Gaming life</a>
+									data-link-name="memberdays_themedisplay_click_gaminglife" data-link-area="memberdays_2022" class="tab__button">#GamingLife</a>
 								</li>
 								<li class="tab__item">
 									<a href="#workinglife" 
 									data-tab-name="workinglife" data-track-group="mic" data-track-opt="theme" data-track-val="workinglife" data-track-name="selectThemeDisplay" 
-									data-link-name="memberdays_themedisplay_click_workinglife" data-link-area="memberdays_2022" class="tab__button">Working life</a>
+									data-link-name="memberdays_themedisplay_click_workinglife" data-link-area="memberdays_2022" class="tab__button">#WorkingLife</a>
 								</li>
 								<li class="tab__item">
 									<a href="#soundfullife" 
 									data-tab-name="soundfullife" data-track-group="mic" data-track-opt="theme" data-track-val="soundfullife" data-track-name="selectThemeDisplay" 
-									data-link-name="memberdays_themedisplay_click_soundfullife" data-link-area="memberdays_2022" class="tab__button">Soundful life</a>
+									data-link-name="memberdays_themedisplay_click_soundfullife" data-link-area="memberdays_2022" class="tab__button">#SoundfulLife</a>
 								</li>
 							</ul>
 							<template class="contents-template">
@@ -691,7 +703,7 @@
 																alt="LG InstaView™">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG InstaView™</p>
+															<p class="product__name">LG InstaView™ «Side-by-Side»</p>
 															<ul class="product__desc">
 																<li>Controllo preciso della temperatura grazie alla tecnologia Linear Cooling™</li>
 																<li>Drink Dispenser con tecnologia UVnano</li>
@@ -713,7 +725,7 @@
 																alt="LG CordZero A9">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG CordZero A9</p>
+															<p class="product__name">LG CordZero A9 «Ultra»</p>
 															<ul class="product__desc">
 																<li>due batterie ricaricabili e facilmente intercambiabili tra loro che garantiscono fino a 120 min* di pulizie no stop.</li>
 																<li>Accensione, spegnimento e livelli di potenza possono essere gestiti facilmente con un semplice tocco.</li>
@@ -736,7 +748,7 @@
 																alt="LG Washing Machine AI DD™">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG Washing Machine AI DD™</p>
+															<p class="product__name">LG Washing Machine<br>AI DD™</p>
 															<ul class="product__desc">
 																<li>Leader nell’efficienza energetica con classe energetica A</li>
 																<li>Tecnologia AI DD™ in grado di scegliere in automatico il lavaggio perfetto</li>
@@ -823,7 +835,7 @@
 															<ul class="product__desc">
 																<li>Pixel autoilluminanti e risoluzione 4K</li>
 																<li>Tecnologia Brightness Booster Max per immagini più luminose del 30%</li>
-																<li>Processore α9 Gen 5 per immagini perfette.</li>
+																<li>Processore α9 Gen 5 per immagini perfette</li>
 																<li>Gallery Design con installazione a filo muro</li>
 															</ul>
 														</div>
@@ -992,7 +1004,27 @@
 								<div class="product">
 									<div class="product__showroom product__showroom--workinglife">
 										<div class="product__slide">
-											<div class="product__layer"></div>
+											<div class="product__layer">
+												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
+												<div class="product__target">
+													<a href="https://www.lg.com/uk/monitors/lg-28mq780-b" target="_blank"
+														data-link-name="memberdays_productMouseHover_workinglife_28MQ780-B"
+														data-link-area="memberdays_2022"
+														class="product__link">
+														<div class="product__img">
+															<img src="../assets/images/it/img_product_showroom_workinglife01_01.png"
+																alt="DualUp Monitor with Ergo">
+														</div>
+														<div class="product__right">
+															<p class="product__name">DualUp Monitor with Ergo</p>
+															<ul class="product__desc">
+																<li>Formato 16:18 con picture-by-picture</li>
+																<li>Stand Ergo regolabile in qualsiasi direzione</li>
+															</ul>
+														</div>
+													</a>
+												</div>
+											</div>
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
@@ -1007,8 +1039,11 @@
 														<div class="product__right">
 															<p class="product__name">LG gram</p>
 															<ul class="product__desc">
-																<li>Ultra potente: processori Intel® Core™ i7 e grafica Intel® Iris® Xe</li>
-																<li>Ultra leggero: solo 1190 grammi</li>
+																<li>Notebook 17" IPS 16:10 2560x1600</li>
+																<li>Windows 11 Home (64 bit)</li>
+																<li>Intel® Core™ i7-1165G7 (Evo™ platform)</li>
+																<li>Ultra leggero: solo 1350 grammi</li>
+																<li>Batteria 80 Wh - fino a 15 ore</li>
 															</ul>
 														</div>
 													</a>
@@ -1076,8 +1111,11 @@
 														<div class="product__right">
 															<p class="product__name">LG gram</p>
 															<ul class="product__desc">
-																<li>Ultra potente: processori Intel® Core™ i7 e grafica Intel® Iris® Xe</li>
-																<li>Ultra leggero: solo 1190 grammi</li>
+																<li>Notebook 17" IPS 16:10 2560x1600</li>
+																<li>Windows 11 Home (64 bit)</li>
+																<li>Intel® Core™ i7-1165G7 (Evo™ platform)</li>
+																<li>Ultra leggero: solo 1350 grammi</li>
+																<li>Batteria 80 Wh - fino a 15 ore</li>
 															</ul>
 														</div>
 													</a>
@@ -1155,12 +1193,12 @@
 				<div id="HotDeal" class="section__container" data-list="hotDeal">
 					<div class="section__inner">
 						<div class="section__header">
-							<h2 class="section__title">MEMBER DAYS SUPER OFFERTE</h2>
+							<h2 class="section__title">MEMBER DAYS OFFERTE TOP</h2>
 							<p class="section__sub section__sub--small">
-								<span class="break--mobile">Una selezione di prodotti a un <span class="highlight highlight--lightblue">prezzo davvero speciale.</span></span>
+								<span class="break--mobile">Una selezione di prodotti a un prezzo davvero speciale.</span>
 								Le quantità sono limitate!
 							</p>
-							<p class="section__desc section__desc--small">Offerta di benvenuto: ulteriore 5% di sconto per nuovi clienti</p>
+							<p class="section__desc section__desc--small">Offerta di benvenuto: ulteriore 5% di sconto per nuovi client registrati.</p>
 						</div>
 						<div id="hotdeal" class="product product--hotdeal">
 							<div class="product__mask">
@@ -1184,22 +1222,22 @@
 											<p class="product__sn sku">*modelName*</p>
 											<div class="product__price">
 												<span class="product__discount">
-													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 													<span class="number">*originPrice*</span>
+													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												</span>
 												<span class="product__highlight">*discountMsg*</span>
 											</div>
 											<div class="product__price-now">
 												<span class="product__cost">
-													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 													<span class="number">*finalPrice*</span>
+													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												</span>
 											</div>
 											<div class="product__members">
 												<span class="product__text"><spring:message code='OBS_MEMBERSHIP_MSG' text='OBS_MEMBERSHIP_MSG'/></span>
 												<span class="product__highlight">
-													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 													<span class="number">*membershipPriceValue*</span>
+													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												</span>
 												<div class="product__noti d-none">
 													<p class="product__text">*reStockAlertText*</p>
@@ -1245,7 +1283,7 @@
 								Sconto speciale Member Days 15% (acquistando 2 o più prodotti) + Extra sconto utenti registrati 2% (direttamente<br>
 								a carrello, per sempre) + Offerta di benvenuto 5% (sul primo acquisto)
 							</p>
-							<p class="section__desc">Visualizzerai il tuo coupon direttamente a carrello in fase di acquisto.</p>
+							<p class="section__desc">Visualizzerai il tuo sconto direttamente a carrello in fase di acquisto</p>
 						</div>
 						<div class="tab">
 							<ul class="tab__list tab__list--round">
@@ -1344,11 +1382,11 @@
 								</li>
 							</template>
 							<div id="tvcinebeam" class="tab__panel" style="display: block;">
-								<p class="tab__noti">
+								<!-- <p class="tab__noti">
 									<span class="highlight highlight--beige">
 										Visualizza il prezzo finale del tuo <span class="tab__bold">carrello</span>
 									</span>
-								</p>
+								</p> -->
 								<div class="product">
 									<div class="product__mask">
 										<ul class="product__list"></ul>
@@ -1471,11 +1509,11 @@
 											tabindex="0" 
 											data-track-group="mic" 
 											data-track-opt="category" 
-											data-track-val="SCOPRI TUTTI I PRODOTTI INFORMATICI"  
+											data-track-val="SCOPRI TUTTI I PC E MONITOR"  
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorecomputerproducts"
 											data-link-area="memberdays_2022"
-											class="button__item button__item--white">SCOPRI TUTTI I PRODOTTI INFORMATICI</a>
+											class="button__item button__item--white">SCOPRI TUTTI I PC E MONITOR</a>
 									</div>
 								</div>
 							</div>
@@ -1522,9 +1560,7 @@
 		<div class="footer-box">
 			<div class="footer-component">
 				<div class="footer-caution">
-					<p>Iniziativa promozionale Member Days valida dal 31/05 al 22/06/22. Ulteriore sconto a carrello del 15% acquistando 2 o più prodotti LG per
-						una valore minimo di 500€ su LG Online Shop. Coupon cumulabile con altri coupon o con offerte in corso. Sconto non applicabile ai prodotti
-						oggetto delle vendite abbinate.</p>
+					<p>Iniziativa promozionale Member Days valida dal 31/05/22 al 22/06/22. Ulteriore sconto a carrello del 15% valido solo su LG Online Shop acquistando 2 o più prodotti per un valore di spesa minimo di 500€. Sconto cumulabile con altri coupon o con offerte in corso. Sconto non applicabile ai prodotti oggetto delle vendite abbinate.</p>
 					<p>Pagamenti rateizzati tramite Findomestic - promozione valida dal 01/01/2022 al 31/12/2022<br>
 						Messaggio pubblicitario con finalità promozionale. Offerta valida dal 01/01/2022 al 31/12/2022 in 10 e 20 mesi come da esempio
 						rappresentativo: Prezzo del bene € 900, TAN fisso 0%, TAEG 0%, in 10 rate da 90 €, 20 rate da 45 €, spese e costi accessori azzerati. Importo

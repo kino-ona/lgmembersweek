@@ -299,6 +299,8 @@
 						background-image: url('../images/it/bg_product_showroom_workinglife01.png');
 						.product__layer {
 							&:nth-child(3) {
+								top: 30%;
+								left: 25%;
 								.product__target {
 									top: -44px;
 									&:before {

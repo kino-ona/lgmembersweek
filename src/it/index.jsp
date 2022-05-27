@@ -137,7 +137,7 @@
 				<div class="visual__swiper">
 					<div class="visual__slide visual__slide--intro">
 						<div class="section">
-							<div class="section__inner">
+							<div class="section__inner">	
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">LG MEMBER DAYS</h2>
 									<p class="section__sub">
@@ -191,7 +191,7 @@
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">Crea la tua <span class="mobile_break"></span>#VividLife con LG</h2>
 									<p class="section__sub">
-										Goditi i tuoi film come al cinema grazie a immagini nitide, colori impareggiabili e un audio surround avvolgente.<br>
+										Goditi i tuoi film come al cinema grazie a colori impareggiabili e audio surround.<br>
 										Offerte valide fino al 22 giugno.
 									</p>
 								</div>
@@ -260,7 +260,7 @@
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">Crea la tua <span class="mobile_break"></span>#SoundfulLife con LG</h2>
 									<p class="section__sub">
-										Ascolta i tuoi brani preferiti con una qualità audio superiore, dovunque tu sia e in ogni momento della tua giornata.<br>
+										Ascolta i tuoi brani preferiti con una qualità audio superiore, dovunque tu sia.<br>
 										Offerte valide fino al 22 giugno.
 									</p>
 								</div>
@@ -446,7 +446,7 @@
 										<li>
 											<span class="coupon__num">3</span>
 											<span class="coupon__text">
-												<span class="highlight highlight--beige">Clicca su Invia</span>
+												<span class="highlight highlight--beige">Clicca su Partecipa</span>
 											</span>
 										</li>
 									</ol>
@@ -726,7 +726,7 @@
 														<div class="product__right">
 															<p class="product__name">LG CordZero A9 «Ultra»</p>
 															<ul class="product__desc">
-																<li>due batterie ricaricabili e facilmente intercambiabili tra loro che garantiscono fino a 120 min* di pulizie no stop.</li>
+																<li>Due batterie ricaricabili e facilmente intercambiabili tra loro che garantiscono fino a 120 min* di pulizie no stop.</li>
 																<li>Accensione, spegnimento e livelli di potenza possono essere gestiti facilmente con un semplice tocco.</li>
 															</ul>
 														</div>
@@ -895,7 +895,7 @@
 								</div>
 							</div>
 							<div id="gaminglife" class="tab__panel tab__panel--gaminglife showroom_panel">
-								<p class="tab__noti">Preparati a vivere i tuoi videogame come mai prima,<br>grazie ai nostri prodotti progettati per garantirti i migliori effetti audio e video.</p>
+								<p class="tab__noti">Preparati a vivere i tuoi videogame come non hai mai fatto prima,<br>grazie ai nostri prodotti progettati per garantirti la migliore esperienza audio e video.</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--gaminglife">
 										<div class="product__slide">
@@ -1415,11 +1415,11 @@
 								</div>
 							</div>
 							<div id="audio" class="tab__panel">
-								<p class="tab__noti">
+								<!-- <p class="tab__noti">
 									<span class="highlight highlight--beige">
 										Visualizza il prezzo finale del tuo <span class="tab__bold">carrello</span>
 									</span>
-								</p>
+								</p> -->
 								<div class="product">
 									<div class="product__mask">
 										<ul class="product__list"></ul>
@@ -1449,11 +1449,11 @@
 								</div>
 							</div>
 							<div id="homeappliance" class="tab__panel">
-								<p class="tab__noti">
+								<!-- <p class="tab__noti">
 									<span class="highlight highlight--beige">
 										Visualizza il prezzo finale del tuo <span class="tab__bold">carrello</span>
 									</span>
-								</p>
+								</p> -->
 								<div class="product">
 									<div class="product__mask">
 										<ul class="product__list"></ul>
@@ -1483,11 +1483,11 @@
 								</div>
 							</div>
 							<div id="computerproducts" class="tab__panel">
-								<p class="tab__noti">
+								<!-- <p class="tab__noti">
 									<span class="highlight highlight--beige">
 										Visualizza il prezzo finale del tuo <span class="tab__bold">carrello</span>
 									</span>
-								</p>
+								</p> -->
 								<div class="product">
 									<div class="product__mask">
 										<ul class="product__list"></ul>
@@ -1518,7 +1518,7 @@
 				<div class="popup__body">
 					<div class="popup__contents">
 						<p class="popup__text">
-							Dopo aver effettuato l'iscrizione, clicca su <span class="popup__bold">«Invia»</span> per partecipare all'estrazione.
+							Dopo aver effettuato l'iscrizione, clicca su <span class="popup__bold">Partecipa</span> per partecipare all'estrazione.
 						</p>
 					</div>
 					<div class="popup__bottom">

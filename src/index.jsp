@@ -1415,8 +1415,10 @@
 							<div id="audio" class="tab__panel">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										Visit <span class="tab__bold">My Basket</span>
-										to check your final disocunted price
+										&nbsp;Visit <span style="font-style:italic;">My Basket</span> to check your final discounted price&nbsp;
+									</span><br>
+									<span class="highlight highlight--beige">
+										&nbsp;Remember to apply 15% Discount Coupon and 5% Welcome Coupon at <span style="font-style:italic;">My Basket</span>&nbsp;
 									</span>
 								</p>
 								<div class="product">
@@ -1450,8 +1452,10 @@
 							<div id="homeappliance" class="tab__panel">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										Visit <span class="tab__bold">My Basket</span>
-										to check your final disocunted price
+										&nbsp;Visit <span style="font-style:italic;">My Basket</span> to check your final discounted price&nbsp;
+									</span><br>
+									<span class="highlight highlight--beige">
+										&nbsp;Remember to apply 15% Discount Coupon and 5% Welcome Coupon at <span style="font-style:italic;">My Basket</span>&nbsp;
 									</span>
 								</p>
 								<div class="product">
@@ -1475,8 +1479,10 @@
 							<div id="computerproducts" class="tab__panel">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										Visit <span class="tab__bold">My Basket</span>
-										to check your final disocunted price
+										&nbsp;Visit <span style="font-style:italic;">My Basket</span> to check your final discounted price&nbsp;
+									</span><br>
+									<span class="highlight highlight--beige">
+										&nbsp;Remember to apply 15% Discount Coupon and 5% Welcome Coupon at <span style="font-style:italic;">My Basket</span>&nbsp;
 									</span>
 								</p>
 								<div class="product">

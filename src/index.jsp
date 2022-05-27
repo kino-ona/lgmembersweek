@@ -1268,12 +1268,11 @@
 							</h2>
 							<p class="section__sub">SHOP OUR LATEST MARKDOWNS</p>
 							<p class="section__desc">
-								Create your own Lifestyle Bundle with LG PRODUCTS and get UP TO 22% OFF your purchases.
+								Create your own Lifestyle Bundle with LG PRODUCTS and get UP TO 22% OFF your purchases.<br>
 								<span class="section__mark">Additional discount applies when you buy 2 OR MORE items*.</span>
 							</p>
 							<p class="section__desc">
-								<span class="break--desktop">Apply MEMBER DAYS Special Discount Coupon 15% + Member Price</span>
-								Discount 2% + Welcome Coupon 5% off.
+								Apply MEMBER DAYS Special Discount Coupon 15% + Member Price Discount 2% + Welcome Coupon 5% off.
 							</p>
 							<p class="section__desc">
 								Click SEE MORE  button below to discover more LG SALE products.<br>
@@ -1379,8 +1378,10 @@
 							<div id="tvcinebeam" class="tab__panel" style="display: block;">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										Visit <span class="tab__bold">My Basket</span> to check your final discounted price<br>
-										Remember to apply 15% Discount Coupon and 5% Welcome Coupon at My Basket
+										&nbsp;Visit <span style="font-style:italic;">My Basket</span> to check your final discounted price&nbsp;
+									</span><br>
+									<span class="highlight highlight--beige">
+										&nbsp;Remember to apply 15% Discount Coupon and 5% Welcome Coupon at <span style="font-style:italic;">My Basket</span>&nbsp;
 									</span>
 								</p>
 								<div class="product">

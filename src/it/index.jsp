@@ -125,10 +125,9 @@
 			-->
 
 			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546805|MD07546781|MD07523705|MD07528466|MD07533869|MD07523980|MD07526955|MD07534114|MD07531094"/>
-			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535124|MD07529953|MD07530617|MD07540591"/>
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546805|MD07546781|MD07523705|MD07528466|MD07533869|MD07526955|MD07523980|MD07534114|MD07531094"/>
+			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535124|MD07529953|MD07540591"/>
 			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07527380|MD07539124|MD07535708|MD07536705|MD07522656|MD07544843|MD07521762|MD06175496|MD05774871|MD05775808|MD07528602|MD07528454|MD07546205|MD07546235|MD07551400|MD07551561"/>
-			<!-- <input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07546205|MD07546235|MD07551400|MD07551561|MD06175496|MD07527380|MD07539124|MD07535708|MD07536705|MD05774871|MD05775808|MD07528602|MD07528454|MD07522656|MD07544843|MD07520889"/> -->
 			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07544866|MD07525444|MD07544862|MD07540299|MD07525616|MD07554256|MD07520962|MD07532987|MD07529698"/>
 		<!-- Required input ## Model List End -->
 	
@@ -167,7 +166,7 @@
 						<div class="section">
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
-									<h2 class="section__title">Crea la tua #GreenLife con LG</h2>
+									<h2 class="section__title">Crea la tua <span class="mobile_break"></span>#GreenLife con LG</h2>
 									<p class="section__sub">
 										Prenditi cura del pianeta e risparmia in bolletta con la tecnologia LG.<br>
 										Offerte valide fino al 22 giugno.
@@ -190,7 +189,7 @@
 						<div class="section">
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
-									<h2 class="section__title">Crea la tua #VividLife con LG</h2>
+									<h2 class="section__title">Crea la tua <span class="mobile_break"></span>#VividLife con LG</h2>
 									<p class="section__sub">
 										Goditi i tuoi film come al cinema grazie a immagini nitide, colori impareggiabili e un audio surround avvolgente.<br>
 										Offerte valide fino al 22 giugno.
@@ -213,7 +212,7 @@
 						<div class="section">
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
-									<h2 class="section__title">Crea la tua #GamingLife con LG</h2>
+									<h2 class="section__title">Crea la tua <span class="mobile_break"></span>#GamingLife con LG</h2>
 									<p class="section__sub">
 										Immergiti completamente nell’azione e conquista la vittoria grazie a tempi di risposta eccezionali<br>
 										Offerte valide fino al 22 giugno.
@@ -236,7 +235,7 @@
 						<div class="section">
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
-									<h2 class="section__title">Crea la tua #WorkingLife con LG</h2>
+									<h2 class="section__title">Crea la tua <span class="mobile_break"></span>#WorkingLife con LG</h2>
 									<p class="section__sub">
 										Crea il set perfetto per il tuo smartworking e ottieni il massimo della produttività ovunque tu sia.<br>
 										Offerte valide fino al 22 giugno.
@@ -259,7 +258,7 @@
 						<div class="section">
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
-									<h2 class="section__title">Crea la tua #SoundfulLife con LG</h2>
+									<h2 class="section__title">Crea la tua <span class="mobile_break"></span>#SoundfulLife con LG</h2>
 									<p class="section__sub">
 										Ascolta i tuoi brani preferiti con una qualità audio superiore, dovunque tu sia e in ogni momento della tua giornata.<br>
 										Offerte valide fino al 22 giugno.
@@ -1007,12 +1006,12 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/uk/monitors/lg-28mq780-b" target="_blank"
+													<a href="https://www.lg.com/it/monitor/lg-28mq780-b" target="_blank"
 														data-link-name="memberdays_productMouseHover_workinglife_28MQ780-B"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="../assets/images/it/img_product_showroom_workinglife01_01.png"
+															<img src="${path}/assets/images/it/img_product_showroom_workinglife01_01.png"
 																alt="DualUp Monitor with Ergo">
 														</div>
 														<div class="product__right">
@@ -1298,16 +1297,6 @@
 										class="tab__button">TV/Proiettori</a>
 								</li>
 								<li class="tab__item">
-									<a href="#audio" 
-									data-tab-name="audio" 
-									data-track-group="mic" 
-									data-track-opt="category" 
-									data-track-name="selectProductCategory" 
-									data-link-name="memberdays_productCategory_audio"
-									data-link-area="memberdays_2022"
-									class="tab__button">Audio</a>
-								</li>
-								<li class="tab__item">
 									<a href="#homeappliance" 
 									data-tab-name="homeappliance" 
 									data-track-group="mic" 
@@ -1326,6 +1315,16 @@
 									data-link-name="memberdays_productCategory_computerproducts"
 									data-link-area="memberdays_2022"
 									class="tab__button">Informatica</a>
+								</li>
+								<li class="tab__item">
+									<a href="#audio" 
+									data-tab-name="audio" 
+									data-track-group="mic" 
+									data-track-opt="category" 
+									data-track-name="selectProductCategory" 
+									data-link-name="memberdays_productCategory_audio"
+									data-link-area="memberdays_2022"
+									class="tab__button">Audio</a>
 								</li>
 							</ul>
 							<template class="contents-template">
@@ -1435,7 +1434,7 @@
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemoresoundbar"
 											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SCOPRI TUTTI LE SOUNDBAR</a>
+											class="button__item button__item--white">SCOPRI TUTTE LE SOUNDBAR</a>
 										<a href="https://www.lg.com/it/hi-fi-audio"
 											target="_blank"
 											tabindex="0" 
@@ -1446,16 +1445,6 @@
 											data-link-name="memberdays_plp_click_seemorewirelessearbuds" 
 											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">SCOPRI TUTTI I PRODOTTI AUDIO</a>
-										<a href="https://www.lg.com/it/cuffie-bluetooth"
-											target="_blank"
-											tabindex="0" 
-											data-track-group="mic" 
-											data-track-opt="category" 
-											data-track-val="SOUND CUFFIE EARBUDS"  
-											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemorewirelessearbuds" 
-											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SCOPRI TUTTI LE CUFFIE BLUETOOTH</a>
 									</div>
 								</div>
 							</div>

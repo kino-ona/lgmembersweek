@@ -181,6 +181,7 @@
 					&:nth-child(2) {
 						.product__layer {
 							&:nth-child(1) {
+								top: 43%;
 								.product__target {
 									top: -44px;
 									&:before {
@@ -190,6 +191,7 @@
 								}
 							}
 							&:nth-child(2) {
+								top: 40%;
 								.product__target {
 									top: -44px;
 									&:before {
@@ -345,6 +347,7 @@
 						}
 					}
 					&:nth-child(2) {
+						background-image: url('../images/it/bg_product_showroom_soundfullife02.png');
 						.product__layer {
 							&:nth-child(1) {
 								.product__target {
@@ -411,6 +414,9 @@
 						&:nth-child(1) {
 							background-image: url('../images/it/m_bg_product_showroom_soundfullife01.png');
 						}
+						&:nth-child(2) {
+							background-image: url('../images/it/m_bg_product_showroom_soundfullife02.png');
+						}
 					}
 				}
 			}
@@ -432,7 +438,10 @@
 				}
 			}
 		}
+		.mobile_break {
+			display: block;
+			margin: 0 !important;
+		}
 	}
-
 	
 }

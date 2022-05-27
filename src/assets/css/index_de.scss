@@ -137,14 +137,31 @@
 	// product
 	.product {
 		&--hotdeal {
+			.product__list {
+				.slick-list {
+					max-width: 1080px;
+				}
+			}
 			.product__item {
-				@for $i from 1 through 6 {
+				min-width: 240px;
+				max-width: 240px;
+				@for $i from 1 through 4 {
 					&:nth-child(#{ $i }) {
 						.hotdeal_bg {
-							background-image: url('../images/it/bg_hotdeal0#{$i}.png');
+							background-image: url('../images/de/bg_hotdeal0#{$i}.png');
 						}
 					}
 				}
+			}
+			.product__flags {
+				top: 10px;
+			}
+			.product__img {
+				height: 240px;
+			}
+			.hotdeal_bg {
+				left: 0;
+				height: 240px;
 			}
 		}
 		&__showroom {
@@ -152,7 +169,7 @@
 				.product__slide {
 					@for $i from 1 through 2 {
 						// &:nth-child(#{ $i }) {
-						// 	background-image: url('../images/it/bg_product_showroom_greenlife0#{$i}.png');
+						// 	background-image: url('../images/de/bg_product_showroom_greenlife0#{$i}.png');
 						// }
 					}
 					&:nth-child(1) {
@@ -229,7 +246,7 @@
 				.product__slide {
 					@for $i from 1 through 2 {
 						&:nth-child(#{ $i }) {
-							background-image: url('../images/it/bg_product_showroom_vividlife0#{$i}.png');
+							background-image: url('../images/de/bg_product_showroom_vividlife0#{$i}.png');
 						}
 					}
 					&:nth-child(1) {
@@ -278,30 +295,14 @@
 									}
 								}
 							}
-							&:nth-child(2) {
-								.product__target {
-									left: 32px;
-									top: -44px;
-									margin-left: 0;
-									padding-left: 20px;
-									&:before {
-										left: 10px;
-										top: 46px;
-										margin-left: 0;
-										margin-top: 0;
-										border-left: 0;
-										border-top: 15px solid transparent;
-										border-bottom: 15px solid transparent;
-										border-right: 20px solid #fff;
-									}
-								}
-							}
 						}
 					}
 					&:nth-child(2) {
-						background-image: url('../images/it/bg_product_showroom_gaminglife02.png');
+						background-image: url('../images/de/bg_product_showroom_gaminglife02.png');
 						.product__layer {
 							&:nth-child(1) {
+								left: 58.81%;
+								top: 14.63%;
 								.product__target {
 									top: -44px;
 									&:before {
@@ -309,6 +310,10 @@
 										margin-top: 0;
 									}
 								}
+							}
+							&:nth-child(2) {
+								left: 81.25%;
+								top: 53.66%;	
 							}
 						}
 					}
@@ -324,6 +329,28 @@
 									&:before {
 										top: 46px;
 										margin-top: 0;
+									}
+								}
+							}
+							&:nth-child(4) {
+								left: 25.38%;
+								top: 32.93%;
+								.product__target {
+									left: auto;
+									right: 32px;
+									top: -44px;
+									margin-left: 0;
+									margin-top: 0;
+									padding-right: 20px;
+									&:before {
+										left: auto;
+										right: 10px;
+										top: 46px;
+										margin-right: 0;
+										border-right: 0;
+										border-top: 15px solid transparent;
+										border-bottom: 15px solid transparent;
+										border-left: 20px solid #fff;
 									}
 								}
 							}
@@ -346,19 +373,19 @@
 			}
 			&--soundfullife {
 				.product__slide {
-					&:nth-child(1) {
-						.product__layer {
-							&:nth-child(1) {
-								.product__target {
-									top: -44px;
-									&:before {
-										top: 46px;
-										margin-top: 0;
-									}
-								}
-							}
-						}
-					}
+					// &:nth-child(1) {
+					// 	.product__layer {
+					// 		&:nth-child(1) {
+					// 			.product__target {
+					// 				top: -44px;
+					// 				&:before {
+					// 					top: 46px;
+					// 					margin-top: 0;
+					// 				}
+					// 			}
+					// 		}
+					// 	}
+					// }
 					&:nth-child(2) {
 						.product__layer {
 							&:nth-child(1) {
@@ -376,13 +403,24 @@
 			}
 		}
 		@media (max-width: 767px) {
+			&--hotdeal {
+				.product__item {
+					width: 220px;
+					min-width: 0;
+					max-width: none;
+				}
+				.product__img {
+					height: 220px;
+				}
+				.hotdeal_bg {
+					height: 220px;
+				}
+			}
 			&__showroom {
 				&--greenlife {
 					.product__slide {
-						@for $i from 1 through 2 {
-							&:nth-child(#{ $i }) {
-								background-image: url('../images/it/m_bg_product_showroom_greenlife0#{$i}.png');
-							}
+						&:nth-child(2) {
+							background-image: url('../images/de/m_bg_product_showroom_greenlife02.png');
 						}
 					}
 				}
@@ -390,7 +428,7 @@
 					.product__slide {
 						@for $i from 1 through 2 {
 							&:nth-child(#{ $i }) {
-								background-image: url('../images/it/m_bg_product_showroom_vividlife0#{$i}.png');
+								background-image: url('../images/de/m_bg_product_showroom_vividlife0#{$i}.png');
 							}
 						}
 					}
@@ -398,13 +436,37 @@
 				&--gaminglife {
 					.product__slide {
 						&:nth-child(2) {
-							background-image: url('../images/it/m_bg_product_showroom_gaminglife02.png');
+							background-image: url('../images/de/m_bg_product_showroom_gaminglife02.png');
 						}
 					}
 				}
 			}
-			&__price {
-				flex-direction: column;
+		}
+		@media (min-width: 768px) and (max-width: 1600px) {
+			&--hotdeal {
+				.product__list {
+					.slick-list {
+						max-width: 1080px;
+					}
+					.slick-prev {
+						left: 0;
+					}
+					.slick-next {
+						right: 0;
+					}
+				}
+			}
+		}
+		@media (min-width: 1600px) {
+			&--hotdeal {
+				.product__list {
+					.slick-prev {
+						left: 8.75%;
+					}
+					.slick-arrow {
+						right: 8.75%;
+					}
+				}
 			}
 		}
 	}

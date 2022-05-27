@@ -17,10 +17,16 @@ $(document).ready(function() {
 
 	// Non-members -> Expose alert pop-up when re-entering after logging in to SSO (비회원 -> SSO 로그인 후 재진입 시에 알람팝업 노출)
 	const referrerSso = document.referrer;
-	if(referrerSso.indexOf('sso.lg.com') > -1 || referrerSso.indexOf('ssodev.lg.com') > -1 || referrerSso.indexOf('change-password-reminder') > -1){
-		$('.modal_referrer_sso').show();
-		$('html, body').animate({scrollTop : $('[data-list="eventGift"]').offset().top}, 250); // move scroll to "#submit" form element
-	}
+	$(window).on("pageshow", function (e){
+		// Whether to enter through the browser's Back/forward button
+		// 브라우저의 Back/forward 버튼으로 진입여부
+		const historyBack = window.performance && (window.performance.getEntriesByType("navigation")[0].type == 'back_forward' || window.performance.navigation.type == 2) ? true : false;
+
+		if( !historyBack && (referrerSso.indexOf('sso.lg.com') > -1 || referrerSso.indexOf('ssodev.lg.com') > -1 || referrerSso.indexOf('change-password-reminder') > -1) ){
+			$('.modal_referrer_sso').show();
+			$('html, body').animate({scrollTop : $('[data-list="eventGift"]').offset().top}, 250); // move scroll to "#submit" form element
+		}
+	});
 
 	// Button data set for redirect after login
 	const $submit = $('#eventCustomerForm #submit'),
@@ -30,6 +36,8 @@ $(document).ready(function() {
 	$submit.data('href',loginUrl);
 	$('.navigation .for-desktop .login div.before-login li:first-child a').attr('href',loginUrl); // pc login icon
 	$('.navigation .for-mobile .login a.before-login:first-child').attr('href',loginUrl); // mo header top, nav menu - login icon
+
+	$('.eprivacy-load-intercom').attr('data-url','/' + localeCd + '/chatbot/chatbot.js'); // footerSeoCopy load - console error fix
 
 	// login check 
 	let isLogin = false;
@@ -280,8 +288,8 @@ $(document).ready(function() {
 
 				// sold out product btn 
 				if(p.reStockAlertFlag == "Y"){
-					$template.find('.add-to-cart').addClass('d-none')
-						.end().find('.re-stock-alert').attr('data-url',p.reStockAlertUrl).removeClass('d-none')
+					$template.find('.atc-members-week').addClass('d-none')
+						.end().find('.restock-members-week').attr('data-url',p.reStockAlertUrl).removeClass('d-none')
 						.end().find('.product__noti').removeClass('d-none');
 				}
 
@@ -298,30 +306,58 @@ $(document).ready(function() {
 			let tmp = $this.data('trackGroup'),
 				option = $this.data('trackOpt') ? $this.data('trackOpt') : '',
 				value = $this.data('trackVal') ? $this.data('trackVal') : '',
+				bu = 'HE, HA, BS_IT_B2C, BS',
 				dataLayerTemp = {}, $dataMetaButton;
 
 			if(option == 'category' && event == 'selectProductCategory') value = $this.text();
-			if(event == 'buy_now_click') $this = $this.closest('.product__info').find('.add-to-cart');
+			if(event == 'buy_now_click') $this = $this.closest('.product__info').find('.atc-members-week');
 
 			switch(tmp){
 				case 'mic':
-					dataLayerTemp['bu'] = "HE, HA, BS_IT_B2C, BS";
+					if(event == 'submitClick'){
+						switch(value){
+							case 'Green':
+								bu = 'HA';
+								break;
+							case 'Vivid':
+							case 'Gaming':
+								bu = 'TV, IT, AV';
+								break;
+							case 'Working':
+								bu = 'AV, TV';
+								break;
+							case 'Soundful':
+								bu = 'AV'
+								break;
+						}
+					}
+
+					dataLayerTemp['bu'] = bu;
 					dataLayerTemp['pageType'] = "MICROSITE";
 					if(option != '' && value != '') dataLayerTemp[option] = value;
 				break;
 				case 'product':
-					dataLayerTemp['bu'] = $this.data('bu'),
-					dataLayerTemp['superCategory'] = $this.data('superCategoryName'),
-					dataLayerTemp['category'] = $this.data('categoryName'),
-					dataLayerTemp['subcategory'] = $this.data('subCategoryName'),
-					dataLayerTemp['modelYear'] = $this.data('modelYear'),
-					dataLayerTemp['modelName'] = $this.data('modelName'),
-					dataLayerTemp['modelCode'] = $this.data('modelId'),
-					dataLayerTemp['salesModelCode'] = $this.data('modelSalesmodelcode'),
-					dataLayerTemp['sku'] = $this.data('sku'),
-					dataLayerTemp['suffix'] = $this.data('modelSuffixcode'),
-					dataLayerTemp['price'] = $this.data('price'),
-					dataLayerTemp['currencyCode'] = $('.currency-code').val()
+					dataLayerTemp['bu'] = $this.data('bu');
+					dataLayerTemp['superCategory'] = $this.data('superCategoryName');
+					dataLayerTemp['category'] = $this.data('categoryName');
+					dataLayerTemp['subcategory'] = $this.data('subCategoryName');
+					dataLayerTemp['modelYear'] = $this.data('modelYear').toString();
+					dataLayerTemp['modelName'] = $this.data('modelName');
+					dataLayerTemp['modelCode'] = $this.data('modelId');
+					dataLayerTemp['salesModelCode'] = $this.data('modelSalesmodelcode');
+					dataLayerTemp['sku'] = $this.data('sku');
+					dataLayerTemp['suffix'] = $this.data('modelSuffixcode');
+					dataLayerTemp['price'] = $this.data('price').toString();
+					dataLayerTemp['currencyCode'] = $('.currency-code').val();
+
+					if(event == 'add_to_cart_click' || event == 'move_to_stock_request_click'){
+						dataLayerTemp['dimension185'] = $('.navigation').attr('data-obs-group');
+						dataLayerTemp['metric4'] = $this.data('msrp');
+					}
+
+					if(event == 'add_to_cart_click'){
+						dataLayerTemp['cart_btn'] = 'Y';
+					}
 				break;
 			}
 			return dataLayerTemp;
@@ -336,6 +372,25 @@ $(document).ready(function() {
 
 			dataLayer.push(dataLayerpushData);
 			console.log(event);
+
+			// Hot Deal DataLayer : pushing total 3 array
+			// 1. offer_add_to_cart_click : dataLayer.push({~})
+			// 2. add_to_cart_click : dataLayer.push({~}) / digitalDataLayer.push({~})
+			// => common.js 에서 분리 적용한 HQ Global ATC - dataLayer(add_to_cart_click) 한번 더 타야함
+			if(event == 'offer_add_to_cart_click'){
+				event = 'add_to_cart_click';
+				dataLayerpushData = $.extend({
+						'event': event,
+						},dataLayerMeta);
+
+				dataLayer.push(dataLayerpushData);
+				console.log(event);
+			}
+
+			// common.js 에서 분리 적용한 HQ Global ATC - digitalDataLayer
+			if(event == 'add_to_cart_click'){
+				digitalDataLayer.push(dataLayerpushData);
+			}
 		},
 		stickyTab: function(originOffset){
 			var $fixbx = $('.box_nav-position'),
@@ -377,8 +432,8 @@ $(document).ready(function() {
 			// tracking Event data setting
 			// submit
 			$(document).on('change','input[name="Coupons"]',function(){
-				let chooseStyle = $('#Coupon01').data('param');
-				$submit.data('trackVal',chooseStyle.toLowerCase() + 'life')
+				let chooseTheme = $(this).data('param');
+				$submit.data('trackVal',chooseTheme).attr('data-link-area','memberdays_luckydraw_submit_click_' + chooseTheme);
 			});
 			// lifeStyle showroom
 			$('[data-list="lifeStyle"] .product__anchor').each(function(){
@@ -392,7 +447,7 @@ $(document).ready(function() {
 
 			// tracking Event
 			$(document).on('click','a[data-track-group], div[data-track-group]',function(){
-				if(!$(this).hasClass('product__anchor')) lgMembersWeek.trackEvent($(this));
+				if(!$(this).hasClass('product__anchor') && !$(this).is('#submit')) lgMembersWeek.trackEvent($(this));
 			});
 			$(document).on('change','input[data-track-group]',function(){
 				lgMembersWeek.trackEvent($(this));

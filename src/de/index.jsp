@@ -75,9 +75,6 @@
 	<link rel="stylesheet" href="${path}/assets/css/index.css">
 	<link rel="stylesheet" href="${path}/assets/css/index_de.css">
 	<link rel="stylesheet" href="/lg5-common-gp/css/customer-mylg-wish-list.min.css"> <!-- For import GET STOCK ALERT css  -->
-	<style>
-		.lgmembersweek .coupon__front .coupon__thumnail {background-position: center 0;}
-	</style>
 
 	<!-- Enter Code Here -->
 	<div class="wrapper">

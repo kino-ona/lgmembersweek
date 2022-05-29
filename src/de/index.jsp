@@ -94,27 +94,21 @@
 			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536043|MD07538440|MD07535124|MD07529953"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
-			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07540676|MD07536043|MD07547135|MD07540307|MD06211517"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07516310|MD07530431|MD07540097|MD07539439"/>
 			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
 			<input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/hotdeal_product01.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/de/hotdeal_product01.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/hotdeal_product02.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/de/hotdeal_product02.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt2" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/hotdeal_product03.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/de/hotdeal_product03.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt3" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/hotdeal_product05.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/de/hotdeal_product04.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt4" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb5" value="${path}/assets/images/hotdeal_product06.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt5" value="Limited to 100 units"/>
-			<!-- ex. multiple model thumb / alt text 
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/hotdeal_product.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt2" value="Limited to 100 units"/>
-			-->
 
 			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546805|MD07546781|MD07523705|MD07528466|MD07533869|MD07523980|MD07526955|MD07534114|MD07531094"/>
-			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535124|MD07529953|MD07530617|MD07540591"/>
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07533491|MD07550676|MD07550687|MD07551110|MD07533482|MD07533493|MD06189816"/>
+			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07545447|MD07545439|MD07536623|MD07536621|MD07552826|MD07551605|MD07551967|MD07553255"/>
 			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07546205|MD07546235|MD07551400|MD07551561|MD06175496|MD07527380|MD07539124|MD07535708|MD07536705|MD05774871|MD05775808|MD07528602|MD07528454|MD07522656|MD07544843|MD07520889"/>
 			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07544866|MD07525444|MD07544862|MD07540299|MD07525616|MD07554256|MD07520962|MD07532987|MD07529698"/>
 		<!-- Required input ## Model List End -->
@@ -712,7 +706,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_greenlife02_02.png"
+															<img src="${path}/assets/images/de/img_product_showroom_greenlife02_01.png"
 															alt="Waschmaschine mit AI DD®">
 														</div>
 														<div class="product__right">
@@ -747,16 +741,14 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Soundbar 770W">
+															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar DS90QY">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG Soundbar 770W</p>
+															<p class="product__name">LG Sound Bar DS90QY</p>
 															<ul class="product__desc">
-																<li>Con tecnologia MERIDIAN</li>
-																<li>Potenza 770W</li>
-																<li>AI Room Calibration</li>
-																<li>Compatibile Google - Alexa - Airplay</li>
-																<li>Dolby Atmos 7.1.4 Ch</li>
+																<li>Verbesserter Audio Technologie</li>
+																<li>IMAX</li>
+																<li>Hi-Res Audio</li>
 															</ul>
 														</div>
 													</a>
@@ -929,8 +921,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_01.png"
-															alt="27,6 Zoll Ergo DualUp Monitor">
+															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_01.png" alt="27,6 Zoll Ergo DualUp Monitor">
 														</div>
 														<div class="product__right">
 															<p class="product__name">27,6 Zoll Ergo DualUp Monitor</p>
@@ -950,8 +941,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_02.png"
-															alt="17’’ Ultraleichtes Notebook mit Intel® Core™">
+															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_02.png" alt="17’’ Ultraleichtes Notebook mit Intel® Core™">
 														</div>
 														<div class="product__right">
 															<p class="product__name">17’’ Ultraleichtes Notebook mit Intel® Core™</p>
@@ -971,7 +961,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="../assets/images/de/img_product_showroom_workinglife01_03.png"
+															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_03.png"
 																alt="LG TONE Free UFP9">
 														</div>
 														<div class="product__right">
@@ -994,8 +984,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife02_01.png"
-															alt="LG TONE Free DFP9W">
+															<img src="${path}/assets/images/de/img_product_showroom_workinglife02_01.png" alt="LG TONE Free DFP9W">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG TONE Free DFP9W</p>
@@ -1049,8 +1038,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_soundfullife01_01.png"
-															alt="LG TONE Free DFP9W">
+															<img src="${path}/assets/images/de/img_product_showroom_soundfullife01_01.png" alt="LG TONE Free DFP9W">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG TONE Free DFP9W</p>
@@ -1130,22 +1118,22 @@
 											<p class="product__sn sku">*modelName*</p>
 											<div class="product__price">
 												<span class="product__discount">
-													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 													<span class="number">*originPrice*</span>
+													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												</span>
 												<span class="product__highlight">*discountMsg*</span>
 											</div>
 											<div class="product__price-now">
 												<span class="product__cost">
-													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 													<span class="number">*finalPrice*</span>
+													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												</span>
 											</div>
 											<div class="product__members">
 												<span class="product__text"><spring:message code='OBS_MEMBERSHIP_MSG' text='OBS_MEMBERSHIP_MSG'/></span>
 												<span class="product__highlight">
-													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 													<span class="number">*membershipPriceValue*</span>
+													<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												</span>
 												<div class="product__noti d-none">
 													<p class="product__text">*reStockAlertText*</p>
@@ -1301,7 +1289,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="https://www.lg.com/it/tv" 
+										<a href="https://www.lg.com/de/tv" 
 											target="_blank"
 											tabindex="0" 
 											data-track-group="mic" 
@@ -1325,14 +1313,14 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="https://www.lg.com/it/soundbar"
+										<a href="https://www.lg.com/de/soundbars"
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
 											data-track-opt="category" 
 											data-track-val="SOUND SYSTEMS" 
 											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemoresoundbar"
+											data-link-name="memberdays_plp_click_seemoresoundsystems"
 											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">SEE MORE SOUND SYSTEMS</a>
 										<a href="https://www.lg.com/it/hi-fi-audio"
@@ -1340,7 +1328,7 @@
 											tabindex="0" 
 											data-track-group="mic" 
 											data-track-opt="category" 
-											data-track-val="SOUND PRODUCTS AUDIO"  
+											data-track-val="SOUND WIRELESS EARBUDS" 
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorewirelessearbuds" 
 											data-link-area="memberdays_2022" 
@@ -1359,12 +1347,12 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="https://www.lg.com/it/elettrodomestici"
+										<a href="#"
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
 											data-track-opt="category" 
-											data-track-val="SCOPRI TUTTI GLI ELETTRODOMESTICI"  
+											data-track-val="HOME APPLIANCES"  
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorehomeappliances"
 											data-link-area="memberdays_2022" 
@@ -1383,12 +1371,12 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="https://www.lg.com/it/informatica" 
+										<a href="https://www.lg.com/de/it-produkte" 
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
 											data-track-opt="category" 
-											data-track-val="SCOPRI TUTTI I PRODOTTI INFORMATICI"  
+											data-track-val="SEE MORE COMPUTER PRODUCTS"  
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorecomputerproducts"
 											data-link-area="memberdays_2022"

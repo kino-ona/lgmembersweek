@@ -75,6 +75,9 @@
 	<link rel="stylesheet" href="${path}/assets/css/index.css">
 	<link rel="stylesheet" href="${path}/assets/css/index_de.css">
 	<link rel="stylesheet" href="/lg5-common-gp/css/customer-mylg-wish-list.min.css"> <!-- For import GET STOCK ALERT css  -->
+	<style>
+		.lgmembersweek .coupon__front .coupon__thumnail {background-position: center 0;}
+	</style>
 
 	<!-- Enter Code Here -->
 	<div class="wrapper">
@@ -87,11 +90,11 @@
 			<input type="hidden" data-model-group="eventGift" data-type="coupon" value="MD07535483|MD07548494|MD07528387|MD07552999|MD07535216"/>
 
 			<!-- Life Style Model -->
-			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07539105|MD07528602|MD07544843|MD06211517"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548200|MD07546800|MD07547146|MD07531094|MD07535366"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07538352|MD07532987|MD07546823|MD07535366"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07540299|MD07536043|MD07554256|MD07554751"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536043|MD07538440|MD07535124|MD07529953"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07538035|MD07526170|MD07546933|MD07541621|MD07538920"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07550687|MD07533491|MD06189816|MD07552826|MD07551605|MD07551967"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07502402|MD07551967|MD07520244|MD07550687|MD07552826|MD07551605"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07548205|MD07550158|MD07536623"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536623|MD07545439|MD07545341|MD07545447|MD07552826"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
 			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07516310|MD07530431|MD07540097|MD07539439"/>
@@ -109,8 +112,8 @@
 			<!-- Hottest Gift Model -->
 			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07533491|MD07550676|MD07550687|MD07551110|MD07533482|MD07533493|MD06189816"/>
 			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07545447|MD07545439|MD07536623|MD07536621|MD07552826|MD07551605|MD07551967|MD07553255"/>
-			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07546205|MD07546235|MD07551400|MD07551561|MD06175496|MD07527380|MD07539124|MD07535708|MD07536705|MD05774871|MD05775808|MD07528602|MD07528454|MD07522656|MD07544843|MD07520889"/>
-			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07544866|MD07525444|MD07544862|MD07540299|MD07525616|MD07554256|MD07520962|MD07532987|MD07529698"/>
+			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07543561|MD07535535|MD07537903|MD07520246|MD06020158|MD07537889|MD05788391|MD07538907|MD07537971|MD07541621|MD07538925|MD07526179|MD07544110|MD07542596|MD06205396|MD07538035|MD07520457|MD07543663|MD07538359|MD07538920"/>
+			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07546401|MD07510035|MD07527569|MD07545130|MD06076196|MD07501021|MD07500772|MD07500784|MD07513632|MD07528827|MD07539456|MD07539439"/>
 		<!-- Required input ## Model List End -->
 	
 		<!--  Content Start  -->
@@ -426,7 +429,7 @@
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="${path}/assets/images/img_coupon_greenlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+												<img src="${path}/assets/images/de/img_coupon_greenlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -455,7 +458,7 @@
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="${path}/assets/images/img_coupon_vividlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+												<img src="${path}/assets/images/de/img_coupon_vividlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -484,7 +487,7 @@
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="${path}/assets/images/img_coupon_gaminglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+												<img src="${path}/assets/images/de/img_coupon_gaminglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -513,7 +516,7 @@
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="${path}/assets/images/img_coupon_workinglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+												<img src="${path}/assets/images/de/img_coupon_workinglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -542,7 +545,7 @@
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="${path}/assets/images/img_coupon_soundfullife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+												<img src="${path}/assets/images/de/img_coupon_soundfullife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -568,7 +571,7 @@
 										<button type="button" id="submit" class="button__item button__item--red" 
 										data-track-group="mic" data-track-opt="theme" data-track-name="submitClick" 
 										data-link-name="memberdays_luckydraw_submit_click_{theme}"
-										data-link-area="memberdays_2022" style="width: 160px;">Jetzt absenden &amp; teilnehmen</button>
+										data-link-area="memberdays_2022">Jetzt absenden &amp; teilnehmen</button>
 									</div>
 								</form>
 							</div>
@@ -1261,9 +1264,9 @@
 												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												<span class="number">*membershipPriceValue*</span>
 											</span>
-										</div>
-										<div class="product__noti d-none">
-											<p class="product__text">*reStockAlertText*</p>
+											<div class="product__noti d-none" style="font-size:13px;">
+												<p class="product__text">*reStockAlertText*</p>
+											</div>
 										</div>
 										<div class="button">
 											<a role="button" href="#" class="button__item button__item--red atc-members-week" data-track-group="product" data-track-name="add_to_cart_click" data-link-name="add_to_cart" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>

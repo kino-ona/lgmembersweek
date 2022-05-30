@@ -273,6 +273,9 @@
 			<div class="box_navigation">
 				<div class="box_nav-position">
 					<div class="box_navigation-inner">
+						<button class="arrow_btn show">
+							<i class="arrow_ico"></i>
+						</button>
 						<ul class="list_navigation smooth-scroll">
 							<li class="list-item">
 								<a href="#box_content1" 

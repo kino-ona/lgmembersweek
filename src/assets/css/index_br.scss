@@ -56,7 +56,11 @@
 			}
 		}
 	}
-
+  .benefit__list--coupon {
+    .benefit__category {
+      font-size:21px;
+    }
+  }
 	.product {
 		&__showroom {
 			&--workinglife {

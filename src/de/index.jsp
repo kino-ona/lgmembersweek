@@ -1284,6 +1284,16 @@
 											data-link-name="memberdays_plp_click_seemoretvs" 
 											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">Weitere Smart TV entdecken</a>
+										<a href="https://www.lg.com/de/tv" 
+											target="_blank"
+											tabindex="0" 
+											data-track-group="mic" 
+											data-track-opt="category" 
+											data-track-val="CINEBEAMS" 
+											data-track-name="plpClick" 
+											data-link-name="memberdays_plp_click_seemorecinebeams" 
+											data-link-area="memberdays_2022" 
+											class="button__item button__item--white">Weitere Cinebeams entdecken</a>
 									</div>
 								</div>
 							</div>
@@ -1298,7 +1308,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="https://www.lg.com/de/soundbars"
+										<a href="https://www.lg.com/de/audio"
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
@@ -1307,8 +1317,8 @@
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemoresoundsystems"
 											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE SOUND SYSTEMS</a>
-										<a href="https://www.lg.com/it/hi-fi-audio"
+											class="button__item button__item--white">Weitere Soundsysteme entdecken</a>
+										<a href="https://www.lg.com/de/bluetooth-kopfhoerer"
 											target="_blank"
 											tabindex="0" 
 											data-track-group="mic" 
@@ -1317,7 +1327,7 @@
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorewirelessearbuds" 
 											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE SOUND WIRELESS EARBUDS</a>
+											class="button__item button__item--white">Weitere Bluetooth Kopfhörer entdecken</a>
 									</div>
 								</div>
 							</div>
@@ -1332,7 +1342,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#"
+										<a href="https://www.lg.com/de/haushaltsgeraete"
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
@@ -1341,7 +1351,7 @@
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorehomeappliances"
 											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE HOME APPLIANCES</a>
+											class="button__item button__item--white">Weitere Haushaltsgeräte entdecken</a>
 									</div>
 								</div>
 							</div>
@@ -1365,7 +1375,7 @@
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorecomputerproducts"
 											data-link-area="memberdays_2022"
-											class="button__item button__item--white">SEE MORE COMPUTER PRODUCTS</a>
+											class="button__item button__item--white">Weitere Computer Produkte entdecken</a>
 									</div>
 								</div>
 							</div>
@@ -1381,7 +1391,7 @@
 				<div class="popup__body">
 					<div class="popup__contents">
 						<p class="popup__text">
-							After joining the sign-up, you must click the <span class="popup__bold">“submit”</span> button to apply for the event.
+							Nach der Registrierung: Klicke <span class="popup__bold">"Abesenden"</span> um teilzunehmen.
 						</p>
 					</div>
 					<div class="popup__bottom">

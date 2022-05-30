@@ -81,7 +81,7 @@
 			}
 		}
 	}
-	
+
 	// visual
 	.visual {
 		&__slide {
@@ -540,6 +540,8 @@
 					}
 				}
 			}
+
+			
 		}
 		@media (min-width: 768px) and (max-width: 1600px) {
 			&--hotdeal {
@@ -566,6 +568,16 @@
 						right: 8.75%;
 					}
 				}
+			}
+		}
+	}
+
+	@media (max-width: 767px) {
+		.product>.button {
+			display: block;
+			.button__item {
+				margin-left: 0 !important;
+				margin-bottom: 10px;
 			}
 		}
 	}

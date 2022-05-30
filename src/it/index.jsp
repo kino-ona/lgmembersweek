@@ -9,12 +9,12 @@
 
 	<meta content="#a50034" name="theme-color">
 
-	<title>LG Italia</title>
+	<title>Promo LG Member Days: Fino al 22% di Sconto | LG Italia</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<meta property="og:title" content="Care For What You Wear: Clothing Care Appliances | LG Italia" />
+	<meta property="og:title" content="Promo LG Member Days: Fino al 22% di Sconto | LG Italia" />
 	<meta property="og:url" content="https://www.lg.comit/member-days" />
-	<meta property="og:description" content="LG ha lanciato una nuova campagna 'Prenditi Curadei Tuoi Capi' per uno stile di vita consapevole e un domani sostenibile. Scopri di più sulla campagna e sull'innovativa tecnologia per la cura dell'abbigliamento di LG." />
+	<meta property="og:description" content="Registrati subito su LG.com e Scopri i Vantaggi dedicati agli Utenti Registrati e gli Sconti sui Prodotti LG. La Promo LG Member Days scade il 22 Giugno." />
 	<meta property="og:image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg" />
 	<link rel="canonical" href="https://www.lg.comit/member-days" />
 
@@ -48,14 +48,14 @@
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/body/broswe-check-popup-layer.jsp" />
 	
 	<div class="sr-only" itemscope itemtype="http://schema.org/WebPage">
-		<meta itemprop="name" content="LG Italia"/>
+		<meta itemprop="name" content="Promo LG Member Days: Fino al 22% di Sconto | LG Italia"/>
 		<meta itemprop="image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg" />
 		<meta itemprop="url" content="www.lg.com/it/member-days" />
-		<meta itemprop="description" content="" />
+		<meta itemprop="description" content="Registrati subito su LG.com e Scopri i Vantaggi dedicati agli Utenti Registrati e gli Sconti sui Prodotti LG. La Promo LG Member Days scade il 22 Giugno." />
 		<meta itemprop="keywords" content="" />
 	</div>
 	
-	<c:set var='bizType' value='${$bizType }' />
+	<c:set var='bizType' value='${$bizType}' />
 	<c:set var='siteType' value='MKT' />
 	<!-- component (navigation) -->
 	<c:import url="/${localeCd }/gnb">

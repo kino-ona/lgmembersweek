@@ -444,6 +444,13 @@
 						}
 					}
 				}
+				&--soundfullife {
+					.product__slide {
+						&:nth-child(2) {
+							background-image: url('../images/de/m_bg_product_showroom_soundfullife02.png');
+						}
+					}
+				}
 			}
 		}
 		@media (min-width: 768px) and (max-width: 1600px) {

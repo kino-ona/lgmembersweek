@@ -1593,12 +1593,7 @@
 												itemprop="name">HOME</span></a>
 										<meta itemprop="position" content="1">
 									</li>
-									<li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem"><a
-											href="/uk/washing-machines" itemprop="item" data-link-area="gnb-breadcrumb"
-											data-link-name="home_washing_machines"><span itemprop="name">Washing Machines</span></a>
-										<meta itemprop="position" content="2">
-									</li>
-									<li><strong>LG Steam Washing Machine</strong></li>
+									<li><strong>Member Days</strong></li>
 								</ul>
 							</nav>
 						</div>

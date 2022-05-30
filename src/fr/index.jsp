@@ -452,44 +452,43 @@
 											</div>
 										</div>
 										<div class="product__slide">
-											<!-- <div class="product__layer">
+											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/it/lavatrici/lg-f4wv510sae" target="_blank"
-														data-link-name="memberdays_productMouseHover_greenlife_F4WV510SAE"
+													<a href="https://www.lg.com/uk/washing-machines/lg-f6v1110wtsa" target="_blank"
+														data-link-name="memberdays_productMouseHover_greenlife_F6V1110WTSA"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_greenlife02_01.png"
-																alt="LG Washing Machine AI DD™">
+															<img src="../assets/images/img_product_showroom_greenlife02_01.png"
+																alt="AI DD™ Washing Machine">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG Washing Machine AI DD™</p>
+															<p class="product__name">AI DD™ Washing Machine</p>
 															<ul class="product__desc">
-																<li>Leader nell’efficienza energetica con classe energetica A</li>
-																<li>Tecnologia AI DD™ in grado di scegliere in automatico il lavaggio perfetto</li>
-																<li>Tecnologia TurboWash™ per lavaggi più rapidi ed efficienti</li>
-																<li>Tecnologia Steam™ che elimina fino al 99,9% dei batteri </li>
+																<li>Gold for Energy savings</li>
+																<li>Cut your wash time to just 39 minutes without compromising the wash quality with TurboWash™ 360</li>
 															</ul>
 														</div>
 													</a>
 												</div>
-											</div> -->
+											</div>
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/waschmaschinen/lg-f6wv709p1" target="_blank" 
-														data-link-name="memberdays_productMouseHover_greenlife_F6WV709P1"
+													<a href="https://www.lg.com/uk/tumble-dryers/lg-fdv1109w" target="_blank" 
+														data-link-name="memberdays_productMouseHover_greenlife_FDV1109W"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_greenlife02_01.png"
-															alt="Waschmaschine mit AI DD®">
+															<img src="../assets/images/img_product_showroom_greenlife02_02.png"
+																alt="LG Eco Hybrid™ Tumble Dryer">
 														</div>
 														<div class="product__right">
-															<p class="product__name">Waschmaschine mit AI DD®</p>
+															<p class="product__name">LG Eco Hybrid™ Tumble Dryer</p>
 															<ul class="product__desc">
-																<li>Energie einsparen mit der InstaView Door-in-Door Funktion!</li>
+																<li>A+++ Energy Efficiency*</li>
+																<li>Dual 10 Year Warranty</li>
 															</ul>
 														</div>
 													</a>
@@ -504,8 +503,8 @@
 							</div>
 							<div id="vividlife" class="tab__panel tab__panel--vividlife showroom_panel">
 								<p class="tab__noti">
-									Kino feeling &amp; Sport games als wärst du mittendrin!<br>
-									Mit OLED, cinebeam Projektoren & Soundbars für dein Zuhause
+									LG technology delivers cinema-like experience and immersive on-screen sports viewing.
+									Live your best home entertainment life with OLED TV, CineBeam projector and Soundbar.
 								</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--vividlife">
@@ -514,18 +513,17 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/audio/lg-ds90qy" target="_blank"
-														data-link-name="memberdays_productMouseHover_vividlife_DS90QY"
+														data-link-name="memberdays_productMouseHover_vividlife_SP8YA"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar DS90QY">
+															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG Sound Bar DS90QY</p>
+															<p class="product__name">LG Sound Bar SP8YA</p>
 															<ul class="product__desc">
-																<li>Verbesserter Audio Technologie</li>
-																<li>IMAX</li>
-																<li>Hi-Res Audio</li>
+																<li>Meridian & Soundbar Mode Control</li>
+																<li>High-Resolution Audio, Dolby Atmos, DTS:X</li>
 															</ul>
 														</div>
 													</a>
@@ -535,17 +533,17 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/tv/lg-oled65b23la" target="_blank"
-														data-link-name="memberdays_productMouseHover_vividlife_OLED65B23LA"
+														data-link-name="memberdays_productMouseHover_vividlife_OLED77G26LA"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_vividlife01_02.png" alt="OLED TV B2">
+															<img src="${path}/assets/images/de/img_product_showroom_vividlife01_02.png" alt="OLED evo G2">
 														</div>
 														<div class="product__right">
-															<p class="product__name">OLED TV B2</p>
+															<p class="product__name">OLED evo G2</p>
 															<ul class="product__desc">
-																<li>Designed für das ultimative Filmerlebnis</li>
-																<li>Smarte Plattform mit Netflix, NOW, Disney+ &amp; weiteren</li>
+																<li>Designed for the ultimate movie viewing experience</li>
+																<li>Smart platform with Netflix, NOW, Disney+ and more</li>
 															</ul>
 														</div>
 													</a>
@@ -557,18 +555,17 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 														<a href="https://www.lg.com/de/audio/lg-ds80qy" target="_blank"
-														data-link-name="memberdays_productMouseHover_vividlife_DS80QY"
+														data-link-name="memberdays_productMouseHover_vividlife_SP8YA"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar DS80QY">
+															<img src="${path}/assets/images/de/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG Sound Bar DS80QY</p>
+															<p class="product__name">LG Sound Bar SP8YA</p>
 															<ul class="product__desc">
-																<li>Verbesserter Audio Technologie</li>
-																<li>IMAX</li>
-																<li>Hi-Res Audio</li>
+																<li>Meridian &amp; Soundbar Mode Control</li>
+																<li>High-Resolution Audio, Dolby Atmos, DTS:X</li>
 															</ul>
 														</div>
 													</a>
@@ -578,7 +575,7 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/beamer/lg-HU70LS" target="_blank"
-														data-link-name="memberdays_productMouseHover_vividlife_HU70LS"
+														data-link-name="memberdays_productMouseHover_vividlife_HU715QW"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -604,8 +601,8 @@
 							</div>
 							<div id="gaminglife" class="tab__panel tab__panel--gaminglife showroom_panel">
 								<p class="tab__noti">
-									Spiele optimiert für den Monitor oder Smart TV mit 3D Surrounding Sound (gaming speaker, soundbars).<br>
-									Mach dich bereit für eine neue Erfahrung
+									Get ready to experience immersive gaming like never before with 
+									LG's big screen (TV, Monitor), 3D surround sound (Gaming Speaker, Soundbar) and eye-popping picture speed and quality.
 								</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--gaminglife">
@@ -614,19 +611,39 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/monitore/lg-34gp950g-b" target="_blank"
-														data-link-name="memberdays_productMouseHover_gaminglife_34GP950G-B"
+                          data-link-name="memberdays_productMouseHover_gaminglife_27GP950-B"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
 															<img src="${path}/assets/images/de/img_product_showroom_gaminglife01_01.png"
-															alt="34 QHD Zoll UtraGear™">
+                              alt="27’’ UHD 4K UltraGear™">
 														</div>
 														<div class="product__right">
-															<p class="product__name">34 QHD Zoll UtraGear™</p>
+															<p class="product__name">27’’ UHD 4K UltraGear™</p>
 															<ul class="product__desc">
-																<li>Freue dich auf atemberaubende Farben</li>
-																<li>Lebendige Farben und gestochen Scharfe Details</li>
-																<li>Designed für unglaubliche Geschwindigkeit</li>
+																<li>Enjoy the Supreme Color</li>
+																<li>Vivid Colors and Sharp Details</li>
+																<li>Designed for Incredible Speed</li>
+															</ul>
+														</div>
+													</a>
+												</div>
+											</div>
+                      <div class="product__layer">
+												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
+												<div class="product__target">
+													<a href="https://www.lg.com/uk/speakers-sound-systems/lg-gp9" target="_blank"
+														data-link-name="memberdays_productMouseHover_gaminglife_GP9"
+														data-link-area="memberdays_2022"
+														class="product__link">
+														<div class="product__img">
+															<img src="../assets/images/img_product_showroom_gaminglife01_02.png" alt="UltraGear Gaming Speaker">
+														</div>
+														<div class="product__right">
+															<p class="product__name">UltraGear Gaming Speaker</p>
+															<ul class="product__desc">
+																<li>Clear Voice Chat</li>
+																<li>Customizable EQ Sound</li>
 															</ul>
 														</div>
 													</a>
@@ -638,17 +655,17 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/tv/lg-oled65b23la" target="_blank"
-														data-link-name="memberdays_productMouseHover_gaminglife_OLED65B23LA"
+                          data-link-name="memberdays_productMouseHover_gaminglife_OLED42C24LA"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_gaminglife02_01.png" alt="65’’ LG 4K OLED TV B2">
+															<img src="${path}/assets/images/de/img_product_showroom_gaminglife02_01.png" alt="OLED evo C2(48/42)">
 														</div>
 														<div class="product__right">
-															<p class="product__name">65’’ LG 4K OLED TV B2</p>
+															<p class="product__name">OLED evo C2(48/42)</p>
 															<ul class="product__desc">
-																<li>Designed für ein herausragendes Spiele Erlebnis</li>
-																<li> HDMI 2.1 Spec, 0.1ms Reaktionszeit & sehr kurze Eingabeverzögerung für ein schnelles Spieleerlebnis</li>
+																<li>Designed for an outstanding gaming experience</li>
+																<li>HDMI 2.1 Spec, 0.1ms response time &amp; low input lag for superfast gameplay</li>
 															</ul>
 														</div>
 													</a>
@@ -658,18 +675,17 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/audio/lg-ds90qy" target="_blank"
-														data-link-name="memberdays_productMouseHover_gaminglife_DS90QY"
+                          data-link-name="memberdays_productMouseHover_gaminglife_SP8YA"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_vividlife01_01.png" alt="3.1.2 Dolby Atmos® Soundbar mit 380 Watt">
+															<img src="${path}/assets/images/de/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
 														</div>
 														<div class="product__right">
-															<p class="product__name">3.1.2 Dolby Atmos® Soundbar mit 380 Watt</p>
+															<p class="product__name">LG Sound Bar SP8YA</p>
 															<ul class="product__desc">
-																<li>Verbesserter Audio Technologie</li>
-																<li>IMAX</li>
-																<li>Hi-Res Audio</li>
+																<li>Meridian &amp; Soundbar Mode Control</li>
+																<li>High-Resolution Audio, Dolby Atmos, DTS:X</li>
 															</ul>
 														</div>
 													</a>
@@ -684,8 +700,7 @@
 							</div>
 							<div id="workinglife" class="tab__panel tab__panel--workinglife showroom_panel">
 								<p class="tab__noti">
-									Deine optimierte Workstation kombniert das Beste aus beiden Welten!<br>
-									Großes Display &amp; klarer Sound. Mit LG gram, &amp; TONE free wirst du noch effizienter.
+									Boost your workday efficiency and wellbeing with tools that optimimize your workplace set-up, including LG gram, ultra wide monitors, IPS picture quality and outstanding multi-tasking features.
 								</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--workinglife">
@@ -698,13 +713,13 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_01.png" alt="27,6 Zoll Ergo DualUp Monitor">
+															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_01.png" alt="DualUp Monitor with Ergo">
 														</div>
 														<div class="product__right">
-															<p class="product__name">27,6 Zoll Ergo DualUp Monitor</p>
+															<p class="product__name">DualUp Monitor with Ergo</p>
 															<ul class="product__desc">
-																<li>Weitwinkel Blickwinkel</li>
-																<li>Wandmontage möglich</li>
+																<li>27.6-inch 16:18 DualUp Monitor </li>
+																<li>Ergo Stand and USB Type-C™</li>
 															</ul>
 														</div>
 													</a>
@@ -714,17 +729,18 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/notebooks/lg-17z90p-gaa82g" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_17Z90P-G.AA82G"
+                          data-link-name="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_02.png" alt="17’’ Ultraleichtes Notebook mit Intel® Core™">
+															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_02.png" alt="LG gram 16">
 														</div>
 														<div class="product__right">
-															<p class="product__name">17’’ Ultraleichtes Notebook mit Intel® Core™</p>
+															<p class="product__name">LG gram 16</p>
 															<ul class="product__desc">
-																<li>Schnelle & starke Leistung</li>
-																<li>Dünn, leicht</li>
+																<li>Ultra-Lightweight</li>
+																<li>16” 16:10 IPS Display </li>
+																<li>LG Glance by Mirametrix®</li>
 															</ul>
 														</div>
 													</a>
@@ -734,7 +750,7 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/audio/lg-tone-dfp9w" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_TONE-DFP9W"
+                            data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -742,32 +758,33 @@
 																alt="LG TONE Free UFP9">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG TONE Free DFP9W</p>
+															<p class="product__name">LG TONE Free UFP9</p>
 															<ul class="product__desc">
-																<li>Plug and Wireless - Kabellos genießen mit jedem Gerät</li>
-																<li>Verbesserte active noise cancelling Funktion-verbessertes eintauchen, weniger Geräusche als zuvor</li>
+																<li>Plug and Wireless</li>
+																<li>Enhanced Active Noise Cancellation/li>
 															</ul>
 														</div>
 													</a>
 												</div>
 											</div>
+                      
 										</div>
 										<div class="product__slide">
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/audio/lg-tone-dfp9w" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_TONE-DFP9W"
+                            data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife02_01.png" alt="LG TONE Free DFP9W">
+															<img src="${path}/assets/images/de/img_product_showroom_workinglife02_01.png" alt=" LG TONE Free UFP9">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG TONE Free DFP9W</p>
+															<p class="product__name">LG TONE Free UFP9</p>
 															<ul class="product__desc">
-																<li>Plug and Wireless - Kabellos genießen mit jedem Gerät</li>
-																<li>Verbesserte active noise cancelling Funktion-verbessertes eintauchen, weniger Geräusche als zuvor</li>
+																<li>Plug and Wireless</li>
+																<li>Enhanced Active Noise Cancellation</li>
 															</ul>
 														</div>
 													</a>
@@ -777,17 +794,18 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/notebooks/lg-17z90p-gaa82g" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_17Z90P-G.AA82G"
+                            data-link-name="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife02_02.png" alt="17’’ Ultraleichtes Notebook mit Intel® Core™">
+															<img src="${path}/assets/images/de/img_product_showroom_workinglife02_02.png"  alt="LG gram 16">
 														</div>
 														<div class="product__right">
-															<p class="product__name">17’’ Ultraleichtes Notebook mit Intel® Core™</p>
+															<p class="product__name">LG gram 16</p>
 															<ul class="product__desc">
-																<li>Schnelle &amp; starke Leistung</li>
-																<li>Dünn, leicht</li>
+																<li>Ultra-Lightweight</li>
+																<li>16” 16:10 IPS Display</li>
+																<li>LG Glance by Mirametrix®</li>
 															</ul>
 														</div>
 													</a>
@@ -802,7 +820,8 @@
 							</div>
 							<div id="soundfullife" class="tab__panel tab__panel--soundfullife showroom_panel">
 								<p class="tab__noti">
-									Portable Speaker oder Wireless Kopfhörer. Kirstallklarer Sound für deine Party, oder dein daily driver für unterwegs. Mit LG findest du den besten Sound für jede Situation
+									From top of the range wireless Earbuds to Portable Speakers, 
+									LG audio technology delivers crystal clear sound quality for every occasion - house parties, exercise sessions.
 								</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--soundfullife">
@@ -811,17 +830,17 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/audio/lg-tone-dfp9w" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_TONE-DFP9W"
+                          data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_soundfullife01_01.png" alt="LG TONE Free DFP9W">
+															<img src="${path}/assets/images/de/img_product_showroom_soundfullife01_01.png" alt="LG TONE Free UFP9">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG TONE Free DFP9W</p>
+															<p class="product__name">LG TONE Free UFP9</p>
 															<ul class="product__desc">
-																<li>Verbesserte active noise cancelling Funktion</li>
-																<li>SleekFit - Ultimate fit mit LG’s EarSeal Design</li>
+																<li>Enhanced active noise cancellation</li>
+																<li>SleekFit - Ultimate fit with LG’s EarSeal Design</li>
 															</ul>
 														</div>
 													</a>
@@ -833,19 +852,18 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/audio/lg-drp4b" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_DRP4B"
+                            data-link-name="memberdays_productMouseHover_workinglife_RP4"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_soundfullife02_01.png" alt="LG XBOOM 360 DRP4">
+															<img src="${path}/assets/images/de/img_product_showroom_soundfullife02_01.png" alt="XBOOM360">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG XBOOM 360 DRP4</p>
+															<p class="product__name">XBOOM360</p>
 															<ul class="product__desc">
-																<li>Kristallklarer Klang &amp; verbesserte Leistung</li>
-																<li>360 Grad Mood lightning</li>
-																<li>Ästhetisches 360 Grad Design passt zu jeder Einrichtung</li>
-																<li>10 Stunden Wiedergabe</li>
+																<li>More powerful and clear sound</li>
+																<li>Emotive 360 Mood Lightening</li>
+																<li>10 hour playtime</li>
 															</ul>
 														</div>
 													</a>
@@ -865,12 +883,15 @@
 					<div class="section__inner">
 						<div class="section__header">
 							<h2 class="section__title">
-								Member Days
-								<span class="break--mobile">HOT DEAL!</span>
+								LA SEMAINE
+								<span class="break--mobile">LG HOT Deal !</span>
 							</h2>
 							<p class="section__sub section__sub--small">
-								Dein LG Produkte <span class="highlight highlight--lightblue">zum Sonderpreis!</span><br>
-								Limitierte Anzahl verfügbar
+								<span class="break--desktop">
+									C’est votre chance d’obtenir un nouveau
+									<span class="highlight highlight--lightblue">LG à un prix spécial !</span>
+								</span>
+								Quantités limitées disponibles
 							</p>
 						</div>
 						<div id="hotdeal" class="product product--hotdeal">
@@ -932,270 +953,10 @@
 								<div class="product__list"></div>
 							</div>
 						</div>
-						<div class="section__footer">
-							<p class="section__text">5% Aktionscode für die erste Bestellung nicht mit dieser Aktion kombinierbar</p>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="anchors" id="VolumeProductsAudio"></div>
-			<div class="anchors" id="VolumeProductsTVCinebeam"></div>
-			<div class="anchors" id="VolumeProductsHomeAppliance"></div>
-			<div class="anchors" id="VolumeProductsComputerProducts"></div>
-			<div id="box_content3" class="section">
-				<div class="section__container section__container--lightgray" data-list="hottest">
-					<div class="section__inner">
-						<div class="section__header">
-							<h2 class="section__title">
-								<span class="break--mobile">Unsere exklusiven</span>
-								Angebote
-							</h2>
-							<p class="section__desc section__desc--semibold">
-								Wähle die passenden Produkte zu deinem Lifestyle: Jetzt registrieren und 10% Rabatt auf den Gesamtpreis sichern,<br>
-								wenn du mindestens 2 Produkte auswählst.
-							</p>
-							<p class="section__desc section__desc--semibold">
-								MEMBER DAYS Rabatt: 10% auf den Gesamtpreis beim Kauf von mindestens 2 Produkten.
-							</p>
-						</div>
-						<div class="tab">
-							<ul class="tab__list tab__list--round">
-								<li class="tab__item tab__item--active">
-									<a href="#tvcinebeam" 
-										data-tab-name="tvcinebeam" 
-										data-track-group="mic" 
-										data-track-opt="category" 
-										data-track-name="selectProductCategory" 
-										data-link-name="memberdays_productCategory_tvcinebeam"
-										data-link-area="memberdays_2022"
-										class="tab__button">TV/Cinebeam</a>
-								</li>
-								<li class="tab__item">
-									<a href="#audio" 
-									data-tab-name="audio" 
-									data-track-group="mic" 
-									data-track-opt="category" 
-									data-track-name="selectProductCategory" 
-									data-link-name="memberdays_productCategory_audio"
-									data-link-area="memberdays_2022"
-									class="tab__button">Audio</a>
-								</li>
-								<li class="tab__item">
-									<a href="#homeappliance" 
-									data-tab-name="homeappliance" 
-									data-track-group="mic" 
-									data-track-opt="category" 
-									data-track-name="selectProductCategory" 
-									data-link-name="memberdays_productCategory_homeappliance"
-									data-link-area="memberdays_2022"
-									class="tab__button">Haushaltsgeräte</a>
-								</li>
-								<li class="tab__item">
-									<a href="#computerproducts" 
-									data-tab-name="computerproducts" 
-									data-track-group="mic" 
-									data-track-opt="category" 
-									data-track-name="selectProductCategory" 
-									data-link-name="memberdays_productCategory_computerproducts"
-									data-link-area="memberdays_2022"
-									class="tab__button">IT</a>
-								</li>
-							</ul>
-							<template class="contents-template">
-								<li class="product__item">
-									<div class="product__img">
-										<div class="product__flags">
-											<span class="product__flag d-none" data-user-type="*productTag1UserType*" data-key="productTag1">*productTag1*</span>
-											<span class="product__flag d-none" data-user-type="*productTag2UserType*" data-key="productTag2">*productTag2*</span>
-										</div>
-										<img class="lazyload" data-src="*mediumImageAddr*" alt="*imageAltText*" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
-									</div>
-									<!-- 
-										// common.js add-to-cart dataLayer 공통 로직 진입을 위해
-										// .products-info / .js-compare 클래스 추가
-										// => $('body').on('click', '.add-to-cart:not(.in-buynow)', ~ );
-									-->
-									<div class="product__info products-info">
-										<p class="product__name">*userFriendlyName*</p>
-										<p class="product__sn sku">*modelName*</p>
-										<div class="product__price">
-											<span class="product__discount">
-												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
-												<span class="number">*originPrice*</span>
-											</span>
-											<span class="product__highlight">*discountMsg*</span>
-										</div>
-										<div class="product__price-now">
-											<span class="product__cost">
-												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
-												<span class="number">*finalPrice*</span>
-											</span>
-										</div>
-										<div class="product__members">
-											<span class="product__text"><spring:message code='OBS_MEMBERSHIP_MSG' text='OBS_MEMBERSHIP_MSG'/></span>
-											<span class="product__highlight">
-												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
-												<span class="number">*membershipPriceValue*</span>
-											</span>
-											<div class="product__noti d-none" style="font-size:13px;">
-												<p class="product__text">*reStockAlertText*</p>
-											</div>
-										</div>
-										<div class="button">
-											<a role="button" href="#" class="button__item button__item--red atc-members-week" data-track-group="product" data-track-name="add_to_cart_click" data-link-name="add_to_cart" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
-											<a role="button" href="#modal_re_stock_alert" class="button__item button__item--lightgray restock-members-week d-none" data-track-group="product" data-track-name="move_to_stock_request_click" data-link-name="move_to_stock_request" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
-										</div>
-										<div class="learn-more">
-											<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click" data-link-name="buy_now">
-												<span class="learn-more__text"><spring:message code='component-learnMore' text='LEARN MORE'/></span>
-												<i class="learn-more__arrow"></i>
-											</a>
-										</div>
-									</div>
-								</li>
-							</template>
-							<div id="tvcinebeam" class="tab__panel" style="display: block;">
-								<p class="tab__noti">
-									<span class="highlight highlight--beige">
-										<span class="break--mobile">Dein MEMBER DAYS Rabatt wird automatisch im</span> <span class="tab__bold">Warenkorb</span> abgezogen.
-									</span>
-								</p>
-								<div class="product">
-									<div class="product__mask">
-										<ul class="product__list"></ul>
-									</div>
-									<div class="button">
-										<a href="https://www.lg.com/de/tv" 
-											target="_blank"
-											tabindex="0" 
-											data-track-group="mic" 
-											data-track-opt="category" 
-											data-track-val="TVS" 
-											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemoretvs" 
-											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">Weitere Smart TV entdecken</a>
-									</div>
-								</div>
-							</div>
-							<div id="audio" class="tab__panel">
-								<p class="tab__noti">
-									<span class="highlight highlight--beige">
-										<span class="break--mobile">Dein MEMBER DAYS Rabatt wird automatisch im</span> <span class="tab__bold">Warenkorb</span> abgezogen.
-									</span>
-								</p>
-								<div class="product">
-									<div class="product__mask">
-										<ul class="product__list"></ul>
-									</div>
-									<div class="button">
-										<a href="https://www.lg.com/de/soundbars"
-											target="_blank" 
-											tabindex="0" 
-											data-track-group="mic" 
-											data-track-opt="category" 
-											data-track-val="SOUND SYSTEMS" 
-											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemoresoundsystems"
-											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE SOUND SYSTEMS</a>
-										<a href="https://www.lg.com/it/hi-fi-audio"
-											target="_blank"
-											tabindex="0" 
-											data-track-group="mic" 
-											data-track-opt="category" 
-											data-track-val="SOUND WIRELESS EARBUDS" 
-											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemorewirelessearbuds" 
-											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE SOUND WIRELESS EARBUDS</a>
-									</div>
-								</div>
-							</div>
-							<div id="homeappliance" class="tab__panel">
-								<p class="tab__noti">
-									<span class="highlight highlight--beige">
-										<span class="break--mobile">Dein MEMBER DAYS Rabatt wird automatisch im</span> <span class="tab__bold">Warenkorb</span> abgezogen.
-									</span>
-								</p>
-								<div class="product">
-									<div class="product__mask">
-										<ul class="product__list"></ul>
-									</div>
-									<div class="button">
-										<a href="#"
-											target="_blank" 
-											tabindex="0" 
-											data-track-group="mic" 
-											data-track-opt="category" 
-											data-track-val="HOME APPLIANCES"  
-											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemorehomeappliances"
-											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE HOME APPLIANCES</a>
-									</div>
-								</div>
-							</div>
-							<div id="computerproducts" class="tab__panel">
-								<p class="tab__noti">
-									<span class="highlight highlight--beige">
-										<span class="break--mobile">Dein MEMBER DAYS Rabatt wird automatisch im</span> <span class="tab__bold">Warenkorb</span> abgezogen.
-									</span>
-								</p>
-								<div class="product">
-									<div class="product__mask">
-										<ul class="product__list"></ul>
-									</div>
-									<div class="button">
-										<a href="https://www.lg.com/de/it-produkte" 
-											target="_blank" 
-											tabindex="0" 
-											data-track-group="mic" 
-											data-track-opt="category" 
-											data-track-val="SEE MORE COMPUTER PRODUCTS"  
-											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemorecomputerproducts"
-											data-link-area="memberdays_2022"
-											class="button__item button__item--white">SEE MORE COMPUTER PRODUCTS</a>
-									</div>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- popup -->
-		<div class="popup modal_referrer_sso">
-			<div class="popup__container">
-				<div class="popup__body">
-					<div class="popup__contents">
-						<p class="popup__text">
-							After joining the sign-up, you must click the <span class="popup__bold">“submit”</span> button to apply for the event.
-						</p>
-					</div>
-					<div class="popup__bottom">
-						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="popup modal_lgmembersweek_submit">
-			<div class="popup__container">
-				<div class="popup__body">
-					<div class="popup__contents">
-						<span class="popup__text popup__bold"></span>
-					</div>
-					<div class="popup__bottom">
-						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- // popup -->
 
 		<!-- // Content End  -->
 	</div>
@@ -1280,54 +1041,6 @@
 	<script src="/lg5-common-gp/js/components/video-asset.min.js"></script>
 
 	<script>
-		// if($('.coupon__list .coupon__item').hasClass('checking').length > 0) {
-		// 	$('.button_takepart').on('click', function() {
-		// 		var $selectCoupon = $('.coupon__list .coupon__item.checking')
-		// 		var themeType = $selectCoupon.find('radio').attr('data-track-val');
-		// 		if(themeType == 'greenlife') {
-		// 			$bu = 'HA'
-		// 		} else if(themeType == 'vividlife') {
-		// 			$bu = 'TV, IT, AV'
-		// 		} else if(themeType == 'gaminglife') {
-		// 			$bu = 'IT, AV, TV'
-		// 		} else if(themeType == 'workinglife') {
-		// 			$bu = 'AV, IT'
-		// 		} else if(themeType == 'soundfullife') {
-		// 			$bu = 'AV'
-		// 		} else {
-		// 			$bu = ' '
-		// 		}
-				
-		// 		dataLayer.push({
-		// 			'event' : $(this).attr('data-track-name'),
-		// 			'bu' : $bu,
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-track-val')
-		// 		})
-		// 	})
-		// }
-		
-		// $('.visual').find('.button__item').each(function () {
-    //   $(this).on('click', function() {
-		// 		dataLayer.push({
-    //       'event' : $(this).attr('data-track-name'),
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-track-val')
-    //     })
-    //   })
-    // });
-
-		// $('.box_navigation').find('.link').each(function () {
-    //   $(this).on('click', function() {
-		// 		dataLayer.push({
-    //       'event' : $(this).attr('data-track-name'),
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-    //     })
-    //   })
-    // });
-		
 		$('#box_content2 .tab__list').find('.tab__button').each(function () {
 			$(this).on('click', function() {
 				var themeType = $(this).attr('data-track-val');
@@ -1369,82 +1082,6 @@
 				})
 			})
     });
-		
-		// $('#box_content3 .tab__list').find('.tab__button').each(function () {
-		// 	$(this).on('click', function() {
-		// 		dataLayer.push({
-		// 			'event' : 'selectProductCategory',
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-tab-name'),
-		// 		})
-		// 	})
-    // });
-		
-		// $('#box_content3 .tab__panel').each(function () {
-		// 	$(this).find('.button__item--white').each(function () {
-		// 		$(this).on('click', function() {
-		// 			dataLayer.push({
-		// 				'event' : 'plpClick',
-		// 				'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 				'pageType' : 'MICROSITE',
-		// 				'theme' : $(this).attr('data-track-val'),
-		// 			})
-		// 		})
-		// 	})
-    // });
-
-		$(document).ready(function(){
-			var href = window.location.href;
-			if(href.indexOf('VolumeProductsTVCinebeam') != -1) {    
-				$('#box_content3 .tab__list .tab__panel').attr('display', 'none')
-        $('#box_content3 .tab__list .tab__item').removeClass('tab__item--active');
-        $('#box_content3 .tab__list .tab__item').eq(0).addClass('tab__item--active');    
-				var timer = setTimeout(function() {         
-					$('#box_content3 .tab__list .tab__item').eq(0).find('.tab__button').click();
-					console.log($('#box_content3 .tab__list .tab__item').eq(0).find('.tab__button').html())
-					$('#box_content3 .tab__list .tab__item').eq(0).find('.tab__button').trigger('click')    
-					    
-					clearTimeout(timer);     
-				}, 1500);
-			}
-			if(href.indexOf('VolumeProductsAudio') != -1) {
-				$('#box_content3 .tab__list .tab__panel').attr('display', 'none')
-        $('#box_content3 .tab__list .tab__item').removeClass('tab__item--active');
-        $('#box_content3 .tab__list .tab__item').eq(1).addClass('tab__item--active');  
-				var timer = setTimeout(function() {         
-					$('#box_content3 .tab__list .tab__item').eq(1).find('.tab__button').click();
-					console.log($('#box_content3 .tab__list .tab__item').eq(1).find('.tab__button').html())
-					$('#box_content3 .tab__list .tab__item').eq(1).find('.tab__button').trigger('click')    
-					    
-					clearTimeout(timer);  
-				}, 1500);
-			}
-			if(href.indexOf('VolumeProductsHomeAppliance') != -1) {
-				$('#box_content3 .tab__list .tab__panel').attr('display', 'none')
-        $('#box_content3 .tab__list .tab__item').removeClass('tab__item--active');
-        $('#box_content3 .tab__list .tab__item').eq(2).addClass('tab__item--active');  
-				var timer = setTimeout(function() {         
-					$('#box_content3 .tab__list .tab__item').eq(2).find('.tab__button').click();
-					console.log($('#box_content3 .tab__list .tab__item').eq(2).find('.tab__button').html())
-					$('#box_content3 .tab__list .tab__item').eq(2).find('.tab__button').trigger('click')    
-					    
-					clearTimeout(timer);  
-				}, 1500);
-			}
-			if(href.indexOf('VolumeProductsComputerProducts') != -1) {
-				$('#box_content3 .tab__list .tab__panel').attr('display', 'none')
-        $('#box_content3 .tab__list .tab__item').removeClass('tab__item--active');
-        $('#box_content3 .tab__list .tab__item').eq(3).addClass('tab__item--active');  
-				var timer = setTimeout(function() {         
-					$('#box_content3 .tab__list .tab__item').eq(3).find('.tab__button').click();
-					console.log($('#box_content3 .tab__list .tab__item').eq(3).find('.tab__button').html())
-					$('#box_content3 .tab__list .tab__item').eq(3).find('.tab__button').trigger('click')    
-					    
-					clearTimeout(timer);   
-				}, 1500);
-			}
-		});
 
 		if($('.add-to-cart').length > 0) {
       $('.add-to-cart').on('click', function (e) {

@@ -2837,15 +2837,23 @@
 		display: list-item;
 		flex: 0 1 480px;
 		@media (max-width: 767px) {
+			display: list-item;
 			flex: none;
 			display: block;
 			background-color: #ffffff;
-			display: none;
 			border-bottom:1px solid #eeeeee;
 			&.active {
 				display: block;
 				.link::after {
 					display: none;
+				}
+			}
+			&:hover {
+				.link {
+					color: #999;
+					&::after {
+						display: none;
+					}
 				}
 			}
 		}

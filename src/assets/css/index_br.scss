@@ -1,0 +1,95 @@
+@charset "UTF-8";
+@import "mixins";
+
+.lgmembersweek {
+	// coupon
+	.coupon {
+		&__process {
+			max-width: 820px;
+			> .coupon__group {
+				padding-top: 54px;
+			}
+			.coupon__order {
+				justify-content: space-between;
+				&:before {
+					left: 50px;
+					right: 50px;
+				}
+				> li {
+					position: relative;
+					&:not(:nth-child(3)) {
+						.coupon__text {
+							margin-top: 10px;
+						}
+					}
+				}
+				.coupon__text {
+					top: -54px;
+				}
+			}
+		}
+		@media (max-width: 767px) {
+			&__process {
+				padding-left: 0;
+				> .coupon__group {
+					padding-left: 0;
+					&:before {
+						left: 8px;
+					}
+				}
+				.coupon__order {
+					&:before {
+						left: 8px;
+						right: auto;
+					}
+					> li {
+						&:not(:nth-child(3)) {
+							.coupon__text {
+								margin-top: 0;
+							}
+						}
+						&:nth-child(3) {
+							align-items: baseline;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.product {
+		&__showroom {
+			&--workinglife {
+				.product__slide {
+					&:nth-child(1) {
+						.product__layer {
+							&:nth-child(4) {
+								left: 24.38%;
+								top: 32.2%;
+								.product__target {
+									left: auto;
+									right: 32px;
+									top: -49px;
+									margin-left: 0;
+									padding-right: 20px;
+									&:before {
+										left: auto;
+										right: 10px;
+										top: 50%;
+										margin-right: 0;
+										margin-top: -15px;
+										border-right: 0;
+										border-top: 15px solid transparent;
+										border-bottom: 15px solid transparent;
+										border-left: 20px solid #fff;
+									}
+								}
+							}
+						}
+						
+					}
+				}
+			}
+		}
+	}
+}

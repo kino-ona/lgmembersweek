@@ -29,18 +29,18 @@ $(document).ready(function(){
 		$(window).on("scroll", function () {
 			changeActiveTab();
 
-			if($(window).width() < 780) {
-				$('.box_navigation .list-item').each(function () {
-					if(!$(this).hasClass('active')) {
-						$(this).hide()
-					}else {
-						$(this).show()
-					}
-				});
-				$('.box_navigation').find('.arrow_btn').removeClass('show')
-			} else {
-				$('.box_navigation .list-item').show()
-			}
+			// if($(window).width() < 780) {
+			// 	// $('.box_navigation .list-item').each(function () {
+			// 	// 	if(!$(this).hasClass('active')) {
+			// 	// 		$(this).hide()
+			// 	// 	}else {
+			// 	// 		$(this).show()
+			// 	// 	}
+			// 	// });
+			// 	// $('.box_navigation').find('.arrow_btn').removeClass('show')
+			// } else {
+			// 	$('.box_navigation .list-item').show()
+			// }
 		});   
 	
 		function changeActiveTab() {

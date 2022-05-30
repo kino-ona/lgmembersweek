@@ -261,7 +261,7 @@
 					</div>
 				</div>
 				<div class="visual__terms">
-					<a href="#" 
+					<a href="${path}/assets/TNCMemberDays.pdf" target="_blank"
 						data-link-name="memberdays_anchor_click_termsandconditions" 
 						data-link-area="memberdays_2022" 
 						class="terms__link visual__link">
@@ -308,15 +308,6 @@
 						</div>
 						<div class="benefit">
 							<ul class="benefit__list benefit__list--discount">
-								<!-- <li class="benefit__item">
-									<div class="benefit__inner">
-										<p class="benefit__category">Extra sconto utenti registrati</p>
-										<p class="benefit__discount">
-											2%
-											<em class="benefit__condition">direttamente a carrello, per sempre</em>
-										</p>
-									</div>
-								</li> -->
 								<li class="benefit__item">
 									<div class="benefit__inner">
 										<p class="benefit__category">10% exklusiver MEMBER DAYS Rabatt</p>
@@ -330,18 +321,9 @@
 										</p>
 									</div>
 								</li>
-								<!-- <li class="benefit__item">
-									<div class="benefit__inner">
-										<p class="benefit__category">Offerta di benvenuto</p>
-										<p class="benefit__discount">
-											5%
-											<em class="benefit__condition">sul primo acquisto</em>
-										</p>
-									</div>
-								</li> -->
 							</ul>
 							<div class="benefit__button">
-								<a href="#" class="benefit__link">
+								<a href="${path}/assets/RaffleMemberDays.pdf" target="_blank" class="benefit__link">
 									Teilnahmebedingungen zustimmen
 									<i class="benefit__arrow"></i>
 								</a>

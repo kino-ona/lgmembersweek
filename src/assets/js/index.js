@@ -23,10 +23,24 @@ $(document).ready(function(){
 			var id = $(this).attr("href"),
 			posY = $(id).offset().top - $('.box_navigation').height();
 			$("html, body").stop().animate({"scrollTop": posY}, 1000);
+
 		});
 		
 		$(window).on("scroll", function () {
 			changeActiveTab();
+
+			if($(window).width() < 780) {
+				$('.box_navigation .list-item').each(function () {
+					if(!$(this).hasClass('active')) {
+						$(this).hide()
+					}else {
+						$(this).show()
+					}
+				});
+				$('.box_navigation').find('.arrow_btn').removeClass('show')
+			} else {
+				$('.box_navigation .list-item').show()
+			}
 		});   
 	
 		function changeActiveTab() {
@@ -45,6 +59,18 @@ $(document).ready(function(){
 			}
 		}
 	}
+
+	$('.box_navigation .arrow_btn').on('click', function(e){
+		e.preventDefault();
+
+		if($(this).hasClass('show')) {
+			$(this).removeClass('show')
+			$('.box_navigation').find('.list-item:not(".active")').css('display', 'none')
+		} else {
+			$(this).addClass('show')
+			$('.box_navigation').find('.list-item').css('display', 'list-item')
+		}
+	});
 
 	// slick
 	$('.lgmembersweek .visual__swiper').slick({
@@ -181,4 +207,6 @@ $(document).ready(function(){
 		e.preventDefault();
 		$(this).closest('.popup').hide();
 	});
+	
 });
+

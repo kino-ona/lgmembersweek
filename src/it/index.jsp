@@ -1476,7 +1476,7 @@
 											data-track-opt="category" 
 											data-track-val="SCOPRI TUTTI I CONDIZIONATORI"  
 											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemorehomeappliances"
+											data-link-name="memberdays_plp_click_seemoreairconditioner"
 											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">SCOPRI TUTTI I CONDIZIONATORI</a>	
 									</div>

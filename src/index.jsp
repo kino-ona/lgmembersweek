@@ -317,6 +317,9 @@
 			<div class="box_navigation">
 				<div class="box_nav-position">
 					<div class="box_navigation-inner">
+						<button class="arrow_btn">
+							<i class="arrow_ico"></i>
+						</button>
 						<ul class="list_navigation smooth-scroll">
 							<li class="list-item">
 								<a href="#box_content1" 
@@ -1622,53 +1625,6 @@
 	<script src="/lg5-common-gp/js/components/video-asset.min.js"></script>
 
 	<script>
-		// if($('.coupon__list .coupon__item').hasClass('checking').length > 0) {
-		// 	$('.button_takepart').on('click', function() {
-		// 		var $selectCoupon = $('.coupon__list .coupon__item.checking')
-		// 		var themeType = $selectCoupon.find('radio').attr('data-track-val');
-		// 		if(themeType == 'greenlife') {
-		// 			$bu = 'HA'
-		// 		} else if(themeType == 'vividlife') {
-		// 			$bu = 'TV, IT, AV'
-		// 		} else if(themeType == 'gaminglife') {
-		// 			$bu = 'IT, AV, TV'
-		// 		} else if(themeType == 'workinglife') {
-		// 			$bu = 'AV, IT'
-		// 		} else if(themeType == 'soundfullife') {
-		// 			$bu = 'AV'
-		// 		} else {
-		// 			$bu = ' '
-		// 		}
-				
-		// 		dataLayer.push({
-		// 			'event' : $(this).attr('data-track-name'),
-		// 			'bu' : $bu,
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-track-val')
-		// 		})
-		// 	})
-		// }
-		
-		// $('.visual').find('.button__item').each(function () {
-    //   $(this).on('click', function() {
-		// 		dataLayer.push({
-    //       'event' : $(this).attr('data-track-name'),
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-track-val')
-    //     })
-    //   })
-    // });
-
-		// $('.box_navigation').find('.link').each(function () {
-    //   $(this).on('click', function() {
-		// 		dataLayer.push({
-    //       'event' : $(this).attr('data-track-name'),
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-    //     })
-    //   })
-    // });
 		
 		$('#box_content2 .tab__list').find('.tab__button').each(function () {
 			$(this).on('click', function() {

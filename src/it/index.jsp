@@ -125,8 +125,8 @@
 			-->
 
 			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546805|MD07546781|MD07523705|MD07528466|MD07533869|MD07526955|MD07523980|MD07534114|MD07531094"/>
-			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535124|MD07529953|MD07540591"/>
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546805|MD07546781|MD07523705|MD07528466|MD07533869|MD07526955|MD07523980|MD07534114|MD07526527|MD07523827|MD07548157|MD07531094"/>
+			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535366|MD07529953|MD07535124|MD07530617|MD07538352|MD07540591|MD07536301|MD07507352"/>
 			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07527380|MD07539124|MD07535708|MD07536705|MD07522656|MD07544843|MD07521762|MD06175496|MD05774871|MD05775808|MD07528602|MD07528454|MD07546205|MD07546235|MD07551400|MD07551561"/>
 			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07544866|MD07525444|MD07544862|MD07540299|MD07525616|MD07554256|MD07520962|MD07532987|MD07529698"/>
 		<!-- Required input ## Model List End -->
@@ -157,7 +157,7 @@
 										data-track-name="members_week_benefit_click"
 										data-link-name="memberdays_banner_click_main" 
 										data-link-area="memberdays_2022" 
-										class="button__item button__item--red">SCOPRI I NOSTRI MEMBER DAYS</a>
+										class="button__item button__item--red">SCOPRI GLI LG MEMBER DAYS</a>
 								</div>
 							</div>
 						</div>
@@ -182,7 +182,7 @@
 								data-track-name="members_week_benefit_click"
 								data-link-name="memberdays_banner_click_greenlife" 
 								data-link-area="memberdays_2022" 
-								class="button__item button__item--red">SCOPRI I NOSTRI MEMBER DAYS</a>
+								class="button__item button__item--red">SCOPRI GLI LG MEMBER DAYS</a>
 						</div>
 					</div>
 					<div class="visual__slide visual__slide--vividlife">
@@ -205,7 +205,7 @@
 								data-track-name="members_week_benefit_click"
 								data-link-name="memberdays_banner_click_vividlife" 
 								data-link-area="memberdays_2022" 
-								class="button__item button__item--red">SCOPRI I NOSTRI MEMBER DAYS</a>
+								class="button__item button__item--red">SCOPRI GLI LG MEMBER DAYS</a>
 						</div>
 					</div>
 					<div class="visual__slide visual__slide--gaminglife">
@@ -228,7 +228,7 @@
 								data-track-name="members_week_benefit_click"
 								data-link-name="memberdays_banner_click_gaminglife" 
 								data-link-area="memberdays_2022" 
-								class="button__item button__item--red">SCOPRI I NOSTRI MEMBER DAYS</a>
+								class="button__item button__item--red">SCOPRI GLI LG MEMBER DAYS</a>
 						</div>
 					</div>
 					<div class="visual__slide visual__slide--workinglife">
@@ -251,7 +251,7 @@
 							data-track-name="members_week_benefit_click" 
 							data-link-name="memberdays_banner_click_workinglife" 
 							data-link-area="memberdays_2022" 
-							class="button__item button__item--red">SCOPRI I NOSTRI MEMBER DAYS</a>
+							class="button__item button__item--red">SCOPRI GLI LG MEMBER DAYS</a>
 						</div>
 					</div>
 					<div class="visual__slide visual__slide--soundfullife">
@@ -274,7 +274,7 @@
 								data-track-name="members_week_benefit_click"
 								data-link-name="memberdays_banner_click_soundfullife" 
 								data-link-area="memberdays_2022" 
-								class="button__item button__item--red">SCOPRI I NOSTRI MEMBER DAYS</a>
+								class="button__item button__item--red">SCOPRI GLI LG MEMBER DAYS</a>
 						</div>
 					</div>
 				</div>

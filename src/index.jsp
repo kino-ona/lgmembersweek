@@ -402,7 +402,7 @@
 								<li class="benefit__item">
 									<div class="benefit__inner">
 										<p class="benefit__category">Free Installation &amp; Disposal</p>
-										<span class="benefit__text">Washing Machine,<br>Refridgerator only</span>
+										<span class="benefit__text">Washing Machine,<br>Refrigerator only</span>
 									</div>
 								</li>
 								<!-- <li class="benefit__item">

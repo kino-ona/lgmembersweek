@@ -68,6 +68,11 @@
 						background-image: url('../images/it/m_bg_visual_soundfullife.png');
 					}
 				}
+				.button__item {
+					height: 45px;
+					padding: 0 20px;
+					font-size: 13px;
+				}
 			}
 		}
 	}
@@ -116,7 +121,7 @@
 						.hotdeal_bg {
 							background-image: url('../images/it/bg_hotdeal0#{$i}.png');
 							&.hotdeal_soldout {
-								background-image: url('../images/hotdeal_bg02.png');
+								background-image: url('../images/it/hotdeal_bg02.png');
 							}
 						}
 					}
@@ -434,6 +439,7 @@
 					.button__item {
 						margin-left: 0 !important;
 						margin-bottom: 10px;
+						line-height: 14px;
 					}
 				}
 			}

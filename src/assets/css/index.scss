@@ -993,7 +993,13 @@
 		}
 		.learn-more {
 			&:not(:first-child) {
-				margin-top: 20px;
+				margin-top: 14px;
+			}
+		}
+		.learn-more__text {
+			font-weight: 400;
+			&:before {
+				display: none;
 			}
 		}
 		&--hotdeal {
@@ -1692,6 +1698,17 @@
 					padding: 0 5px;
 				}
 			}
+			.learn-more {
+				&:not(:first-child) {
+					margin-top: 20px;
+				}
+			}
+			.learn-more__text {
+				font-weight: 600;
+				&:before {
+					display: block;
+				}
+			}
 		}
 		&__img {
 			img {
@@ -1836,8 +1853,11 @@
 			}
 			.learn-more {
 				&:not(:first-child) {
-					margin-top: 16px;
+					margin-top: 10px;
 				}
+			}
+			.learn-more__arrow {
+				display: block;
 			}
 			&--hotdeal {
 				&:not(:first-child) {
@@ -2031,6 +2051,14 @@
 				width: calc(50% - 2.56vw);
 				margin: 2.56vw 0 0 2.56vw;
 				padding: 15px 15px 25px;
+				.learn-more {
+					&:not(:first-child) {
+						margin-top: 16px;
+					}
+				}
+				.learn-more__arrow {
+					display: none;
+				}
 			}
 			&__flags {
 				left: -5px;
@@ -2199,7 +2227,6 @@
 					}
 				}
 				.benefit__category {
-					display: flex;
 					height: 104px;
 					padding: 20px 20px 0;
 					font-size: 24px;
@@ -2650,6 +2677,9 @@
 	.learn-more {
 		display: flex;
 		justify-content: center;
+		&--right {
+			justify-content: flex-end;
+		}
 		&__link {
 			display: inline-flex;
 			align-items: center;
@@ -2678,6 +2708,9 @@
 			@include iconAngle($direction: 'right', $width: 8px, $height: 16px, $thick: 1.5px, $color: #000, $display: block, $position: relative);
 		}
 		@media (max-width: 767px) {
+			&--right {
+				justify-content: center;
+			}
 			&__text {
 				font-size: 14px;
 			}

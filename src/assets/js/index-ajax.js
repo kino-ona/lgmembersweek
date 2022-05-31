@@ -1,4 +1,57 @@
 $(document).ready(function() {
+
+	const actionUrl = $('.lgmembersweek').data('actionUrl'),
+		submitUrl = $('#eventCustomerForm').data('url');
+
+	// Non-members -> Expose alert pop-up when re-entering after logging in to SSO (비회원 -> SSO 로그인 후 재진입 시에 알람팝업 노출)
+	$(window).on("pageshow", function (e){
+		// Whether to enter through the browser's Back/forward button
+		// 브라우저의 Back/forward 버튼으로 진입여부
+		const $referrerModal = $('.modal_referrer_sso'),
+			historyBack = window.performance && (window.performance.getEntriesByType("navigation")[0].type == 'back_forward' || window.performance.navigation.type == 2) ? true : false,
+			referrerSso = document.referrer.indexOf('sso.lg.com') > -1 || document.referrer.indexOf('ssodev.lg.com') > -1 || document.referrer.indexOf('change-password-reminder') > -1 ? true : false;
+			// referrerSso = document.referrer.indexOf('sso.lg.com') > -1 || document.referrer.indexOf('ssodev.lg.com') > -1 || document.referrer.indexOf('change-password-reminder') > -1 ? true : false,
+			// submitted = @@@ ? true : false;
+
+		// if( !historyBack && referrerSso && submitted ){
+		if( !historyBack && referrerSso ){
+			$.ajax({
+				type: 'post',
+				url: submitUrl,
+				data: 'lifeStyle=',
+				dataType:'json',
+				success : function(data){
+					if(data.code == '02' && data.selection != '' && data.selection != null){ // already applied for an account (이미 응모한 계정)
+						$referrerModal.find('.popup__text').text(data.message);
+
+						const selection = data.selection;
+						let choosenInputId;
+						switch(selection){
+							case 'Green':
+								choosenInputId = '#Coupon01';
+							break;
+							case 'Vivid':
+								choosenInputId = '#Coupon02';
+							break;
+							case 'Gaming':
+								choosenInputId = '#Coupon03';
+							break;
+							case 'Working':
+								choosenInputId = '#Coupon04';
+							break;
+							case 'Soundful':
+								choosenInputId = '#Coupon05';
+							break;
+						}
+						$(choosenInputId).trigger('click');
+					}
+					$('html, body').animate({scrollTop : $('[data-list="eventGift"]').offset().top}, 250); // move scroll to "#submit" form element
+					$referrerModal.show();
+				}
+			});
+		}
+	});
+
 	// Model List Array
 	const listArray = {};
 	$('[data-model-group]').each(function(){
@@ -13,19 +66,6 @@ $(document).ready(function() {
 		let [listName, tmp] = [$(this).closest('.section__container').data('list'), $(this).clone()];
 		templateArray[listName] = tmp;
 		$(this).remove();
-	});
-
-	// Non-members -> Expose alert pop-up when re-entering after logging in to SSO (비회원 -> SSO 로그인 후 재진입 시에 알람팝업 노출)
-	const referrerSso = document.referrer;
-	$(window).on("pageshow", function (e){
-		// Whether to enter through the browser's Back/forward button
-		// 브라우저의 Back/forward 버튼으로 진입여부
-		const historyBack = window.performance && (window.performance.getEntriesByType("navigation")[0].type == 'back_forward' || window.performance.navigation.type == 2) ? true : false;
-
-		if( !historyBack && (referrerSso.indexOf('sso.lg.com') > -1 || referrerSso.indexOf('ssodev.lg.com') > -1 || referrerSso.indexOf('change-password-reminder') > -1) ){
-			$('.modal_referrer_sso').show();
-			$('html, body').animate({scrollTop : $('[data-list="eventGift"]').offset().top}, 250); // move scroll to "#submit" form element
-		}
 	});
 
 	// Button data set for redirect after login
@@ -44,8 +84,6 @@ $(document).ready(function() {
 	setTimeout(function(){
 		if($('.navigation .right-btm .login').hasClass('logged')) isLogin = true;
 	},200);
-
-	const actionUrl = $('.lgmembersweek').data('actionUrl');
 
 	let lgMembersWeek = {
 		tab : $('.lgmembersweek .tab__button'),
@@ -93,18 +131,16 @@ $(document).ready(function() {
 			$submit.click(function(e){
 				e.preventDefault();
 				if(isLogin){
-					let url = $('#eventCustomerForm').data('url'),
-						chooseParam = $('.coupon__list [type="radio"]:checked').data('param'),
+					let chooseParam = $('.coupon__list [type="radio"]:checked').data('param'),
 						paramData = 'lifeStyle=' + chooseParam,
 						$modal = $('.modal_lgmembersweek_submit');
 					$.ajax({
 						type: 'post',
-						url: url,
+						url: submitUrl,
 						data: paramData,
 						dataType:'json',
 						success : function(data){
-							$modal.find('.popup__text').text(data.message)
-							$modal.show();
+							$modal.find('.popup__text').text(data.message).end().show();
 							if(data.code == '00') lgMembersWeek.trackEvent($submit); //tracking Event
 						}
 					});

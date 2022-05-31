@@ -1517,9 +1517,7 @@
 			<div class="popup__container">
 				<div class="popup__body">
 					<div class="popup__contents">
-						<p class="popup__text">
-							Dopo aver effettuato l'iscrizione, clicca su <span class="popup__bold">Partecipa</span> per partecipare all'estrazione.
-						</p>
+						<p class="popup__text"><spring:message code='acc_lg-member-days-event_submit-msg' text='acc_lg-member-days-event_submit-msg'/></p>
 					</div>
 					<div class="popup__bottom">
 						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>
@@ -1640,54 +1638,6 @@
 	<script src="/lg5-common-gp/js/components/video-asset.min.js"></script>
 
 	<script>
-		// if($('.coupon__list .coupon__item').hasClass('checking').length > 0) {
-		// 	$('.button_takepart').on('click', function() {
-		// 		var $selectCoupon = $('.coupon__list .coupon__item.checking')
-		// 		var themeType = $selectCoupon.find('radio').attr('data-track-val');
-		// 		if(themeType == 'greenlife') {
-		// 			$bu = 'HA'
-		// 		} else if(themeType == 'vividlife') {
-		// 			$bu = 'TV, IT, AV'
-		// 		} else if(themeType == 'gaminglife') {
-		// 			$bu = 'IT, AV, TV'
-		// 		} else if(themeType == 'workinglife') {
-		// 			$bu = 'AV, IT'
-		// 		} else if(themeType == 'soundfullife') {
-		// 			$bu = 'AV'
-		// 		} else {
-		// 			$bu = ' '
-		// 		}
-				
-		// 		dataLayer.push({
-		// 			'event' : $(this).attr('data-track-name'),
-		// 			'bu' : $bu,
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-track-val')
-		// 		})
-		// 	})
-		// }
-		
-		// $('.visual').find('.button__item').each(function () {
-    //   $(this).on('click', function() {
-		// 		dataLayer.push({
-    //       'event' : $(this).attr('data-track-name'),
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-track-val')
-    //     })
-    //   })
-    // });
-
-		// $('.box_navigation').find('.link').each(function () {
-    //   $(this).on('click', function() {
-		// 		dataLayer.push({
-    //       'event' : $(this).attr('data-track-name'),
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-    //     })
-    //   })
-    // });
-		
 		$('#box_content2 .tab__list').find('.tab__button').each(function () {
 			$(this).on('click', function() {
 				var themeType = $(this).attr('data-track-val');
@@ -1729,30 +1679,6 @@
 				})
 			})
     });
-		
-		// $('#box_content3 .tab__list').find('.tab__button').each(function () {
-		// 	$(this).on('click', function() {
-		// 		dataLayer.push({
-		// 			'event' : 'selectProductCategory',
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-tab-name'),
-		// 		})
-		// 	})
-    // });
-		
-		// $('#box_content3 .tab__panel').each(function () {
-		// 	$(this).find('.button__item--white').each(function () {
-		// 		$(this).on('click', function() {
-		// 			dataLayer.push({
-		// 				'event' : 'plpClick',
-		// 				'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 				'pageType' : 'MICROSITE',
-		// 				'theme' : $(this).attr('data-track-val'),
-		// 			})
-		// 		})
-		// 	})
-    // });
 
 		$(document).ready(function(){
 			var href = window.location.href;

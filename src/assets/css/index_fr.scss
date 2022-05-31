@@ -118,6 +118,18 @@
 		}
 	}
 
+	.benefit__list--coupon {
+		.benefit__item {
+			&:nth-child(1)>.benefit__inner:after,
+			&:nth-child(2)>.benefit__inner:after {
+				display: none;
+			}
+			&:not(:first-child):before {
+				display: none;
+			}
+		}
+	}
+
 	// product
 	.product {
 		&--hotdeal {
@@ -393,6 +405,9 @@
 					}
 				}
 			}
+		}
+		&__mask {
+			margin-top: 40px;
 		}
 	}
 }

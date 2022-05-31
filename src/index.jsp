@@ -320,6 +320,9 @@
 						<button class="arrow_btn show">
 							<i class="arrow_ico"></i>
 						</button>
+						<div id="select_list-item" class="select_list-item">
+							<span class="link">MEMBER DAYS BENEFITS</span>
+						</div>
 						<ul class="list_navigation smooth-scroll">
 							<li class="list-item">
 								<a href="#box_content1" 

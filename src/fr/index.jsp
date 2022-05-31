@@ -9,14 +9,14 @@
 
 	<meta content="#a50034" name="theme-color">
 
-	<title>LG Consumer &amp; Business Electronics | LG Deutschland</title>
+	<title>TV, Audio, Vidéo, Électroménager, Informatique, Climatisation | LG France</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<meta property="og:title" content="LG Consumer &amp; Business Electronics | LG Deutschland" />
-	<meta property="og:url" content="https://www.lg.com/de/memberdays" />
-	<meta property="og:description" content="Entdecken Sie die neuesten Consumer und Business Electronics von LG. Lassen Sie sich von unseren aktuellen Produktinnovationen inspirieren| LG Deutschland" />
+	<meta property="og:title" content="TV, Audio, Vidéo, Électroménager, Informatique, Climatisation | LG France" />
+	<meta property="og:url" content="https://www.lg.com/fr" />
+	<meta property="og:description" content="LG Electronics vous propose son expertise en téléviseurs OLED, QNED, produits audio, électroménager, moniteurs et bien plus." />
 	<meta property="og:image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg" />
-	<link rel="canonical" href="https://www.lg.com/de/memberdays" />
+	<link rel="canonical" href="https://www.lg.com/fr" />
 
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/head/head-css.jsp" />
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/head/font-woff.jsp" />
@@ -48,10 +48,10 @@
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/body/broswe-check-popup-layer.jsp" />
 	
 	<div class="sr-only" itemscope itemtype="http://schema.org/WebPage">
-		<meta itemprop="name" content="LG Consumer &amp; Business Electronics | LG Deutschland"/>
+		<meta itemprop="name" content="TV, Audio, Vidéo, Électroménager, Informatique, Climatisation | LG France"/>
 		<meta itemprop="image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg" />
-		<meta itemprop="url" content="www.lg.com/it/member-days" />
-		<meta itemprop="description" content="Entdecken Sie die neuesten Consumer und Business Electronics von LG. Lassen Sie sich von unseren aktuellen Produktinnovationen inspirieren| LG Deutschland" />
+		<meta itemprop="url" content="https://www.lg.com/fr" />
+		<meta itemprop="description" content="LG Electronics vous propose son expertise en téléviseurs OLED, QNED, produits audio, électroménager, moniteurs et bien plus." />
 		<meta itemprop="keywords" content="" />
 	</div>
 	
@@ -73,7 +73,7 @@
 
 	<c:set var='path' value='/${localeCd}/memberdays' /> <!-- Required input ## Specify the microsite upload path for a flexible folder structure -->
 	<link rel="stylesheet" href="${path}/assets/css/index.css">
-	<link rel="stylesheet" href="${path}/assets/css/index_de.css">
+	<link rel="stylesheet" href="${path}/assets/css/index_fr.css">
 	<link rel="stylesheet" href="/lg5-common-gp/css/customer-mylg-wish-list.min.css"> <!-- For import GET STOCK ALERT css  -->
 
 	<!-- Enter Code Here -->
@@ -83,8 +83,6 @@
 			<input type="hidden" class="currency-code" value="<spring:message code='component-currency-code' text='component-currency-code'/>">
 
 			<!-- Required input ## Model List Start -->
-			<!-- Event Gift Model -->
-			<input type="hidden" data-model-group="eventGift" data-type="coupon" value="MD07535483|MD07548494|MD07528387|MD07552999|MD07535216"/>
 
 			<!-- Life Style Model -->
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07538035|MD07526170|MD07546933|MD07541621|MD07538920"/>
@@ -94,24 +92,11 @@
 			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536623|MD07545439|MD07545341|MD07545447|MD07552826"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
-			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07516310|MD07530431|MD07540097|MD07539439"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07516310"/>
 			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
 			<input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/de/hotdeal_product01.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/fr/hotdeal_product01.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/de/hotdeal_product02.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt2" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/de/hotdeal_product03.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt3" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/de/hotdeal_product04.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt4" value="Limited to 100 units"/>
-
-			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07533491|MD07550676|MD07550687|MD07551110|MD07533482|MD07533493|MD06189816"/>
-			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07545447|MD07545439|MD07536623|MD07536621|MD07552826|MD07551605|MD07551967|MD07553255"/>
-			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07543561|MD07535535|MD07537903|MD07520246|MD06020158|MD07537889|MD05788391|MD07538907|MD07537971|MD07541621|MD07538925|MD07526179|MD07544110|MD07542596|MD06205396|MD07538035|MD07520457|MD07543663|MD07538359|MD07538920"/>
-			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07546401|MD07510035|MD07527569|MD07545130|MD06076196|MD07501021|MD07500772|MD07500784|MD07513632|MD07528827|MD07539456|MD07539439"/>
-		<!-- Required input ## Model List End -->
 	
 		<!--  Content Start  -->
 		<div class="lgmembersweek" data-action-url="/${localeCd}/mkt/ajax/nbaa/retrieveManualProductList">
@@ -263,15 +248,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="visual__terms">
-					<a href="#" 
-						data-link-name="memberdays_anchor_click_termsandconditions" 
-						data-link-area="memberdays_2022" 
-						class="terms__link visual__link">
-						Terms and Conditions
-						<i class="visual__arrow"></i>
-					</a>
-				</div>
 			</div>
 			<div class="box_navigation">
 				<div class="box_nav-position">
@@ -294,9 +270,9 @@
 							<li class="list-item">
 								<a href="#box_content3" 
 									data-track-group="mic" data-track-name="members_week_anchor_click"
-									data-link-name="memberdays_anchor_click_hottest_product" 
+									data-link-name="memberdays_anchor_click_hotdeal" 
 									data-link-area="memberdays_2022" 
-									class="link">BONNES AFFAIRES</a>
+									class="link">Hot deal</a>
 								</li>
 						</ul>
 					</div>
@@ -333,12 +309,6 @@
 							<div class="benefit__noti">
 								<p class="benefit__text">Découvrez les codes de réduction dans votre compte MyLG.</p>
 							</div>
-							<div class="benefit__button">
-								<a href="#" class="benefit__link">
-									Terms and Conditions apply
-									<i class="benefit__arrow"></i>
-								</a>
-							</div>
 							<ul class="benefit__list benefit__list--coupon">
 								<li class="benefit__item">
 									<div class="benefit__inner">
@@ -364,22 +334,17 @@
 						<div class="tab">
 							<ul class="tab__list">
 								<li class="tab__item tab__item--active">
-									<a href="#greenlife" 
-									data-tab-name="greenlife" data-track-group="mic" data-track-opt="theme" data-track-val="greenlife" data-track-name="selectThemeDisplay" 
-									data-link-name="memberdays_themedisplay_click_greenlife" data-link-area="memberdays_2022" class="tab__button">STYLE CASANIER</a>
-								</li>
-								<li class="tab__item">
 									<a href="#vividlife" 
 									data-tab-name="vividlife" data-track-group="mic" data-track-opt="theme" data-track-val="vividlife" data-track-name="selectThemeDisplay" 
 									data-link-name="memberdays_themedisplay_click_vividlife" data-link-area="memberdays_2022" class="tab__button">STYLE CINÉPHILE</a>
 								</li>
 								<li class="tab__item">
-									<a href="#gaminglife" 
+									<a href="#gaminglife"
 									data-tab-name="gaminglife" data-track-group="mic" data-track-opt="theme" data-track-val="gaminglife" data-track-name="selectThemeDisplay" 
 									data-link-name="memberdays_themedisplay_click_gaminglife" data-link-area="memberdays_2022" class="tab__button">STYLE GAMER</a>
 								</li>
 								<li class="tab__item">
-									<a href="#workinglife" 
+									<a href="#workinglife"
 									data-tab-name="workinglife" data-track-group="mic" data-track-opt="theme" data-track-val="workinglife" data-track-name="selectThemeDisplay" 
 									data-link-name="memberdays_themedisplay_click_workinglife" data-link-area="memberdays_2022" class="tab__button">STYLE NOMADE</a>
 								</li>
@@ -388,120 +353,67 @@
 									data-tab-name="soundfullife" data-track-group="mic" data-track-opt="theme" data-track-val="soundfullife" data-track-name="selectThemeDisplay" 
 									data-link-name="memberdays_themedisplay_click_soundfullife" data-link-area="memberdays_2022" class="tab__button">STYLE FESTIF</a>
 								</li>
+								<li class="tab__item">
+									<a href="#greenlife" 
+									data-tab-name="greenlife" data-track-group="mic" data-track-opt="theme" data-track-val="greenlife" data-track-name="selectThemeDisplay" 
+									data-link-name="memberdays_themedisplay_click_greenlife" data-link-area="memberdays_2022" class="tab__button">STYLE CASANIER</a>
+								</li>
 							</ul>
 							<template class="contents-template">
-								<div class="product__slide">
-									<div class="product__item">
-										<div class="product__img">
-											<div class="product__flags">
-												<span class="product__flag d-none" data-user-type="*productTag1UserType*" data-key="productTag1">*productTag1*</span>
-												<span class="product__flag d-none" data-user-type="*productTag2UserType*" data-key="productTag2">*productTag2*</span>
-											</div>
-											<img class="lazyload" data-src="*mediumImageAddr*" alt="*imageAltText*" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+								<li class="product__item">
+									<div class="product__img">
+										<div class="product__flags">
+											<span class="product__flag d-none" data-user-type="*productTag1UserType*" data-key="productTag1">*productTag1*</span>
+											<span class="product__flag d-none" data-user-type="*productTag2UserType*" data-key="productTag2">*productTag2*</span>
 										</div>
-										<!-- 
-											// common.js add-to-cart dataLayer 공통 로직 진입을 위해
-											// .products-info / .js-compare 클래스 추가
-											// => $('body').on('click', '.add-to-cart:not(.in-buynow)', ~ );
-										-->
-										<div class="product__info products-info">
-											<p class="product__name">*userFriendlyName*</p>
-											<p class="product__sn sku">*modelName*</p>
-											<div class="button">
-												<a role="button" href="#" class="button__item button__item--red atc-members-week" data-track-group="product" data-track-name="add_to_cart_click" data-link-name="add_to_cart" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
-												<a role="button" href="#modal_re_stock_alert" class="button__item button__item--lightgray restock-members-week d-none" data-track-group="product" data-track-name="move_to_stock_request_click" data-link-name="move_to_stock_request" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
-											</div>
-											<div class="learn-more">
-												<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click" data-link-name="buy_now">
-													<span class="learn-more__text"><spring:message code='component-learnMore' text='LEARN MORE'/></span>
-													<i class="learn-more__arrow"></i>
-												</a>
-											</div>
+										<img class="lazyload" data-src="*mediumImageAddr*" alt="*imageAltText*" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+									</div>
+									<!-- 
+										// common.js add-to-cart dataLayer 공통 로직 진입을 위해
+										// .products-info / .js-compare 클래스 추가
+										// => $('body').on('click', '.add-to-cart:not(.in-buynow)', ~ );
+									-->
+									<div class="product__info products-info">
+										<p class="product__name">*userFriendlyName*</p>
+										<p class="product__sn sku">*modelName*</p>
+										<div class="product__price">
+											<span class="product__discount">
+												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
+												<span class="number">*originPrice*</span>
+											</span>
+											<span class="product__highlight">*discountMsg*</span>
+										</div>
+										<div class="product__price-now">
+											<span class="product__cost">
+												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
+												<span class="number">*finalPrice*</span>
+											</span>
+										</div>
+										<div class="product__members">
+											<span class="product__text"><spring:message code='OBS_MEMBERSHIP_MSG' text='OBS_MEMBERSHIP_MSG'/></span>
+											<span class="product__highlight">
+												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
+												<span class="number">*membershipPriceValue*</span>
+											</span>
+										</div>
+										<div class="product__noti d-none">
+											<p class="product__text">*reStockAlertText*</p>
+										</div>
+										<div class="button">
+											<a role="button" href="#" class="button__item button__item--red atc-members-week" data-track-group="product" data-track-name="add_to_cart_click" data-link-name="add_to_cart" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
+											<a role="button" href="#modal_re_stock_alert" class="button__item button__item--lightgray restock-members-week d-none" data-track-group="product" data-track-name="move_to_stock_request_click" data-link-name="move_to_stock_request" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-reStockAlert' text='GET STOCK ALERT'/></a>
+										</div>
+										<div class="learn-more">
+											<a rel="nofollow" href="*modelUrlPath*" class="learn-more__link" data-track-group="product" data-track-name="buy_now_click" data-link-name="buy_now">
+												<span class="learn-more__text"><spring:message code='component-learnMore' text='LEARN MORE'/></span>
+												<i class="learn-more__arrow"></i>
+											</a>
 										</div>
 									</div>
-								</div>
+								</li>
 							</template>
-							<div id="greenlife" class="tab__panel tab__panel--greenlife showroom_panel" style="display: block;">
-								<p class="tab__noti">
-									Install an energy-saving Refrigerator and Washing Machine.<br>
-									Helping you transition to a cleaner, healthier, more comfortable home.
-								</p>
-								<div class="product">
-									<div class="product__showroom product__showroom--greenlife">
-										<div class="product__slide">
-											<div class="product__layer">
-												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
-												<div class="product__target">
-													<a href="https://www.lg.com/de/kuehlschraenke-gefrierschraenke/lg-gsxv91bsae" target="_blank"
-														data-link-name="memberdays_productMouseHover_greenlife_GSXV91BSAE"
-														data-link-area="memberdays_2022"
-														class="product__link">
-														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_greenlife01_01.png"
-															alt="Side-by-Side mit InstaView Door-in-Door®™">
-														</div>
-														<div class="product__right">
-															<p class="product__name">LG InstaView™ ThinQ™</p>
-															<ul class="product__desc">
-																<li>Silver for Energy savings</li>
-																<li>Save energy and get easy access with sleek InstaView™ Door-in-Door™</li>
-															</ul>
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-										<div class="product__slide">
-											<div class="product__layer">
-												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
-												<div class="product__target">
-													<a href="https://www.lg.com/uk/washing-machines/lg-f6v1110wtsa" target="_blank"
-														data-link-name="memberdays_productMouseHover_greenlife_F6V1110WTSA"
-														data-link-area="memberdays_2022"
-														class="product__link">
-														<div class="product__img">
-															<img src="../assets/images/img_product_showroom_greenlife02_01.png"
-																alt="AI DD™ Washing Machine">
-														</div>
-														<div class="product__right">
-															<p class="product__name">AI DD™ Washing Machine</p>
-															<ul class="product__desc">
-																<li>Gold for Energy savings</li>
-																<li>Cut your wash time to just 39 minutes without compromising the wash quality with TurboWash™ 360</li>
-															</ul>
-														</div>
-													</a>
-												</div>
-											</div>
-											<div class="product__layer">
-												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
-												<div class="product__target">
-													<a href="https://www.lg.com/uk/tumble-dryers/lg-fdv1109w" target="_blank" 
-														data-link-name="memberdays_productMouseHover_greenlife_FDV1109W"
-														data-link-area="memberdays_2022"
-														class="product__link">
-														<div class="product__img">
-															<img src="../assets/images/img_product_showroom_greenlife02_02.png"
-																alt="LG Eco Hybrid™ Tumble Dryer">
-														</div>
-														<div class="product__right">
-															<p class="product__name">LG Eco Hybrid™ Tumble Dryer</p>
-															<ul class="product__desc">
-																<li>A+++ Energy Efficiency*</li>
-																<li>Dual 10 Year Warranty</li>
-															</ul>
-														</div>
-													</a>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="product__track">
-										<div class="product__swiper"></div>
-									</div>
-								</div>
-							</div>
-							<div id="vividlife" class="tab__panel tab__panel--vividlife showroom_panel">
+
+							<div id="vividlife" class="tab__panel tab__panel--vividlife showroom_panel" style="display: block;">
 								<p class="tab__noti">
 									LG technology delivers cinema-like experience and immersive on-screen sports viewing.
 									Live your best home entertainment life with OLED TV, CineBeam projector and Soundbar.
@@ -512,7 +424,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/audio/lg-ds90qy" target="_blank"
+													<a href="https://www.lg.com/fr/lg-soundbar/lg-sp8ya-barre-de-son" target="_blank"
 														data-link-name="memberdays_productMouseHover_vividlife_SP8YA"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -532,7 +444,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/tv/lg-oled65b23la" target="_blank"
+													<a href="https://www.lg.com/fr/televiseurs/lg-oled77g26la-oled-evo-tv-gallery-design" target="_blank"
 														data-link-name="memberdays_productMouseHover_vividlife_OLED77G26LA"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -554,7 +466,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-														<a href="https://www.lg.com/de/audio/lg-ds80qy" target="_blank"
+														<a href="https://www.lg.com/fr/lg-soundbar/lg-sp8ya-barre-de-son" target="_blank"
 														data-link-name="memberdays_productMouseHover_vividlife_SP8YA"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -574,8 +486,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/beamer/lg-HU70LS" target="_blank"
-														data-link-name="memberdays_productMouseHover_vividlife_HU715QW"
+													<a href="https://www.lg.com/fr/videoprojecteurs/lg-HU70LS-videoprojecteur-led-4k" target="_blank"
+														data-link-name="memberdays_productMouseHover_vividlife_HU70LS"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -594,8 +506,8 @@
 											</div>
 										</div>
 									</div>
-									<div class="product__track">
-										<div class="product__swiper"></div>
+									<div class="product__mask">
+										<ul class="product__list"></ul>
 									</div>
 								</div>
 							</div>
@@ -610,7 +522,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/monitore/lg-34gp950g-b" target="_blank"
+													<a href="#" target="_blank"
                           data-link-name="memberdays_productMouseHover_gaminglife_27GP950-B"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -632,7 +544,7 @@
                       <div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/uk/speakers-sound-systems/lg-gp9" target="_blank"
+													<a href="#" target="_blank"
 														data-link-name="memberdays_productMouseHover_gaminglife_GP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -654,7 +566,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/tv/lg-oled65b23la" target="_blank"
+													<a href="#" target="_blank"
                           data-link-name="memberdays_productMouseHover_gaminglife_OLED42C24LA"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -674,7 +586,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/audio/lg-ds90qy" target="_blank"
+													<a href="#" target="_blank"
                           data-link-name="memberdays_productMouseHover_gaminglife_SP8YA"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -693,8 +605,8 @@
 											</div>
 										</div>
 									</div>
-									<div class="product__track">
-										<div class="product__swiper"></div>
+									<div class="product__mask">
+										<ul class="product__list"></ul>
 									</div>
 								</div>
 							</div>
@@ -708,7 +620,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/monitore/lg-28mq780-b" target="_blank"
+													<a href="#" target="_blank"
 														data-link-name="memberdays_productMouseHover_workinglife_28MQ780-B"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -728,7 +640,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/notebooks/lg-17z90p-gaa82g" target="_blank"
+													<a href="#" target="_blank"
                           data-link-name="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -749,7 +661,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/audio/lg-tone-dfp9w" target="_blank"
+													<a href="#" target="_blank"
                             data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -773,7 +685,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/audio/lg-tone-dfp9w" target="_blank"
+													<a href="#" target="_blank"
                             data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -793,7 +705,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/notebooks/lg-17z90p-gaa82g" target="_blank"
+													<a href="#" target="_blank"
                             data-link-name="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -813,8 +725,8 @@
 											</div>
 										</div>
 									</div>
-									<div class="product__track">
-										<div class="product__swiper"></div>
+									<div class="product__mask">
+										<ul class="product__list"></ul>
 									</div>
 								</div>
 							</div>
@@ -829,7 +741,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/audio/lg-tone-dfp9w" target="_blank"
+													<a href="#" target="_blank"
                           data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -851,7 +763,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/audio/lg-drp4b" target="_blank"
+													<a href="#" target="_blank"
                             data-link-name="memberdays_productMouseHover_workinglife_RP4"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -871,8 +783,88 @@
 											</div>
 										</div>
 									</div>
-									<div class="product__track">
-										<div class="product__swiper"></div>
+									<div class="product__mask">
+										<ul class="product__list"></ul>
+									</div>
+								</div>
+							</div>
+							<div id="greenlife" class="tab__panel tab__panel--greenlife showroom_panel">
+								<p class="tab__noti">
+									Install an energy-saving Refrigerator and Washing Machine.<br>
+									Helping you transition to a cleaner, healthier, more comfortable home.
+								</p>
+								<div class="product">
+									<div class="product__showroom product__showroom--greenlife">
+										<div class="product__slide">
+											<div class="product__layer">
+												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
+												<div class="product__target">
+													<a href="#" target="_blank"
+														data-link-name="memberdays_productMouseHover_greenlife_GSXV91BSAE"
+														data-link-area="memberdays_2022"
+														class="product__link">
+														<div class="product__img">
+															<img src="${path}/assets/images/de/img_product_showroom_greenlife01_01.png"
+															alt="Side-by-Side mit InstaView Door-in-Door®™">
+														</div>
+														<div class="product__right">
+															<p class="product__name">LG InstaView™ ThinQ™</p>
+															<ul class="product__desc">
+																<li>Silver for Energy savings</li>
+																<li>Save energy and get easy access with sleek InstaView™ Door-in-Door™</li>
+															</ul>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+										<div class="product__slide">
+											<div class="product__layer">
+												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
+												<div class="product__target">
+													<a href="#" target="_blank"
+														data-link-name="memberdays_productMouseHover_greenlife_F6V1110WTSA"
+														data-link-area="memberdays_2022"
+														class="product__link">
+														<div class="product__img">
+															<img src="../assets/images/img_product_showroom_greenlife02_01.png"
+																alt="AI DD™ Washing Machine">
+														</div>
+														<div class="product__right">
+															<p class="product__name">AI DD™ Washing Machine</p>
+															<ul class="product__desc">
+																<li>Gold for Energy savings</li>
+																<li>Cut your wash time to just 39 minutes without compromising the wash quality with TurboWash™ 360</li>
+															</ul>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="product__layer">
+												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
+												<div class="product__target">
+													<a href="#" target="_blank" 
+														data-link-name="memberdays_productMouseHover_greenlife_FDV1109W"
+														data-link-area="memberdays_2022"
+														class="product__link">
+														<div class="product__img">
+															<img src="../assets/images/img_product_showroom_greenlife02_02.png"
+																alt="LG Eco Hybrid™ Tumble Dryer">
+														</div>
+														<div class="product__right">
+															<p class="product__name">LG Eco Hybrid™ Tumble Dryer</p>
+															<ul class="product__desc">
+																<li>A+++ Energy Efficiency*</li>
+																<li>Dual 10 Year Warranty</li>
+															</ul>
+														</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="product__mask">
+										<ul class="product__list"></ul>
 									</div>
 								</div>
 							</div>
@@ -1041,31 +1033,6 @@
 	<script src="/lg5-common-gp/js/components/video-asset.min.js"></script>
 
 	<script>
-		$('#box_content2 .tab__list').find('.tab__button').each(function () {
-			$(this).on('click', function() {
-				var themeType = $(this).attr('data-track-val');
-				if(themeType == 'greenlife') {
-					$bu = 'HA'
-				} else if(themeType == 'vividlife') {
-					$bu = 'TV, IT, AV'
-				} else if(themeType == 'gaminglife') {
-					$bu = 'IT, AV, TV'
-				} else if(themeType == 'workinglife') {
-					$bu = 'AV, IT'
-				} else if(themeType == 'soundfullife') {
-					$bu = 'AV'
-				} else {
-					$bu = ' '
-				}
-				
-				dataLayer.push({
-					'event' : $(this).find('input').attr('data-track-name'),
-					'bu' : $bu,
-					'theme' : $(this).find('input').attr('data-track-val'),
-				})
-			})
-    });
-
 		$('.showroom_panel').each(function () {
 			var theme = $(this).attr('id');
 

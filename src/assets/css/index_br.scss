@@ -2,16 +2,87 @@
 @import "mixins";
 
 .lgmembersweek {
+	.tab__panel {
+		.tab__noti {
+			max-width: 1200px;
+		}
+	}
 	// visual
 	.visual {
-		@media (max-width: 767px) {
+		&__slide {
+			.section__title {
+				font-size: 48px;
+				line-height: 50px;
+				.break--mobile {
+					letter-spacing: -2.8px;
+				}
+			}
+			&--intro {
+				.section__inner {
+					background-image: url('../images/br/bg_visual_intro_obj.png');
+				}
+			}
+			&--greenlife {
+				.section__inner {
+					background-image: url('../images/br/bg_visual_greenlife_obj.png');
+				}
+			}
+			&--vividlife {
+				.section__inner {
+					background-image: url('../images/br/bg_visual_vividlife_obj.png');
+				}
+			}
+			&--gaminglife {
+				.section__inner {
+					background-image: url('../images/br/bg_visual_gaminglife_obj.png');
+				}
+			}
+			&--workinglife {
+				.section__inner {
+					background-image: url('../images/br/bg_visual_workinglife_obj.png');
+				}
+			}
+			&--soundfullife {
+				.section__inner {
+					background-image: url('../images/br/bg_visual_soundfullife_obj.png');
+				}
+			} 
+		}
+		@media (max-width: 767px)  {
 			&__slide {
+				&--intro {
+					.section__inner {
+						background-image: url('../images/br/m_bg_visual_intro.png');
+					}
+				}
+				&--greenlife {
+					.section__inner {
+						background-image: url('../images/br/m_bg_visual_greenlife.png');
+					}
+				}
+				&--vividlife {
+					.section__inner {
+						background-image: url('../images/br/m_bg_visual_vividlife.png');
+					}
+				}
+				&--gaminglife {
+					.section__inner {
+						background-image: url('../images/br/m_bg_visual_gaminglife.png');
+					}
+				}
+				&--workinglife {
+					.section__inner {
+						background-image: url('../images/br/m_bg_visual_workinglife.png');
+					}
+				}
+				&--soundfullife {
+					.section__inner {
+						background-image: url('../images/br/m_bg_visual_soundfullife.png');
+					}
+				}
 				.section__title {
 					font-size: 48px;
 					line-height: 50px;
-					.break--mobile {
-						letter-spacing: -2.8px;
-					}
 				}
 			}
 		}

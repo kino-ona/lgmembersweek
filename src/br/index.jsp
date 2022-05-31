@@ -134,10 +134,10 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">
-										Tenha uma <span>[#Vida Sustentável]</span> com a LG
+										Tenha uma <span class="break--mobile">[#Vida Sustentável]</span> com a LG
 									</h2>
 									<p class="section__sub">
-										Economize recursos e ajude o planeta com as tecnologias LG.<br>
+										<span class="break--mobile">Economize recursos e ajude o planeta</span> com as tecnologias LG.<br>
 										Benefícios Exclusivos até 30 de Junho
 									</p>
 								</div>
@@ -159,10 +159,10 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">
-										Tenha uma <span>[#Vida Intensa]</span> com a LG
+										Tenha uma <span class="break--mobile">[#Vida Intensa]</span> com a LG
 									</h2>
 									<p class="section__sub">
-										Traga Cores mais vivas, som mais envolvente para sua casa com produtos LG.<br>
+										<span class="break--mobile">Traga Cores mais vivas, som mais envolvente</span> para sua casa com produtos LG.<br>
 										Benefícios Exclusivos até 30 de Junho
 									</p>
 								</div>
@@ -184,7 +184,7 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">
-										Tenha uma <span>[#Vida Gamer]</span> com a LG
+										Tenha uma <span class="break--mobile">[#Vida Gamer]</span> com a LG
 									</h2>
 									<p class="section__sub">
 										Tenha mais detalhes e melhor tempo de reação em seus jogos com os produtos LG.<br>
@@ -209,10 +209,10 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">
-										Construa sua <span>[#Vida Profissional]</span> com a LG
+										Construa sua <span class="break--mobile">[#Vida Profissional]</span> com a LG
 									</h2>
 									<p class="section__sub">
-										Trabalhe de forma otimizada onde quiser com a LG<br>
+										<span class="break--mobile">Trabalhe de forma otimizada onde</span> quiser com a LG<br>
 										Benefícios Exclusivos até 30 de Junho
 									</p>
 								</div>
@@ -234,10 +234,10 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">
-										Tenha uma <span>[#Vida Musical]</span> com a LG
+										Tenha uma <span class="break--mobile">[#Vida Musical]</span> com a LG
 									</h2>
 									<p class="section__sub">
-										Som imersivo em qualquer lugar com os produtos LG<br>
+										<span class="break--mobile">Som imersivo em qualquer lugar</span> com os produtos LG<br>
 										Benefícios exclusivos até 30 de Junho
 									</p>
 								</div>
@@ -268,30 +268,27 @@
 			<div class="box_navigation">
 				<div class="box_nav-position">
 					<div class="box_navigation-inner">
-						<button class="arrow_btn show">
-							<i class="arrow_ico"></i>
-						</button>
 						<ul class="list_navigation smooth-scroll">
 							<li class="list-item">
 								<a href="#box_content1" 
 									data-track-group="mic" data-track-name="members_week_anchor_click"
 									data-link-name="memberdays_anchor_benefit" 
 									data-link-area="memberdays_2022" 
-									class="link">Benefícios do LG MEMBER DAY</a>
+									class="link">BENEFÍCIOS DO LG MEMBER DAY</a>
 							</li>
 							<li class="list-item">
 								<a href="#box_content2" 
 									data-track-group="mic" data-track-name="members_week_anchor_click"
 									data-link-name="memberdays_anchor_click_design_lifestyle" 
 									data-link-area="memberdays_2022" 
-									class="link">Projete seu estilo de vida com a LG</a>
+									class="link">PROJETE SEU ESTILO DE VIDA COM A LG</a>
 							</li>
 							<li class="list-item">
 								<a href="#box_content3" 
 									data-track-group="mic" data-track-name="members_week_anchor_click"
 									data-link-name="memberdays_anchor_click_hottest_product" 
 									data-link-area="memberdays_2022" 
-									class="link">Verifique as melhores ofertas</a>
+									class="link">VERIFIQUE AS MELHORES OFERTAS</a>
 								</li>
 						</ul>
 					</div>
@@ -302,7 +299,10 @@
 					<div class="section__inner">
 						<div class="section__header">
 							<p class="section__sub">Benefícios exclusivos para Membros LG</p>
-							<h2 class="section__title">Compre mais e pague menos, até 20% de desconto!</h2>
+							<h2 class="section__title">
+								Compre mais e pague menos,<br>
+								até 20% de desconto!
+							</h2>
 						</div>
 						<div class="benefit">
 							<ul class="benefit__list benefit__list--discount">
@@ -336,8 +336,8 @@
 								</li>
 							</ul>
 							<div class="benefit__button">
-								<a href="#" target="_blank" class="benefit__link">
-									Terms and Conditions apply
+								<a href="#" class="benefit__link">
+									Aplicam-se Termos e Condições 
 									<i class="benefit__arrow"></i>
 								</a>
 							</div>
@@ -345,7 +345,8 @@
 								<li class="benefit__item">
 									<div class="benefit__inner">
 										<p class="benefit__category">
-											Frete Grátis (Consulte Regiões Atendidas)
+											Frete Grátis
+											<span class="benefit__sub">(Consulte Regiões Atendidas)</span>
 										</p>
 									</div>
 								</li>
@@ -365,6 +366,13 @@
 									</div>
 								</li>
 							</ul>
+						</div>
+						<div class="section__footer section__footer--center">
+							<p class="section__text">
+								Aplicam-se Termos e Condições<br>
+								A Loja Online LG realiza entregas nas regiões Sul e Sudeste do Brasil.<br>
+								Alguns produtos podem não estar disponíveis na sua região.
+							</p>
 						</div>
 					</div>
 				</div>
@@ -389,7 +397,12 @@
 										</li>
 										<li>
 											<span class="coupon__num">2</span>
-											<span class="coupon__text highlight highlight--beige">Cadastre-se na LG.com ou faça seu login</span>
+											<span class="coupon__text">
+												<span class="highlight highlight--beige">Cadastre-se na LG.com</span>
+												<span class="coupon__desc">
+													<span class="break--mobile">(ou faça seu login)</span>
+												</span>
+											</span>
 										</li>
 										<li>
 											<span class="coupon__num">3</span>
@@ -411,7 +424,7 @@
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="${path}/assets/images/img_coupon_greenlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+												<img src="${path}/assets/images/br/img_coupon_greenlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -440,7 +453,7 @@
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="${path}/assets/images/img_coupon_vividlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+												<img src="${path}/assets/images/br/img_coupon_vividlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -469,7 +482,7 @@
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="${path}/assets/images/img_coupon_gaminglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+												<img src="${path}/assets/images/br/img_coupon_gaminglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -498,7 +511,7 @@
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="${path}/assets/images/img_coupon_workinglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+												<img src="${path}/assets/images/br/img_coupon_workinglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -527,7 +540,7 @@
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
 											<span class="product__img">
-												<img src="${path}/assets/images/img_coupon_soundfullife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
+												<img src="${path}/assets/images/br/img_coupon_soundfullife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
 												<span class="product__category">with</span>
@@ -561,7 +574,7 @@
 							</div>
 						</div>
 						<div class="section__footer">
-							<p class="section__text">*One entry per participant. You can win only one prize.</p>
+							<p class="section__text">Winner can win only one product.</p>
 						</div>
 					</div>
 				</div>
@@ -631,7 +644,8 @@
 							</template>
 							<div id="greenlife" class="tab__panel tab__panel--greenlife showroom_panel" style="display: block;">
 								<p class="tab__noti">
-									Equipe sua casa com lavadoras e geladeiras LG que economizam energia. Tenha uma casa mais limpa, saudável e confortável.
+									Equipe sua casa com lavadoras e geladeiras LG que economizam energia.<br>
+									Tenha uma casa mais limpa, saudável e confortável.
 								</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--greenlife">
@@ -644,8 +658,8 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_greenlife01_01.png"
-                              alt="LG InstaView™ Door-in-Door™ and Hygiene Fresh+™">
+															<img src="${path}/assets/images/br/img_product_showroom_greenlife01_01.png"
+															alt="LG InstaView™ Door-in-Door™ and Hygiene Fresh+™">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG InstaView™ Door-in-Door™ and Hygiene Fresh+™</p>
@@ -666,41 +680,29 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_greenlife02_01.png"
-																alt="AI DD™ Washing Machine">
+															<img src="${path}/assets/images/br/img_product_showroom_greenlife02_01.png"
+															alt="Smart Washer and Dryer LG Victor 2">
 														</div>
 														<div class="product__right">
-															<p class="product__name">AI DD™ Washing Machine</p>
+															<p class="product__name">Smart Washer and Dryer LG Victor 2</p>
 															<ul class="product__desc">
-																<li>Gold for Energy savings</li>
-																<li>Cut your wash time to just 39 minutes without compromising the wash quality with TurboWash™ 360</li>
+																<li>Economize energia</li>
+																<li>Reduza o tempo de lavagem para apenas 39 minutos sem comprometer a qualidade da lavagem com o TurboWash™ 360</li>
+																<li>Evite danos aos tecidos com a tecnologia AI DD™</li>
+																<li>Tranquilidade com 10 anos de garantia no motor</li>
 															</ul>
 														</div>
 													</a>
 												</div>
 											</div>
-											<div class="product__layer">
-												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
-												<div class="product__target">
-													<a href="#" target="_blank" 
-														data-link-name="memberdays_productMouseHover_greenlife_FDV1109W"
-														data-link-area="memberdays_2022"
-														class="product__link">
-														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_greenlife02_02.png"
-																alt="LG Eco Hybrid™ Tumble Dryer">
-														</div>
-														<div class="product__right">
-															<p class="product__name">LG Eco Hybrid™ Tumble Dryer</p>
-															<ul class="product__desc">
-																<li>A+++ Energy Efficiency*</li>
-																<li>Dual 10 Year Warranty</li>
-															</ul>
-														</div>
-													</a>
-												</div>
-											</div>
+											
 										</div>
+									</div>
+									<div class="learn-more learn-more--right">
+										<a href="#" class="learn-more__link">
+											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com</span>
+											<i class="learn-more__arrow"></i>
+										</a>
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>
@@ -709,7 +711,8 @@
 							</div>
 							<div id="vividlife" class="tab__panel tab__panel--vividlife showroom_panel">
 								<p class="tab__noti">
-									Tenha uma experiência de cinema e assista ao seu esporte favorito cada vez mais próximo da realidade com TV OLED, projetor cinebeam e Sound Bar LG.
+									Tenha uma experiência de cinema e assista ao seu esporte favorito cada vez mais próximo<br>
+									da realidade com TV OLED, projetor cinebeam e Sound Bar LG.
 								</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--vividlife">
@@ -722,13 +725,14 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
+															<img src="${path}/assets/images/br/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP9A">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG Sound Bar SP8YA</p>
+															<p class="product__name">LG Sound Bar SP9A</p>
 															<ul class="product__desc">
-																<li>Meridian & Soundbar Mode Control</li>
-																<li>High-Resolution Audio, Dolby Atmos, DTS:X</li>
+																<li>Meridian Design</li>
+																<li>Controle tudo com o seu LG remote</li>
+																<li>Som de alta resolução</li>
 															</ul>
 														</div>
 													</a>
@@ -742,13 +746,13 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_vividlife01_02.png" alt="OLED evo G2">
+															<img src="${path}/assets/images/br/img_product_showroom_vividlife01_02.png" alt="4K OLED65G1 Evo Gallery Design ">
 														</div>
 														<div class="product__right">
-															<p class="product__name">OLED evo G2</p>
+															<p class="product__name">4K OLED65G1 Evo Gallery Design </p>
 															<ul class="product__desc">
-																<li>Designed for the ultimate movie viewing experience</li>
-																<li>Smart platform with Netflix, NOW, Disney+ and more</li>
+																<li>Projetado para a melhor experiência de visualização de filmes</li>
+																<li>Plataforma Smart com Netflix, NOW, Disney+ e muito mais</li>
 															</ul>
 														</div>
 													</a>
@@ -764,13 +768,15 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
+															<img src="${path}/assets/images/br/img_product_showroom_vividlife02_01.png"
+															alt="LG Sound Bar SP9A">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG Sound Bar SP8YA</p>
+															<p class="product__name">LG Sound Bar SP9A</p>
 															<ul class="product__desc">
-																<li>Meridian &amp; Soundbar Mode Control</li>
-																<li>High-Resolution Audio, Dolby Atmos, DTS:X</li>
+																<li>Design Meridian</li>
+																<li>Controle tudo com o seu controle LG</li>
+																<li>Som de alta resolução</li>
 															</ul>
 														</div>
 													</a>
@@ -784,20 +790,25 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_vividlife02_02.png"
-																alt="LG CineBeam 4K UHD Laser UST Projector">
+															<img src="${path}/assets/images/br/img_product_showroom_vividlife02_02.png" alt="LG CineBeam UHD 4K ThinQ AI Projector">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG CineBeam 4K UHD Laser UST Projector</p>
+															<p class="product__name">LG CineBeam UHD 4K ThinQ AI Projector</p>
 															<ul class="product__desc">
-																<li>Real 4K UHD (3840x2160)</li>
-																<li>8.3 Mega pixel</li>
+																<li>UHD 4K real (3840x2160)</li>
+																<li>8,3 Mega pixels</li>
 															</ul>
 														</div>
 													</a>
 												</div>
 											</div>
 										</div>
+									</div>
+									<div class="learn-more learn-more--right">
+										<a href="#" class="learn-more__link">
+											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com/br</span>
+											<i class="learn-more__arrow"></i>
+										</a>
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>
@@ -806,7 +817,8 @@
 							</div>
 							<div id="gaminglife" class="tab__panel tab__panel--gaminglife showroom_panel">
 								<p class="tab__noti">
-									Os jogos são adaptados para a tela grande (TV, monitor), com som ambiente (alto-falante de jogos, sound bar) para o melhor efeito visual e de áudio. Prepare-se para ver seus jogos como você nunca viu antes!
+									Os jogos são adaptados para a tela grande (TV, monitor), com som ambiente (alto-falante de jogos, sound bar)<br>
+									para o melhor efeito visual e de áudio. Prepare-se para ver seus jogos como você nunca viu antes!
 								</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--gaminglife">
@@ -819,15 +831,15 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_gaminglife01_01.png"
-																alt="27’’ UHD 4K UltraGear™">
+															<img src="${path}/assets/images/br/img_product_showroom_gaminglife01_01.png"
+															alt="UltraWide™ LG 34‘’ Gamer Monitor">
 														</div>
 														<div class="product__right">
-															<p class="product__name">27’’ UHD 4K UltraGear™</p>
+															<p class="product__name">UltraWide™ LG 34‘’ Gamer Monitor</p>
 															<ul class="product__desc">
-																<li>Enjoy the Supreme Color</li>
-																<li>Vivid Colors and Sharp Details</li>
-																<li>Designed for Incredible Speed</li>
+																<li>Curta as cores no seu Setup</li>
+																<li>Cores vivas e detalhes nítidos</li>
+																<li>Projetado para velocidade incrível</li>
 															</ul>
 														</div>
 													</a>
@@ -841,13 +853,13 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_gaminglife01_02.png" alt="UltraGear Gaming Speaker">
+															<img src="${path}/assets/images/br/img_product_showroom_gaminglife01_02.png" alt="LG Home Theater Sound Bar SP9A with 5.1.2 Channels">
 														</div>
 														<div class="product__right">
-															<p class="product__name">UltraGear Gaming Speaker</p>
+															<p class="product__name">LG Home Theater Sound Bar SP9A with 5.1.2 Channels</p>
 															<ul class="product__desc">
-																<li>Clear Voice Chat</li>
-																<li>Customizable EQ Sound</li>
+																<li>QUALIDADE DE SOM: alto-falante para jogos  sem fone de ouvido</li>
+																<li>SOM EQ CUSTOMIZÁVEL: Não precisa mais de placa de som externa para jogos</li>
 															</ul>
 														</div>
 													</a>
@@ -863,13 +875,13 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_gaminglife02_01.png" alt="OLED evo C2(48/42)">
+															<img src="${path}/assets/images/br/img_product_showroom_gaminglife02_01.png" alt="48” Smart TV LG 4K OLED">
 														</div>
 														<div class="product__right">
-															<p class="product__name">OLED evo C2(48/42)</p>
+															<p class="product__name">48” Smart TV LG 4K OLED</p>
 															<ul class="product__desc">
-																<li>Designed for an outstanding gaming experience</li>
-																<li>HDMI 2.1 Spec, 0.1ms response time &amp; low input lag for superfast gameplay</li>
+																<li>Projetado para uma excelente experiência de jogo</li>
+																<li>Especificações HDMI 2.1, tempo de resposta de 0,1 ms e baixo imput leg para uma jogabilidade super rápida</li>
 															</ul>
 														</div>
 													</a>
@@ -883,19 +895,26 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
+															<img src="${path}/assets/images/br/img_product_showroom_gaminglife02_02.png" alt="LG Sound Bar SP9A">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG Sound Bar SP8YA</p>
+															<p class="product__name">LG Sound Bar SP9A</p>
 															<ul class="product__desc">
-																<li>Meridian &amp; Soundbar Mode Control</li>
-																<li>High-Resolution Audio, Dolby Atmos, DTS:X</li>
+																<li>Design Meridian</li>
+																<li>Controle tudo com o seu controle LG</li>
+																<li>Som de alta resolução</li>
 															</ul>
 														</div>
 													</a>
 												</div>
 											</div>
 										</div>
+									</div>
+									<div class="learn-more learn-more--right">
+										<a href="#" class="learn-more__link">
+											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com/br</span>
+											<i class="learn-more__arrow"></i>
+										</a>
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>
@@ -904,7 +923,8 @@
 							</div>
 							<div id="workinglife" class="tab__panel tab__panel--workinglife showroom_panel">
 								<p class="tab__noti">
-									Otimize seu home-office com uma visão mais ampla e uma combinação perfeita de imagem e som. A combinação LG gram, monitor e TONE free pode aumentar a eficiência do seu trabalho.
+									Otimize seu home-office com uma visão mais ampla e uma combinação perfeita de imagem e som.<br>
+									A combinação LG gram, monitor e TONE free pode aumentar a eficiência do seu trabalho.
 								</p>
 								<div class="product">
 									<div class="product__showroom product__showroom--workinglife">
@@ -917,14 +937,14 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_workinglife01_01.png"
-																alt="DualUp Monitor with Ergo">
+															<img src="${path}/assets/images/br/img_product_showroom_workinglife01_01.png"
+															alt="LG UltraWide™ LG Monitor 29’’ Full">
 														</div>
 														<div class="product__right">
-															<p class="product__name">DualUp Monitor with Ergo</p>
+															<p class="product__name">LG UltraWide™ LG Monitor 29’’ Full</p>
 															<ul class="product__desc">
-																<li>27.6-inch 16:18 DualUp Monitor </li>
-																<li>Ergo Stand and USB Type-C™</li>
+																<li>Amplo ângulo de visão</li>
+																<li>Montável na parede</li>
 															</ul>
 														</div>
 													</a>
@@ -938,15 +958,14 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_workinglife01_02.png"
-																alt="LG gram 16">
+															<img src="${path}/assets/images/br/img_product_showroom_workinglife01_02.png"
+															alt="LG gram 16‘’">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG gram 16</p>
+															<p class="product__name">LG gram 16‘’</p>
 															<ul class="product__desc">
-																<li>Ultra-Lightweight</li>
-																<li>16” 16:10 IPS Display </li>
-																<li>LG Glance by Mirametrix®</li>
+																<li>Desempenho poderoso e rápido</li>
+																<li>Fino e leve</li>
 															</ul>
 														</div>
 													</a>
@@ -960,14 +979,16 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_workinglife01_03.png"
-																alt="LG TONE Free UFP9">
+															<img src="${path}/assets/images/br/img_product_showroom_workinglife01_03.png"
+															alt="LG TONE Free FP9">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG TONE Free UFP9</p>
+															<p class="product__name">LG TONE Free FP9</p>
 															<ul class="product__desc">
-																<li>Plug and Wireless</li>
-																<li>Enhanced Active Noise Cancellation</li>
+																<li>PLUG AND WIRELESS</li>
+																<li>Aproveite todos os dispositivos sem fio</li>
+																<li>CANCELAMENTO DE RUÍDO ATIVO</li>
+																<li>MELHORADO - Mais imersão do que nunca, menos ruído do que antes</li>
 															</ul>
 														</div>
 													</a>
@@ -981,14 +1002,16 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_workinglife01_03.png"
-																alt="LG TONE Free UFP9">
+															<img src="${path}/assets/images/br/img_product_showroom_workinglife01_03.png"
+															alt="LG TONE Free FP9">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG TONE Free UFP9</p>
+															<p class="product__name">LG TONE Free FP9</p>
 															<ul class="product__desc">
-																<li>Plug and Wireless</li>
-																<li>Enhanced Active Noise Cancellation</li>
+																<li>PLUG AND WIRELESS</li>
+																<li>Aproveite todos os dispositivos sem fio</li>
+																<li>CANCELAMENTO DE RUÍDO ATIVO</li>
+																<li>MELHORADO - Mais imersão do que nunca, menos ruído do que antes</li>
 															</ul>
 														</div>
 													</a>
@@ -1004,14 +1027,16 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_workinglife02_01.png"
-																alt=" LG TONE Free UFP9">
+															<img src="${path}/assets/images/br/img_product_showroom_workinglife02_01.png"
+															alt="LG TONE Free FP9">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG TONE Free UFP9</p>
+															<p class="product__name">LG TONE Free FP9</p>
 															<ul class="product__desc">
-																<li>Plug and Wireless</li>
-																<li>Enhanced Active Noise Cancellation</li>
+																<li>PLUG AND WIRELESS</li>
+																<li>Aproveite todos os dispositivos sem fio</li>
+																<li>CANCELAMENTO DE RUÍDO ATIVO</li>
+																<li>MELHORADO - Mais imersão do que nunca, menos ruído do que antes</li>
 															</ul>
 														</div>
 													</a>
@@ -1025,20 +1050,25 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_workinglife02_02.png" alt="LG gram 16">
+															<img src="${path}/assets/images/br/img_product_showroom_workinglife02_02.png" alt="LG gram 16‘’">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG gram 16</p>
+															<p class="product__name">LG gram 16‘’</p>
 															<ul class="product__desc">
-																<li>Ultra-Lightweight</li>
-																<li>16” 16:10 IPS Display</li>
-																<li>LG Glance by Mirametrix®</li>
+																<li>Desempenho rápido e poderoso</li>
+																<li>Fino e leve</li>
 															</ul>
 														</div>
 													</a>
 												</div>
 											</div>
 										</div>
+									</div>
+									<div class="learn-more learn-more--right">
+										<a href="#" class="learn-more__link">
+											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com/br</span>
+											<i class="learn-more__arrow"></i>
+										</a>
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>
@@ -1060,14 +1090,14 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_soundfullife01_01.png"
-																alt="LG TONE Free UFP9">
+															<img src="${path}/assets/images/br/img_product_showroom_soundfullife01_01.png"
+															alt="LG TONE Free FP9">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG TONE Free UFP9</p>
+															<p class="product__name">LG TONE Free FP9</p>
 															<ul class="product__desc">
-																<li>Enhanced active noise cancellation</li>
-																<li>SleekFit - Ultimate fit with LG’s EarSeal Design</li>
+																<li>PLUG AND WIRELESS - Aproveite todos os dispositivos sem fio</li>
+																<li>CANCELAMENTO DE RUÍDO ATIVO MELHORADO - Mais imersão do que nunca, com muito menos ruído</li>
 															</ul>
 														</div>
 													</a>
@@ -1083,20 +1113,26 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/img_product_showroom_soundfullife02_01.png" alt="XBOOM360">
+															<img src="${path}/assets/images/br/img_product_showroom_soundfullife02_01.png" alt="XBOOM360 RP4">
 														</div>
 														<div class="product__right">
-															<p class="product__name">XBOOM360</p>
+															<p class="product__name">XBOOM360 RP4</p>
 															<ul class="product__desc">
-																<li>More powerful and clear sound</li>
-																<li>Emotive 360 Mood Lightening</li>
-																<li>10 hour playtime</li>
+																<li>EMOTIVE 360 MOOD LIGHTING: Modos de luz ambiente/natureza/festa criando um clima ideal</li>
+																<li>DESIGN AESTHETIC 360: Adapta-se e combina com qualquer ambiente</li>
+																<li>10 HORAS DE MUSICA:  Desfrute seu som em qualquer lugar por mais tempo</li>
 															</ul>
 														</div>
 													</a>
 												</div>
 											</div>
 										</div>
+									</div>
+									<div class="learn-more learn-more--right">
+										<a href="#" class="learn-more__link">
+											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com/br</span>
+											<i class="learn-more__arrow"></i>
+										</a>
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>
@@ -1120,8 +1156,10 @@
 								DESCUBRA NOSSAS MELHORES OFERTAS
 							</h2>
 							<p class="section__sub">Produtos com Condições Especiais</p>
-							<p class="section__desc">Crie seu próprio estilo de vida com os  produto LG e ganhe até 20% de desconto na sua compra</p>
-							<p class="section__desc">Desconto especial de 10% para membros LG + 5% na Compra de dois ou mais produtos  + 5% para Pagamento no boleto</p>
+							<p class="section__desc">
+								Crie seu próprio estilo de vida com os  produto LG e ganhe até 20% de desconto na sua compra<br>
+								Desconto especial de 10% para membros LG + 5% na Compra de dois ou mais produtos  + 5% para Pagamento no boleto
+							</p>
 							<p class="section__desc">Encontre seu Cupom na sua conta LG.</p>
 						</div>
 						<div class="tab">
@@ -1223,7 +1261,7 @@
 							<div id="tvcinebeam" class="tab__panel" style="display: block;">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										Verifique o preço final no Carrinho de Compras
+										Verifique o preço final no <span class="tab__bold">Carrinho de Compras</span>
 									</span>
 								</p>
 								<div class="product">
@@ -1257,11 +1295,8 @@
 							<div id="audio" class="tab__panel">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										&nbsp;Visit <span style="font-style:italic;">My Basket</span> to check your final discounted price&nbsp;
-									</span><br>
-									<!-- <span class="highlight highlight--beige">
-										&nbsp;Remember to apply 15% Discount Coupon and 5% Welcome Coupon at <span style="font-style:italic;">My Basket</span>&nbsp;
-									</span> -->
+										Verifique o preço final no <span class="tab__bold">Carrinho de Compras</span>
+									</span>
 								</p>
 								<div class="product">
 									<div class="product__mask">
@@ -1294,11 +1329,8 @@
 							<div id="homeappliance" class="tab__panel">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										&nbsp;Visit <span style="font-style:italic;">My Basket</span> to check your final discounted price&nbsp;
-									</span><br>
-									<!-- <span class="highlight highlight--beige">
-										&nbsp;Remember to apply 15% Discount Coupon and 5% Welcome Coupon at <span style="font-style:italic;">My Basket</span>&nbsp;
-									</span> -->
+										Verifique o preço final no <span class="tab__bold">Carrinho de Compras</span>
+									</span>
 								</p>
 								<div class="product">
 									<div class="product__mask">
@@ -1321,11 +1353,8 @@
 							<div id="computerproducts" class="tab__panel">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										&nbsp;Visit <span style="font-style:italic;">My Basket</span> to check your final discounted price&nbsp;
-									</span><br>
-									<!-- <span class="highlight highlight--beige">
-										&nbsp;Remember to apply 15% Discount Coupon and 5% Welcome Coupon at <span style="font-style:italic;">My Basket</span>&nbsp;
-									</span> -->
+										Verifique o preço final no <span class="tab__bold">Carrinho de Compras</span>
+									</span>
 								</p>
 								<div class="product">
 									<div class="product__mask">
@@ -1345,6 +1374,13 @@
 									</div>
 								</div>
 							</div>
+						</div>
+						<div class="section__footer section__footer--center">
+							<p class="section__text">
+								Todos os direitos reservados. Ofertas para produtos selecionados, exclusivas para a Loja Online LG - Ofertas válidas para compras realizadas de 8  a 30 Junho.<br>
+								Promoção válida até 30 de Junho de 2022 ou enquanto durarem os estoques. Consulte o Regulamento. Os preços, promoções e produtos disponíveis podem variar e estão sujeitos a alteração sem prévio aviso.<br>
+								A Loja Online LG realiza entregas nas regiões Sul e Sudeste do Brasil. Alguns produtos podem não estar disponíveis na sua região. Imagens meramente ilustrativas. Para mais informações, acesse www.lg.com/br. 
+							</p>
 						</div>
 					</div>
 				</div>

@@ -43,7 +43,6 @@ $(document).ready(function(){
 				$tabs.parent().eq(0).addClass('active');
 			}else{
 				$tabs.parent().eq(targetIndex).addClass("active").siblings().removeClass("active");
-				console.log($tabs.parent().eq(targetIndex).addClass("active").find('a').html())
 
 				$('#select_list-item').find('span').html($tabs.parent().eq(targetIndex).addClass("active").find('a').html())
 			}

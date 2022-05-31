@@ -134,10 +134,6 @@
 			<!-- ex. multiple model thumb / alt text 
 			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/hotdeal_product.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt2" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/hotdeal_product.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt3" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/hotdeal_product.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt4" value="Limited to 100 units"/>
 			-->
 
 			<!-- Hottest Gift Model -->
@@ -1520,9 +1516,7 @@
 			<div class="popup__container">
 				<div class="popup__body">
 					<div class="popup__contents">
-						<p class="popup__text">
-							Thank you for joining LG.com! Select your Lifestyle and click <span class="popup__bold">"TAKE PART"</span>.
-						</p>
+						<p class="popup__text"><spring:message code='acc_lg-member-days-event_submit-msg' text='acc_lg-member-days-event_submit-msg'/></p>
 					</div>
 					<div class="popup__bottom">
 						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>
@@ -1535,7 +1529,7 @@
 			<div class="popup__container">
 				<div class="popup__body">
 					<div class="popup__contents">
-						<p class="popup__text"></p>
+						<span class="popup__text popup__bold"></span>
 					</div>
 					<div class="popup__bottom">
 						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>
@@ -1670,30 +1664,6 @@
 				})
 			})
     });
-		
-		// $('#box_content3 .tab__list').find('.tab__button').each(function () {
-		// 	$(this).on('click', function() {
-		// 		dataLayer.push({
-		// 			'event' : 'selectProductCategory',
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-tab-name'),
-		// 		})
-		// 	})
-    // });
-		
-		// $('#box_content3 .tab__panel').each(function () {
-		// 	$(this).find('.button__item--white').each(function () {
-		// 		$(this).on('click', function() {
-		// 			dataLayer.push({
-		// 				'event' : 'plpClick',
-		// 				'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 				'pageType' : 'MICROSITE',
-		// 				'theme' : $(this).attr('data-track-val'),
-		// 			})
-		// 		})
-		// 	})
-    // });
 
 		$(document).ready(function(){
 			var href = window.location.href;

@@ -9,65 +9,15 @@
 		&__slide {
 			&--intro {
 				.section__inner {
-					background-image: url('../images/de/bg_visual_intro_obj.png');
+					background-image: url('../images/fr/bg_visual_intro_obj.png');
 				}
 			}
-			&--greenlife {
-				.section__inner {
-					background-image: url('../images/de/bg_visual_greenlife_obj.png');
-				}
-			}
-			&--vividlife {
-				.section__inner {
-					background-image: url('../images/de/bg_visual_vividlife_obj.png');
-				}
-			}
-			&--gaminglife {
-				.section__inner {
-					background-image: url('../images/de/bg_visual_gaminglife_obj.png');
-				}
-			}
-			&--workinglife {
-				.section__inner {
-					background-image: url('../images/de/bg_visual_workinglife_obj.png');
-				}
-			}
-			&--soundfullife {
-				.section__inner {
-					background-image: url('../images/de/bg_visual_soundfullife_obj.png');
-				}
-			} 
 		}
 		@media (max-width: 767px)  {
 			&__slide {
 				&--intro {
 					.section__inner {
-						background-image: url('../images/it/m_bg_visual_intro.png');
-					}
-				}
-				&--greenlife {
-					.section__inner {
-						background-image: url('../images/it/m_bg_visual_greenlife.png');
-					}
-				}
-				&--vividlife {
-					.section__inner {
-						background-image: url('../images/it/m_bg_visual_vividlife.png');
-					}
-				}
-				&--gaminglife {
-					.section__inner {
-						background-image: url('../images/it/m_bg_visual_gaminglife.png');
-					}
-				}
-				&--workinglife {
-					.section__inner {
-						background-image: url('../images/it/m_bg_visual_workinglife.png');
-					}
-				}
-				&--soundfullife {
-					.section__inner {
-						background-image: url('../images/it/m_bg_visual_soundfullife.png');
+						background-image: url('../images/fr/m_bg_visual_intro.png');
 					}
 				}
 				.section__title {
@@ -156,7 +106,7 @@
 				.product__slide {
 					@for $i from 1 through 2 {
 						// &:nth-child(#{ $i }) {
-						// 	background-image: url('../images/de/bg_product_showroom_greenlife0#{$i}.png');
+						// 	background-image: url('../images/bg_product_showroom_greenlife0#{$i}.png');
 						// }
 					}
 					&:nth-child(1) {
@@ -233,7 +183,7 @@
 				.product__slide {
 					@for $i from 1 through 2 {
 						&:nth-child(#{ $i }) {
-							background-image: url('../images/de/bg_product_showroom_vividlife0#{$i}.png');
+							background-image: url('../images/bg_product_showroom_vividlife0#{$i}.png');
 						}
 					}
 					&:nth-child(1) {
@@ -285,7 +235,7 @@
 						}
 					}
 					&:nth-child(2) {
-						background-image: url('../images/de/bg_product_showroom_gaminglife02.png');
+						background-image: url('../images/bg_product_showroom_gaminglife02.png');
 						.product__layer {
 							&:nth-child(1) {
 								left: 58.81%;
@@ -361,7 +311,7 @@
 			&--soundfullife {
 				.product__slide {
 					&:nth-child(2) {
-						background-image: url('../images/de/bg_product_showroom_soundfullife02.png');
+						background-image: url('../images/bg_product_showroom_soundfullife02.png');
 						.product__layer {
 							&:nth-child(1) {
 								.product__target {
@@ -382,7 +332,7 @@
 				&--greenlife {
 					.product__slide {
 						&:nth-child(2) {
-							background-image: url('../images/de/m_bg_product_showroom_greenlife02.png');
+							background-image: url('../images/m_bg_product_showroom_greenlife02.png');
 						}
 					}
 				}
@@ -390,7 +340,7 @@
 					.product__slide {
 						@for $i from 1 through 2 {
 							&:nth-child(#{ $i }) {
-								background-image: url('../images/de/m_bg_product_showroom_vividlife0#{$i}.png');
+								background-image: url('../images/m_bg_product_showroom_vividlife0#{$i}.png');
 							}
 						}
 					}
@@ -398,14 +348,14 @@
 				&--gaminglife {
 					.product__slide {
 						&:nth-child(2) {
-							background-image: url('../images/de/m_bg_product_showroom_gaminglife02.png');
+							background-image: url('../images/m_bg_product_showroom_gaminglife02.png');
 						}
 					}
 				}
 				&--soundfullife {
 					.product__slide {
 						&:nth-child(2) {
-							background-image: url('../images/de/m_bg_product_showroom_soundfullife02.png');
+							background-image: url('../images/m_bg_product_showroom_soundfullife02.png');
 						}
 					}
 				}

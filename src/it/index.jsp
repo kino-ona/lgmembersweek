@@ -1353,15 +1353,15 @@
 										</div>
 										<div class="product__price-now">
 											<span class="product__cost">
-												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												<span class="number">*finalPrice*</span>
+												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 											</span>
 										</div>
 										<div class="product__members">
 											<span class="product__text"><spring:message code='OBS_MEMBERSHIP_MSG' text='OBS_MEMBERSHIP_MSG'/></span>
 											<span class="product__highlight">
-												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												<span class="number">*membershipPriceValue*</span>
+												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 											</span>
 										</div>
 										<div class="product__noti d-none">
@@ -1694,7 +1694,7 @@
 					clearTimeout(timer);     
 				}, 1500);
 			}
-			if(href.indexOf('VolumeProductsAudio') != -1) {
+			if(href.indexOf('VolumeProductsHomeAppliance') != -1) {
 				$('#box_content3 .tab__list .tab__panel').attr('display', 'none')
         $('#box_content3 .tab__list .tab__item').removeClass('tab__item--active');
         $('#box_content3 .tab__list .tab__item').eq(1).addClass('tab__item--active');  
@@ -1706,7 +1706,7 @@
 					clearTimeout(timer);  
 				}, 1500);
 			}
-			if(href.indexOf('VolumeProductsHomeAppliance') != -1) {
+			if(href.indexOf('VolumeProductsComputerProducts') != -1) {
 				$('#box_content3 .tab__list .tab__panel').attr('display', 'none')
         $('#box_content3 .tab__list .tab__item').removeClass('tab__item--active');
         $('#box_content3 .tab__list .tab__item').eq(2).addClass('tab__item--active');  
@@ -1718,7 +1718,7 @@
 					clearTimeout(timer);  
 				}, 1500);
 			}
-			if(href.indexOf('VolumeProductsComputerProducts') != -1) {
+			if(href.indexOf('VolumeProductsAudio') != -1) {
 				$('#box_content3 .tab__list .tab__panel').attr('display', 'none')
         $('#box_content3 .tab__list .tab__item').removeClass('tab__item--active');
         $('#box_content3 .tab__list .tab__item').eq(3).addClass('tab__item--active');  

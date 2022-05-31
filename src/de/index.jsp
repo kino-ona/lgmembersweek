@@ -273,9 +273,6 @@
 			<div class="box_navigation">
 				<div class="box_nav-position">
 					<div class="box_navigation-inner">
-						<button class="arrow_btn show">
-							<i class="arrow_ico"></i>
-						</button>
 						<ul class="list_navigation smooth-scroll">
 							<li class="list-item">
 								<a href="#box_content1" 
@@ -1284,7 +1281,7 @@
 											data-link-name="memberdays_plp_click_seemoretvs" 
 											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">Weitere Smart TV entdecken</a>
-										<a href="https://www.lg.com/de/tv" 
+										<a href="https://www.lg.com/de/beamer" 
 											target="_blank"
 											tabindex="0" 
 											data-track-group="mic" 

@@ -129,6 +129,11 @@
 			}
 		}
 	}
+	.benefit__list--discount {
+		.benefit__item:not(:first-child):before {
+			display: none;
+		}
+	}
 
 	// product
 	.product {

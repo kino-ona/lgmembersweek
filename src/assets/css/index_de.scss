@@ -2,85 +2,85 @@
 @import "mixins";
 
 .lgmembersweek {
-	.box_navigation .list_navigation {
-		display: flex;
-		width: 100%;
-		justify-content: center;
-		@media (max-width: 767px) {
-			display: block;
-		}
-	}
-	.box_navigation .list_navigation .list-item {
-		display: list-item;
-		@media (max-width: 767px) {
-			display: list-item;
-			display: block;
-			background-color: #ffffff;
-			border-bottom:1px solid #eeeeee;
-			&.active {
-				display: block;
-				.link::after {
-					display: none;
-				}
-			}
-			&:hover {
-				.link {
-					color: #999;
-					&::after {
-						display: none;
-					}
-				}
-			}
-		}
-	}
-	.box_navigation .list_navigation .link {
-		@media (max-width: 767px) {
-			justify-content: flex-start;
-		}
-	}
-	.box_navigation .list_navigation .link:hover {
-		text-decoration: none;
-		color: #000
-	}
-	.box_navigation .list_navigation .list-item.active .link {
-		color: #000;
-	}
-	.box_navigation .list_navigation .list-item.active .link::after,
-	.box_navigation .list_navigation .link:hover::after {
-		content: '';
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		right: 0;
-		height: 3px;
-		background-color: #A50034
-	}
-	.arrow_btn {display: none;}
-	@media (max-width: 770px) {
-		.box_navigation .arrow_btn {
-			position: absolute;
-			right: 0;
-			top: 0;
-			display: block;
-			width: 50px;
-			height: 50px;
-			line-height: 50px;
-			text-align: center;
-			background-color: #ffffff;
-			border: 0;
-			z-index: 10;
-			.arrow_ico {
-				@include iconAngle($direction: 'down', $width: 19px, $height: 10px, $thick: 1px, $color: #222, $display: inline-block, $position: relative); 
-				justify-content: center;
-			}
-			&.show {
-				.arrow_ico {
-					@include iconAngle($direction: 'up', $width: 19px, $height: 10px, $thick: 1px, $color: #222, $display: inline-block, $position: relative); 
-					justify-content: center;
-				}
-			}
-		}
-	}
+	// .box_navigation .list_navigation {
+	// 	display: flex;
+	// 	width: 100%;
+	// 	justify-content: center;
+	// 	@media (max-width: 767px) {
+	// 		display: block;
+	// 	}
+	// }
+	// .box_navigation .list_navigation .list-item {
+	// 	display: list-item;
+	// 	@media (max-width: 767px) {
+	// 		display: list-item;
+	// 		display: block;
+	// 		background-color: #ffffff;
+	// 		border-bottom:1px solid #eeeeee;
+	// 		&.active {
+	// 			display: block;
+	// 			.link::after {
+	// 				display: none;
+	// 			}
+	// 		}
+	// 		&:hover {
+	// 			.link {
+	// 				color: #999;
+	// 				&::after {
+	// 					display: none;
+	// 				}
+	// 			}
+	// 		}
+	// 	}
+	// }
+	// .box_navigation .list_navigation .link {
+	// 	@media (max-width: 767px) {
+	// 		justify-content: flex-start;
+	// 	}
+	// }
+	// .box_navigation .list_navigation .link:hover {
+	// 	text-decoration: none;
+	// 	color: #000
+	// }
+	// .box_navigation .list_navigation .list-item.active .link {
+	// 	color: #000;
+	// }
+	// .box_navigation .list_navigation .list-item.active .link::after,
+	// .box_navigation .list_navigation .link:hover::after {
+	// 	content: '';
+	// 	position: absolute;
+	// 	left: 0;
+	// 	bottom: 0;
+	// 	right: 0;
+	// 	height: 3px;
+	// 	background-color: #A50034
+	// }
+	// .arrow_btn {display: none;}
+	// @media (max-width: 770px) {
+	// 	.box_navigation .arrow_btn {
+	// 		position: absolute;
+	// 		right: 0;
+	// 		top: 0;
+	// 		display: block;
+	// 		width: 50px;
+	// 		height: 50px;
+	// 		line-height: 50px;
+	// 		text-align: center;
+	// 		background-color: #ffffff;
+	// 		border: 0;
+	// 		z-index: 10;
+	// 		.arrow_ico {
+	// 			@include iconAngle($direction: 'down', $width: 19px, $height: 10px, $thick: 1px, $color: #222, $display: inline-block, $position: relative); 
+	// 			justify-content: center;
+	// 		}
+	// 		&.show {
+	// 			.arrow_ico {
+	// 				@include iconAngle($direction: 'up', $width: 19px, $height: 10px, $thick: 1px, $color: #222, $display: inline-block, $position: relative); 
+	// 				justify-content: center;
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	// visual
 	.visual {

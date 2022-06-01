@@ -265,7 +265,7 @@
 						data-link-name="memberdays_anchor_click_termsandconditions" 
 						data-link-area="memberdays_2022" 
 						class="terms__link visual__link">
-						Terms and Conditions
+						Aktionsbedingungen
 						<i class="visual__arrow"></i>
 					</a>
 				</div>

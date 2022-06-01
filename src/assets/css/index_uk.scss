@@ -21,15 +21,12 @@
 		}
 	}
 
-	
-
-
 	.box_navigation .list_navigation {
 		display: flex;
 		width: 100%;
 		justify-content: center;
 		@media (max-width: 767px) {
-			display: block;
+			display: none;
 		}
 	}
 	.box_navigation .list_navigation .list-item {
@@ -101,6 +98,13 @@
 					justify-content: center;
 				}
 			}
+		}
+	}
+
+	@media (max-width: 370px) {
+		.visual__slide--intro .section__title {
+			font-size: 43px;
+			line-height: 45px;
 		}
 	}
 

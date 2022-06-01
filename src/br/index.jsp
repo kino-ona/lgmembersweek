@@ -909,7 +909,7 @@
 									</div>
 									<div class="learn-more learn-more--right">
 										<a href="#" class="learn-more__link">
-											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com/br</span>
+											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com</span>
 											<i class="learn-more__arrow"></i>
 										</a>
 									</div>
@@ -1063,7 +1063,7 @@
 									</div>
 									<div class="learn-more learn-more--right">
 										<a href="#" class="learn-more__link">
-											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com/br</span>
+											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com</span>
 											<i class="learn-more__arrow"></i>
 										</a>
 									</div>
@@ -1127,7 +1127,7 @@
 									</div>
 									<div class="learn-more learn-more--right">
 										<a href="#" class="learn-more__link">
-											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com/br</span>
+											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com</span>
 											<i class="learn-more__arrow"></i>
 										</a>
 									</div>
@@ -1389,9 +1389,7 @@
 			<div class="popup__container">
 				<div class="popup__body">
 					<div class="popup__contents">
-						<p class="popup__text">
-							Após selecionar você deve <span class="popup__bold">clicar</span> em participar.
-						</p>
+						<p class="popup__text"><spring:message code='acc_lg-member-days-event_submit-msg' text='acc_lg-member-days-event_submit-msg'/></p>
 					</div>
 					<div class="popup__bottom">
 						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>
@@ -1404,7 +1402,7 @@
 			<div class="popup__container">
 				<div class="popup__body">
 					<div class="popup__contents">
-						<p class="popup__text"></p>
+						<span class="popup__text popup__bold"></span>
 					</div>
 					<div class="popup__bottom">
 						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>

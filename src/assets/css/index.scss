@@ -372,24 +372,24 @@
 				background-image: none;
 				.section__inner {
 					height: 148.72vw;
-					padding-top: 10.26vw;
+					padding-top: 6.26vw;
 					background-size: cover;
 				}
 				.section__title {
 					font-size: 36px;
-					line-height: 46px;
+					line-height: 38px;
 					span {
 						&:not([class^='break--']) {
 							margin: 6px 0 2px;
 							display: block;
-							font-size: 50px;
+							font-size: 36px;
 							letter-spacing: -2px;
 						}
 					}
 				}
 				.section__sub {
-					font-size: 20px;
-					line-height: 22px;
+					font-size: 16px;
+					line-height: 18px;
 				}
 				.section__desc {
 					font-size: 20px;
@@ -1837,6 +1837,7 @@
 		}
 		@media (max-width: 767px) {
 			> .button {
+				display: block;
 				&:not(:first-child) {
 					margin-top: 40px;
 				}
@@ -1846,8 +1847,10 @@
 					min-height: 50px;
 					padding: 10px 15px;
 					font-size: 18px;
+					margin-bottom: 10px;
+					margin-left: 0;
 					&:not(:first-child) {
-						margin-left: 10px;
+						margin-left: 0;
 					}
 				}
 			}
@@ -1893,6 +1896,7 @@
 					width: 220px;
 					height: 220px;
 					margin: 0 auto;
+					background-color: transparent;
 					img {
 						max-width: 200px;
 						@include translate(-50%, 30px);
@@ -3086,6 +3090,17 @@
 				width: 8px;
 				height: 8px;
 			}
+		}
+	} 
+
+	.product__img {
+		background-color: #ffffff;
+		padding: 40px;
+		border-radius: 28px;
+		overflow: hidden;
+
+		@media (max-width: 767px) {
+			padding: 15px;
 		}
 	}
 }

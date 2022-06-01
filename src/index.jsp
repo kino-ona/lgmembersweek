@@ -313,7 +313,7 @@
 			<div class="box_navigation">
 				<div class="box_nav-position">
 					<div class="box_navigation-inner">
-						<button class="arrow_btn show">
+						<button class="arrow_btn">
 							<i class="arrow_ico"></i>
 						</button>
 						<div id="select_list-item" class="select_list-item">
@@ -1360,9 +1360,9 @@
 												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												<span class="number">*membershipPriceValue*</span>
 											</span>
-										</div>
-										<div class="product__noti d-none">
-											<p class="product__text">*reStockAlertText*</p>
+											<div class="product__noti d-none">
+												<p class="product__text">*reStockAlertText*</p>
+											</div>
 										</div>
 										<div class="button">
 											<a role="button" href="#" class="button__item button__item--red atc-members-week" data-track-group="product" data-track-name="add_to_cart_click" data-link-name="add_to_cart" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>

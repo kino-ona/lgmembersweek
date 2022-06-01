@@ -5,6 +5,7 @@
 	.tab__panel {
 		.tab__noti {
 			max-width: 1200px;
+			margin: 0 auto 40px;
 		}
 	}
 	// visual
@@ -52,32 +53,32 @@
 			&__slide {
 				&--intro {
 					.section__inner {
-						background-image: url('../images/br/m_bg_visual_intro.png');
+						background-image: url('../images/br/m_bg_visual_intro_obj.png');
 					}
 				}
 				&--greenlife {
 					.section__inner {
-						background-image: url('../images/br/m_bg_visual_greenlife.png');
+						background-image: url('../images/br/m_bg_visual_greenlife_obj.png');
 					}
 				}
 				&--vividlife {
 					.section__inner {
-						background-image: url('../images/br/m_bg_visual_vividlife.png');
+						background-image: url('../images/br/m_bg_visual_vividlife_obj.png');
 					}
 				}
 				&--gaminglife {
 					.section__inner {
-						background-image: url('../images/br/m_bg_visual_gaminglife.png');
+						background-image: url('../images/br/m_bg_visual_gaminglife_obj.png');
 					}
 				}
 				&--workinglife {
 					.section__inner {
-						background-image: url('../images/br/m_bg_visual_workinglife.png');
+						background-image: url('../images/br/m_bg_visual_workinglife_obj.png');
 					}
 				}
 				&--soundfullife {
 					.section__inner {
-						background-image: url('../images/br/m_bg_visual_soundfullife.png');
+						background-image: url('../images/br/m_bg_visual_soundfullife_obj.png');
 					}
 				}
 				.section__title {
@@ -330,6 +331,7 @@
 			&--soundfullife {
 				.product__slide {
 					&:nth-child(1) {
+						background-image: url('../images/br/bg_product_showroom_soundfullife01.png');
 						.product__layer {
 							&:nth-child(1) {
 								.product__target {
@@ -385,6 +387,13 @@
 					}
 				}
 			}
+			// &--soundfullife {
+			// 	.product__slide {
+			// 		&:nth-child(1) {
+			// 			background-image: url('../images/bg_product_showroom_soundfullife01.png');
+			// 		}
+			// 	}
+			// }
 		}
 	}
 	}

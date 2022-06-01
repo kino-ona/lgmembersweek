@@ -84,20 +84,20 @@
 
 			<!-- Required input ## Model List Start -->
 			<!-- Event Gift Model -->
-			<input type="hidden" data-model-group="eventGift" data-type="coupon" value="MD07535483|MD07548494|MD07528387|MD07552999|MD07535216"/>
+			<input type="hidden" data-model-group="eventGift" data-type="coupon" value="MD07530735|MD07530611|MD07548903|MD07531091|MD07541559"/>
 
 			<!-- Life Style Model -->
-			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07535414|MD07535483|MD07535475"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548355|MD07546571|MD07546591|MD07545548|MD07528365"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07528365"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552999|MD07553042|MD07553142|MD07535403|MD07540286|MD07540281|MD07550947|MD07537017"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07534551|MD07535359|MD07535216|MD07528451"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07539167|MD07538714|MD07538721|MD07539997|MD07509944|MD06216776|MD07530735|MD07533005"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07538702|MD07538792|MD06242696|MD07535198|MD07535161|MD07530785|MD07533008|MD07530612|MD07530611|MD07530579|MD07530693"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07545870|MD07530693|MD07545870|MD07548903|MD07548901|MD07545870|MD07530693|MD07545870|MD07548903|MD07548901|MD07548905"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07541521|MD07541559|MD07531107|MD07531007|MD07548902|MD07548905|MD07545101|MD07541521|MD07541559|MD07531107|MD07531007|MD07548902|MD07548905|MD07545101"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07515370|MD07542881|MD07541521|MD07541559|MD07538792|MD07515370|MD07542881|MD07541521|MD07541559|MD07538792"/>
 
 			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07548335|MD07546595|MD07548387|MD07550523|MD07545548"/>
-			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508573|MD07508373|MD07528365|MD07528451|MD07510893|MD07504084|MD07535242|MD07538956"/>
-			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07514393|MD07535475|MD07536912|MD07515106|MD07514364|MD07535502|MD07535480|MD07535414|MD07517580"/>
-			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07552999|MD07553042|MD07540281|MD07540286|MD07540283|MD07550947|MD06164217|MD07525661|MD07532529|MD07522774|MD07525972|MD07532528|MD07528387"/>
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07530871|MD07530881|MD07530888|MD07530561|MD07530934|MD07531004|MD07546318|MD07533013|MD07532838|MD07535198|MD06242696"/>
+			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07538792|MD07538702|MD07515381|MD07515380|MD07545870|MD07541559|MD07541521|MD07515370|MD07515371"/>
+			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07530580|MD06175996|MD07533005|MD07530735|MD06176036|MD06216196|MD07541911|MD07539036|MD07538861|MD07539997|MD07520061|MD07520089|MD06187116|MD06187118|MD06187196|MD06187116"/>
+			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07531091|MD07531011|MD07531107|MD07548908|MD07548903|MD07548905|MD07548901|MD07548909|MD06143417"/>
 		<!-- Required input ## Model List End -->
 	
 		<!--  Content Start  -->
@@ -573,9 +573,6 @@
 								</form>
 							</div>
 						</div>
-						<div class="section__footer">
-							<p class="section__text">Winner can win only one product.</p>
-						</div>
 					</div>
 				</div>
 			</div>
@@ -653,8 +650,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_greenlife_GSXV91BSAE"
+													<a href="https://www.lg.com/br/geladeiras/lg-gc-x247csbv" target="_blank"
+														data-link-name="memberdays_productMouseHover_greenlife_GC-X247CSBV"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -675,8 +672,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_greenlife_F6V1110WTSA"
+													<a href="https://www.lg.com/br/lavadoras-de-roupa/lg-wd17bv2s6b" target="_blank"
+														data-link-name="memberdays_productMouseHover_greenlife_WD17BV2S6B"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -720,8 +717,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_vividlife_SP8YA"
+													<a href="https://www.lg.com/br/audio-e-video/lg-sp9a" target="_blank"
+														data-link-name="memberdays_productMouseHover_vividlife_SP9A"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -741,15 +738,15 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_vividlife_OLED77G26LA"
+													<a href="https://www.lg.com/br/tvs/lg-oled65g1psa" target="_blank"
+														data-link-name="memberdays_productMouseHover_vividlife_OLED65G1PSA"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
 															<img src="${path}/assets/images/br/img_product_showroom_vividlife01_02.png" alt="4K OLED65G1 Evo Gallery Design ">
 														</div>
 														<div class="product__right">
-															<p class="product__name">4K OLED65G1 Evo Gallery Design </p>
+															<p class="product__name">4K OLED65G1 Evo Gallery Design</p>
 															<ul class="product__desc">
 																<li>Projetado para a melhor experiência de visualização de filmes</li>
 																<li>Plataforma Smart com Netflix, NOW, Disney+ e muito mais</li>
@@ -763,8 +760,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_vividlife_SP8YA"
+													<a href="https://www.lg.com/br/audio-e-video/lg-sp9a" target="_blank"
+														data-link-name="memberdays_productMouseHover_vividlife_SP9A"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -785,8 +782,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_vividlife_HU715QW"
+													<a href="https://www.lg.com/br/projetores/lg-HU70LA" target="_blank"
+														data-link-name="memberdays_productMouseHover_vividlife_HU70LA"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -806,7 +803,7 @@
 									</div>
 									<div class="learn-more learn-more--right">
 										<a href="#" class="learn-more__link">
-											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com/br</span>
+											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com</span>
 											<i class="learn-more__arrow"></i>
 										</a>
 									</div>
@@ -826,8 +823,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_gaminglife_27GP950-B"
+													<a href="https://www.lg.com/br/monitores/lg-34gl750-b" target="_blank"
+														data-link-name="memberdays_productMouseHover_gaminglife_34GL750-B"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -848,7 +845,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
+													<a href="https://www.lg.com/br/audio-e-video/lg-gp9" target="_blank"
 														data-link-name="memberdays_productMouseHover_gaminglife_GP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -870,8 +867,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_gaminglife_OLED42C24LA"
+													<a href="https://www.lg.com/br/tvs/lg-oled48c1psa" target="_blank"
+														data-link-name="memberdays_productMouseHover_gaminglife_OLED48C1PSA"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -890,8 +887,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_gaminglife_SP8YA"
+													<a href="https://www.lg.com/br/audio-e-video/lg-gp9" target="_blank"
+														data-link-name="memberdays_productMouseHover_gaminglife_GP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -932,8 +929,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_28MQ780-B"
+													<a href="https://www.lg.com/br/monitores/lg-29wk600-w" target="_blank"
+														data-link-name="memberdays_productMouseHover_workinglife_29WK600-W"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -953,8 +950,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
+													<a href="https://www.lg.com/br/computadores/lg-16z90p-g" target="_blank"
+														data-link-name="memberdays_productMouseHover_workinglife_16Z90P-G"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -974,8 +971,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
+													<a href="https://www.lg.com/br/audio-e-video/lg-tone-fp9" target="_blank"
+														data-link-name="memberdays_productMouseHover_workinglife_TONE-FP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -997,8 +994,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
+													<a href="https://www.lg.com/br/audio-e-video/lg-tone-fp9" target="_blank"
+														data-link-name="memberdays_productMouseHover_workinglife_TONE-FP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -1022,8 +1019,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
+													<a href="https://www.lg.com/br/audio-e-video/lg-tone-fp9" target="_blank"
+														data-link-name="memberdays_productMouseHover_workinglife_TONE-FP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -1045,8 +1042,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_16Z90Q-K.AA78A1"
+													<a href="https://www.lg.com/br/computadores/lg-16z90p-g" target="_blank"
+														data-link-name="memberdays_productMouseHover_workinglife_16Z90P-G"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -1085,8 +1082,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_TONE-UFP9"
+													<a href="https://www.lg.com/br/audio-e-video/lg-tone-fp9" target="_blank"
+														data-link-name="memberdays_productMouseHover_workinglife_TONE-FP9"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -1108,7 +1105,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="#" target="_blank"
+													<a href="https://www.lg.com/br/audio-e-video/lg-rp4" target="_blank"
 														data-link-name="memberdays_productMouseHover_workinglife_RP4"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -1241,9 +1238,9 @@
 												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												<span class="number">*membershipPriceValue*</span>
 											</span>
-										</div>
-										<div class="product__noti d-none">
-											<p class="product__text">*reStockAlertText*</p>
+											<div class="product__noti d-none">
+												<p class="product__text">*reStockAlertText*</p>
+											</div>
 										</div>
 										<div class="button">
 											<a role="button" href="#" class="button__item button__item--red atc-members-week" data-track-group="product" data-track-name="add_to_cart_click" data-link-name="add_to_cart" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
@@ -1269,7 +1266,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" 
+										<a href="https://www.lg.com/br/tv" 
 											target="_blank"
 											tabindex="0" 
 											data-track-group="mic" 
@@ -1279,7 +1276,7 @@
 											data-link-name="memberdays_plp_click_seemoretvs" 
 											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">Confira mais TVs</a>
-										<a href="#" 
+										<a href="https://www.lg.com/br/projetores" 
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
@@ -1303,26 +1300,16 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" 
+										<a href="https://www.lg.com/br/audio-video" 
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
 											data-track-opt="category" 
-											data-track-val="SOUND SYSTEMS" 
+											data-track-val="Confira a linha de Áudio" 
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemoresoundsystems"
 											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE SOUND SYSTEMS</a>
-										<a href="#" 
-											target="_blank"
-											tabindex="0" 
-											data-track-group="mic" 
-											data-track-opt="category" 
-											data-track-val="SOUND WIRELESS EARBUDS"  
-											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemorewirelessearbuds" 
-											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE SOUND WIRELESS EARBUDS</a>
+											class="button__item button__item--white">Confira a linha de Áudio</a>
 									</div>
 								</div>
 							</div>
@@ -1337,7 +1324,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" 
+										<a href="https://www.lg.com/br/lavanderia" 
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
@@ -1346,7 +1333,17 @@
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorehomeappliances"
 											data-link-area="memberdays_2022" 
-											class="button__item button__item--white">SEE MORE HOME APPLIANCES</a>
+											class="button__item button__item--white">Confira mais Lavadoras</a>
+										<a href="https://www.lg.com/br/geladeiras" 
+											target="_blank" 
+											tabindex="0" 
+											data-track-group="mic" 
+											data-track-opt="category" 
+											data-track-val="HOME APPLIANCES"  
+											data-track-name="plpClick" 
+											data-link-name="memberdays_plp_click_seemorehomeappliances"
+											data-link-area="memberdays_2022" 
+											class="button__item button__item--white">Confira Mais Geladeiras</a>
 									</div>
 								</div>
 							</div>
@@ -1361,7 +1358,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" 
+										<a href="https://www.lg.com/br/informatica" 
 											target="_blank" 
 											tabindex="0" 
 											data-track-group="mic" 
@@ -1370,7 +1367,7 @@
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorecomputerproducts"
 											data-link-area="memberdays_2022"
-											class="button__item button__item--white">SEE MORE COMPUTER PRODUCTS</a>
+											class="button__item button__item--white"> Confira a linha de Informática</a>
 									</div>
 								</div>
 							</div>

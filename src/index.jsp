@@ -121,7 +121,7 @@
 			<!-- Life Style Model -->
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07535414|MD07535483|MD07535475"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548355|MD07546571|MD07546591|MD07545548|MD07528365"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07525972|MD07546567|MD07528365"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07514269|MD07546567|MD07528365"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552999|MD07553042|MD07553142|MD07535403|MD07540286|MD07540281|MD07550947|MD07537017"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07534551|MD07535359|MD07535216|MD07528451"/>
 
@@ -137,10 +137,10 @@
 			-->
 
 			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07548335|MD07546595|MD07548387|MD07550523|MD07545548"/>
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07548335|MD07546595|MD07548379|MD07550523|MD07545548"/>
 			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508573|MD07508373|MD07528365|MD07528451|MD07510893|MD07504084|MD07535242|MD07538956"/>
 			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07514393|MD07535475|MD07536912|MD07515106|MD07514364|MD07535502|MD07535480|MD07535414|MD07517580"/>
-			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07552999|MD07553042|MD07540281|MD07540286|MD07540283|MD07550947|MD06164217|MD07525661|MD07532529|MD07522774|MD07525972|MD07532528|MD07528387"/>
+			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07552999|MD07553042|MD07540281|MD07540286|MD07540283|MD07550947|MD07514270|MD07525661|MD07532529|MD07535283|MD07514269|MD07532528|MD07528387"/>
 		<!-- Required input ## Model List End -->
 	
 		<!--  Content Start  -->
@@ -886,16 +886,16 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/uk/monitors/lg-27gp950-b" target="_blank"
-														data-link-name="memberdays_productMouseHover_gaminglife_27GP950-B"
+													<a href="https://www.lg.com/uk/monitors/lg-27gn850-b" target="_blank"
+														data-link-name="memberdays_productMouseHover_gaminglife_27GN850-B"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
 															<img src="${path}/assets/images/img_product_showroom_gaminglife01_01.png"
-																alt="27’’ UHD 4K UltraGear™">
+																alt="27’’ QHD 4K UltraGear™">
 														</div>
 														<div class="product__right">
-															<p class="product__name">27’’ UHD 4K UltraGear™</p>
+															<p class="product__name">27’’ QHD 4K UltraGear™</p>
 															<ul class="product__desc">
 																<li>Enjoy the Supreme Color</li>
 																<li>Vivid Colors and Sharp Details</li>

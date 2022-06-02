@@ -471,7 +471,7 @@ $(document).ready(function() {
 			// submit
 			$(document).on('change','input[name="Coupons"]',function(){
 				let chooseTheme = $(this).data('param');
-				$submit.data('trackVal',chooseTheme).attr('data-link-area','memberdays_luckydraw_submit_click_' + chooseTheme);
+				$submit.data('trackVal',chooseTheme).attr('data-link-name','memberdays_luckydraw_submit_click_' + chooseTheme);
 			});
 			// lifeStyle showroom
 			$('[data-list="lifeStyle"] .product__anchor').each(function(){

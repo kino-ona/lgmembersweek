@@ -579,7 +579,17 @@
 				}
 			}
 		}
+
 	}
+	@media (max-width: 767px) {
+		.product__price {
+			height: 49px;
+		}
+		.product__price-now {
+			height: 30px;
+		}
+	}
+	
 
 	@media (max-width: 767px) {
 		.product>.button {

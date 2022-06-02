@@ -547,10 +547,12 @@
 							<div style="margin-top:80px">
 								<form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
 									<div class="button">
-										<button type="button" id="submit" class="button__item button__item--red" 
-										data-track-group="mic" data-track-opt="theme" data-track-name="submitClick" 
-										data-link-name="memberdays_luckydraw_submit_click_{theme}"
-										data-link-area="memberdays_2022">Jetzt absenden &amp; teilnehmen</button>
+										<a role="button" href="#" id="submit" class="button__item button__item--red button_takepart" 
+											data-track-group="mic" 
+											data-track-opt="theme" 
+											data-track-name="submitClick" 
+											data-link-name="memberdays_luckydraw_submit_click_{theme}"
+											data-link-area="memberdays_2022" style="width: 160px;">PARTECIPA</a>
 									</div>
 								</form>
 							</div>
@@ -956,6 +958,27 @@
 													</a>
 												</div>
 											</div>
+											<div class="product__layer">
+												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
+												<div class="product__target">
+													<a href="https://www.lg.com/de/audio/lg-tone-dfp9w" target="_blank"
+														data-link-name="memberdays_productMouseHover_workinglife_TONE-DFP9W"
+														data-link-area="memberdays_2022"
+														class="product__link">
+														<div class="product__img">
+															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_03.png"
+																alt="LG TONE Free UFP9">
+														</div>
+														<div class="product__right">
+															<p class="product__name">LG TONE Free DFP9W</p>
+															<ul class="product__desc">
+																<li>Plug and Wireless - Kabellos genießen mit jedem Gerät</li>
+																<li>Verbesserte active noise cancelling Funktion-verbessertes eintauchen, weniger Geräusche als zuvor</li>
+															</ul>
+														</div>
+													</a>
+												</div>
+											</div>
 										</div>
 										<div class="product__slide">
 											<div class="product__layer">
@@ -1332,7 +1355,7 @@
 							<div id="homeappliance" class="tab__panel">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										<span class="break--mobile">Dein MEMBER DAYS Rabatt wird automatisch im</span> <span class="tab__bold">Warenkorb</span> abgezogen.
+										10% MEMBER DAYS Rabatt im Checkout!
 									</span>
 								</p>
 								<div class="product">

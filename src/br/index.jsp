@@ -109,11 +109,11 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">LG MEMBER DAYS</h2>
-									<p class="section__sub">Escolha o [#Estilo de vida] dos seus sonhos na LG</p>
+									<p class="section__sub">Escolha o seu [#Estilo de Vida] com a LG</p>
 									<p class="section__desc">
-										Membros LG tem Benefícios exclusivos<br>
-										em todos os PRODUTOS e ESTILOS DE VIDA<br>
-										Promoção válida até 30 de Junho
+										Membros LG têm BENEFÍCIOS exclusivos em<br>
+										TODOS os produtos e ESTILOS DE VIDA.<br>
+										Promoção válida até 30 de junho.
 									</p>
 								</div>
 								<div class="button">
@@ -134,11 +134,11 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">
-										Tenha uma <span class="break--mobile">[#Vida Sustentável]</span> com a LG
+										Viva uma <span class="break--mobile">[#Vida Sustentável]</span> com a LG
 									</h2>
 									<p class="section__sub">
-										<span class="break--mobile">Economize recursos e ajude o planeta</span> com as tecnologias LG.<br>
-										Benefícios Exclusivos até 30 de Junho
+										Com as tecnologias LG, você economiza recursos e ajuda o planeta!<br>
+										Benefícios exclusivos até 30 de junho.
 									</p>
 								</div>
 							</div>
@@ -159,11 +159,11 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">
-										Tenha uma <span class="break--mobile">[#Vida Intensa]</span> com a LG
+										Aproveite uma <span class="break--mobile">[#Vida Imersiva]</span> com a LG
 									</h2>
 									<p class="section__sub">
-										<span class="break--mobile">Traga Cores mais vivas, som mais envolvente</span> para sua casa com produtos LG.<br>
-										Benefícios Exclusivos até 30 de Junho
+										Os produtos LG proporcionam cores mais vivas e som mais envolvente para a sua casa!<br>
+										Benefícios exclusivos até 30 de junho.
 									</p>
 								</div>
 							</div>
@@ -184,11 +184,11 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">
-										Tenha uma <span class="break--mobile">[#Vida Gamer]</span> com a LG
+										Viva uma <span class="break--mobile">[#Vida Gamer]</span> com a LG
 									</h2>
 									<p class="section__sub">
-										Tenha mais detalhes e melhor tempo de reação em seus jogos com os produtos LG.<br>
-										Benefícios Esclusivos até 30 de Junho
+										Precisão em detalhes e melhor tempo de reação em seus jogos com os produtos LG.<br>
+										Benefícios exclusivos até 30 de junho.
 									</p>
 								</div>
 							</div>
@@ -209,11 +209,11 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">
-										Construa sua <span class="break--mobile">[#Vida Profissional]</span> com a LG
+										Aprimore sua <span class="break--mobile">[#Vida Profissional]</span> com a LG
 									</h2>
 									<p class="section__sub">
-										<span class="break--mobile">Trabalhe de forma otimizada onde</span> quiser com a LG<br>
-										Benefícios Exclusivos até 30 de Junho
+										Com a LG, você pode trabalhar de onde quiser e de forma otimizada.<br>
+										Benefícios exclusivos até 30 de junho.
 									</p>
 								</div>
 							</div>
@@ -234,11 +234,11 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">
-										Tenha uma <span class="break--mobile">[#Vida Musical]</span> com a LG
+										Tenha uma <span class="break--mobile">[#Vida em Movimento]</span> com a LG
 									</h2>
 									<p class="section__sub">
-										<span class="break--mobile">Som imersivo em qualquer lugar</span> com os produtos LG<br>
-										Benefícios exclusivos até 30 de Junho
+										Som imersivo e em qualquer lugar com os produtos LG.<br>
+										Benefícios exclusivos até 30 de junho.
 									</p>
 								</div>
 							</div>
@@ -308,7 +308,7 @@
 							<ul class="benefit__list benefit__list--discount">
 								<li class="benefit__item">
 									<div class="benefit__inner">
-										<p class="benefit__category">Desconto especial de</p>
+										<p class="benefit__category">DESCONTO DE</p>
 										<p class="benefit__discount">
 											10%
 											<em class="benefit__condition">para membros LG</em>
@@ -317,20 +317,20 @@
 								</li>
 								<li class="benefit__item">
 									<div class="benefit__inner">
-										<p class="benefit__category">Desconto de</p>
+										<p class="benefit__category">DESCONTO DE</p>
 										<p class="benefit__discount">
 											5%
-											<em class="benefit__condition">na Compra de dois ou mais produtos</em>
-											<span class="benefit__text">Seu cupom de desconto exclusivo para membros estará disponível em sua conta LG.</span>
+											<em class="benefit__condition">na compra de dois ou mais produtos</em>
+											<span class="benefit__text">O cupom de desconto, exclusivo para Membros LG, estará disponível em sua conta LG.</span>
 										</p>
 									</div>
 								</li>
 								<li class="benefit__item">
 									<div class="benefit__inner">
-										<p class="benefit__category">Desconto de</p>
+										<p class="benefit__category">DESCONTO DE</p>
 										<p class="benefit__discount">
 											5%
-											<em class="benefit__condition">para Pagamento no boleto</em>
+											<em class="benefit__condition">para pagamento à vista no boleto</em>
 										</p>
 									</div>
 								</li>
@@ -352,12 +352,12 @@
 								</li>
 								<li class="benefit__item">
 									<div class="benefit__inner">
-										<p class="benefit__category">Pagamento em até 12 vezes no cartão de crédito</p>
+										<p class="benefit__category">Pagamento em até 12x sem juros no cartão de crédito</p>
 									</div>
 								</li>
 								<li class="benefit__item">
 									<div class="benefit__inner">
-										<p class="benefit__category">Instalação grátis para TV em modelos selecionados</p>
+										<p class="benefit__category">Instalação grátis em modelos selecionados de TV</p>
 									</div>
 								</li>
 								<li class="benefit__item">
@@ -369,9 +369,7 @@
 						</div>
 						<div class="section__footer section__footer--center">
 							<p class="section__text">
-								Aplicam-se Termos e Condições<br>
-								A Loja Online LG realiza entregas nas regiões Sul e Sudeste do Brasil.<br>
-								Alguns produtos podem não estar disponíveis na sua região.
+								Todos os direitos reservados. Ofertas para produtos selecionados, exclusivas para a Loja Online LG. Os preços, opromoções e produtos disponíveis podem variar e estão sujeitos a alteração sem prévio aviso. Ofertas válidas de 08.06.2022 até 30.06.2022. Promoção válida enquanto durarem os estoques. A Loja Online LG realiza entregas nas regiões Sul e Sudeste do Brasil. Alguns produtos podem não estar disponíveis na sua região. Imagens meramente ilustrativas. Consulte o Regulamento. 
 							</p>
 						</div>
 					</div>
@@ -382,8 +380,8 @@
 						<div class="section__header">
 							<h2 class="section__title">Concorra a produtos LG</h2>
 							<p class="section__sub section__sub--small">
-								Conte para nós qual o seu estilo de vida favorito e concorra a prêmios<br>
-								São 50 caixas de som PL5 + 5 prêmios especiais
+								Conte para nós qual o seu estilo de vida favorito e concorra a prêmios!<br>
+								São 50 caixas de som modelo PL5 + 5 prêmios especiais!
 							</p>
 						</div>
 						<div id="coupon" class="coupon">
@@ -427,8 +425,8 @@
 												<img src="${path}/assets/images/br/img_coupon_greenlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<span class="product__category">with</span>
-												<span class="product__name">Ganhador</span>
+												<!-- <span class="product__category">with</span> //-->
+												<span class="product__name">Concorra a</span>
 												<span class="product__code">WD14EGS62</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
@@ -456,8 +454,8 @@
 												<img src="${path}/assets/images/br/img_coupon_vividlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<span class="product__category">with</span>
-												<span class="product__name">Ganhador</span>
+												<!-- <span class="product__category">with</span> //-->
+												<span class="product__name">Concorra a</span>
 												<span class="product__code">OLED65C1PSA.AWZ</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
@@ -485,8 +483,8 @@
 												<img src="${path}/assets/images/br/img_coupon_gaminglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<span class="product__category">with</span>
-												<span class="product__name">Ganhador</span>
+												<!-- <span class="product__category">with</span> //-->
+												<span class="product__name">Concorra a</span>
 												<span class="product__code">27GN750-B.AWZM</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
@@ -514,8 +512,8 @@
 												<img src="${path}/assets/images/br/img_coupon_workinglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<span class="product__category">with</span>
-												<span class="product__name">Ganhador</span>
+												<!-- <span class="product__category">with</span> //-->
+												<span class="product__name">Concorra a</span>
 												<span class="product__code">7Z90N-V</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
@@ -532,7 +530,7 @@
 								<div class="coupon__item coupon__item--soundfullife">
 									<div class="coupon__front">
 										<div class="coupon__thumnail"></div>
-										<p class="coupon__category">#Músical</p>
+										<p class="coupon__category">#Movimento</p>
 									</div>
 									<input type="radio" id="Coupon05" name="Coupons" class="sr-only" data-param="Soundful" data-track-group="mic" data-track-opt="theme" data-track-val="soundfullife" data-track-name="themeSelectionCoupon">
 									<label for="Coupon05" 
@@ -543,8 +541,8 @@
 												<img src="${path}/assets/images/br/img_coupon_soundfullife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<span class="product__category">with</span>
-												<span class="product__name">Ganhador</span>
+												<!-- <span class="product__category">with</span> //-->
+												<span class="product__name">Concorra a</span>
 												<span class="product__code">TONE-FP9.CBRALLK</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
@@ -561,21 +559,20 @@
 							</div>
 							
 							<div style="margin-top:80px">
-								<div class="button">
-									<button type="button" onclick="termpop();" class="button__item button__item--red button_takepart">Participar</button>
-								</div>
-
-								<!-- <form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
+								<form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
 									<div class="button">
-										<button type="button" id="submit" class="button__item button__item--red button_takepart" 
+										<a role="button" href="#" id="submit" class="button__item button__item--red button_takepart" 
 											data-track-group="mic" 
-											data-track-opt="theme" 	
+											data-track-opt="theme" 
 											data-track-name="submitClick" 
 											data-link-name="memberdays_luckydraw_submit_click_{theme}"
-                      data-link-area="memberdays_2022">Participar</button>
+											data-link-area="memberdays_2022" style="width: 160px;">PARTECIPA</a>
 									</div>
-								</form> -->
+								</form>
 							</div>
+						</div>
+						<div class="section__footer">
+							<a href="#" target="_blank" class="section__text">Consulte Regulamento</a>
 						</div>
 					</div>
 				</div>
@@ -700,10 +697,11 @@
 										</div>
 									</div>
 									<div class="learn-more learn-more--right">
-										<a href="#" class="learn-more__link">
-											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com</span>
+										<p class="learn-more__link">
+											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade.
+												Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
 											<i class="learn-more__arrow"></i>
-										</a>
+											</p>
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>
@@ -807,7 +805,8 @@
 									</div>
 									<div class="learn-more learn-more--right">
 										<a href="#" class="learn-more__link">
-											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com</span>
+											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade.
+												Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
 											<i class="learn-more__arrow"></i>
 										</a>
 									</div>
@@ -913,7 +912,8 @@
 									</div>
 									<div class="learn-more learn-more--right">
 										<a href="#" class="learn-more__link">
-											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com</span>
+											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade.
+												Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
 											<i class="learn-more__arrow"></i>
 										</a>
 									</div>
@@ -1067,7 +1067,8 @@
 									</div>
 									<div class="learn-more learn-more--right">
 										<a href="#" class="learn-more__link">
-											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com</span>
+											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade.
+												Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
 											<i class="learn-more__arrow"></i>
 										</a>
 									</div>
@@ -1131,7 +1132,8 @@
 									</div>
 									<div class="learn-more learn-more--right">
 										<a href="#" class="learn-more__link">
-											<span class="learn-more__text">Imagens ilustrativas. Saiba mais em LG.com</span>
+											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade.
+												Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
 											<i class="learn-more__arrow"></i>
 										</a>
 									</div>
@@ -1378,9 +1380,11 @@
 						</div>
 						<div class="section__footer section__footer--center">
 							<p class="section__text">
-								Todos os direitos reservados. Ofertas para produtos selecionados, exclusivas para a Loja Online LG - Ofertas válidas para compras realizadas de 8  a 30 Junho.<br>
-								Promoção válida até 30 de Junho de 2022 ou enquanto durarem os estoques. Consulte o Regulamento. Os preços, promoções e produtos disponíveis podem variar e estão sujeitos a alteração sem prévio aviso.<br>
-								A Loja Online LG realiza entregas nas regiões Sul e Sudeste do Brasil. Alguns produtos podem não estar disponíveis na sua região. Imagens meramente ilustrativas. Para mais informações, acesse www.lg.com/br. 
+							Todos os direitos reservados. Ofertas para produtos selecionados, exclusivas para a Loja Online LG. Os preços,<br>
+							opromoções e produtos disponíveis podem variar e estão sujeitos a alteração sem prévio aviso. Ofertas válidas<br>
+							de 08.06.2022 até 30.06.2022. Promoção válida enquanto durarem os estoques. A Loja Online LG realiza entregas<br>
+							nas regiões Sul e Sudeste do Brasil. Alguns produtos podem não estar disponíveis na sua região. Imagens<br>
+							meramente ilustrativas. Consulte o Regulamento. 
 							</p>
 						</div>
 					</div>
@@ -1433,24 +1437,7 @@
 						<!-- </form> -->
 					</div>
 					<div class="popup__bottom">
-						<!-- <button type="type" id="nextBtn"  class="popup__button popup__close"> -->
-							<div class="terms01" style="position: absolute;width: 100%;background-color: #ffffff;">
-								<button type="type" id="nextBtn"  class="popup__button">
-									확인
-								</button>
-							</div>
-						<div class="terms02">
-							<form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
-								<div class="button">
-									<button type="button" id="submit" class="button__item button__item--red button_takepart" 
-										data-track-group="mic" 
-										data-track-opt="theme" 	
-										data-track-name="submitClick" 
-										data-link-name="memberdays_luckydraw_submit_click_{theme}"
-										data-link-area="memberdays_2022">TAKE PART</button>
-								</div>
-							</form>
-						</div>
+						<button type="type" id="nextBtn" class="popup__button popup__close">
 					</div>
 				</div>
 			</div>
@@ -1563,13 +1550,6 @@
 				})
 			})
 		});
-
-		function termpop() {
-			$('.terms_pop').show()
-		}
-		function termpopClose() {
-			$('.terms_pop').hide()
-		}
 		
 		$('#box_content2 .tab__list').find('.tab__button').each(function () {
 			$(this).on('click', function() {

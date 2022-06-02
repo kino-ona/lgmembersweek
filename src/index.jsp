@@ -122,7 +122,7 @@
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07535414|MD07535483|MD07535475"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548355|MD07546571|MD07546591|MD07545548|MD07528365"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07514269|MD07546567|MD07528365"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07540281|MD07550947|MD07553142|MD07535403|MD07540286|MD07552999|MD07553042|MD07537017"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07540281|MD07540286|MD07550947|MD07553142|MD07535403|MD07552999|MD07553042|MD07537017"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07534551|MD07535359|MD07535216|MD07528451"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
@@ -618,12 +618,12 @@
 							<div style="margin-top:80px">
 								<form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
 									<div class="button">
-										<button type="button" id="submit" class="button__item button__item--red button_takepart" 
+										<a role="button" href="#" id="submit" class="button__item button__item--red" 
 											data-track-group="mic" 
 											data-track-opt="theme" 	
 											data-track-name="submitClick" 
 											data-link-name="memberdays_luckydraw_submit_click_{theme}"
-											data-link-area="memberdays_2022">TAKE PART</button>
+											data-link-area="memberdays_2022">TAKE PART</a>
 									</div>
 								</form>
 							</div>

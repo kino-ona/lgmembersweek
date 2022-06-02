@@ -604,12 +604,12 @@
 							<div style="margin-top:80px">
 								<form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
 									<div class="button">
-										<button type="button" id="submit" class="button__item button__item--red button_takepart" 
+										<a role="button" href="#" id="submit" class="button__item button__item--red button_takepart" 
 											data-track-group="mic" 
 											data-track-opt="theme" 
 											data-track-name="submitClick" 
 											data-link-name="memberdays_luckydraw_submit_click_{theme}"
-											data-link-area="memberdays_2022" style="width: 160px;">PARTECIPA</button>
+											data-link-area="memberdays_2022" style="width: 160px;">PARTECIPA</a>
 									</div>
 								</form>
 							</div>
@@ -1363,9 +1363,9 @@
 												<span class="number">*membershipPriceValue*</span>
 												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 											</span>
-										</div>
-										<div class="product__noti d-none">
-											<p class="product__text">*reStockAlertText*</p>
+											<div class="product__noti d-none">
+												<p class="product__text">*reStockAlertText*</p>
+											</div>
 										</div>
 										<div class="button">
 											<a role="button" href="#" class="button__item button__item--red atc-members-week" data-track-group="product" data-track-name="add_to_cart_click" data-link-name="add_to_cart" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>

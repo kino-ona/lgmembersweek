@@ -818,8 +818,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/monitore/lg-34gp950g-b" target="_blank"
-														data-link-name="memberdays_productMouseHover_gaminglife_34GP950G-B"
+													<a href="https://www.lg.com/de/monitore/lg-34gn850-b" target="_blank"
+														data-link-name="memberdays_productMouseHover_gaminglife_34GN850-B"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">

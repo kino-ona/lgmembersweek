@@ -258,7 +258,7 @@ $(document).ready(function() {
 
 							if(atcMembersWeek.successHTML!=null) {
 								if($('#addToCartSuccess').length>0) $('#addToCartSuccess').remove();
-								$('body').find('.iw_viewport-wrapper').first().append(atcMembersWeek.successHTML); //LGEGMC-2772
+								$('body').find('.wrapper').append(atcMembersWeek.successHTML); //LGEGMC-2772
 								$('#addToCartSuccess').modal();
 								$('#addToCartSuccess').find('button[data-dismiss=modal]').on('click.close', function() {
 									atcMembersWeek.currentFocus();

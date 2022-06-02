@@ -561,7 +561,11 @@
 							</div>
 							
 							<div style="margin-top:80px">
-								<form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
+								<div class="button">
+									<button type="button" onclick="termpop();" class="button__item button__item--red button_takepart">Participar</button>
+								</div>
+
+								<!-- <form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
 									<div class="button">
 										<button type="button" id="submit" class="button__item button__item--red button_takepart" 
 											data-track-group="mic" 
@@ -570,7 +574,7 @@
 											data-link-name="memberdays_luckydraw_submit_click_{theme}"
                       data-link-area="memberdays_2022">Participar</button>
 									</div>
-								</form>
+								</form> -->
 							</div>
 						</div>
 					</div>
@@ -1410,6 +1414,47 @@
 				</div>
 			</div>
 		</div>
+
+		<div class="popup terms_pop">
+			<div class="popup__container">
+				<div class="popup__body">
+					<div class="popup__contents terms_contents">
+						<!-- <form id="terms_form" action=""> -->
+							<p class="terms_title">약관1</h4>
+							<!-- <textarea style="font-size:1em;">내용입니다.</textarea> -->
+							<p class="terms_txt">
+								<input type="checkbox" id="check_1" class="term_chk" name="" /> 위의 약관에 동의 합니다.<br />
+							</p>            
+							<p class="terms_title">약관2</h4>
+							<!-- <textarea style="font-size:1em;">내용입니다.</textarea> -->
+							<p class="terms_txt">
+								<input type="checkbox" id="check_2" class="term_chk" name="" /> 위의 약관에 동의 합니다.<br />
+							</p>
+						<!-- </form> -->
+					</div>
+					<div class="popup__bottom">
+						<!-- <button type="type" id="nextBtn"  class="popup__button popup__close"> -->
+							<div class="terms01" style="position: absolute;width: 100%;background-color: #ffffff;">
+								<button type="type" id="nextBtn"  class="popup__button">
+									확인
+								</button>
+							</div>
+						<div class="terms02">
+							<form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
+								<div class="button">
+									<button type="button" id="submit" class="button__item button__item--red button_takepart" 
+										data-track-group="mic" 
+										data-track-opt="theme" 	
+										data-track-name="submitClick" 
+										data-link-name="memberdays_luckydraw_submit_click_{theme}"
+										data-link-area="memberdays_2022">TAKE PART</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<!-- // popup -->
 
 		<!-- // Content End  -->
@@ -1495,6 +1540,36 @@
 	<script src="/lg5-common-gp/js/components/video-asset.min.js"></script>
 
 	<script>
+		$(document).ready(function(){
+			$("#nextBtn").click(function(){    
+				if($("#check_1").is(":checked") == false){
+						alert("모든 약관에 동의 하셔야 다음 단계로 진행 가능합니다.");
+						return;
+				}else if($("#check_2").is(":checked") == false){
+						alert("모든 약관에 동의 하셔야 다음 단계로 진행 가능합니다.");
+						return;
+				}
+			});   
+
+			$('.term_chk').each(function() {
+				$(this).click(function(){    
+					if($("#check_1").is(":checked") == true && $("#check_2").is(":checked") == true){
+						$('.terms01').hide()
+						$('.terms02').show()
+					} else {
+						$('.terms01').show()
+						$('.terms02').hide()
+					}
+				})
+			})
+		});
+
+		function termpop() {
+			$('.terms_pop').show()
+		}
+		function termpopClose() {
+			$('.terms_pop').hide()
+		}
 		
 		$('#box_content2 .tab__list').find('.tab__button').each(function () {
 			$(this).on('click', function() {

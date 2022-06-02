@@ -122,7 +122,7 @@
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07535414|MD07535483|MD07535475"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548355|MD07546571|MD07546591|MD07545548|MD07528365"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07514269|MD07546567|MD07528365"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552999|MD07553042|MD07553142|MD07535403|MD07540286|MD07540281|MD07550947|MD07537017"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07540281|MD07550947|MD07553142|MD07535403|MD07540286|MD07552999|MD07553042|MD07537017"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07534551|MD07535359|MD07535216|MD07528451"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
@@ -892,14 +892,14 @@
 														class="product__link">
 														<div class="product__img">
 															<img src="${path}/assets/images/img_product_showroom_gaminglife01_01.png"
-																alt="27’’ QHD 4K UltraGear™">
+																alt="27’’ QHD UltraGear™">
 														</div>
 														<div class="product__right">
-															<p class="product__name">27’’ QHD 4K UltraGear™</p>
+															<p class="product__name">27’’ QHD UltraGear™</p>
 															<ul class="product__desc">
-																<li>Enjoy the Supreme Color</li>
-																<li>Vivid Colors and Sharp Details</li>
-																<li>Designed for Incredible Speed</li>
+																<li>G-SYNC® Compatible Validated by NVDIA</li>
+																<li>144Hz Ultra-Fast Speed</li>
+																<li>Exceptional Graphics Quality</li>
 															</ul>
 														</div>
 													</a>

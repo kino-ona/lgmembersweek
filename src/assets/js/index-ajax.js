@@ -1,56 +1,15 @@
 $(document).ready(function() {
 
 	const actionUrl = $('.lgmembersweek').data('actionUrl'),
-		submitUrl = $('#eventCustomerForm').data('url');
+		submitUrl = $('#eventCustomerForm').data('url'),
+		$submit = $('#eventCustomerForm #submit'), // Button data set for redirect before login
+		localeCd = $('#eventCustomerForm').data('locale'),
+		pcLoginClass = '.navigation .for-desktop .login div.before-login li:first-child a',
+		moLoginClass = '.navigation .for-mobile .login a.before-login:first-child',
+		loginUrl = '/' + localeCd + '/my-lg/login?state=' + window.location.pathname;
 
-	// Non-members -> Expose alert pop-up when re-entering after logging in to SSO (비회원 -> SSO 로그인 후 재진입 시에 알람팝업 노출)
-	$(window).on("pageshow", function (e){
-		// Whether to enter through the browser's Back/forward button
-		// 브라우저의 Back/forward 버튼으로 진입여부
-		const $referrerModal = $('.modal_referrer_sso'),
-			historyBack = window.performance && (window.performance.getEntriesByType("navigation")[0].type == 'back_forward' || window.performance.navigation.type == 2) ? true : false,
-			referrerSso = document.referrer.indexOf('sso.lg.com') > -1 || document.referrer.indexOf('ssodev.lg.com') > -1 || document.referrer.indexOf('change-password-reminder') > -1 ? true : false;
-			// referrerSso = document.referrer.indexOf('sso.lg.com') > -1 || document.referrer.indexOf('ssodev.lg.com') > -1 || document.referrer.indexOf('change-password-reminder') > -1 ? true : false,
-			// submitted = @@@ ? true : false;
-
-		// if( !historyBack && referrerSso && submitted ){
-		if( !historyBack && referrerSso ){
-			$.ajax({
-				type: 'post',
-				url: submitUrl,
-				data: 'lifeStyle=',
-				dataType:'json',
-				success : function(data){
-					if(data.code == '02' && data.selection != '' && data.selection != null){ // already applied for an account (이미 응모한 계정)
-						$referrerModal.find('.popup__text').text(data.message);
-
-						const selection = data.selection;
-						let choosenInputId;
-						switch(selection){
-							case 'Green':
-								choosenInputId = '#Coupon01';
-							break;
-							case 'Vivid':
-								choosenInputId = '#Coupon02';
-							break;
-							case 'Gaming':
-								choosenInputId = '#Coupon03';
-							break;
-							case 'Working':
-								choosenInputId = '#Coupon04';
-							break;
-							case 'Soundful':
-								choosenInputId = '#Coupon05';
-							break;
-						}
-						$(choosenInputId).trigger('click');
-					}
-					$('html, body').animate({scrollTop : $('[data-list="eventGift"]').offset().top}, 250); // move scroll to "#submit" form element
-					$referrerModal.show();
-				}
-			});
-		}
-	});
+	$submit.attr('href',loginUrl);
+	$(pcLoginClass+', '+moLoginClass).attr('href',loginUrl+'?referrer=gnb'); // pc, mo header top, nav menu - login icon
 
 	// Model List Array
 	const listArray = {};
@@ -68,21 +27,13 @@ $(document).ready(function() {
 		$(this).remove();
 	});
 
-	// Button data set for redirect after login
-	const $submit = $('#eventCustomerForm #submit'),
-		localeCd = $('#eventCustomerForm').data('locale'),
-		loginUrl = '/' + localeCd + '/my-lg/login?state=' + window.location.pathname;
-
-	$submit.data('href',loginUrl);
-	$('.navigation .for-desktop .login div.before-login li:first-child a').attr('href',loginUrl); // pc login icon
-	$('.navigation .for-mobile .login a.before-login:first-child').attr('href',loginUrl); // mo header top, nav menu - login icon
-
 	$('.eprivacy-load-intercom').attr('data-url','/' + localeCd + '/chatbot/chatbot.js'); // footerSeoCopy load - console error fix
 
 	// login check 
 	let isLogin = false;
 	setTimeout(function(){
 		if($('.navigation .right-btm .login').hasClass('logged')) isLogin = true;
+		lgMembersWeek.ajaxSubmitted('lifeStyle=');
 	},200);
 
 	let lgMembersWeek = {
@@ -126,28 +77,7 @@ $(document).ready(function() {
 		},
 		template: null,
 		init: function(){
-			// submit lifestyle
 			$('.lgmembersweek .coupon form:not(:first-child)').css('margin-top','80px');
-			$submit.click(function(e){
-				e.preventDefault();
-				if(isLogin){
-					let chooseParam = $('.coupon__list [type="radio"]:checked').data('param'),
-						paramData = 'lifeStyle=' + chooseParam,
-						$modal = $('.modal_lgmembersweek_submit');
-					$.ajax({
-						type: 'post',
-						url: submitUrl,
-						data: paramData,
-						dataType:'json',
-						success : function(data){
-							$modal.find('.popup__text').text(data.message).end().show();
-							if(data.code == '00') lgMembersWeek.trackEvent($submit); //tracking Event
-						}
-					});
-				}else{
-					location.href = $(this).data('href');
-				}
-			});
 
 			// eventGift Model List
 			lgMembersWeek.ajaxModelList($('#coupon'), 'eventGift');
@@ -161,9 +91,86 @@ $(document).ready(function() {
 			});
 
 			// Hot Deal Model List
-			lgMembersWeek.ajaxModelList($('#hotdeal'), 'hotDeal'); 
+			lgMembersWeek.ajaxModelList($('#hotdeal'), 'hotDeal');
 
 			lgMembersWeek.addEvent();
+		},
+		ajaxSubmitted: function(paramData){
+			const $referrerModal = $('.modal_referrer_sso');
+			let caseParam = paramData;
+			$.ajax({
+				type: 'post',
+				url: submitUrl,
+				data: paramData,
+				dataType:'json',
+				success : function(data){
+					if(caseParam == 'lifeStyle='){ // page loading : login check + submit display logic
+						// applied account (이미 응모한 계정)
+						if(data && data.code == '02' && data.selection != '' && data.selection != null){
+							$referrerModal.find('.popup__text').text(data.message);
+							lgMembersWeek.checkSubmitted(data.selection, true);
+						}
+						// Non-members -> Expose alert pop-up when re-entering after logging in to SSO (비회원 submit -> SSO 로그인 후 재진입 시에 알람팝업 노출)
+						$(window).on("pageshow", function (e){
+							// historyBack : Check the entry with the browser's Back/forward button (브라우저의 Back/forward 버튼으로 진입 체크)
+							// referrerSso : Check re-entry after SSO login (SSO 로그인 후 재진입 진입 체크)
+							// referrerGnb : Check SSO move with gnb button (gnb 버튼으로 SSO 이동 체크)
+							// dummyLife : Check the selected life style before logging in (로그인 전 선택한 life style 체크)
+							const historyBack = window.performance && (window.performance.getEntriesByType("navigation")[0].type == 'back_forward' || window.performance.navigation.type == 2) ? true : false,
+								referrerSso = document.referrer.indexOf('sso.lg.com') > -1 || document.referrer.indexOf('ssodev.lg.com') > -1 || document.referrer.indexOf('change-password-reminder') > -1 ? true : false,
+								referrerGnb = getUrlParams('referrer').referrer == 'gnb' ? true : false, 
+								dummyLife = getUrlParams('dummyLife').dummyLife != undefined ? getUrlParams('dummyLife').dummyLife : ''; 
+
+							if( referrerSso && !historyBack && !referrerGnb ){
+								$('html, body').animate({scrollTop : $('[data-list="eventGift"]').offset().top}, 250); // move scroll to "#submit" form element
+								$referrerModal.show();
+							}
+							// Unapplied account + Check the selected life style before logging in (미응모 계정 + 로그인 전 선택한 life style 체크)
+							if(data.code != '02' && dummyLife != ''){ 
+								$('[data-param='+dummyLife+']').trigger('click');
+							}
+						});
+					}else{ // submit click
+						let $modal = $('.modal_lgmembersweek_submit');
+						$modal.find('.popup__text').text(data.message).end().show();
+						if(data.code == '00') lgMembersWeek.trackEvent($submit); //tracking Event
+					}
+				},
+				beforeSend: function(){
+					$('body').trigger('ajaxLoadBefore');
+				},
+				complete: function(){
+					$('body').trigger('ajaxLoadEnd');
+				}
+			});
+		},
+		checkSubmitted: function(selection, submitted){
+			// If applied account, the submit form will be deactivated (이미 응모한 계정일 시, submit form 비활성화)
+			let choosenInputId;
+			switch(selection){
+				case 'Green':
+					choosenInputId = '#Coupon01';
+				break;
+				case 'Vivid':
+					choosenInputId = '#Coupon02';
+				break;
+				case 'Gaming':
+					choosenInputId = '#Coupon03';
+				break;
+				case 'Working':
+					choosenInputId = '#Coupon04';
+				break;
+				case 'Soundful':
+					choosenInputId = '#Coupon05';
+				break;
+			}
+			$(choosenInputId).trigger('click');
+
+			if(submitted){
+				$submit.addClass('button__item--lightgray submitted').removeClass('button__item--red').removeAttr('href');
+				$('.coupon__list').addClass('submitted');
+				$('[name="Coupons"]').prop('disabled',true);
+			}
 		},
 		ajaxModelList: function($targetPanel, listName){
 			$('body').trigger('ajaxLoadBefore');
@@ -242,11 +249,9 @@ $(document).ready(function() {
 
 				let priceValue = '';
 				if(p.rPromoPrice != null && p.rPromoPrice != '' && p.rPromoPrice != 'null'){
-					// priceValue = changeFormatFullPrice(p.rPromoPrice+'.'+nvl(p.rPromoPriceCent,'00'));
-					priceValue = changeFormatFullPrice(p.rPromoPrice, p.rPromoPriceCent);
+					priceValue = p.rPromoPrice+'.'+nvl(p.rPromoPriceCent,'00');
 				} else{
-					// priceValue = changeFormatFullPrice(nvl(p.rPrice,'')+'.'+nvl(p.rPriceCent,'00'));
-					priceValue = changeFormatFullPrice(p.rPrice, p.rPriceCent);
+					priceValue = nvl(p.rPrice,'')+'.'+nvl(p.rPriceCent,'00');
 				}
 
 				let hotdealImageAddr, hotdealImageAltText;
@@ -447,6 +452,18 @@ $(document).ready(function() {
 				}
 		},
 		addEvent: function(){
+			// submit lifestyle coupon
+			$submit.click(function(e){
+				if(isLogin){
+					e.preventDefault();
+					if(!$submit.is('.submitted')){
+						let chooseParam = $('.coupon__list [type="radio"]:checked').data('param'),
+							paramData = 'lifeStyle=' + chooseParam;
+						lgMembersWeek.ajaxSubmitted(paramData);
+					}
+				}
+			});
+
 			lgMembersWeek.tab.on('click', function(e){
 				e.preventDefault();
 
@@ -470,8 +487,12 @@ $(document).ready(function() {
 			// tracking Event data setting
 			// submit
 			$(document).on('change','input[name="Coupons"]',function(){
-				let chooseTheme = $(this).data('param');
-				$submit.data('trackVal',chooseTheme).attr('data-link-name','memberdays_luckydraw_submit_click_' + chooseTheme);
+				let chooseTheme = $(this).data('param'),
+					hrefSubmit = $submit.attr('href');
+
+				$submit.data('trackVal',chooseTheme)
+					.attr('href',hrefSubmit+'?dummyLife='+chooseTheme)
+					.attr('data-link-name','memberdays_luckydraw_submit_click_' + chooseTheme);
 			});
 			// lifeStyle showroom
 			$('[data-list="lifeStyle"] .product__anchor').each(function(){

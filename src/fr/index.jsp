@@ -55,7 +55,7 @@
 		<meta itemprop="keywords" content="" />
 	</div>
 	
-	<c:set var='bizType' value='${$bizType }' />
+	<c:set var='bizType' value='${$bizType}' />
 	<c:set var='siteType' value='MKT' />
 	<!-- component (navigation) -->
 	<c:import url="/${localeCd }/gnb">
@@ -272,7 +272,7 @@
 									data-track-group="mic" data-track-name="members_week_anchor_click"
 									data-link-name="memberdays_anchor_click_hotdeal" 
 									data-link-area="memberdays_2022" 
-									class="link">Hot deal</a>
+									class="link">Bonnes Affaires</a>
 								</li>
 						</ul>
 					</div>
@@ -876,14 +876,13 @@
 						<div class="section__header">
 							<h2 class="section__title">
 								LA SEMAINE
-								<span class="break--mobile">LG HOT Deal !</span>
+								<span class="break--mobile">LG Bonnes Affaires !</span>
 							</h2>
 							<p class="section__sub section__sub--small">
-								<span class="break--desktop">
-									C’est votre chance d’obtenir un nouveau
-									<span class="highlight highlight--lightblue">LG à un prix spécial !</span>
-								</span>
-								Quantités limitées disponibles
+								C’est parti !<br>
+								A l’occasion de La Semaine LG, nous vous avons préparé des offres,<br> 
+								mais très limitées...<br> 
+								<span class="highlight highlight--lightblue">Profitez-en dès maintenant !</span>
 							</p>
 						</div>
 						<div id="hotdeal" class="product product--hotdeal">

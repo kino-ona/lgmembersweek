@@ -23,6 +23,7 @@
 		max-width: 360px;
 		border-radius: 30px;
 		background-color: #fff;
+		overflow: hidden;
 	}
 	&__contents {
 		padding: 45px 40px;
@@ -36,7 +37,9 @@
 		}
 	}
 	&__bottom {
+		position: relative;
 		display: flex;
+		height: 60px;
 		border-top: 1px solid #E0E0E0;
 	}
 	&__button {
@@ -55,6 +58,21 @@
 			max-width: none;
 			margin: 0 5.13vw;
 		}
+	}
+	form {
+		margin:0;
+		padding:0;
+	}
+	.terms_contents {
+		width: 360px;
+		padding: 20px;
+		text-align: left;
+	}
+	.terms_title {
+		font-size: 14px;
+	}
+	.terms_txt {
+		font-size: 13px;
 	}
 }
 
@@ -620,6 +638,16 @@
 			&:not(:first-child) {
 				margin-top: 80px;
 			}
+			&:not(.submitted) {
+				.coupon__item {
+					&:focus,
+					&:hover {
+						.coupon__back {
+							z-index: 5;
+						}
+					}
+				}
+			}
 		}
 		&__item {
 			flex: 1;
@@ -632,12 +660,12 @@
 			&:not(:first-child) {
 				margin-left: 1.92%;
 			}
-			&:focus,
-			&:hover {
-				.coupon__back {
-					z-index: 5;
-				}
-			}
+			// &:focus,
+			// &:hover {
+			// 	.coupon__back {
+			// 		z-index: 5;
+			// 	}
+			// }
 			&--greenlife {
 				.coupon__thumnail {
 					background-image: url('../images/bg_coupon_greenlife.png');
@@ -1592,6 +1620,9 @@
 			}
 			.product__img {
 				margin-right: 10px;
+				padding: 0;
+				width: 100%;
+				max-width: 100px;
 				img {
 					max-width: 100px;
 				}

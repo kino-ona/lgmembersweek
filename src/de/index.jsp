@@ -552,7 +552,7 @@
 											data-track-opt="theme" 
 											data-track-name="submitClick" 
 											data-link-name="memberdays_luckydraw_submit_click_{theme}"
-											data-link-area="memberdays_2022" style="width: 160px;">PARTECIPA</a>
+											data-link-area="memberdays_2022">Jetzt absenden & teilnehmen</a>
 									</div>
 								</form>
 							</div>

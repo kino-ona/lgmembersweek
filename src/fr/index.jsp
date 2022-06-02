@@ -102,55 +102,6 @@
 		<div class="lgmembersweek" data-action-url="/${localeCd}/mkt/ajax/nbaa/retrieveManualProductList">
 			<div class="visual">
 				<div class="visual__swiper">
-					<div class="visual__slide visual__slide--intro">
-						<div class="section">
-							<div class="section__inner">
-								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
-									<h2 class="section__title">LA SEMAINE LG</h2>
-									<p class="section__sub">Chacun son style !</p>
-									<p class="section__desc">
-										<span class="break--mobile">Bénéficiez de nos offres spéciales</span>
-										qui répondent à votre style de vie.
-									</p>
-								</div>
-								<div class="button">
-									<a href="#box_content1" 
-										data-track-group="mic" 
-										data-track-opt="theme" 
-										data-track-val="lifestyle" 
-										data-track-name="members_week_benefit_click"
-										data-link-name="memberdays_banner_click_main" 
-										data-link-area="memberdays_2022" 
-										class="button__item button__item--red">Je découvre !</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="visual__slide visual__slide--greenlife">
-						<div class="section">
-							<div class="section__inner">
-								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
-									<h2 class="section__title">STYLE CASANIER</h2>
-									<p class="section__sub">
-										‘Le plaisir d’être chez soi !<br>
-										Que c’est bon de rester à la maison !<br>
-										Découvrez nos offres pour une maison capable de répondre<br>
-										à tous vos besoins au quotidien.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div class="button">
-							<a href="#box_content1" 
-								data-track-group="mic" 
-								data-track-opt="theme" 
-								data-track-val="greenlife" 
-								data-track-name="members_week_benefit_click"
-								data-link-name="memberdays_banner_click_greenlife" 
-								data-link-area="memberdays_2022" 
-								class="button__item button__item--red">Je découvre !</a>
-						</div>
-					</div>
 					<div class="visual__slide visual__slide--vividlife">
 						<div class="section">
 							<div class="section__inner">
@@ -223,6 +174,30 @@
 							class="button__item button__item--red">Je découvre !</a>
 						</div>
 					</div>
+					<div class="visual__slide visual__slide--intro">
+						<div class="section">
+							<div class="section__inner">
+								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
+									<h2 class="section__title">LA SEMAINE LG</h2>
+									<p class="section__sub">Chacun son style !</p>
+									<p class="section__desc">
+										<span class="break--mobile">Bénéficiez de nos offres spéciales</span>
+										qui répondent à votre style de vie.
+									</p>
+								</div>
+								<div class="button">
+									<a href="#box_content1" 
+										data-track-group="mic" 
+										data-track-opt="theme" 
+										data-track-val="lifestyle" 
+										data-track-name="members_week_benefit_click"
+										data-link-name="memberdays_banner_click_main" 
+										data-link-area="memberdays_2022" 
+										class="button__item button__item--red">Je découvre !</a>
+								</div>
+							</div>
+						</div>
+					</div>
 					<div class="visual__slide visual__slide--soundfullife">
 						<div class="section">
 							<div class="section__inner">
@@ -243,6 +218,31 @@
 								data-track-val="soundfullife" 
 								data-track-name="members_week_benefit_click"
 								data-link-name="memberdays_banner_click_soundfullife" 
+								data-link-area="memberdays_2022" 
+								class="button__item button__item--red">Je découvre !</a>
+						</div>
+					</div>
+					<div class="visual__slide visual__slide--greenlife">
+						<div class="section">
+							<div class="section__inner">
+								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
+									<h2 class="section__title">STYLE CASANIER</h2>
+									<p class="section__sub">
+										‘Le plaisir d’être chez soi !<br>
+										Que c’est bon de rester à la maison !<br>
+										Découvrez nos offres pour une maison capable de répondre<br>
+										à tous vos besoins au quotidien.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="button">
+							<a href="#box_content1" 
+								data-track-group="mic" 
+								data-track-opt="theme" 
+								data-track-val="greenlife" 
+								data-track-name="members_week_benefit_click"
+								data-link-name="memberdays_banner_click_greenlife" 
 								data-link-area="memberdays_2022" 
 								class="button__item button__item--red">Je découvre !</a>
 						</div>

@@ -107,7 +107,7 @@
 			<input type="hidden" data-model-group="hotDeal" data-type="alt4" value="Limited to 100 units"/>
 
 			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07533491|MD07550676|MD07550687|MD07551110|MD07533482|MD07533493|MD06189816"/>
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07533491|MD07550676|MD07550687|MD07551110|MD07533482|MD06189816"/>
 			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07545447|MD07545439|MD07536623|MD07536621|MD07552826|MD07551605|MD07551967|MD07553255"/>
 			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07543561|MD07535535|MD07537903|MD07520246|MD06020158|MD07537889|MD05788391|MD07538907|MD07537971|MD07541621|MD07538925|MD07526179|MD07544110|MD07542596|MD06205396|MD07538035|MD07520457|MD07543663|MD07538359|MD07538920"/>
 			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07546401|MD07510035|MD07527569|MD07545130|MD06076196|MD07501021|MD07500772|MD07500784|MD07513632|MD07528827|MD07539456|MD07539439"/>
@@ -411,7 +411,7 @@
 												<img src="${path}/assets/images/de/img_coupon_greenlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<span class="product__category">with</span>
+												<!-- <span class="product__category">with</span> //-->
 												<span class="product__name">Gewinne eines unserer Lifestyle Produkte</span>
 												<span class="product__code">F6WV710AT2</span>
 												<i class="coupon__ico">
@@ -440,7 +440,7 @@
 												<img src="${path}/assets/images/de/img_coupon_vividlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<span class="product__category">with</span>
+												<!-- <span class="product__category">with</span> //-->
 												<span class="product__name">Gewinne eines unserer Lifestyle Produkte</span>
 												<span class="product__code">OLED65C27LA</span>
 												<i class="coupon__ico">
@@ -469,7 +469,7 @@
 												<img src="${path}/assets/images/de/img_coupon_gaminglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<span class="product__category">with</span>
+												<!-- <span class="product__category">with</span> //-->
 												<span class="product__name">Gewinne eines unserer Lifestyle Produkte</span>
 												<span class="product__code">27GP950-B</span>
 												<i class="coupon__ico">
@@ -498,7 +498,7 @@
 												<img src="${path}/assets/images/de/img_coupon_workinglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<span class="product__category">with</span>
+												<!-- <span class="product__category">with</span> //-->
 												<span class="product__name">Gewinne eines unserer Lifestyle Produkte</span>
 												<span class="product__code">17Z90P-G.AA89G</span>
 												<i class="coupon__ico">
@@ -527,7 +527,7 @@
 												<img src="${path}/assets/images/de/img_coupon_soundfullife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<span class="product__category">with</span>
+												<!-- <span class="product__category">with</span> //-->
 												<span class="product__name">Gewinne eines unserer Lifestyle Produkte</span>
 												<span class="product__code">DSP9YA</span>
 												<i class="coupon__ico">
@@ -1074,7 +1074,7 @@
 								<span class="break--mobile">HOT DEAL!</span>
 							</h2>
 							<p class="section__sub section__sub--small">
-								Dein LG Produkte <span class="highlight highlight--lightblue">zum Sonderpreis!</span><br>
+								Deine LG Produkte <span class="highlight highlight--lightblue">zum Sonderpreis!</span><br>
 								Limitierte Anzahl verfügbar
 							</p>
 						</div>
@@ -1263,7 +1263,7 @@
 							<div id="tvcinebeam" class="tab__panel" style="display: block;">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										<span class="break--mobile">Dein MEMBER DAYS Rabatt wird automatisch im</span> <span class="tab__bold">Warenkorb</span> abgezogen.
+										10% MEMBER DAYS Rabatt im Checkout!
 									</span>
 								</p>
 								<div class="product">
@@ -1297,7 +1297,8 @@
 							<div id="audio" class="tab__panel">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										<span class="break--mobile">Dein MEMBER DAYS Rabatt wird automatisch im</span> <span class="tab__bold">Warenkorb</span> abgezogen.
+										10% MEMBER DAYS Rabatt im Checkout!
+										<!-- <span class="break--mobile">Dein MEMBER DAYS Rabatt wird automatisch im</span> <span class="tab__bold">Warenkorb</span> abgezogen. -->
 									</span>
 								</p>
 								<div class="product">
@@ -1355,7 +1356,7 @@
 							<div id="computerproducts" class="tab__panel">
 								<p class="tab__noti">
 									<span class="highlight highlight--beige">
-										<span class="break--mobile">Dein MEMBER DAYS Rabatt wird automatisch im</span> <span class="tab__bold">Warenkorb</span> abgezogen.
+										10% MEMBER DAYS Rabatt im Checkout!
 									</span>
 								</p>
 								<div class="product">
@@ -1495,53 +1496,6 @@
 	<script src="/lg5-common-gp/js/components/video-asset.min.js"></script>
 
 	<script>
-		// if($('.coupon__list .coupon__item').hasClass('checking').length > 0) {
-		// 	$('.button_takepart').on('click', function() {
-		// 		var $selectCoupon = $('.coupon__list .coupon__item.checking')
-		// 		var themeType = $selectCoupon.find('radio').attr('data-track-val');
-		// 		if(themeType == 'greenlife') {
-		// 			$bu = 'HA'
-		// 		} else if(themeType == 'vividlife') {
-		// 			$bu = 'TV, IT, AV'
-		// 		} else if(themeType == 'gaminglife') {
-		// 			$bu = 'IT, AV, TV'
-		// 		} else if(themeType == 'workinglife') {
-		// 			$bu = 'AV, IT'
-		// 		} else if(themeType == 'soundfullife') {
-		// 			$bu = 'AV'
-		// 		} else {
-		// 			$bu = ' '
-		// 		}
-				
-		// 		dataLayer.push({
-		// 			'event' : $(this).attr('data-track-name'),
-		// 			'bu' : $bu,
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-track-val')
-		// 		})
-		// 	})
-		// }
-		
-		// $('.visual').find('.button__item').each(function () {
-    //   $(this).on('click', function() {
-		// 		dataLayer.push({
-    //       'event' : $(this).attr('data-track-name'),
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-track-val')
-    //     })
-    //   })
-    // });
-
-		// $('.box_navigation').find('.link').each(function () {
-    //   $(this).on('click', function() {
-		// 		dataLayer.push({
-    //       'event' : $(this).attr('data-track-name'),
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-    //     })
-    //   })
-    // });
 		
 		$('#box_content2 .tab__list').find('.tab__button').each(function () {
 			$(this).on('click', function() {
@@ -1584,30 +1538,6 @@
 				})
 			})
     });
-		
-		// $('#box_content3 .tab__list').find('.tab__button').each(function () {
-		// 	$(this).on('click', function() {
-		// 		dataLayer.push({
-		// 			'event' : 'selectProductCategory',
-		// 			'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 			'pageType' : 'MICROSITE',
-		// 			'theme' : $(this).attr('data-tab-name'),
-		// 		})
-		// 	})
-    // });
-		
-		// $('#box_content3 .tab__panel').each(function () {
-		// 	$(this).find('.button__item--white').each(function () {
-		// 		$(this).on('click', function() {
-		// 			dataLayer.push({
-		// 				'event' : 'plpClick',
-		// 				'bu' : 'HE, HA, BS_IT_B2C, BS',
-		// 				'pageType' : 'MICROSITE',
-		// 				'theme' : $(this).attr('data-track-val'),
-		// 			})
-		// 		})
-		// 	})
-    // });
 
 		$(document).ready(function(){
 			var href = window.location.href;

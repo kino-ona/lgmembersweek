@@ -85,17 +85,17 @@
 			<!-- Required input ## Model List Start -->
 
 			<!-- Life Style Model -->
-			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07538035|MD07526170|MD07546933|MD07541621|MD07538920"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07550687|MD07533491|MD06189816|MD07552826|MD07551605|MD07551967"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07502402|MD07551967|MD07520244|MD07550687|MD07552826|MD07551605"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07548205|MD07550158|MD07536623"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536623|MD07545439|MD07545341|MD07545447|MD07552826"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07554482|MD07554381|MD07554491|MD07545699"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07540047|MD07530879|MD07540039|MD07554485"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07539331|MD07539468|MD07552060|MD07554321"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07546259|MD07546246|MD07546322|MD07546324"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07546106|MD07546117|MD07546111|MD07546107"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
-			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07516310"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07554482"/>
 			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
 			<input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/fr/hotdeal_product01.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/hotdeal_product.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="Limited to 100 units"/>
 	
 		<!--  Content Start  -->
@@ -395,9 +395,9 @@
 												<span class="unit"><spring:message code='component-currencySymbol' text='component-currencySymbol'/></span>
 												<span class="number">*membershipPriceValue*</span>
 											</span>
-										</div>
-										<div class="product__noti d-none">
-											<p class="product__text">*reStockAlertText*</p>
+											<div class="product__noti d-none">
+												<p class="product__text">*reStockAlertText*</p>
+											</div>
 										</div>
 										<div class="button">
 											<a role="button" href="#" class="button__item button__item--red atc-members-week" data-track-group="product" data-track-name="add_to_cart_click" data-link-name="add_to_cart" data-model-id="*modelId*" data-bu="*buName1*" data-super-category-name="*superCategoryName*" data-category-name="*buName2*" data-sub-category-name="*buName3*" data-model-year="*modelYear*" data-model-name="*modelName*" data-model-code="*salesModelCode*" data-model-salesmodelcode="*salesModelCode*.*salesSuffixCode*" data-sku="*modelName*" data-model-suffixcode="*salesSuffixCode*" data-price="*priceValue*"><spring:message code='component-addToCart' text='ADD TO BASKET'/></a>
@@ -450,7 +450,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_vividlife01_02.png" alt="OLED evo G2">
+															<img src="${path}/assets/images/img_product_showroom_vividlife01_02.png" alt="OLED evo G2">
 														</div>
 														<div class="product__right">
 															<p class="product__name">OLED evo G2</p>
@@ -472,7 +472,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
+															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG Sound Bar SP8YA</p>
@@ -492,7 +492,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_vividlife02_02.png"
+															<img src="${path}/assets/images/img_product_showroom_vividlife02_02.png"
 															alt="LG CineBeam 4K UHD Laser UST Projector">
 														</div>
 														<div class="product__right">
@@ -529,7 +529,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_gaminglife01_01.png"
+															<img src="${path}/assets/images/img_product_showroom_gaminglife01_01.png"
                               alt="27’’ UHD 4K UltraGear™">
 														</div>
 														<div class="product__right">
@@ -551,7 +551,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="../assets/images/img_product_showroom_gaminglife01_02.png" alt="UltraGear Gaming Speaker">
+															<img src="${path}/assets/images/img_product_showroom_gaminglife01_02.png" alt="UltraGear Gaming Speaker">
 														</div>
 														<div class="product__right">
 															<p class="product__name">UltraGear Gaming Speaker</p>
@@ -573,7 +573,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_gaminglife02_01.png" alt="OLED evo C2(48/42)">
+															<img src="${path}/assets/images/img_product_showroom_gaminglife02_01.png" alt="OLED evo C2(48/42)">
 														</div>
 														<div class="product__right">
 															<p class="product__name">OLED evo C2(48/42)</p>
@@ -593,7 +593,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
+															<img src="${path}/assets/images/img_product_showroom_vividlife01_01.png" alt="LG Sound Bar SP8YA">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG Sound Bar SP8YA</p>
@@ -629,7 +629,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_01.png" alt="DualUp Monitor with Ergo">
+															<img src="${path}/assets/images/img_product_showroom_workinglife01_01.png" alt="DualUp Monitor with Ergo">
 														</div>
 														<div class="product__right">
 															<p class="product__name">DualUp Monitor with Ergo</p>
@@ -649,7 +649,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_02.png" alt="LG gram 16">
+															<img src="${path}/assets/images/img_product_showroom_workinglife01_02.png" alt="LG gram 16">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG gram 16</p>
@@ -670,7 +670,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife01_03.png"
+															<img src="${path}/assets/images/img_product_showroom_workinglife01_03.png"
 																alt="LG TONE Free UFP9">
 														</div>
 														<div class="product__right">
@@ -694,7 +694,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife02_01.png" alt=" LG TONE Free UFP9">
+															<img src="${path}/assets/images/img_product_showroom_workinglife02_01.png" alt=" LG TONE Free UFP9">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG TONE Free UFP9</p>
@@ -714,7 +714,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_workinglife02_02.png"  alt="LG gram 16">
+															<img src="${path}/assets/images/img_product_showroom_workinglife02_02.png"  alt="LG gram 16">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG gram 16</p>
@@ -751,7 +751,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_soundfullife01_01.png" alt="LG TONE Free UFP9">
+															<img src="${path}/assets/images/img_product_showroom_soundfullife01_01.png" alt="LG TONE Free UFP9">
 														</div>
 														<div class="product__right">
 															<p class="product__name">LG TONE Free UFP9</p>
@@ -773,7 +773,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_soundfullife02_01.png" alt="XBOOM360">
+															<img src="${path}/assets/images/img_product_showroom_soundfullife02_01.png" alt="XBOOM360">
 														</div>
 														<div class="product__right">
 															<p class="product__name">XBOOM360</p>
@@ -811,7 +811,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_greenlife01_01.png"
+															<img src="${path}/assets/images/img_product_showroom_greenlife01_01.png"
 															alt="Side-by-Side mit InstaView Door-in-Door®™">
 														</div>
 														<div class="product__right">
@@ -834,7 +834,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="../assets/images/img_product_showroom_greenlife02_01.png"
+															<img src="${path}/assets/images/img_product_showroom_greenlife02_01.png"
 																alt="AI DD™ Washing Machine">
 														</div>
 														<div class="product__right">
@@ -855,7 +855,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="../assets/images/img_product_showroom_greenlife02_02.png"
+															<img src="${path}/assets/images/img_product_showroom_greenlife02_02.png"
 																alt="LG Eco Hybrid™ Tumble Dryer">
 														</div>
 														<div class="product__right">

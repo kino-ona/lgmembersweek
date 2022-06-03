@@ -87,17 +87,17 @@
 			<input type="hidden" data-model-group="eventGift" data-type="coupon" value="MD07530735|MD07530611|MD07548903|MD07531091|MD07541559"/>
 
 			<!-- Life Style Model -->
-			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07539167|MD07538714|MD07538721|MD07539997|MD07509944|MD06216776|MD07530735|MD07533005"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07538702|MD07538792|MD06242696|MD07535198|MD07535161|MD07530785|MD07533008|MD07530612|MD07530611|MD07530579|MD07530693"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07545870|MD07530693|MD07545870|MD07548903|MD07548901|MD07545870|MD07530693|MD07545870|MD07548903|MD07548901|MD07548905"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07541521|MD07541559|MD07531107|MD07531007|MD07548902|MD07548905|MD07545101|MD07541521|MD07541559|MD07531107|MD07531007|MD07548902|MD07548905|MD07545101"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07515370|MD07542881|MD07541521|MD07541559|MD07538792|MD07515370|MD07542881|MD07541521|MD07541559|MD07538792"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD06216776|MD07530735|MD07533005|MD07554000|MD07554005|MD07539167|MD07538714|MD07538721|MD07539997"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07530785|MD07533008|MD07535198|MD07535161|MD07538702|MD07538792|MD06242696"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07530693|MD07548903|MD07548901|MD07548905|MD07545870"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07531107|MD07531091|MD07541521|MD07541559|MD07548902|MD07548905|MD07545101"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07515370|MD07542881|MD07538792|MD07541521|MD07541559"/>
 
 			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07530871|MD07530881|MD07530888|MD07530561|MD07530934|MD07531004|MD07546318|MD07533013|MD07532838|MD07535198|MD06242696"/>
-			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07538792|MD07538702|MD07515381|MD07515380|MD07545870|MD07541559|MD07541521|MD07515370|MD07515371"/>
-			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07530580|MD06175996|MD07533005|MD07530735|MD06176036|MD06216196|MD07541911|MD07539036|MD07538861|MD07539997|MD07520061|MD07520089|MD06187116|MD06187118|MD06187196|MD06187116"/>
-			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07531091|MD07531011|MD07531107|MD07548908|MD07548903|MD07548905|MD07548901|MD07548909|MD06143417"/>
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07530871|MD07546318|MD07535198|MD07533013|MD07532838|MD07531004|MD07530888|MD07530561|MD07530885|MD06242696"/>
+			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07541559|MD07541521|MD07515370|MD07541521|MD07515371|MD07538792|MD07538702|MD07515381|MD07515380|MD07545870"/>
+			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD06216196|MD07554000|MD07554005|MD07530580|MD06175996|MD07533005|MD07530735|MD06176036|MD07541911|MD07539036|MD07538861|MD07539997|MD07520061|MD07520089|MD06187116|MD06187118|MD06187196|MD07538523"/>
+			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07531091|MD07531107|MD07548908|MD07548903|MD07548905|MD07548901|MD07548909|MD06143417"/>
 		<!-- Required input ## Model List End -->
 	
 		<!--  Content Start  -->
@@ -539,6 +539,14 @@
 											data-link-area="memberdays_2022" style="width: 160px;">PARTECIPA</a>
 									</div>
 								</form>
+								
+								<div class="section__footer" style="margin-bottom: 0;text-align: center">
+									<p class="section__text">
+										Em até 5 dias corridos você recebera em um email com o número da sorte para concorrer.<br>
+										Para garantir o recebimento adicione o endereço <a href="matito:contato@relacionamento.lgmarketing.com.br">contato@relacionamento.lgmarketing.com.br</a> a sua lista segura de emails.<br>
+										Fique atendo, confira também sua caixa de spam, alguns emails podem ser redirecionados para ela
+									</p>
+								</div>
 							</div>
 						</div>
 						<div class="section__footer">

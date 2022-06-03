@@ -395,4 +395,24 @@
 			margin-top: 40px;
 		}
 	}
+
+	.product__img {
+		padding: 20px;
+		@media (max-width: 767px) {
+			padding: 10px;
+		}
+	}
+
+	@media (max-width: 767px) {
+		.product__price {
+			display: block;
+			> span {
+				display: block;
+			}
+		}
+		.product__sn {
+			height: 44px;
+		}
+	}
+
 }

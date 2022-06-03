@@ -138,7 +138,7 @@
 
 			<!-- Hottest Gift Model -->
 			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07548335|MD07546595|MD07548379|MD07550523|MD07545548"/>
-			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508573|MD07508373|MD07528365|MD07528451|MD07510893|MD07504084|MD07535242|MD07538956"/>
+			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508373|MD07528365|MD07528451|MD07510893|MD07504084|MD07535242|MD07538956"/>
 			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07514393|MD07535475|MD07536912|MD07515106|MD07514364|MD07535502|MD07535480|MD07535414|MD07517580"/>
 			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07552999|MD07553042|MD07540281|MD07540286|MD07540283|MD07550947|MD07514270|MD07525661|MD07532529|MD07535283|MD07514269|MD07532528|MD07528387"/>
 		<!-- Required input ## Model List End -->
@@ -1539,6 +1539,34 @@
 		</div>
 		<!-- // popup -->
 
+		<!-- 약관 동의 팝업 -->
+		<div class="popup terms_pop">
+			<div class="popup__container">
+				<div class="popup__body">
+					<div class="popup__contents terms_contents">
+						<p class="terms_head">One checkbox for Lottery participate consent needed.</p>
+						<p class="terms_txt">
+							<input type="checkbox" id="check_1" class="term_chk" name="" /> 
+							<label for="check_1">Li e aceito o Regulamento e a Politica de Privacidade*</label>
+						</p>            
+						<p class="terms_txt">
+							<input type="checkbox" id="check_2" class="term_chk"  name="" /> 
+							<label for="check_2">Aceito compartilhar meus dados para receber informacoes sobre productos e ofertas da LG com base em estudos do meu perfil. Para saber mais, veja nossa Politica de Privacidade.</label>
+						</p>
+					</div>
+					<div class="popup__bottom">
+						<button type="type" class="popup__button popup__close">
+							Cancle
+						</button>
+						<button type="type" id="nextBtn" class="popup__button popup__close">
+							Confirm
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- // popup -->
+
 		<!-- // Content End  -->
 	</div>
 
@@ -1622,6 +1650,17 @@
 	<script src="/lg5-common-gp/js/components/video-asset.min.js"></script>
 
 	<script>
+		$(document).ready(function(){
+			$("#nextBtn").click(function(){    
+				if($("#check_1").is(":checked") == false){
+						alert("모든 약관에 동의 하셔야 다음 단계로 진행 가능합니다.");
+						return;
+				}else if($("#check_2").is(":checked") == false){
+						alert("모든 약관에 동의 하셔야 다음 단계로 진행 가능합니다.");
+						return;
+				}
+			});  
+		});
 		
 		$('#box_content2 .tab__list').find('.tab__button').each(function () {
 			$(this).on('click', function() {

@@ -323,8 +323,8 @@
 								</li>
 							</ul>
 							<div class="benefit__button">
-								<a href="${path}/assets/RaffleMemberDays.pdf" target="_blank" class="benefit__link">
-									Teilnahmebedingungen zustimmen
+								<a href="${path}/assets/TNCMemberDays.pdf" target="_blank" class="benefit__link">
+									Aktionsbedingungen anzeigen
 									<i class="benefit__arrow"></i>
 								</a>
 							</div>
@@ -558,6 +558,7 @@
 							</div>
 						</div>
 						<div class="section__footer">
+							<a href="${path}/assets/RaffleMemberDays.pdf" target="_blank" class="section__text" style="display:block;margin-bottom:10px;">Aktionsbedingungen anzeigen &gt;</a>
 							<p class="section__text">*Du kannst mehrere Lifestyles auswählen, je Teilnehmer kann aber maximal nur ein Produkt gewonnen werden.</p>
 						</div>
 					</div>

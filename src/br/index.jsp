@@ -256,11 +256,11 @@
 					</div>
 				</div>
 				<div class="visual__terms">
-					<a href="#" target="_blank" 
+					<a href="${path}/assets/LGMembersDayRegulamentoaprovadopelaSECAP.pdf" target="_blank" 
 						data-link-name="memberdays_anchor_click_termsandconditions" 
 						data-link-area="memberdays_2022" 
 						class="terms__link visual__link">
-						Termos e condições
+						Consulte Regulamento
 						<i class="visual__arrow"></i>
 					</a>
 				</div>
@@ -336,8 +336,8 @@
 								</li>
 							</ul>
 							<div class="benefit__button">
-								<a href="#" class="benefit__link">
-									Aplicam-se Termos e Condições 
+								<a href="https://www.lg.com/br/suporte/loja-online-lg" target="_blank" class="benefit__link">
+									Consulte Regulamento 
 									<i class="benefit__arrow"></i>
 								</a>
 							</div>
@@ -421,13 +421,7 @@
 										data-link-name="memberdays_luckydraw_theme_click_greenlife" 
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
-											<span class="product__img">
-												<img src="${path}/assets/images/br/img_coupon_greenlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
-											</span>
 											<span class="product__info">
-												<!-- <span class="product__category">with</span> //-->
-												<span class="product__name">Concorra a</span>
-												<span class="product__code">WD14EGS62</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -450,13 +444,7 @@
 										data-link-name="memberdays_luckydraw_theme_click_vividlife" 
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
-											<span class="product__img">
-												<img src="${path}/assets/images/br/img_coupon_vividlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
-											</span>
 											<span class="product__info">
-												<!-- <span class="product__category">with</span> //-->
-												<span class="product__name">Concorra a</span>
-												<span class="product__code">OLED65C1PSA.AWZ</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -479,13 +467,7 @@
 										data-link-name="memberdays_luckydraw_theme_click_gaminglife" 
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
-											<span class="product__img">
-												<img src="${path}/assets/images/br/img_coupon_gaminglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
-											</span>
 											<span class="product__info">
-												<!-- <span class="product__category">with</span> //-->
-												<span class="product__name">Concorra a</span>
-												<span class="product__code">27GN750-B.AWZM</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -508,13 +490,7 @@
 										data-link-name="memberdays_luckydraw_theme_click_workinglife" 
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
-											<span class="product__img">
-												<img src="${path}/assets/images/br/img_coupon_workinglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
-											</span>
 											<span class="product__info">
-												<!-- <span class="product__category">with</span> //-->
-												<span class="product__name">Concorra a</span>
-												<span class="product__code">7Z90N-V</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -537,13 +513,7 @@
 										data-link-name="memberdays_luckydraw_theme_click_soundfullife" 
 										data-link-area="memberdays_2022" class="coupon__back">
 										<span class="product">
-											<span class="product__img">
-												<img src="${path}/assets/images/br/img_coupon_soundfullife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
-											</span>
 											<span class="product__info">
-												<!-- <span class="product__category">with</span> //-->
-												<span class="product__name">Concorra a</span>
-												<span class="product__code">TONE-FP9.CBRALLK</span>
 												<i class="coupon__ico">
 													<svg xmlns="http://www.w3.org/2000/svg" width="14.265" height="10.308"
 														viewBox="0 0 14.265 10.308">
@@ -572,7 +542,7 @@
 							</div>
 						</div>
 						<div class="section__footer">
-							<a href="#" target="_blank" class="section__text">Consulte Regulamento</a>
+							<a href="${path}/assets/LGMembersDayRegulamentoaprovadopelaSECAP.pdf" target="_blank" class="section__text">Consulte Regulamento</a>
 						</div>
 					</div>
 				</div>
@@ -580,32 +550,32 @@
 			<div id="box_content2" class="section">
 				<div class="section__container section__container--toplow" data-list="lifeStyle">
 					<div class="section__inner">
-						<div class="tab">
+						<div class="tab"> 
 							<ul class="tab__list">
 								<li class="tab__item tab__item--active">
 									<a href="#greenlife" 
 									data-tab-name="greenlife" data-track-group="mic" data-track-opt="theme" data-track-val="greenlife" data-track-name="selectThemeDisplay" 
-									data-link-name="memberdays_themedisplay_click_greenlife" data-link-area="memberdays_2022" class="tab__button">Green life</a>
+									data-link-name="memberdays_themedisplay_click_greenlife" data-link-area="memberdays_2022" class="tab__button">Vida Sustentável</a>
 								</li>
 								<li class="tab__item">
 									<a href="#vividlife" 
 									data-tab-name="vividlife" data-track-group="mic" data-track-opt="theme" data-track-val="vividlife" data-track-name="selectThemeDisplay" 
-									data-link-name="memberdays_themedisplay_click_vividlife" data-link-area="memberdays_2022" class="tab__button">Vivid life</a>
+									data-link-name="memberdays_themedisplay_click_vividlife" data-link-area="memberdays_2022" class="tab__button">Vida Imersiva</a>
 								</li>
 								<li class="tab__item">
 									<a href="#gaminglife" 
 									data-tab-name="gaminglife" data-track-group="mic" data-track-opt="theme" data-track-val="gaminglife" data-track-name="selectThemeDisplay" 
-									data-link-name="memberdays_themedisplay_click_gaminglife" data-link-area="memberdays_2022" class="tab__button">Gaming life</a>
+									data-link-name="memberdays_themedisplay_click_gaminglife" data-link-area="memberdays_2022" class="tab__button">Vida Gamer</a>
 								</li>
 								<li class="tab__item">
 									<a href="#workinglife" 
 									data-tab-name="workinglife" data-track-group="mic" data-track-opt="theme" data-track-val="workinglife" data-track-name="selectThemeDisplay" 
-									data-link-name="memberdays_themedisplay_click_workinglife" data-link-area="memberdays_2022" class="tab__button">Working life</a>
+									data-link-name="memberdays_themedisplay_click_workinglife" data-link-area="memberdays_2022" class="tab__button">Vida Profissional</a>
 								</li>
 								<li class="tab__item">
 									<a href="#soundfullife" 
 									data-tab-name="soundfullife" data-track-group="mic" data-track-opt="theme" data-track-val="soundfullife" data-track-name="selectThemeDisplay" 
-									data-link-name="memberdays_themedisplay_click_soundfullife" data-link-area="memberdays_2022" class="tab__button">Soundful life</a>
+									data-link-name="memberdays_themedisplay_click_soundfullife" data-link-area="memberdays_2022" class="tab__button">Vida em Movimento</a>
 								</li>
 							</ul>
 							<template class="contents-template">
@@ -700,8 +670,7 @@
 										<p class="learn-more__link">
 											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade.
 												Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
-											<i class="learn-more__arrow"></i>
-											</p>
+										</p>
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>
@@ -804,11 +773,10 @@
 										</div>
 									</div>
 									<div class="learn-more learn-more--right">
-										<a href="#" class="learn-more__link">
+										<p class="learn-more__link">
 											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade.
 												Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
-											<i class="learn-more__arrow"></i>
-										</a>
+										</p>
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>
@@ -911,11 +879,10 @@
 										</div>
 									</div>
 									<div class="learn-more learn-more--right">
-										<a href="#" class="learn-more__link">
+										<p class="learn-more__link">
 											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade.
 												Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
-											<i class="learn-more__arrow"></i>
-										</a>
+										</p>
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>
@@ -1066,11 +1033,10 @@
 										</div>
 									</div>
 									<div class="learn-more learn-more--right">
-										<a href="#" class="learn-more__link">
+										<p class="learn-more__link">
 											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade.
 												Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
-											<i class="learn-more__arrow"></i>
-										</a>
+										</p>
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>
@@ -1131,11 +1097,10 @@
 										</div>
 									</div>
 									<div class="learn-more learn-more--right">
-										<a href="#" class="learn-more__link">
+										<p class="learn-more__link">
 											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade.
 												Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
-											<i class="learn-more__arrow"></i>
-										</a>
+										</p>
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>
@@ -1419,25 +1384,28 @@
 			</div>
 		</div>
 
+		<!-- 약관 동의 팝업 -->
 		<div class="popup terms_pop">
 			<div class="popup__container">
 				<div class="popup__body">
 					<div class="popup__contents terms_contents">
-						<!-- <form id="terms_form" action=""> -->
-							<p class="terms_title">약관1</h4>
-							<!-- <textarea style="font-size:1em;">내용입니다.</textarea> -->
-							<p class="terms_txt">
-								<input type="checkbox" id="check_1" class="term_chk" name="" /> 위의 약관에 동의 합니다.<br />
-							</p>            
-							<p class="terms_title">약관2</h4>
-							<!-- <textarea style="font-size:1em;">내용입니다.</textarea> -->
-							<p class="terms_txt">
-								<input type="checkbox" id="check_2" class="term_chk" name="" /> 위의 약관에 동의 합니다.<br />
-							</p>
-						<!-- </form> -->
+						<p class="terms_head">One checkbox for Lottery participate consent needed.</p>
+						<p class="terms_txt">
+							<input type="checkbox" id="check_1" class="term_chk" name="" /> 
+							<label for="check_1">Li e aceito o Regulamento e a Politica de Privacidade*</label>
+						</p>            
+						<p class="terms_txt">
+							<input type="checkbox" id="check_2" class="term_chk"  name="" /> 
+							<label for="check_2">Aceito compartilhar meus dados para receber informacoes sobre productos e ofertas da LG com base em estudos do meu perfil. Para saber mais, veja nossa Politica de Privacidade.</label>
+						</p>
 					</div>
 					<div class="popup__bottom">
+						<button type="type" class="popup__button popup__close">
+							Cancle
+						</button>
 						<button type="type" id="nextBtn" class="popup__button popup__close">
+							Confirm
+						</button>
 					</div>
 				</div>
 			</div>
@@ -1536,19 +1504,7 @@
 						alert("모든 약관에 동의 하셔야 다음 단계로 진행 가능합니다.");
 						return;
 				}
-			});   
-
-			$('.term_chk').each(function() {
-				$(this).click(function(){    
-					if($("#check_1").is(":checked") == true && $("#check_2").is(":checked") == true){
-						$('.terms01').hide()
-						$('.terms02').show()
-					} else {
-						$('.terms01').show()
-						$('.terms02').hide()
-					}
-				})
-			})
+			});  
 		});
 		
 		$('#box_content2 .tab__list').find('.tab__button').each(function () {

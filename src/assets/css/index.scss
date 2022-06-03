@@ -59,20 +59,68 @@
 			margin: 0 5.13vw;
 		}
 	}
-	form {
-		margin:0;
-		padding:0;
+
+	&.terms_pop {
+		.popup__body {
+			max-width: 440px;
+		}
+	}
+	.terms_head {
+		margin-bottom: 25px;
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 24px;
 	}
 	.terms_contents {
-		width: 360px;
-		padding: 20px;
+		width: 100%;
+		padding: 25px;
 		text-align: left;
 	}
 	.terms_title {
 		font-size: 14px;
 	}
 	.terms_txt {
-		font-size: 13px;
+		position: relative;
+		padding-left: 32px;
+		margin-top: 15px;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.popup__button {
+		outline: none;
+		&:first-of-type {
+			border-right: 1px solid #e0e0e0;
+		}
+	}
+	input[type=checkbox] {
+		display: none;
+		width: 0;
+		height: 0;
+		border: 0;
+		& + label {
+			cursor: pointer;
+			&:before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 3px;
+				display: block;
+				width: 22px;
+				height: 22px;
+				background: {
+					image: url('../images/checkbox_off.png');
+					size: 22px;
+					repeat: no-repeat;
+				}
+			}
+		}
+		&:checked + label {
+			&:before {
+				background: {
+					image: url('../images/checkbox_on.png');
+				}
+			}
+		}
 	}
 }
 

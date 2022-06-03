@@ -1,6 +1,12 @@
 @charset "UTF-8";
 @import "mixins";
 
+.popup {
+	form {
+		margin:0;
+		padding:0;
+	}
+}
 .lgmembersweek {
 	.tab__panel {
 		.tab__noti {
@@ -132,6 +138,26 @@
 							align-items: baseline;
 						}
 					}
+				}
+			}
+		}
+
+		&__back {
+			height: 100%;
+			background-color: transparent;
+			.product {
+				height: 100%;
+				.product__info {
+					padding-bottom: 125%;
+					@media (max-width: 767px) {
+						padding-bottom: 160%;
+					}
+				}
+				.coupon__ico {
+					position: absolute;
+					left: 52%;
+					bottom: 21%;
+					@include translate(-50%, 0);
 				}
 			}
 		}

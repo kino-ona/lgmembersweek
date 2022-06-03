@@ -5,7 +5,7 @@ const
 		터미널에 작성
 		Window = $env:NODE_ENV="production" or "development"
 		Mac    = NODE_ENV=production or development
-	*********/
+	*********/ 
 
 	devBuild  = ((process.env.NODE_ENV || 'development').trim().toLowerCase() === 'development'),
 

@@ -677,7 +677,7 @@
 															<p class="product__name">LG TONE Free UFP9</p>
 															<ul class="product__desc">
 																<li>Plug and Wireless</li>
-																<li>Enhanced Active Noise Cancellation/li>
+																<li>Enhanced Active Noise Cancellation</li>
 															</ul>
 														</div>
 													</a>

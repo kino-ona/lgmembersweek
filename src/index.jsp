@@ -1539,34 +1539,6 @@
 		</div>
 		<!-- // popup -->
 
-		<!-- 약관 동의 팝업 -->
-		<div class="popup terms_pop">
-			<div class="popup__container">
-				<div class="popup__body">
-					<div class="popup__contents terms_contents">
-						<p class="terms_head">One checkbox for Lottery participate consent needed.</p>
-						<p class="terms_txt">
-							<input type="checkbox" id="check_1" class="term_chk" name="" /> 
-							<label for="check_1">Li e aceito o Regulamento e a Politica de Privacidade*</label>
-						</p>            
-						<p class="terms_txt">
-							<input type="checkbox" id="check_2" class="term_chk"  name="" /> 
-							<label for="check_2">Aceito compartilhar meus dados para receber informacoes sobre productos e ofertas da LG com base em estudos do meu perfil. Para saber mais, veja nossa Politica de Privacidade.</label>
-						</p>
-					</div>
-					<div class="popup__bottom">
-						<button type="type" class="popup__button popup__close">
-							Cancle
-						</button>
-						<button type="type" id="nextBtn" class="popup__button popup__close">
-							Confirm
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- // popup -->
-
 		<!-- // Content End  -->
 	</div>
 
@@ -1650,18 +1622,6 @@
 	<script src="/lg5-common-gp/js/components/video-asset.min.js"></script>
 
 	<script>
-		$(document).ready(function(){
-			$("#nextBtn").click(function(){    
-				if($("#check_1").is(":checked") == false){
-						alert("모든 약관에 동의 하셔야 다음 단계로 진행 가능합니다.");
-						return;
-				}else if($("#check_2").is(":checked") == false){
-						alert("모든 약관에 동의 하셔야 다음 단계로 진행 가능합니다.");
-						return;
-				}
-			});  
-		});
-		
 		$('#box_content2 .tab__list').find('.tab__button').each(function () {
 			$(this).on('click', function() {
 				var themeType = $(this).attr('data-track-val');

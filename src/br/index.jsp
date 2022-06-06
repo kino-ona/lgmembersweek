@@ -87,17 +87,17 @@
 			<input type="hidden" data-model-group="eventGift" data-type="coupon" value="MD07530735|MD07530611|MD07548903|MD07531091|MD07541559"/>
 
 			<!-- Life Style Model -->
-			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD06216776|MD07530735|MD07533005|MD07554000|MD07554005|MD07539167|MD07538714|MD07538721|MD07539997"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07530785|MD07533008|MD07535198|MD07535161|MD07538702|MD07538792|MD06242696"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07530693|MD07548903|MD07548901|MD07548905|MD07545870"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07531107|MD07531091|MD07541521|MD07541559|MD07548902|MD07548905|MD07545101"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07515370|MD07542881|MD07538792|MD07541521|MD07541559"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07556091|MD06216776|MD07530735|MD07533005|MD07554000|MD07554005|MD07539997|MD07538714|MD07539167"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07533008|MD07530612|MD07530611|MD07530579|MD07530693|MD07530785|MD07535161|MD07535198|MD07538792|MD07538702|MD06242696"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07548903|MD07530693|MD07548905|MD07545870|MD07548901"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07531091|MD07531107|MD07548905|MD07548902|MD07545101|MD07541559|MD07541521"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07538792|MD07542881|MD07541559|MD07541521|MD07515370"/>
 
 			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07530871|MD07546318|MD07535198|MD07533013|MD07532838|MD07531004|MD07530888|MD07530561|MD07530885|MD06242696"/>
-			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07541559|MD07541521|MD07515370|MD07541521|MD07515371|MD07538792|MD07538702|MD07515381|MD07515380|MD07545870"/>
-			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD06216196|MD07554000|MD07554005|MD07530580|MD06175996|MD07533005|MD07530735|MD06176036|MD07541911|MD07539036|MD07538861|MD07539997|MD07520061|MD07520089|MD06187116|MD06187118|MD06187196|MD07538523"/>
-			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07531091|MD07531107|MD07548908|MD07548903|MD07548905|MD07548901|MD07548909|MD06143417"/>
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07535198|MD07546318|MD07530871|MD07531004|MD07530888|MD07530561|MD07530885|MD07533013|MD07532838|MD06242696"/>
+			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07538792|MD07538702|MD07515381|MD07515380|MD07545870|MD07541559|MD07541521|MD07515370|MD07515371"/>
+			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07556012|MD07556083|MD06216196|MD07554000|MD07554005|MD07533005|MD07530735|MD07530580|MD06175996|MD06176036|MD07539997|MD07538861|MD07539036|MD07541911|MD06187116|MD07520089|MD06187196|MD06187118|MD07520061"/>
+			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07531091|MD07531107|MD06143417|MD07548909|MD07548901|MD07548905|MD07548903|MD07548908"/>
 		<!-- Required input ## Model List End -->
 	
 		<!--  Content Start  -->
@@ -670,8 +670,7 @@
 														</div>
 													</a>
 												</div>
-											</div>
-											
+											</div>										
 										</div>
 									</div>
 									<div class="learn-more learn-more--right">
@@ -1353,11 +1352,7 @@
 						</div>
 						<div class="section__footer section__footer--center">
 							<p class="section__text">
-							Todos os direitos reservados. Ofertas para produtos selecionados, exclusivas para a Loja Online LG. Os preços,<br>
-							opromoções e produtos disponíveis podem variar e estão sujeitos a alteração sem prévio aviso. Ofertas válidas<br>
-							de 08.06.2022 até 30.06.2022. Promoção válida enquanto durarem os estoques. A Loja Online LG realiza entregas<br>
-							nas regiões Sul e Sudeste do Brasil. Alguns produtos podem não estar disponíveis na sua região. Imagens<br>
-							meramente ilustrativas. Consulte o Regulamento. 
+								Modelo dos produtos especiais que serão sorteados: 1 TV OLED 65" - Televisor 65" - SKU OLED65C1, 1 LG GRAM -<br>Notebook 17" - SKU 17Z90N-V, 1 Ultragear Monitor, Monitor 27" - SKU 27GN750-B, 1 Tone Free - Fone de Ouvido<br>Bluetooth - SKU FP9 e 1 Wash Machine 14kg - Maquina Lava e Seca 14sg - SKU WD14EGS62. 
 							</p>
 						</div>
 					</div>
@@ -1392,7 +1387,7 @@
 			</div>
 		</div>
 
-		<!-- 약관 동의 팝업 -->
+		<!-- Term Popup -->
 		<div class="popup terms_pop">
 			<div class="popup__container">
 				<div class="popup__body">
@@ -1400,11 +1395,11 @@
 						<p class="terms_head">One checkbox for Lottery participate consent needed.</p>
 						<p class="terms_txt">
 							<input type="checkbox" id="check_1" class="term_chk" name="" /> 
-							<label for="check_1">Li e aceito o Regulamento e a Politica de Privacidade*</label>
+							<label for="check_1">Li e aceito o Regulamento (link to: PDF file) e a Política de Privacidade (link to: <a href="https://www.lg.com/br/privacidade" target="_blank">https://www.lg.com/br/privacidade</a>)</label>
 						</p>            
 						<p class="terms_txt">
 							<input type="checkbox" id="check_2" class="term_chk"  name="" /> 
-							<label for="check_2">Aceito compartilhar meus dados para receber informacoes sobre productos e ofertas da LG com base em estudos do meu perfil. Para saber mais, veja nossa Politica de Privacidade.</label>
+							<label for="check_2">Aceito compartilhar meus dados para receber informacoes sobre productos e ofertas da LG com base em estudos do meu perfil. Para saber mais, veja nossa Política de Privacidade (link to: <a href="https://www.lg.com/br/privacidade" target="_blank">https://www.lg.com/br/privacidade</a>)</label>
 						</p>
 					</div>
 					<div class="popup__bottom">

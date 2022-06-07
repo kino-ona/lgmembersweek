@@ -1412,9 +1412,7 @@
 			<div class="popup__container">
 				<div class="popup__body">
 					<div class="popup__contents">
-						<p class="popup__text">
-							Nach der Registrierung: Klicke <span class="popup__bold">"Abesenden"</span> um teilzunehmen.
-						</p>
+						<p class="popup__text"><spring:message code='acc_lg-member-days-event_submit-msg' text='acc_lg-member-days-event_submit-msg'/></p>
 					</div>
 					<div class="popup__bottom">
 						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>

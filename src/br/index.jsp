@@ -256,7 +256,7 @@
 					</div>
 				</div>
 				<div class="visual__terms">
-					<a href="${path}/assets/LGMembersDayRegulamentoaprovadopelaSECAP.pdf" target="_blank" 
+					<a href="${path}/sorteio" target="_blank" 
 						data-link-name="memberdays_anchor_click_termsandconditions" 
 						data-link-area="memberdays_2022" 
 						class="terms__link visual__link">
@@ -550,7 +550,7 @@
 							</div>
 						</div>
 						<div class="section__footer">
-							<a href="${path}/assets/LGMembersDayRegulamentoaprovadopelaSECAP.pdf" target="_blank" class="section__text">Consulte Regulamento</a>
+							<a href="${path}/sorteio" target="_blank" class="section__text">Consulte Regulamento</a>
 						</div>
 					</div>
 				</div>

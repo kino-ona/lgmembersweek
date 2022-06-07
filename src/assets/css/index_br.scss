@@ -561,6 +561,14 @@
 				line-height: 36px;
 			}
 		}
+		@media (max-width: 1400px) {
+			&__visual {
+				.section__title {
+					font-size: 60px;
+					line-height: 80px;
+				}
+			}
+		}
 		@media (max-width: 767px) {
 			&__visual {
 				.terms__box {

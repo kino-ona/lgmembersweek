@@ -331,7 +331,7 @@
 							<ul class="benefit__list benefit__list--discount">
 								<li class="benefit__item">
 									<div class="benefit__inner">
-										<p class="benefit__category">Extra sconto clineti registrati</p>
+										<p class="benefit__category">Extra sconto clienti registrati</p>
 										<p class="benefit__discount">
 											2%
 											<em class="benefit__condition">direttamente a carrello, per sempre</em>

@@ -132,7 +132,7 @@
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">STYLE CINÉPHILE</h2>
 									<p class="section__sub">
-										‘Envie d’une soirée devant un bon film ?<br>
+										Envie d’une soirée devant un bon film ?<br>
 										Vivez une expérience immersive exceptionnelle depuis votre salon<br>
 										avec les TVs et vidéoprojecteurs LG !
 									</p>
@@ -156,7 +156,7 @@
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">STYLE GAMER</h2>
 									<p class="section__sub">
-										‘Libérez votre réel potentiel de joueur !<br>
+										Libérez votre réel potentiel de joueur !<br>
 										Nous vous avons sélectionné le meilleur de nos produits gaming<br>
 										afin de vous assurer la victoire.
 									</p>
@@ -180,7 +180,7 @@
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">STYLE NOMADE</h2>
 									<p class="section__sub">
-										‘Des envies d’ailleurs ? Vos voyages ne seront plus les mêmes !<br>
+										Des envies d’ailleurs ? Vos voyages ne seront plus les mêmes !<br>
 										Avec nos produits nomades, prolongez votre aventure<br>
 										que vous soyez chez vous ou à l’autre bout du monde.
 									</p>
@@ -285,6 +285,13 @@
 							<p class="section__sub">Avantages Exceptionnels</p>
 							<h2 class="section__title">Réductions jusqu’à -20%</h2>
 						</div>
+						<div style="width: 300px;margin: 30px auto 20px;border-top: 1px solid #999"></div>
+						<div class="section__header">
+							<h2 class="section__title">Avantages MyLG</h2>
+							<p class="section__sub">Inscrivez-vous dès maintenant à MyLG<br> 
+								pour bénéficier jusqu’à -15%<br> 
+								sur une large sélection de produits.</p>
+						</div>
 						<div class="benefit">
 							<ul class="benefit__list benefit__list--discount">
 								<li class="benefit__item">
@@ -309,11 +316,14 @@
 							<div class="benefit__noti">
 								<p class="benefit__text">Découvrez les codes de réduction dans votre compte MyLG.</p>
 							</div>
-							<ul class="benefit__list benefit__list--coupon">
+							<div class="section__header" style="margin-top: 20px">
+								<h2 class="section__sub">Remises de -5% à -30%</h2>
+							</div>
+							<!-- <ul class="benefit__list benefit__list--coupon">
 								<li class="benefit__item">
 									<div class="benefit__inner">
 										<p class="benefit__category">
-											Livraison/Installation<br>
+											Livraison/Installation
 											offertes
 										</p>
 									</div>
@@ -323,7 +333,7 @@
 										<p class="benefit__category">Paiement en 3x ou 4x sans frais disponible</p>
 									</div>
 								</li>
-							</ul>
+							</ul> -->
 						</div>
 					</div>
 				</div>
@@ -882,7 +892,6 @@
 					<div class="section__inner">
 						<div class="section__header">
 							<h2 class="section__title">
-								LA SEMAINE
 								<span class="break--mobile">LG Bonnes Affaires !</span>
 							</h2>
 							<p class="section__sub section__sub--small">

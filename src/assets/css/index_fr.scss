@@ -415,4 +415,16 @@
 		}
 	}
 
+
+	@media (max-width: 1600px) {
+		.lgmembersweek .visual__slide .section__title {
+			font-size: 60px;
+			line-height: 60px;
+		}
+		.lgmembersweek .section__sub {
+			font-size: 25px;
+			line-height: 28px;
+		}
+	}
+
 }

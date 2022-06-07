@@ -369,4 +369,10 @@
 			}
 		}
 	}
+
+	.product--hotdeal .product__item:nth-child(3) {
+		.hotdeal_bg {
+			background-image: url('../images/hotdeal_bg02.png');
+		}
+	}
 }

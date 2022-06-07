@@ -249,9 +249,11 @@ $(document).ready(function() {
 
 				let priceValue = '';
 				if(p.rPromoPrice != null && p.rPromoPrice != '' && p.rPromoPrice != 'null'){
-					priceValue = p.rPromoPrice+'.'+nvl(p.rPromoPriceCent,'00');
+					// priceValue = p.rPromoPrice+'.'+nvl(p.rPromoPriceCent,'00');
+					priceValue = changeFormatFullPrice(p.rPromoPrice, p.rPromoPriceCent);
 				} else{
-					priceValue = nvl(p.rPrice,'')+'.'+nvl(p.rPriceCent,'00');
+					priceValue = changeFormatFullPrice(p.rPrice, p.rPriceCent);
+					// priceValue = nvl(p.rPrice,'')+'.'+nvl(p.rPriceCent,'00');
 				}
 
 				let hotdealImageAddr, hotdealImageAltText;

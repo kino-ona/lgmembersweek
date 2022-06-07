@@ -71,7 +71,7 @@
 	</c:import> 
 	<!-- // breadcrumb -->
 
-	<c:set var='path' value='/${localeCd}/memberdays' /> <!-- Required input ## Specify the microsite upload path for a flexible folder structure -->
+	<c:set var='path' value='/${localeCd}/brandweek' /> <!-- Required input ## Specify the microsite upload path for a flexible folder structure -->
 	<link rel="stylesheet" href="${path}/assets/css/index.css">
 	<link rel="stylesheet" href="${path}/assets/css/index_fr.css">
 	<link rel="stylesheet" href="/lg5-common-gp/css/customer-mylg-wish-list.min.css"> <!-- For import GET STOCK ALERT css  -->
@@ -228,7 +228,7 @@
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">STYLE CASANIER</h2>
 									<p class="section__sub">
-										‘Le plaisir d’être chez soi !<br>
+										Le plaisir d’être chez soi !<br>
 										Que c’est bon de rester à la maison !<br>
 										Découvrez nos offres pour une maison capable de répondre<br>
 										à tous vos besoins au quotidien.
@@ -281,11 +281,10 @@
 			<div id="box_content1" class="section">
 				<div class="section__container section__container--black section__container--bottomlow">
 					<div class="section__inner">
-						<div class="section__header">
-							<p class="section__sub">Avantages Exceptionnels</p>
-							<h2 class="section__title">Réductions jusqu’à -20%</h2>
+						<div class="section__header header__round">	
+							<p class="section__sub">Offres Exceptionnelles</p>
+							<h2 class="section__title">Remises de -5% à -30%</h2>
 						</div>
-						<div style="width: 300px;margin: 30px auto 20px;border-top: 1px solid #999"></div>
 						<div class="section__header">
 							<h2 class="section__title">Avantages MyLG</h2>
 							<p class="section__sub">Inscrivez-vous dès maintenant à MyLG<br> 
@@ -316,8 +315,14 @@
 							<div class="benefit__noti">
 								<p class="benefit__text">Découvrez les codes de réduction dans votre compte MyLG.</p>
 							</div>
+							<div class="benefit__button">
+								<a href="#" target="_blank" class="benefit__link">
+									J’EN PROFITE !
+									<i class="benefit__arrow"></i>
+								</a>
+							</div>
 							<div class="section__header" style="margin-top: 20px">
-								<h2 class="section__sub">Remises de -5% à -30%</h2>
+								<h2 class="section__sub">Paiement en 3x ou 4x sans frais disponible</h2>
 							</div>
 							<!-- <ul class="benefit__list benefit__list--coupon">
 								<li class="benefit__item">
@@ -520,6 +525,9 @@
 									<div class="product__mask">
 										<ul class="product__list"></ul>
 									</div>
+									<div class="button">
+										<a href="#" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+									</div>
 								</div>
 							</div>
 							<div id="gaminglife" class="tab__panel tab__panel--gaminglife showroom_panel">
@@ -619,6 +627,9 @@
 									</div>
 									<div class="product__mask">
 										<ul class="product__list"></ul>
+									</div>
+									<div class="button">
+										<a href="#" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>
@@ -742,6 +753,9 @@
 									<div class="product__mask">
 										<ul class="product__list"></ul>
 									</div>
+									<div class="button">
+										<a href="#" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+									</div>
 								</div>
 							</div>
 							<div id="soundfullife" class="tab__panel tab__panel--soundfullife showroom_panel">
@@ -800,6 +814,9 @@
 									</div>
 									<div class="product__mask">
 										<ul class="product__list"></ul>
+									</div>
+									<div class="button">
+										<a href="#" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>
@@ -883,6 +900,9 @@
 									<div class="product__mask">
 										<ul class="product__list"></ul>
 									</div>
+									<div class="button">
+										<a href="#" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -892,7 +912,7 @@
 					<div class="section__inner">
 						<div class="section__header">
 							<h2 class="section__title">
-								<span class="break--mobile">LG Bonnes Affaires !</span>
+								<span class="break--mobile">Bonnes Affaires !</span>
 							</h2>
 							<p class="section__sub section__sub--small">
 								C’est parti !<br>

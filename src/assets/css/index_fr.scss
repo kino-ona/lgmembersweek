@@ -427,4 +427,24 @@
 		}
 	}
 
+	.section__header {
+		&.header__round {
+			width: 50%;
+			margin: 0 auto 40px;
+			border: 1px solid #999;
+			border-radius: 45px;
+			padding: 45px 20px;
+
+			@media (max-width: 767px) {
+				width: 100%;
+				.section__sub {
+					font-size: 20px;
+				}
+				.section__title {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+
 }

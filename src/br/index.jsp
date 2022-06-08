@@ -529,9 +529,9 @@
 							</div>
 							
 							<div style="margin-top:80px">
-								<form action="#" id="eventCustomerForm" data-url="/${localeCd}/mylg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
+								<form action="#" id="eventCustomerForm" data-url="/${localeCd}/my-lg/insertEventCustomerInfo.lgajax" data-locale="${localeCd}">
 									<div class="button">
-										<a role="button" href="#" id="submit" class="button__item button__item--red button_takepart" 
+										<a role="button" href="#" id="submit" class="button__item button__item--red" 
 											data-track-group="mic" 
 											data-track-opt="theme" 
 											data-track-name="submitClick" 
@@ -1379,41 +1379,37 @@
 			</div>
 		</div>
 
-		<div class="popup modal_lgmembersweek_submit">
+		<!-- Terms popup -->
+		<div class="popup modal_terms terms_pop">
 			<div class="popup__container">
 				<div class="popup__body">
-					<div class="popup__contents">
-						<span class="popup__text popup__bold"></span>
+					<div class="popup__contents terms_contents">
+						<p class="terms_head"><spring:message code='mkt_lg-member-days-event_agree-title' text='mkt_lg-member-days-event_agree-title'/></p>
+						<p class="terms_txt">
+							<input type="checkbox" id="check_1" class="term_chk" name="" /> 
+							<label for="check_1"><spring:message code='mkt_lg-member-days-event_agree-text1' text='mkt_lg-member-days-event_agree-text1'/></label>
+						</p>            
+						<p class="terms_txt">
+							<input type="checkbox" id="check_2" class="term_chk"  name="" /> 
+							<label for="check_2"><spring:message code='mkt_lg-member-days-event_agree-text2' text='mkt_lg-member-days-event_agree-text2'/></label>
+						</p>
 					</div>
 					<div class="popup__bottom">
-						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>
+						<button type="type" class="popup__button popup__cancle"><spring:message code='mkt_lg-member-days-event_agree-btn-cancle' text='mkt_lg-member-days-event_agree-btn-cancle'/></button>
+						<button type="type" id="nextBtn" class="popup__button popup__confirm"><spring:message code='mkt_lg-member-days-event_agree-btn-ok' text='mkt_lg-member-days-event_agree-btn-ok'/></button>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<!-- Term Popup -->
-		<div class="popup terms_pop">
+		<div class="popup modal_lgmembersweek_submit" data-reject-msg="<spring:message code='mkt_lg-member-days-event_agree-reject' text='mkt_lg-member-days-event_agree-reject'/>" data-choose-msg="<spring:message code='mkt_lg-member-days-event_submit-msg-01' text='mkt_lg-member-days-event_submit-msg-01'/>" data-allcheck-msg="<spring:message code='mkt_lg-member-days-event_agree-allcheck' text='mkt_lg-member-days-event_agree-allcheck'/>">
 			<div class="popup__container">
 				<div class="popup__body">
-					<div class="popup__contents terms_contents">
-						<p class="terms_head">One checkbox for Lottery participate consent needed.</p>
-						<p class="terms_txt">
-							<input type="checkbox" id="check_1" class="term_chk" name="" /> 
-							<label for="check_1">Li e aceito o Regulamento (link to: PDF file) e a Política de Privacidade (link to: <a href="https://www.lg.com/br/privacidade" target="_blank">https://www.lg.com/br/privacidade</a>)</label>
-						</p>            
-						<p class="terms_txt">
-							<input type="checkbox" id="check_2" class="term_chk"  name="" /> 
-							<label for="check_2">Aceito compartilhar meus dados para receber informacoes sobre productos e ofertas da LG com base em estudos do meu perfil. Para saber mais, veja nossa Política de Privacidade (link to: <a href="https://www.lg.com/br/privacidade" target="_blank">https://www.lg.com/br/privacidade</a>)</label>
-						</p>
+					<div class="popup__contents">
+						<p class="popup__text"></p>
 					</div>
 					<div class="popup__bottom">
-						<button type="type" class="popup__button popup__close">
-							Cancle
-						</button>
-						<button type="type" id="nextBtn" class="popup__button popup__close">
-							Confirm
-						</button>
+						<button type="type" class="popup__button popup__close"><spring:message code='component-close' text='component-close'/></button>
 					</div>
 				</div>
 			</div>
@@ -1503,18 +1499,6 @@
 	<script src="/lg5-common-gp/js/components/video-asset.min.js"></script>
 
 	<script>
-		$(document).ready(function(){
-			$("#nextBtn").click(function(){    
-				if($("#check_1").is(":checked") == false){
-						alert("모든 약관에 동의 하셔야 다음 단계로 진행 가능합니다.");
-						return;
-				}else if($("#check_2").is(":checked") == false){
-						alert("모든 약관에 동의 하셔야 다음 단계로 진행 가능합니다.");
-						return;
-				}
-			});  
-		});
-		
 		$('#box_content2 .tab__list').find('.tab__button').each(function () {
 			$(this).on('click', function() {
 				var themeType = $(this).attr('data-track-val');

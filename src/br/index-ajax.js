@@ -33,10 +33,10 @@ $(document).ready(function() {
 	let isLogin = false;
 	setTimeout(function(){
 		if($('.navigation .right-btm .login').hasClass('logged')) isLogin = true;
-		lgMembersWeek.ajaxSubmitted('lifeStyle=');
+		if(isLogin) lgMembersWeek.ajaxSubmitted('lifeStyle=');
 	},200);
 
-	let lgMembersWeek = {
+	const lgMembersWeek = {
 		tab : $('.lgmembersweek .tab__button'),
 		ctaBtn : $('.lgmembersweek .button a, .lgmembersweek .learn-more'),
 		lifeStyleSlickOpt: {
@@ -75,6 +75,7 @@ $(document).ready(function() {
 				}
 			]
 		},
+		submitModal: $('.modal_lgmembersweek_submit'),
 		template: null,
 		init: function(){
 			$('.lgmembersweek .coupon form:not(:first-child)').css('margin-top','80px');
@@ -91,7 +92,10 @@ $(document).ready(function() {
 			});
 
 			// Hot Deal Model List
-			if($('[data-model-group="hotDeal"]').length) lgMembersWeek.ajaxModelList($('#hotdeal'), 'hotDeal');
+			if($('[data-model-group="hotDeal"]').length)
+				lgMembersWeek.ajaxModelList($('#hotdeal'), 'hotDeal');
+			else 
+				if($('[data-list="hotDeal"]').length) $('[data-list="hotDeal"]').remove();
 
 			lgMembersWeek.addEvent();
 		},
@@ -131,9 +135,7 @@ $(document).ready(function() {
 							}
 						});
 					}else{ // submit click
-						let $modal = $('.modal_lgmembersweek_submit');
-						$modal.find('.popup__text').text(data.message).end().show();
-						if(data.code == '00') lgMembersWeek.trackEvent($submit); //tracking Event
+						lgMembersWeek.finSubmit(data.message, data.code);
 					}
 				},
 				beforeSend: function(){
@@ -143,6 +145,61 @@ $(document).ready(function() {
 					$('body').trigger('ajaxLoadEnd');
 				}
 			});
+		},
+		submit: function(){
+			let chooseParam = $('.coupon__list [type="radio"]:checked').data('param'),
+				paramData = 'lifeStyle=' + chooseParam;
+			lgMembersWeek.ajaxSubmitted(paramData);
+		},
+		submitBr: function(){
+			if($('input[name="Coupons"]:checked').length){
+				const $modalTerms = $('.modal_terms'),
+					$inputTerm = $modalTerms.find('.term_chk'),
+					$btnCancle = $modalTerms.find('.popup__cancle'),
+					$btnConfirm = $modalTerms.find('.popup__confirm');
+
+				$modalTerms.show();
+
+				$btnCancle.click(function(e){
+					e.preventDefault();
+					$modalTerms.hide();
+					lgMembersWeek.finSubmit(null, null, 'reject');
+				});
+
+				$btnConfirm.click(function(e){
+					e.preventDefault();
+					if($modalTerms.find('.term_chk:checked').length != $inputTerm.length){ // all check X
+						lgMembersWeek.finSubmit(null, null, 'allcheck');
+					}else{ // all check O
+						$modalTerms.hide();
+						lgMembersWeek.submit();
+					}
+				});
+			}else{
+				const chooseMsg = lgMembersWeek.submitModal.data('chooseMsg');
+				lgMembersWeek.submitModalText(chooseMsg);
+			}
+		},
+		finSubmit: function(msg, code, term){
+			if(term){
+				switch(term){
+					case 'reject':
+						msg = lgMembersWeek.submitModal.data('rejectMsg');
+						break;
+					case 'allcheck':
+						msg = lgMembersWeek.submitModal.data('allcheckMsg');
+						break;
+				}
+			}
+			lgMembersWeek.submitModalText(msg);
+
+			if(code && code == '00'){
+				if(localeCd == 'br') lgMembersWeek.checkSubmitted(null, true); // br 응모 직후, submit 비활성화
+				lgMembersWeek.trackEvent($submit); //tracking Event
+			}
+		},
+		submitModalText: function(msg){
+			lgMembersWeek.submitModal.find('.popup__text').text(msg).end().show();
 		},
 		checkSubmitted: function(selection, submitted){
 			// If applied account, the submit form will be deactivated (이미 응모한 계정일 시, submit form 비활성화)
@@ -456,10 +513,9 @@ $(document).ready(function() {
 			$submit.click(function(e){
 				if(isLogin){
 					e.preventDefault();
-					if(!$submit.is('.submitted')){
-						let chooseParam = $('.coupon__list [type="radio"]:checked').data('param'),
-							paramData = 'lifeStyle=' + chooseParam;
-						lgMembersWeek.ajaxSubmitted(paramData);
+					if(!$submit.is('.submitted')){ // Confirmation of application (응모 여부 확인)
+						if(localeCd == 'br') lgMembersWeek.submitBr();
+						else lgMembersWeek.submit();
 					}
 				}
 			});
@@ -486,13 +542,13 @@ $(document).ready(function() {
 
 			// tracking Event data setting
 			// submit
+			const referrerSsoUrl = $submit.attr('href');
 			$(document).on('change','input[name="Coupons"]',function(){
-				let chooseTheme = $(this).data('param'),
-					hrefSubmit = $submit.attr('href');
+				const chooseTheme = $(this).data('param');
 
 				$submit.data('trackVal',chooseTheme)
-					.attr('href',hrefSubmit+'?dummyLife='+chooseTheme)
-					.attr('data-link-name','memberdays_luckydraw_submit_click_' + chooseTheme);
+				.attr('href',referrerSsoUrl+'?dummyLife='+chooseTheme) // sso referrer data setting
+				.attr('data-link-name','memberdays_luckydraw_submit_click_' + chooseTheme);
 			});
 			// lifeStyle showroom
 			$('[data-list="lifeStyle"] .product__anchor').each(function(){

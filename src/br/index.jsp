@@ -9,12 +9,12 @@
 
 	<meta content="#a50034" name="theme-color">
 
-  <title>TVs, Informática, Eletrodomésticos | LG Brasil</title>
+  <title>LG Member Days: ECONOMIZE ATÉ 20% | LG BR</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<meta property="og:title" content="TVs, Informática, Eletrodomésticos | LG Brasil" />
+	<meta property="og:title" content="LG Member Days: ECONOMIZE ATÉ 20% | LG BR" />
 	<meta property="og:url" content="https://www.lg.com/br/promocoes/memberdays" />
-	<meta property="og:description" content="Conheça a linha completa de produtos da LG. Aqui você encontra soluções completas para Áudio, Vídeo, Eletrodomésticos, TVs, TVs 3D, Celulares e Informática." />
+	<meta property="og:description" content="Cadastre-se na LG.com e aproveite os Benefícios exclusivos para membros em todos os PRODUTOS e ESTILOS DE VIDA. Promoção válida até 30 de Junho." />
 	<meta property="og:image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg" />
 	<link rel="canonical" href="https://www.lg.com/br/promocoes/memberdays" />
 
@@ -48,10 +48,10 @@
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/body/broswe-check-popup-layer.jsp" />
 	
 	<div class="sr-only" itemscope itemtype="http://schema.org/WebPage">
-		<meta itemprop="name" content="TVs, Informática, Eletrodomésticos | LG Brasil"/>
+		<meta itemprop="name" content="LG Member Days: ECONOMIZE ATÉ 20% | LG BR"/>
 		<meta itemprop="image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg" />
 		<meta itemprop="url" content="www.lg.com/br/promocoes/memberdays" />
-		<meta itemprop="description" content="Conheça a linha completa de produtos da LG. Aqui você encontra soluções completas para Áudio, Vídeo, Eletrodomésticos, TVs, TVs 3D, Celulares e Informática." />
+		<meta itemprop="description" content="Cadastre-se na LG.com e aproveite os Benefícios exclusivos para membros em todos os PRODUTOS e ESTILOS DE VIDA. Promoção válida até 30 de Junho." />
 		<meta itemprop="keywords" content="" />
 	</div>
 	

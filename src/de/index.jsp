@@ -9,12 +9,12 @@
 
 	<meta content="#a50034" name="theme-color">
 
-	<title>LG Consumer &amp; Business Electronics | LG Deutschland</title>
+	<title>LG Member Days: 10% Rabatt & Vorteile Sichern! | LG DE</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
-	<meta property="og:title" content="LG Consumer &amp; Business Electronics | LG Deutschland" />
+	<meta property="og:title" content="LG Member Days: 10% Rabatt & Vorteile Sichern! | LG DE" />
 	<meta property="og:url" content="https://www.lg.com/de/memberdays" />
-	<meta property="og:description" content="Entdecken Sie die neuesten Consumer und Business Electronics von LG. Lassen Sie sich von unseren aktuellen Produktinnovationen inspirieren| LG Deutschland" />
+	<meta property="og:description" content="Jetzt auf LG.com registrieren und Member-Vorteile genießen! Beim Kauf von mind. 2 ausgewählten Produkten 10% auf den Gesamtpreis sichern! Bis 4. Juli 2022" />
 	<meta property="og:image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg" />
 	<link rel="canonical" href="https://www.lg.com/de/memberdays" />
 
@@ -48,10 +48,10 @@
 	<jsp:include page="/WEB-INF/jsp/gp/common/include/body/broswe-check-popup-layer.jsp" />
 	
 	<div class="sr-only" itemscope itemtype="http://schema.org/WebPage">
-		<meta itemprop="name" content="LG Consumer &amp; Business Electronics | LG Deutschland"/>
+		<meta itemprop="name" content="LG Member Days: 10% Rabatt & Vorteile Sichern! | LG DE"/>
 		<meta itemprop="image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg" />
 		<meta itemprop="url" content="www.lg.com/it/member-days" />
-		<meta itemprop="description" content="Entdecken Sie die neuesten Consumer und Business Electronics von LG. Lassen Sie sich von unseren aktuellen Produktinnovationen inspirieren| LG Deutschland" />
+		<meta itemprop="description" content="Jetzt auf LG.com registrieren und Member-Vorteile genießen! Beim Kauf von mind. 2 ausgewählten Produkten 10% auf den Gesamtpreis sichern! Bis 4. Juli 2022" />
 		<meta itemprop="keywords" content="" />
 	</div>
 	

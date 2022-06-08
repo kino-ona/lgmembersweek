@@ -542,7 +542,7 @@
 								
 								<div class="section__footer" style="margin-bottom: 0;text-align: center">
 									<p class="section__text">
-										m até 5 dias corridos você recebera em um email com o número da sorte para concorrer.<br>
+										Em até 5 dias corridos você recebera em um email com o número da sorte para concorrer.<br>
 										Para garantir o recebimento adicione o endereço <a href="mailto:contato@relacionamento.lgmarketing.com.br">contato@relacionamento.lgmarketing.com.br</a> a sua lista segura de emails.<br>
 										Fique atendo, confira também sua caixa de spam, alguns emails podem ser redirecionados para ela.<br>
 										<a href="${path}/sorteio" target="_blank">Clique aqui para ver os ganhadores</a>
@@ -1106,8 +1106,7 @@
 									</div>
 									<div class="learn-more learn-more--right">
 										<p class="learn-more__link">
-											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade.
-												Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
+											<span class="learn-more__text">As cores e modelos dos produtos podem variar. Verifique disponibilidade. Imagens meramente ilustrativas. Para maiores informações consulte: <a href="https://www.lg.com/br" target="_blank">www.lg.com/br</a></span>
 										</p>
 									</div>
 									<div class="product__track">

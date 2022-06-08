@@ -247,8 +247,6 @@
 	</script>
 	
 	<script src="${path}/assets/js/index.js"></script>
-	<script src="${path}/assets/js/index-ajax.js"></script>
-	<script src="${path}/assets/js/index-add-to-cart.js"></script>
 
 	<script type="text/javascript">
 	(function(w, d, a){

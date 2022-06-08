@@ -675,4 +675,22 @@
 			}
 		}
 	}
+
+	.section__footer {
+		.section__text {
+			width: 55%;
+    	margin: 0 auto 15px;
+			@media (max-width: 767px) {
+				width: 100%;
+			}
+		}
+	}
+	.terms__message .terms__desc {
+		width: 50%;
+		margin: 0 auto;
+		@media (max-width: 767px) {
+			width: 100%;
+		}
+	}
+
 }

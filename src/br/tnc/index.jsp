@@ -93,32 +93,17 @@
 								</div>
 							</div>
 							<div class="terms__container">
-								<p class="terms__title">Participar é fácil</p>
 								<div class="terms__round">
-									<ul class="terms__list">
-										<li class="terms__item">
-											<div class="terms__inner">
-												<p class="terms__title">LIFESTYLE</p>
-												<p class="terms__desc">Conte para gente qual é seu LifeStyle e concorra a 50 caixinhas PL5 e prêmios exclusivos.</p>
-												<a href="${path}#MemberDaysEvent" class="terms__link">Clique aqui para participar</a>
-											</div>
-										</li>
-										<li class="terms__item">
-											<div class="terms__inner">
-												<p class="terms__title">ESCOLHA SEU LIFESTYLE</p>
-												<p class="terms__desc">Escolha seu LifeStyle, faça login ou cadastre-se no My LG, clique em PARTICIPAR e receba seu número da sorte.</p>
-											</div>
-										</li>
-										<li class="terms__item">
-											<div class="terms__inner">
-												<p class="terms__title">CONCORRA</p>
-												<p class="terms__desc">Seus números da sorte gerados entram para o sorteio das 50 caixinhas PL5 entre outros prêmios.</p>
-												<a href="${path}/assets/LGMembersDayRegulamentoaprovadopelaSECAP.pdf" target="_blank"  class="terms__link">Confira o Regulamento</a>
-											</div>
-										</li>
-									</ul>
 									<div class="button">
-										<a href="#terms__message" class="button__item button__item--red">CONFIRA OS GANHADORES</a>
+										<a href="#terms__message" class="terms__title">CONFIRA OS GANHADORES</a>
+									</div>
+								</div>
+								<div id="terms__message" class="terms__message">
+									<div class="terms__item">
+										<div class="terms__ico">
+											<i></i>
+										</div>
+										<div class="terms__desc">O sorteio será realizado no dia 09 de julho e a divulgação dos ganhadores será realizada após a apuração do sorteio no dia 11 de julho</div>
 									</div>
 								</div>
 								<div class="terms__rectangle">
@@ -127,14 +112,6 @@
 											Para mais informações, consulte <a href="${path}/assets/LGMembersDayRegulamentoaprovadopelaSECAP.pdf" target="_blank"  class="terms__link">o regulamento da promoção.</a><br>
 											A promoção é válida apenas no período de 08/06/2022 a 30/06/2022.
 										</p>
-									</div>
-								</div>
-								<div id="terms__message" class="terms__message">
-									<div class="terms__item">
-										<div class="terms__ico">
-											<i></i>
-										</div>
-										<div class="terms__desc">A divulgação dos ganahdores será realizada após o sorteio</div>
 									</div>
 								</div>
 							</div>

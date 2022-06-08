@@ -88,7 +88,7 @@
 
 			<!-- Life Style Model -->
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07556091|MD06216776|MD07530735|MD07533005|MD07554000|MD07554005|MD07539997|MD07538714|MD07539167"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07533008|MD07530612|MD07530611|MD07530579|MD07530693|MD07530785|MD07535161|MD07535198|MD07538792|MD07538702|MD06242696"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07533008|MD07530785|MD07535161|MD07535198|MD07538792|MD07538702|MD06242696|MD07530612|MD07530611|MD07530579|MD07530693"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07548903|MD07530693|MD07548905|MD07545870|MD07548901"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07531091|MD07531107|MD07548905|MD07548902|MD07545101|MD07541559|MD07541521"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07538792|MD07542881|MD07541559|MD07541521|MD07515370"/>
@@ -256,7 +256,7 @@
 					</div>
 				</div>
 				<div class="visual__terms">
-					<a href="${path}/sorteio" target="_blank" 
+					<a href="${path}/assets/LGMembersDayRegulamentoaprovadopelaSECAP.pdf" target="_blank" 
 						data-link-name="memberdays_anchor_click_termsandconditions" 
 						data-link-area="memberdays_2022" 
 						class="terms__link visual__link" style="color:#000000;">
@@ -536,21 +536,22 @@
 											data-track-opt="theme" 
 											data-track-name="submitClick" 
 											data-link-name="memberdays_luckydraw_submit_click_{theme}"
-											data-link-area="memberdays_2022" style="width: 160px;">PARTECIPA</a>
+											data-link-area="memberdays_2022" style="width: 160px;">Participar</a>
 									</div>
 								</form>
 								
 								<div class="section__footer" style="margin-bottom: 0;text-align: center">
 									<p class="section__text">
-										Em até 5 dias corridos você recebera em um email com o número da sorte para concorrer.<br>
-										Para garantir o recebimento adicione o endereço <a href="matito:contato@relacionamento.lgmarketing.com.br">contato@relacionamento.lgmarketing.com.br</a> a sua lista segura de emails.<br>
-										Fique atendo, confira também sua caixa de spam, alguns emails podem ser redirecionados para ela
+										m até 5 dias corridos você recebera em um email com o número da sorte para concorrer.<br>
+										Para garantir o recebimento adicione o endereço <a href="mailto:contato@relacionamento.lgmarketing.com.br">contato@relacionamento.lgmarketing.com.br</a> a sua lista segura de emails.<br>
+										Fique atendo, confira também sua caixa de spam, alguns emails podem ser redirecionados para ela.<br>
+										<a href="${path}/sorteio" target="_blank">Clique aqui para ver os ganhadores</a>
 									</p>
 								</div>
 							</div>
 						</div>
 						<div class="section__footer">
-							<a href="${path}/sorteio" target="_blank" class="section__text">Consulte Regulamento</a>
+							<a href="${path}/assets/LGMembersDayRegulamentoaprovadopelaSECAP.pdf" target="_blank" class="section__text">Consulte Regulamento</a>
 						</div>
 					</div>
 				</div>
@@ -721,7 +722,7 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/br/img_product_showroom_vividlife01_02.png" alt="4K OLED65G1 Evo Gallery Design ">
+															<img src="${path}/assets/images/br/img_product_showroom_vividlife01_02.png" alt="4K OLED65G1 Evo Gallery Design">
 														</div>
 														<div class="product__right">
 															<p class="product__name">4K OLED65G1 Evo Gallery Design</p>
@@ -828,13 +829,13 @@
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/br/img_product_showroom_gaminglife01_02.png" alt="LG Home Theater Sound Bar SP9A with 5.1.2 Channels">
+															<img src="${path}/assets/images/br/img_product_showroom_gaminglife01_02.png" alt="Caixa de Som Gamer LG UltraGear">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG Home Theater Sound Bar SP9A with 5.1.2 Channels</p>
+															<p class="product__name">Caixa de Som Gamer LG UltraGear</p>
 															<ul class="product__desc">
-																<li>QUALIDADE DE SOM: alto-falante para jogos  sem fone de ouvido</li>
-																<li>SOM EQ CUSTOMIZÁVEL: Não precisa mais de placa de som externa para jogos</li>
+																<li>HI-FI QUAD DAC E PROCESSADOR HI-RES INTEGRADOS: para reprodução precisa de áudio</li>
+																<li>SOM 3D PARA JOGOS: Otimizador de gênero de jogo para FPS, RTS</li>
 															</ul>
 														</div>
 													</a>
@@ -865,8 +866,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/br/audio-e-video/lg-gp9" target="_blank"
-														data-link-name="memberdays_productMouseHover_gaminglife_GP9"
+													<a href="https://www.lg.com/br/audio-e-video/lg-sp9a" target="_blank"
+														data-link-name="memberdays_productMouseHover_gaminglife_SP9A"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -1309,7 +1310,7 @@
 											data-track-opt="category" 
 											data-track-val="HOME APPLIANCES"  
 											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemorehomeappliances"
+											data-link-name="memberdays_plp_click_seemoreclothingproducts"
 											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">Confira mais Lavadoras</a>
 										<a href="https://www.lg.com/br/geladeiras" 
@@ -1319,7 +1320,7 @@
 											data-track-opt="category" 
 											data-track-val="HOME APPLIANCES"  
 											data-track-name="plpClick" 
-											data-link-name="memberdays_plp_click_seemorehomeappliances"
+											data-link-name="memberdays_plp_click_seemorefridges"
 											data-link-area="memberdays_2022" 
 											class="button__item button__item--white">Confira Mais Geladeiras</a>
 									</div>
@@ -1345,17 +1346,16 @@
 											data-track-name="plpClick" 
 											data-link-name="memberdays_plp_click_seemorecomputerproducts"
 											data-link-area="memberdays_2022"
-											class="button__item button__item--white"> Confira a linha de Informática</a>
+											class="button__item button__item--white">Confira a linha de Informática</a>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="section__footer section__footer--center">
-							<p class="section__text" style="margin-bottom: 15px;">Todos os direitos reservados. Ofertas para produtos selecionados, exclusivas para a Loja Online LG. Os preços,<br>
-								opromoções e produtos disponíveis podem variar e estão sujeitos a alteração sem prévio aviso. Ofertas válidas<br>
-								de 08.06.2022 até 30.06.2022. Promoção válida enquanto durarem os estoques. A Loja Online LG realiza entregas<br>
-								nas regiões Sul e Sudeste do Brasil. Alguns produtos podem não estar disponíveis na sua região. Imagens<br>
-								meramente ilustrativas. Consulte o Regulamento.</p>
+							<p class="section__text">
+								Ofertas válidas para compras realizadas de 08/06/2022 a 09/07/2022. Período de Participação: De 08/06/2022 00:00 a 30/06/2022 23:59. Certificado de Autorização SECAP nº 04.020285/2022. Promoção exclusiva para clientes da LG. Consulte o Regulamento e os produtos participantes. Imagens meramente ilustrativas. LG Electronics do Brasil Ltda. Todos os direitos reservados. Para mais informações acesse o site www.lg.com/br/promocoes/memberdays
+								<br>Política de Privacidade (<a href="www.lg.com/br/privacidade" target="_blank">www.lg.com/br/privacidade</a>)
+							</p>
 							<p class="section__text">
 								Modelo dos produtos especiais que serão sorteados: 1 TV OLED 65" - Televisor 65" - SKU OLED65C1, 1 LG GRAM -<br>Notebook 17" - SKU 17Z90N-V, 1 Ultragear Monitor, Monitor 27" - SKU 27GN750-B, 1 Tone Free - Fone de Ouvido<br>Bluetooth - SKU FP9 e 1 Wash Machine 14kg - Maquina Lava e Seca 14sg - SKU WD14EGS62. 
 							</p>

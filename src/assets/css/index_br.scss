@@ -207,6 +207,7 @@
 							&:nth-child(1) {
 								.product__target {
 									top: -44px;
+									z-index: 10;
 									&:before {
 										top: 46px;
 										margin-top: 0;
@@ -388,41 +389,59 @@
 			}
 		}
 		@media (max-width: 767px) {
-		&__showroom {
-			&--greenlife {
-				.product__slide {
-					@for $i from 1 through 2 {
-						&:nth-child(#{ $i }) {
-							background-image: url('../images/br/m_bg_product_showroom_greenlife0#{$i}.png');
+			&__showroom {
+				&--greenlife {
+					.product__slide {
+						@for $i from 1 through 2 {
+							&:nth-child(#{ $i }) {
+								background-image: url('../images/br/m_bg_product_showroom_greenlife0#{$i}.png');
+							}
 						}
 					}
 				}
-			}
-			&--vividlife {
-				.product__slide {
-					@for $i from 1 through 2 {
-						&:nth-child(#{ $i }) {
-							background-image: url('../images/br/m_bg_product_showroom_vividlife0#{$i}.png');
+				&--vividlife {
+					.product__slide {
+						@for $i from 1 through 2 {
+							&:nth-child(#{ $i }) {
+								background-image: url('../images/br/m_bg_product_showroom_vividlife0#{$i}.png');
+							}
 						}
 					}
 				}
-			}
-			&--gaminglife {
-				.product__slide {
-					&:nth-child(2) {
-						background-image: url('../images/br/m_bg_product_showroom_gaminglife02.png');
+				&--gaminglife {
+					.product__slide {
+						&:nth-child(2) {
+							background-image: url('../images/br/m_bg_product_showroom_gaminglife02.png');
+						}
 					}
 				}
-			}
-			&--workinglife {
-				.product__slide {
-					&:nth-child(1) {
-						background-image: url('../images/br/m_bg_product_showroom_workinglife01.png');
+				&--workinglife {
+					.product__slide {
+						&:nth-child(1) {
+							background-image: url('../images/br/m_bg_product_showroom_workinglife01.png');
+						}
 					}
 				}
 			}
 		}
 	}
+	.product__showroom--greenlife .product__slide:nth-child(1) .product__layer:nth-child(2) {
+		right: 15.0%;
+    top: 15.0%;
+		.product__target {
+			top: 25px;
+			padding-top: 20px;
+			&:before {
+				top: 10px;
+				margin-left: 0;
+				margin-top: 0;
+				border-left: 15px solid rgba(0,0,0,0);
+				border-right: 15px solid rgba(0,0,0,0);
+				border-top: 0;
+				border-bottom: 20px solid #fff;
+				
+			}
+		}
 	}
 
 	// terms

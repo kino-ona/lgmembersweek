@@ -630,18 +630,38 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/br/geladeiras/lg-gc-x247csbv" target="_blank"
-														data-link-name="memberdays_productMouseHover_greenlife_GC-X247CSBV"
+													<a href="https://www.lg.com/br/geladeiras/lg-GR-X228NMSM-geladeira-french-door-525-litros" target="_blank"
+														data-link-name="memberdays_productMouseHover_greenlife_GR-X228NMSM"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
 															<img src="${path}/assets/images/br/img_product_showroom_greenlife01_01.png"
-															alt="LG InstaView™ Door-in-Door™ and Hygiene Fresh+™">
+															alt="LG French Door InstaView™ Door-in-Door™ 525 litros">
 														</div>
 														<div class="product__right">
-															<p class="product__name">LG InstaView™ Door-in-Door™ and Hygiene Fresh+™</p>
+															<p class="product__name">LG French Door InstaView™ Door-in-Door™ 525 litros</p>
 															<ul class="product__desc">
-																<li>Economize energia e tenha fácil acesso à sua geladeira com a elegante InstaView™ Door-in-Door™</li>
+																<li>Geladeira French Door 525 litros com sistema InstaView Door-In-Door, acabamento premium e compressor Linear Inverter para maior eficiência</li>
+															</ul>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="product__layer">
+												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
+												<div class="product__target">
+													<a href="https://www.lg.com/br/ar-condicionado-residencial/lg-s4-w24k2rxe" target="_blank"
+														data-link-name="memberdays_productMouseHover_greenlife_S4-W24K2RXE"
+														data-link-area="memberdays_2022"
+														class="product__link">
+														<div class="product__img">
+															<img src="${path}/assets/images/br/img_product_showroom_greenlife01_02.png"
+															alt="LG DUAL Inverter Voice Artcool UV Nano 24.000 Quente/Frio 220V">
+														</div>
+														<div class="product__right">
+															<p class="product__name">LG DUAL Inverter Voice Artcool UV Nano 24.000 Quente/Frio 220V</p>
+															<ul class="product__desc">
+																<li>Tão silencioso que você não escuta. Tão inteligente que escuta você. Comandos de voz pelo Google Assistente. Comandos de voz pela Alexa.</li>
 															</ul>
 														</div>
 													</a>

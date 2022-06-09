@@ -9,10 +9,10 @@
 
 	<meta content="#a50034" name="theme-color">
 
-	<title>TV, Audio, Vidéo, Électroménager, Informatique, Climatisation | LG France</title>
-	<meta name="keywords" content="" />
-	<meta name="description" content="" />
-	<meta property="og:title" content="TV, Audio, Vidéo, Électroménager, Informatique, Climatisation | LG France" />
+	<title>LG Brand Week - Chacun son style | LG France</title>
+	<meta name="keywords" content="LG, LG France, offres, promotions, remises, reduction, brand week, semaine LG" />
+	<meta name="description" content="Jusqu'au 30 juin, profitez de la LG Brand Week et de remise allant de -5% à -30% !" />
+	<meta property="og:title" content="LG Brand Week - Chacun son style | LG France" />
 	<meta property="og:url" content="https://www.lg.com/fr" />
 	<meta property="og:description" content="LG Electronics vous propose son expertise en téléviseurs OLED, QNED, produits audio, électroménager, moniteurs et bien plus." />
 	<meta property="og:image" content="https://www.lg.com/lg5-common-gp/images/common/share/share-default.jpg" />
@@ -278,7 +278,7 @@
 									data-track-group="mic" data-track-name="members_week_anchor_click"
 									data-link-name="memberdays_anchor_click_hotdeal" 
 									data-link-area="memberdays_2022" 
-									class="link">Bonnes Affaires</a>
+									class="link">BONNES AFFAIRES</a>
 								</li>
 						</ul>
 					</div>
@@ -292,41 +292,45 @@
 							<h2 class="section__title">Remises de -5% à -30%</h2>
 						</div>
 						<div class="section__header header__round">
-							<h2 class="section__title">Avantages MyLG</h2>
-							<p class="section__sub">Inscrivez-vous dès maintenant à MyLG<br> 
-								pour bénéficier jusqu’à -15%<br> 
-								sur une large sélection de produits.</p>
+							<div class="section__header">
+								<h2 class="section__title">Avantages MyLG</h2>
+								<p class="section__sub">Inscrivez-vous dès maintenant à MyLG<br> 
+									pour bénéficier jusqu’à -15%<br> 
+									sur une large sélection de produits.</p>
+							</div>
+							<div class="benefit">
+								<ul class="benefit__list benefit__list--discount">
+									<li class="benefit__item">
+										<div class="benefit__inner">
+											<p class="benefit__category">Pour 1 article acheté</p>
+											<p class="benefit__discount">
+												-10%
+												<em class="benefit__condition">de réduction</em>
+											</p>
+										</div>
+									</li>
+									<li class="benefit__item">
+										<div class="benefit__inner">
+											<p class="benefit__category">A partir de 2 articles achetés</p>
+											<p class="benefit__discount">
+												-15%
+												<em class="benefit__condition">de réduction</em>
+											</p>
+										</div>
+									</li>
+								</ul>
+								<div class="benefit__noti">
+									<p class="benefit__text">Découvrez les codes de réduction dans votre compte MyLG.</p>
+								</div>
+								<div class="benefit__button">
+									<a href="/fr/promotions/brand-week-members" target="_blank" class="benefit__link">
+										J’EN PROFITE !
+										<i class="benefit__arrow"></i>
+									</a>
+								</div>
+							</div>
 						</div>
 						<div class="benefit">
-							<ul class="benefit__list benefit__list--discount">
-								<li class="benefit__item">
-									<div class="benefit__inner">
-										<p class="benefit__category">Pour 1 article acheté</p>
-										<p class="benefit__discount">
-											-10%
-											<em class="benefit__condition">de réduction</em>
-										</p>
-									</div>
-								</li>
-								<li class="benefit__item">
-									<div class="benefit__inner">
-										<p class="benefit__category">A partir de 2 articles achetés</p>
-										<p class="benefit__discount">
-											-15%
-											<em class="benefit__condition">de réduction</em>
-										</p>
-									</div>
-								</li>
-							</ul>
-							<div class="benefit__noti">
-								<p class="benefit__text">Découvrez les codes de réduction dans votre compte MyLG.</p>
-							</div>
-							<div class="benefit__button">
-								<a href="#" target="_blank" class="benefit__link">
-									J’EN PROFITE !
-									<i class="benefit__arrow"></i>
-								</a>
-							</div>
 							<div class="section__header" style="margin-top: 20px">
 								<h2 class="section__sub">Paiement en 3x ou 4x sans frais disponible</h2>
 							</div>
@@ -532,7 +536,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+										<a href="/fr/promotions/brand-week" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>

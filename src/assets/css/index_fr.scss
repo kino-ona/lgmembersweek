@@ -81,17 +81,21 @@
 				}
 			}
 		}
+		&__discount {
+			font-size: 80px;
+		}
 		.benefit__noti {
 			margin-top: 10px;
 			text-align: center;
 			.benefit__text {
-				font-size: 16px;
-				line-height: 22px;
+				font-size: 25px;
+				line-height: 30px;
 			}
 		}
 		@media (max-width: 767px) {
 			.benefit__noti {
 				.benefit__text {
+					font-size: 16px;
 					line-height: 20px;
 				}
 			}
@@ -118,15 +122,44 @@
 	// product
 	.product {
 		&--hotdeal {
+			.product__img img {
+				bottom: 22px;
+				max-width: 90%;
+			}
 			.product__item {
-				@for $i from 1 through 1 {
-					&:nth-child(#{ $i }) {
-						.hotdeal_bg {
-							background-image: url('../images/fr/bg_hotdeal0#{$i}.png');
-							&.hotdeal_soldout {
-								background-image: url('../images/hotdeal_bg02.png');
-							}
-						}
+				// @for $i from 1 through 1 {
+				// 	&:nth-child(#{ $i }) {
+				// 		.hotdeal_bg {
+				// 			background-image: url('../images/bg_hotdeal0#{$i}.png');
+				// 			&.hotdeal_soldout {
+				// 				background-image: url('../images/hotdeal_bg02.png');
+				// 			}
+				// 		}
+				// 	}
+				// }
+				.hotdeal_bg {
+					&.hotdeal_soldout {
+						background-image: url('../images/hotdeal_bg02.png');
+					}
+				}
+				&:nth-child(1) {
+					.hotdeal_bg {
+						background-image: url('../images/bg_hotdeal01.png');
+					}
+				}
+				&:nth-child(2) {
+					.hotdeal_bg {
+						background-image: url('../images/bg_hotdeal02.png');
+					}
+				}
+				&:nth-child(3) {
+					.hotdeal_bg {
+						background-image: url('../images/bg_hotdeal03.png');
+					}
+				}
+				&:nth-child(4) {
+					.hotdeal_bg {
+						background-image: url('../images/bg_hotdeal04.png');
 					}
 				}
 			}

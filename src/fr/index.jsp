@@ -92,11 +92,17 @@
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07546106|MD07546117|MD07546111|MD07546107"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
-			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07554482"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07546258|MD07546259|MD07552060|MD07530879"/>
 			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
 			<input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/hotdeal_product.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="Limited to 100 units"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/hotdeal_product01.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="22% de Remise"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/hotdeal_product02.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt2" value="28% de Remise"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/hotdeal_product03.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt3" value="32% de Remise"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/hotdeal_product04.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt4" value="22% de Remise"/>
 	
 		<!--  Content Start  -->
 		<div class="lgmembersweek" data-action-url="/${localeCd}/mkt/ajax/nbaa/retrieveManualProductList">
@@ -285,7 +291,7 @@
 							<p class="section__sub">Offres Exceptionnelles</p>
 							<h2 class="section__title">Remises de -5% à -30%</h2>
 						</div>
-						<div class="section__header">
+						<div class="section__header header__round">
 							<h2 class="section__title">Avantages MyLG</h2>
 							<p class="section__sub">Inscrivez-vous dès maintenant à MyLG<br> 
 								pour bénéficier jusqu’à -15%<br> 

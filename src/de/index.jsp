@@ -89,9 +89,10 @@
 			<!-- Life Style Model -->
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07538035|MD07526170|MD07546933|MD07541621|MD07538920"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07550687|MD07533491|MD06189816|MD07552826|MD07551605|MD07551967"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07502402|MD07551967|MD07520244|MD07550687|MD07552826|MD07551605"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07520244|MD07551967|MD07520244|MD07550687|MD07552826|MD07551605"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07548205|MD07550158|MD07536623"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536623|MD07545439|MD07545341|MD07545447|MD07552826"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536623|MD07545439|MD07545447|MD07552826"/>
+			<!-- <input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536623|MD07545439|MD07545341|MD07545447|MD07552826"/> -->
 
 			<!-- Hot Deal Model / thumb - alt text -->
 			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07533491|MD07530431|MD07540097|MD07539439"/>
@@ -110,7 +111,7 @@
 			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07550676|MD07550687|MD07551110|MD06189816"/>
 			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07545447|MD07545439|MD07536623|MD07536621|MD07552826|MD07551605|MD07551967|MD07553255"/>
 			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07543561|MD07535535|MD07537903|MD07520246|MD06020158|MD07537889|MD05788391|MD07538907|MD07537971|MD07541621|MD07538925|MD07526179|MD07544110|MD07542596|MD06205396|MD07538035|MD07520457|MD07543663|MD07538359|MD07538920"/>
-			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07546401|MD07510035|MD07527569|MD07545130|MD06076196|MD07501021|MD07500772|MD07500784|MD07513632|MD07528827|MD07539456"/>
+			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07546401|MD07510035|MD07545130|MD06076196|MD07501021|MD07500772|MD07500784|MD07513632|MD07528827|MD07539456"/>
 		<!-- Required input ## Model List End -->
 	
 		<!--  Content Start  -->
@@ -411,7 +412,6 @@
 												<img src="${path}/assets/images/de/img_coupon_greenlife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<!-- <span class="product__category">with</span> //-->
 												<span class="product__name">Gewinne eines unserer Lifestyle Produkte</span>
 												<span class="product__code">F6WV710AT2</span>
 												<i class="coupon__ico">
@@ -469,7 +469,6 @@
 												<img src="${path}/assets/images/de/img_coupon_gaminglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<!-- <span class="product__category">with</span> //-->
 												<span class="product__name">Gewinne eines unserer Lifestyle Produkte</span>
 												<span class="product__code">27GP950-B</span>
 												<i class="coupon__ico">
@@ -498,7 +497,6 @@
 												<img src="${path}/assets/images/de/img_coupon_workinglife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<!-- <span class="product__category">with</span> //-->
 												<span class="product__name">Gewinne eines unserer Lifestyle Produkte</span>
 												<span class="product__code">17Z90P-G.AA89G</span>
 												<i class="coupon__ico">
@@ -527,7 +525,6 @@
 												<img src="${path}/assets/images/de/img_coupon_soundfullife_product.png" alt="product img" data-error-img="/lg5-common-gp/images/common/product-default-list-350.jpg">
 											</span>
 											<span class="product__info">
-												<!-- <span class="product__category">with</span> //-->
 												<span class="product__name">Gewinne eines unserer Lifestyle Produkte</span>
 												<span class="product__code">DSP9YA</span>
 												<i class="coupon__ico">
@@ -821,10 +818,10 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/monitore/lg-34gn850-b" target="_blank"
-														data-link-name="memberdays_productMouseHover_gaminglife_34GN850-B"
+													<a href="https://www.lg.com/de/monitore/lg-32gn600-b" target="_blank"
+														data-link-name="memberdays_productMouseHover_gaminglife_32GN600-B"
 														data-link-area="memberdays_2022"
-														class="product__link">
+														class="product__link">	
 														<div class="product__img">
 															<img src="${path}/assets/images/de/img_product_showroom_gaminglife01_01.png"
 															alt="34 QHD Zoll UtraGear™">
@@ -1057,7 +1054,7 @@
 												</div>
 											</div>
 										</div>
-										<div class="product__slide">
+										<!-- <div class="product__slide">
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
@@ -1080,7 +1077,7 @@
 													</a>
 												</div>
 											</div>
-										</div>
+										</div> -->
 									</div>
 									<div class="product__track">
 										<div class="product__swiper"></div>

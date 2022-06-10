@@ -1136,7 +1136,7 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/it/cuffie-bluetooth/lg-tone-fp5.ceufllk" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_TONE-FP5"
+														data-link-name="memberdays_productMouseHover_soundfullife_TONE-FP5"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -1161,7 +1161,7 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/it/hi-fi-audio/lg-rp4-x-boom360" target="_blank"
-														data-link-name="memberdays_productMouseHover_workinglife_RP4"
+														data-link-name="memberdays_productMouseHover_soundfullife_RP4"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">

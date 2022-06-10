@@ -1250,7 +1250,7 @@
 							</div>
 						</div>
 						<div class="section__footer">
-							<p class="section__text">*Welcome coupon 5% is not applicable</p>
+							<p class="section__text">*Other Discount coupon is not applicable</p>
 						</div>
 					</div>
 				</div>

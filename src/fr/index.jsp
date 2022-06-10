@@ -85,11 +85,11 @@
 			<!-- Required input ## Model List Start -->
 
 			<!-- Life Style Model -->
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07554482|MD07554381|MD07554491|MD07545699"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07540047|MD07530879|MD07540039|MD07554485"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07539331|MD07539468|MD07552060|MD07554321"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07546259|MD07546246|MD07546322|MD07546324"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07546106|MD07546117|MD07546111|MD07546107"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07534431|MD07520934|MD07524535|MD07536227|MD07545699"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07545726|MD07546115|MD07546223"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07538236|MD07538239|MD07552057|MD07546302"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07546253|MD07546302"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07546106|MD07546117|MD0754611|MD07546120"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
 			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07546258|MD07546259|MD07552060|MD07530879"/>
@@ -274,7 +274,7 @@
 									class="link">VOTRE STYLE &amp; LG</a>
 							</li>
 							<li class="list-item">
-								<a href="#box_content3" 
+								<a href="#HotDeal" 
 									data-track-group="mic" data-track-name="members_week_anchor_click"
 									data-link-name="memberdays_anchor_click_hotdeal" 
 									data-link-area="memberdays_2022" 
@@ -536,7 +536,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="/fr/promotions/brand-week" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+										<a href="/fr/promotions/brand-week" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>
@@ -639,7 +639,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+										<a href="/fr/promotions/brand-week" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>
@@ -764,7 +764,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+										<a href="/fr/promotions/brand-week" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>
@@ -826,7 +826,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+										<a href="/fr/promotions/brand-week" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>
@@ -911,7 +911,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="#" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+										<a href="/fr/promotions/brand-week" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>

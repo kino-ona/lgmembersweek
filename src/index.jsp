@@ -1199,7 +1199,7 @@
 											<span class="product__flag d-none" data-user-type="*productTag2UserType*" data-key="productTag2">*productTag2*</span>
 										</div>
 										<div class="product__img">
-											<p class="hotdeal_bg"></p>
+											<p class="hotdeal_bg hotdeal_soldout"></p>
 											<img src="*hotdealImageAddr*" alt="*hotdealImageAltText*">
 										</div>
 										<!-- 

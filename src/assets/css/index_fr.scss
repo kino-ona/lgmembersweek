@@ -123,20 +123,10 @@
 	.product {
 		&--hotdeal {
 			.product__img img {
-				bottom: 22px;
+				bottom: 30px;
 				max-width: 90%;
 			}
 			.product__item {
-				// @for $i from 1 through 1 {
-				// 	&:nth-child(#{ $i }) {
-				// 		.hotdeal_bg {
-				// 			background-image: url('../images/bg_hotdeal0#{$i}.png');
-				// 			&.hotdeal_soldout {
-				// 				background-image: url('../images/hotdeal_bg02.png');
-				// 			}
-				// 		}
-				// 	}
-				// }
 				.hotdeal_bg {
 					&.hotdeal_soldout {
 						background-image: url('../images/hotdeal_bg02.png');

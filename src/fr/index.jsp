@@ -92,7 +92,7 @@
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07546106|MD07546117|MD0754611|MD07546120"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
-			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07546258|MD07546259|MD07552060|MD07530879"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07546258|MD07546246|MD07552060|MD07530879"/>
 			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
 			<input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/hotdeal_product01.png"/>

@@ -120,9 +120,9 @@
 
 			<!-- Life Style Model -->
 			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07535414|MD07535483|MD07535475"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548355|MD07546571|MD07546591|MD07545548|MD07528365"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07548335|MD07546571|MD07546591|MD07523609|MD07545548|MD07528365"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07535374|MD07514269|MD07546567|MD07528365"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07553045|MD07553055|MD07540281|MD07540286|MD07550947|MD07553142|MD07535403|MD07537017"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07553045|MD07553055|MD07553005|MD07553012|MD07550947|MD07553142|MD07535403|MD07537017"/>
 			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07535403|MD07534551|MD07535359|MD07535216|MD07528451"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
@@ -137,10 +137,10 @@
 			-->
 
 			<!-- Hottest Gift Model -->
-			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07548335|MD07546595|MD07548379|MD07550523|MD07545548"/>
+			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07546571|MD07548335|MD07546595|MD07548379|MD07550523|MD07523609|MD07545548"/>
 			<input type="hidden" data-model-group="hottest" data-type="audio" value="MD07535403|MD07537017|MD07534551|MD07535359|MD07535216|MD07538824|MD07535374|MD07508602|MD07508373|MD07528365|MD07528451|MD07510893|MD07504084|MD07535242|MD07538956"/>
 			<input type="hidden" data-model-group="hottest" data-type="homeappliance" value="MD07514393|MD05849457|MD07535483|MD07535475|MD07536912|MD06201936|MD07515106|MD07514364|MD07535628|MD07515090|MD07535502|MD07535480|MD07535414|MD07517580|MD07535464"/>
-			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07553045|MD07553055|MD07540281|MD07540286|MD07550947|MD07525972|MD07553142|MD07514270|MD07525661|MD07532529|MD07535283|MD07514269|MD07532528|MD07528387"/>
+			<input type="hidden" data-model-group="hottest" data-type="computerproducts" value="MD07553045|MD07553055|MD07553005|MD07553012|MD07550947|MD07553142|MD07514270|MD07525661|MD07532529|MD07535283|MD07514269|MD07532528|MD07528387"/>
 		<!-- Required input ## Model List End -->
 	
 		<!--  Content Start  -->

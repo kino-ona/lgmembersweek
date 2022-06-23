@@ -1372,11 +1372,11 @@
 						</div>
 						<div class="section__footer section__footer--center">
 							<p class="section__text">
-								Ofertas válidas para compras realizadas de 08/06/2022 a 09/07/2022. Período de Participação: De 08/06/2022 00:00 a 30/06/2022 23:59. Certificado de Autorização SECAP nº 04.020285/2022. Promoção exclusiva para clientes da LG. Consulte o Regulamento e os produtos participantes. Imagens meramente ilustrativas. LG Electronics do Brasil Ltda. Todos os direitos reservados. Para mais informações acesse o site www.lg.com/br/promocoes/memberdays
+								Ofertas válidas para compras realizadas de 08/06/2022 a 30/06/2022. Período de Participação: De 08/06/2022 00:00 a 30/06/2022 23:59. Certificado de Autorização SECAP nº 04.020285/2022. Promoção exclusiva para clientes da LG. Consulte o Regulamento e os produtos participantes. Imagens meramente ilustrativas. LG Electronics do Brasil Ltda. Todos os direitos reservados. Para mais informações acesse o site www.lg.com/br/promocoes/memberdays
 								<br>Política de Privacidade (<a href="www.lg.com/br/privacidade" target="_blank">www.lg.com/br/privacidade</a>)
 							</p>
 							<p class="section__text">
-								Modelo dos produtos especiais que serão sorteados: 1 TV OLED 65" - Televisor 65" - SKU OLED65C1, 1 LG GRAM -<br>Notebook 17" - SKU 17Z90N-V, 1 Ultragear Monitor, Monitor 27" - SKU 27GN750-B, 1 Tone Free - Fone de Ouvido<br>Bluetooth - SKU FP9 e 1 Wash Machine 14kg - Maquina Lava e Seca 14sg - SKU WD14EGS62. 
+								Modelo dos produtos especiais que serão sorteados: 1 TV OLED 65" - Televisor 65" - SKU OLED65C1, 1 LG GRAM -<br>Notebook 17" - SKU 17Z90N-V, 1 Ultragear Monitor, Monitor 27" - SKU 27GN750-B, 1 Tone Free - Fone de Ouvido<br>Bluetooth - SKU FP9 e 1 Wash Machine 14kg - Maquina Lava e Seca 14Kg - SKU WD14EGS62. 
 							</p>
 						</div>
 					</div>

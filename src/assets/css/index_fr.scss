@@ -122,34 +122,40 @@
 	// product
 	.product {
 		&--hotdeal {
+			.product__flags {z-index: 1;}
 			.product__img img {
-				bottom: 30px;
-				max-width: 90%;
+				bottom: 40px;
+				max-width: 100%;
 			}
 			.product__item {
 				.hotdeal_bg {
 					&.hotdeal_soldout {
-						background-image: url('../images/hotdeal_bg02.png');
+						// background-image: url('../images/hotdeal_bg02.png');
+						background-image: none;
 					}
 				}
 				&:nth-child(1) {
 					.hotdeal_bg {
-						background-image: url('../images/bg_hotdeal01.png');
+						// background-image: url('../images/bg_hotdeal01.png');
+						background-image: none;
 					}
 				}
 				&:nth-child(2) {
 					.hotdeal_bg {
-						background-image: url('../images/bg_hotdeal02.png');
+						// background-image: url('../images/bg_hotdeal02.png');
+						background-image: none;
 					}
 				}
 				&:nth-child(3) {
 					.hotdeal_bg {
-						background-image: url('../images/bg_hotdeal03.png');
+						// background-image: url('../images/bg_hotdeal03.png');
+						background-image: none;
 					}
 				}
 				&:nth-child(4) {
 					.hotdeal_bg {
-						background-image: url('../images/bg_hotdeal04.png');
+						// background-image: url('../images/bg_hotdeal04.png');
+						background-image: none;
 					}
 				}
 			}

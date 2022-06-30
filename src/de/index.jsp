@@ -95,17 +95,17 @@
 			<!-- <input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07536623|MD07545439|MD07545341|MD07545447|MD07552826"/> -->
 
 			<!-- Hot Deal Model / thumb - alt text -->
-			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07533491|MD07530431|MD07540097|MD07539439"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07533482|MD07530431|MD07539439|MD07540097"/>
 			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
 			<input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/de/hotdeal_product01.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="Limited to 100 units"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/de/hotdeal_product02.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt2" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/de/hotdeal_product03.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/de/hotdeal_product04.png"/>
 			<input type="hidden" data-model-group="hotDeal" data-type="alt3" value="Limited to 100 units"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/de/hotdeal_product04.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt4" value="Limited to 100 units"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/de/hotdeal_product03.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt4" value="Limited to 100 units"/> 
 
 			<!-- Hottest Gift Model -->
 			<input type="hidden" data-model-group="hottest" data-type="tvcinebeam" value="MD07550676|MD07550687|MD07551110|MD06189816"/>
@@ -123,7 +123,7 @@
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
 									<h2 class="section__title">LG MEMBER DAYS</h2>
-									<p class="section__desc section__desc--regular">Aktionszeitraum 7.6.-4.7.2022</p>
+									<p class="section__desc section__desc--regular">Aktionszeitraum 07.06.-04.07.2022</p>
 									<p class="section__sub">Für jeden Lifestyle die passenden Produkte</p>
 									<p class="section__desc">
 										Werde jetzt LG Member und sichere dir exklusive<br>
@@ -147,10 +147,10 @@
 						<div class="section">
 							<div class="section__inner">
 								<div class="section__header" data-track-group="mic" data-track-name="members_week_banner_click">
-									<h2 class="section__title">Green living mit LG Technologie</h2>
+									<h2 class="section__title">Green living mit LG</h2>
 									<p class="section__sub">
-										Entdecke deine Produkte für einen grünen Lifestyle<br>
-										Aktion gülitg bis 4.7.2022
+										Entdecke deine Produkte für einen grünen Lifestyle –<br> zum Beispiel mit Energieeffizienzklasse A <br>
+										Aktion gültig bis 04.07.2022
 									</p>
 								</div>
 							</div>
@@ -174,7 +174,7 @@
 									<p class="section__sub">
 										Surrounding Sound &amp; leuchtende Farben<br>
 										für dein Zuhause!<br>
-										Aktion gültig bis 4.7.2022
+										Aktion gültig bis 04.07.2022
 									</p>
 								</div>
 							</div>
@@ -198,7 +198,7 @@
 									<p class="section__sub">
 										Schneller sehen, schneller reagieren.<br>
 										Gewinne dein Match mit LG!<br>
-										Aktion gülitg bis 4.7.2022
+										Aktion gültig bis 04.07.2022
 									</p>
 								</div>
 							</div>
@@ -221,7 +221,7 @@
 									<h2 class="section__title">Dein Working life mit LG</h2>
 									<p class="section__sub">
 										Egal von wo du arbeitest, mit LG kreierst du deine perfekte Workstation<br>
-										Aktion gülitg bis 4.7.2022
+										Aktion gültig bis 04.07.2022
 									</p>
 								</div>
 							</div>
@@ -244,7 +244,7 @@
 									<h2 class="section__title">Klangvoll durch den Tag mit LG!</h2>
 									<p class="section__sub">
 										Dein Tag, dein perfekter Sound mit LG!<br>
-										Aktion gülitg bis 4.7.2022
+										Aktion gültig bis 04.07.2022
 									</p>
 								</div>
 							</div>
@@ -361,7 +361,7 @@
 					<div class="section__inner">
 						<div class="section__header">
 							<h2 class="section__title">
-								Nur für LG Member : Jetzt kostenlos<br>
+								Nur für LG Member: Jetzt kostenlos<br>
 								teilnehmen und ein LG Produkt gewinnen! 
 							</h2>
 							<p class="section__sub section__sub--small">
@@ -635,8 +635,8 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/de/kuehlschraenke-gefrierschraenke/lg-gsxv91bsae" target="_blank"
-														data-link-name="memberdays_productMouseHover_greenlife_GSXV91BSAE"
+													<a href="https://www.lg.com/de/kuehlschraenke-gefrierschraenke/lg-gsxv90bsde" target="_blank"
+														data-link-name="memberdays_productMouseHover_greenlife_gsxv90bsde"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
@@ -646,10 +646,14 @@
 														<div class="product__right">
 															<p class="product__name">Side-by-Side mit InstaView Door-in-Door®</p>
 															<ul class="product__desc">
-																<li>Gold für Energiesparung</li>
-																<li>Kürzen Sie die Waschzeit auf 39 Minuten ohne Kompromiss bei der Waschqualität mit TurboWash 360</li>
-																<li>Verhindern Sie jeglichen Stoffschaden mit der brillianted AI DD Technologie</li>
-																<li>Seien Sie versichert mit einer 10 Jahre Motorgarantie</li>
+																<li>InstaView Door-in-Door® mit Showeffekt: Alles im Blick</li>
+																<li>Door-in-Door®: schneller Zugriff auf beliebte Lebensmittel</li>
+																<li>DoorCooling+®: viel schneller und gleichmäßiger Kühlen</li>
+																<li>Craft Ice : Langsam schmelzende Eiskugeln</li>
+																<li>UVnano Technologie: deutlich weniger Bakterien an den Wasserspender-Ausgängen
+																</li>
+																<li>Inverter Linear Compressor®: Super leise und 10 Jahre Garantie auf den Kompressor
+																</li>
 															</ul>
 														</div>
 													</a>
@@ -684,17 +688,59 @@
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
 													<a href="https://www.lg.com/de/waschmaschinen/lg-f6wv709p1" target="_blank" 
-														data-link-name="memberdays_productMouseHover_greenlife_F6WV709P1"
+														data-link-name="memberdays_productMouseHover_greenlife_f6wv709p1"
 														data-link-area="memberdays_2022"
 														class="product__link">
 														<div class="product__img">
-															<img src="${path}/assets/images/de/img_product_showroom_greenlife02_01.png"
+															<img src="${path}/assets/images/de/img_product_showroom_greenlife02_01_01.jpg"
 															alt="Waschmaschine mit AI DD®">
 														</div>
 														<div class="product__right">
 															<p class="product__name">Waschmaschine mit AI DD®</p>
 															<ul class="product__desc">
-																<li>Energie einsparen mit der InstaView Door-in-Door Funktion!</li>
+																<li>AI DD®: Intelligente Erkennung der Fasern für 18% mehr Gewebeschutz
+																</li>
+																<li>Edelstahl Mitnehmer: Hygienisch, Strapazierfähig und keine Verfärbungen
+																</li>
+																<li>Sicherheitsglastür: Stabil, Kratzfest, Hygienisch und Hitzebeständig
+																</li>
+																<li>Steam: Tiefenreinigung mit Dampf mit speziellem Programm wie Allergy Care
+																</li>
+																<li>TurboWash®360°: 4 Einsprühdüsen für schnelleres und schonenderes Waschen in nur 39 min. (halbe Beladung)
+																</li>
+																<li>Inverter DirectDrive® : Energieeffizienter, langlebiger und leiser Motor mit 10 Jahren Garantie*
+																</li>
+															</ul>
+														</div>
+													</a>
+												</div>
+											</div>
+											<div class="product__layer">
+												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
+												<div class="product__target">
+													<a href="https://www.lg.com/de/trockner/lg-RT8DIH1Q" target="_blank" 
+														data-link-name="memberdays_productMouseHover_greenlife_RT8DIH1Q"
+														data-link-area="memberdays_2022"
+														class="product__link">
+														<div class="product__img">
+															<img src="${path}/assets/images/de/img_product_showroom_greenlife02_01.jpg"
+															alt="Waschmaschine mit AI DD®">
+														</div>
+														<div class="product__right">
+															<p class="product__name">LG Trockner mit Dual Inverter Wärmepumpentechnologie</p>
+															<ul class="product__desc">
+																<li>Dual Inverter Wärmepumpentechnologie für eine schonende Trocknung mit niedrigen Temperaturen
+																</li>
+																<li>Automatisch selbstreinigender Kondensator: Ausspülung mit Hilfe von Wasserdruck
+																</li>
+																<li>Allergy Care: Reduziert Allergene um bis zu 99,9%
+																</li>
+																<li>Sensor Dry optimiert die Trocknungsleistung
+																</li>
+																<li>ECO Hybrid System: flexibel wählen zwischen Zeit- oder Energieersparnis
+																</li>
+																<li>ThinQ®: vernetzte Zukunft eingebaut
+																</li>
 															</ul>
 														</div>
 													</a>

@@ -85,25 +85,24 @@
 			<!-- Required input ## Model List Start -->
 
 			<!-- Life Style Model -->
-			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07550858|MD07554473|MD07550875|MD07540072"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07545726|MD07546115|MD07546223|MD07530879"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07552060|MD07552057"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07546246|MD07538512"/>
-			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07546106|MD07546117|MD0754611|MD07546111"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="vividlife" value="MD07534431|MD07520934|MD07524535|MD07536227|MD07545699"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="gaminglife" value="MD07545726|MD07546115|MD07546223"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="workinglife" value="MD07538236|MD07538239|MD07552057|MD07546302"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="soundfullife" value="MD07546253|MD07546302"/>
+			<input type="hidden" data-model-group="lifeStyle" data-type="greenlife" value="MD07546106|MD07546117|MD0754611|MD07546120"/>
 
 			<!-- Hot Deal Model / thumb - alt text -->
-			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07546255|MD07552057|MD07530879"/>
-			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07546258|MD07546246|MD07552060|MD07530879"/> -->
+			<input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07546258|MD07546246|MD07552060|MD07530879"/>
 			<!-- <input type="hidden" data-model-group="hotDeal" data-type="hotdeal" value="MD07508573|MD07548246|MD07546591"/> ex. multiple model -->
 			<input type="hidden" data-model-group="hotDeal" data-type="altClose" value="Closed"/>
-			<!-- <input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/hotdeal_product01.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="22% de Remise"/> -->
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/fr/hotdeal_product02_2.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="28% de Remise"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/fr/hotdeal_product03_2.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt2" value="32% de Remise"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/fr/hotdeal_product04_2.png"/>
-			<input type="hidden" data-model-group="hotDeal" data-type="alt3" value="250€ de Remise"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb1" value="${path}/assets/images/hotdeal_product01.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt1" value="22% de Remise"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb2" value="${path}/assets/images/hotdeal_product02.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt2" value="28% de Remise"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb3" value="${path}/assets/images/hotdeal_product03.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt3" value="32% de Remise"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="thumb4" value="${path}/assets/images/hotdeal_product04.png"/>
+			<input type="hidden" data-model-group="hotDeal" data-type="alt4" value="22% de Remise"/>
 	
 		<!--  Content Start  -->
 		<div class="lgmembersweek" data-action-url="/${localeCd}/mkt/ajax/nbaa/retrieveManualProductList">
@@ -513,7 +512,7 @@
 											<div class="product__layer">
 												<a href="#" class="product__anchor"><span class="sr-only">detail view</span></a>
 												<div class="product__target">
-													<a href="https://www.lg.com/fr/videoprojecteurs/lg-hu810pwaqp5w-videoprojecteur-laser-bundle" target="_blank"
+													<a href="https://www.lg.com/fr/videoprojecteurs/lg-HU70LS-videoprojecteur-led-4k" target="_blank"
 														data-link-name="memberdays_productMouseHover_vividlife_HU70LS"
 														data-link-area="memberdays_2022"
 														class="product__link">
@@ -537,7 +536,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="/fr/promotions/offres-d-ete" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+										<a href="/fr/promotions/brand-week" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>
@@ -640,7 +639,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="/fr/promotions/offres-d-ete" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+										<a href="/fr/promotions/brand-week" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>
@@ -765,7 +764,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="/fr/promotions/offres-d-ete" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+										<a href="/fr/promotions/brand-week" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>
@@ -827,7 +826,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="/fr/promotions/offres-d-ete" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+										<a href="/fr/promotions/brand-week" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>
@@ -912,7 +911,7 @@
 										<ul class="product__list"></ul>
 									</div>
 									<div class="button">
-										<a href="/fr/promotions/offres-d-ete" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
+										<a href="/fr/promotions/brand-week" target="_blank" class="button__item button__item--red">EN DÉCOUVRIR PLUS</a>
 									</div>
 								</div>
 							</div>

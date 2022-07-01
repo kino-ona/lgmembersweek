@@ -9,7 +9,7 @@
 
 	<meta content="#a50034" name="theme-color">
 
-  <title>TLG Member Days: ECONOMIZE ATÉ 20% | LG BR</title>
+  <title>LG Member Days: ECONOMIZE ATÉ 20% | LG BR</title>
 	<meta name="keywords" content="" />
 	<meta name="description" content="" />
 	<meta property="og:title" content="TLG Member Days: ECONOMIZE ATÉ 20% | LG BR" />
